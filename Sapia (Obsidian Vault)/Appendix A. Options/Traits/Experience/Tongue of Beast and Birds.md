@@ -1,0 +1,1 @@
+When encountering a new type of natural animal, you can make an Intelligence check to see if they have studied that animal's tongue. Different beast languages are somewhat narrow: Mouse and Rat languages are different, for example (but perhaps in the same language family). Keep a list of all the animals you can speak to.

@@ -1,0 +1,1 @@
+As long as you have basic tools you can make significant repairs to a single object overnight. If a shield has been sundered or spear shaken, you can repair them with a single night of work. You don't even need sleep when you work: your obsession is refreshing.

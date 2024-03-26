@@ -1,0 +1,1 @@
+Your Mana total increases by an amount equal to your Proficiency Bonus.

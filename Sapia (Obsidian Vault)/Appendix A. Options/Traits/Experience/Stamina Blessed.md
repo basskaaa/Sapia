@@ -1,0 +1,1 @@
+Your Stamina total increases by an amount equal to your Proficiency Modifier.

@@ -1,0 +1,2 @@
+When you make an attack against a target, you roll dice to determine how much damage is dealt.
+The target reduces the incoming damage by their defence. If they reduce the damage to 0, the target gets to counter the attack with a main action.

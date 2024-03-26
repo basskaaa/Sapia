@@ -1,0 +1,1 @@
+You have exceptional taste. With just a tiny taste of food, you can tell what the ingredients are (e.g., if there's a little extra poison in there). This lets you backwards engineer most potions.

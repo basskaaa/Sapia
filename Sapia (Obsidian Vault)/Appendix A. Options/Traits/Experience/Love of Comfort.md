@@ -1,0 +1,1 @@
+Whenever you increase your drunkenness level, you can heal 1d4 hp. You can do this a number of times equal to the number of your constitution modifier per long rest.

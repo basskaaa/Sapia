@@ -1,0 +1,1 @@
+When asked to make a Performance check to deliver artistic expression, you have advantage on the roll.

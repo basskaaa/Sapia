@@ -1,0 +1,1 @@
+When asked to make a Survival check to discern natural conditions or local wildlife, you have advantage on the roll.

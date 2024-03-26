@@ -1,0 +1,1 @@
+You don’t suffer disadvantage on Perception checks in Dim Light.

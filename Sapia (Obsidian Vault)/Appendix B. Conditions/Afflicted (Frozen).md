@@ -1,0 +1,1 @@
+You take damage equal to your proficiency modifier at the start of your turn, your movement speed is reduced by half, and you cannot use starter actions or reactions.

@@ -1,0 +1,1 @@
+You can smell gold, jewels, gems, silver--minerals and crystals of value. If you stand at a crossroads and sniff, the GM will tell you which direction has the most treasure. If you sniff in an empty room, the GM will tell you if you smell the faint odor of potentially buried treasure.

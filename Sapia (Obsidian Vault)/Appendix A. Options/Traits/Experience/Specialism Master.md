@@ -1,0 +1,1 @@
+You gain an additional number of Specialisms of your choice equal to your Intelligence modifier.

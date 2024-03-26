@@ -1,0 +1,1 @@
+When asked to make a Survival check to treat wounds, you have advantage on the roll.

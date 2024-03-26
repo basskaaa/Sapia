@@ -1,0 +1,1 @@
+You can sense things that give off heat nearby, and where the flow of heat is moving.

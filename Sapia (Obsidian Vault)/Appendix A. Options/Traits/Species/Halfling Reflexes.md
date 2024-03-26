@@ -1,0 +1,2 @@
+Requires [[Halfling]]
+Whenever a larger enemy misses you with a melee attack, you may force them to make another melee attack against a target within range. It's possible to make enemies hit themselves with this ability.

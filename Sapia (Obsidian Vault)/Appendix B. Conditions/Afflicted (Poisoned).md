@@ -1,0 +1,1 @@
+You take damage equal to your proficiency modifier at the start of your turn, and you have disadvantage on all d20 rolls.

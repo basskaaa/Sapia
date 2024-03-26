@@ -1,0 +1,3 @@
+A remote uncle dies and leaves you a great inheritance; the local lord notices your rising fame and bribes you; whatever happens, you gain a minor noble title. Name your new noble house, select heraldry and house words.
+
+When you fight under your own banner or wear your own heraldry, your ability DC increases by 1, and once per long rest you have advantage on a skill check, instinct check, or attack roll.

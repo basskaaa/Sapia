@@ -1,0 +1,1 @@
+Your movement speed is reduced by half and you have disadvantage on d20 rolls.

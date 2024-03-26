@@ -1,0 +1,1 @@
+You gain an additional Death Saving Throw. Now, you must reach 4 failed Death Saving Throws for your character to be considered dead.

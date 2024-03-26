@@ -1,0 +1,1 @@
+When asked to make a Knowledge check to discern where to find information, you have advantage on the roll.

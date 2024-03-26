@@ -1,0 +1,1 @@
+When asked to make a precision or stealth check for lockpicking, pickpocketing, or any other similar activity, you have advantage on the roll.

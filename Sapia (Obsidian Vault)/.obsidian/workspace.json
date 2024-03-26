@@ -1,0 +1,251 @@
+{
+  "main": {
+    "id": "d718d7e6f2c43ad0",
+    "type": "split",
+    "children": [
+      {
+        "id": "f6a505a077929146",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "20a85455a45572fb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appendix B. Conditions/Afflicted (Hexed).md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1020158b15f767e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Long Rest.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "124683a89baaf91f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Short Rest.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8e670e25204dd5b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Long Rest.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e5b81df0134211d9",
+    "type": "split",
+    "children": [
+      {
+        "id": "e3591813d2a6f3ea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3281c1b69e354674",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e15fd1875128bf35",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4d1a157c9339bbbe",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "eb19490116b74a1b",
+    "type": "split",
+    "children": [
+      {
+        "id": "a415c903822da552",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5136eaca047bd646",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Long Rest.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e9a62216d4fb16b5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Long Rest.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "03f690b6b4595704",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "55fed61f7dd7eaf2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Long Rest.md"
+              }
+            }
+          },
+          {
+            "id": "0a88e25eddb7d8e7",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "41572533dd7af462",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Long Rest.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": true,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "8e670e25204dd5b0",
+  "lastOpenFiles": [
+    "Short Rest.md",
+    "Recovery Dice.md",
+    "Long Rest.md",
+    "Untitled.md",
+    "Appendix B. Conditions/Afflicted (Hexed).md",
+    "Appendix B. Conditions/Afflicted (Burning).md",
+    "Appendix B. Conditions/Afflicted (Bleeding).md",
+    "Appendix B. Conditions/Scarred.md",
+    "Appendix B. Conditions/Unlucky.md",
+    "Appendix B. Conditions/Exhausted.md",
+    "Appendix B. Conditions/Paralysed.md",
+    "Appendix B. Conditions/Afflicted (Poisoned).md",
+    "Appendix B. Conditions/Afflicted (Frozen).md",
+    "Appendix B. Conditions/Wounded.md",
+    "Appendix B. Conditions/Unconscious.md",
+    "Appendix B. Conditions/Stunned.md",
+    "Appendix B. Conditions/Restrained.md",
+    "Appendix B. Conditions/Prone.md",
+    "Appendix B. Conditions/Pinned.md",
+    "Appendix B. Conditions/Invisible.md",
+    "Appendix B. Conditions/Hidden.md",
+    "Hidden.md",
+    "Appendix B. Conditions/Incapacitated.md",
+    "Appendix B. Conditions/Frightened.md",
+    "Appendix B. Conditions/Doomed.md",
+    "Appendix B. Conditions/Deafened.md",
+    "Appendix A. Options/Abilities/Grace",
+    "3. Expanded Rules/1. General/Abilities",
+    "_Main/Images",
+    "_Main/Templates",
+    "_Main",
+    "Appendix A. Options/Gear/Tools/Potions",
+    "Appendix A. Options/Traits/Curse",
+    "3. Expanded Rules/1. General/Instincts",
+    "3. Expanded Rules/1. General/Attributes",
+    "3. Expanded Rules/1. General/Skills"
+  ]
+}

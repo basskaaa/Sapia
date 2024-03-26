@@ -1,0 +1,1 @@
+When asked to make a Diplomacy check to influence others via your faith, you have advantage on the roll.

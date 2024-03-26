@@ -1,0 +1,1 @@
+You hear would-be ambushers moments before they attack. When surprised, you have a 50% chance to act anyway.

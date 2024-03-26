@@ -1,0 +1,1 @@
+When asked to make a Diplomacy check to command commoners in public, you have advantage on the roll.

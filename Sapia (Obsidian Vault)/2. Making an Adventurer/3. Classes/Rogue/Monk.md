@@ -1,0 +1,1 @@
+Rapid Strikes: Once per turn, if you roll the lowest number on a damage dice, you can make an additional number of attacks equal to your proficiency bonus.

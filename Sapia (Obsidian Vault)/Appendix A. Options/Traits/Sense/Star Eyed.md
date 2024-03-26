@@ -1,0 +1,1 @@
+Elves treat starlight as sunlight. If they can see the stars, they can see as well as they can during the day. This doesn't help in dark, underground dungeons, but is helpful in the wilderness.

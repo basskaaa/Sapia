@@ -1,0 +1,16 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "Rank": "number",
+    "Action": "multitext",
+    "Range": "multitext",
+    "Duration": "multitext",
+    "Attack/Save": "multitext",
+    "Concentration": "checkbox",
+    "Classes": "multitext",
+    "Damage Type": "multitext",
+    "School": "multitext"
+  }
+}

@@ -1,0 +1,1 @@
+You suffer no penalties from wearing medium armour.

@@ -1,0 +1,1 @@
+When you roll a 20 on a d20 roll, you succeed and something good happens, vs when you roll a 1 on a d20 roll, something bad happens.

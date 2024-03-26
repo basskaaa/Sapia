@@ -1,0 +1,1 @@
+Over a period of 8 hours of downtime and by consuming the appropriate resources, you can increase the crafting value of a weapon or armour by 1. Requires access to a smithy.
