@@ -4,23 +4,414 @@
     "type": "split",
     "children": [
       {
-        "id": "f6a505a077929146",
+        "id": "3575eaf30ba77b5b",
         "type": "tabs",
         "children": [
           {
-            "id": "62e3b312abdd7490",
+            "id": "3b9f8c92aee9af2e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rules/Appendix A. Options/Abilities/Moves/Quiet Step.md",
+                "file": "Rules/Appendix A. Options/Abilities/Moves/0/Patient Defence.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "89271d4f0c71b0bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/1/Heavy Attack.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "560466e4799dd67a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/1/Careful Footing.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "73db2da1e4c7b47d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/0/Cleave.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9cf480ca04952eca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/1/Distraction.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7ab7bcc6ffc75f52",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/1/Lunge.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2aefa14da877902a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/1/Parry.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6d43cf860893b690",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/1/Second Wind.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "193f1e7ac9a6a614",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/1/Cheat.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "878e60154f169ba4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/1/Conceal.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "063aa3009e7a8df2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/1/Rattle.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d398aeb9a8b27557",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/1/Reckless.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "df4eb91a054329a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Grappling Manoeuvre.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "70d47b790e3d1b7a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Improvise.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "455497d4267201ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Multiattack.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f9128c1b82ecc294",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Improvise.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "44d0b4d5b714fcf5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Ricochet.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2cb2afd36695c949",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Deflect Missiles.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "35fe6b942c0f2398",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Flurry of Blows.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "db5e7658d0e35541",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Deadly Volley.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8e88c30cec64de7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Quickened Healing.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fc5f90308486bea6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Rage.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d4c390cb0dc80a07",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Redirect Attack.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e2096b13174f6a40",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Soul Shot.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d0e82e41a42f0423",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Step of the Wind.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3911bba67c5c71db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Uncanny Dodge.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0774e92046d41f83",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/3/Backstab.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b3215fe1c946c9f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/3/Command Ally.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f9c9d9125c0bf848",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/3/Scurry from Danger.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b30a0e61fa2635bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/3/Turn the Tide.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "149c66411fbcea98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Uncanny Dodge.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 30
       }
     ],
     "direction": "vertical"
@@ -86,7 +477,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rules/Appendix A. Options/Abilities/Moves/Quiet Step.md",
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Uncanny Dodge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +494,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rules/Appendix A. Options/Abilities/Moves/Quiet Step.md",
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Uncanny Dodge.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +517,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rules/Appendix A. Options/Abilities/Moves/Quiet Step.md"
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Uncanny Dodge.md"
               }
             }
           },
@@ -148,7 +539,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Rules/Appendix A. Options/Abilities/Moves/Quiet Step.md"
+                "file": "Rules/Appendix A. Options/Abilities/Moves/2/Uncanny Dodge.md"
               }
             }
           }
@@ -171,43 +562,43 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "62e3b312abdd7490",
+  "active": "149c66411fbcea98",
   "lastOpenFiles": [
-    "Rules/Appendix A. Options/Abilities/Moves/Sweep.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Two Handed Stance.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Vanish From Sight.md",
-    "Rules/Appendix B. Conditions/Wounded.md",
+    "Rules/Appendix A. Options/Abilities/Moves/2/Step of the Wind.md",
+    "Rules/Appendix A. Options/Abilities/Moves/2/Soul Shot.md",
+    "Rules/Appendix A. Options/Abilities/Moves/2/Ricochet.md",
+    "Rules/Appendix A. Options/Abilities/Moves/2/Retaliate.md",
+    "Rules/Appendix A. Options/Abilities/Moves/2/Redirect Attack.md",
+    "Rules/Appendix A. Options/Abilities/Moves/2/Rage.md",
+    "Rules/Appendix A. Options/Abilities/Moves/2/Quickened Healing.md",
+    "Rules/Appendix A. Options/Abilities/Moves/2/Multiattack.md",
+    "Rules/Appendix A. Options/Abilities/Moves/2/Improvise.md",
+    "Rules/Appendix A. Options/Abilities/Moves/2/Grappling Manoeuvre.md",
+    "Rules/Appendix A. Options/Abilities/Moves/2/Flurry of Blows.md",
+    "Rules/Appendix A. Options/Abilities/Moves/2/Deflect Missiles.md",
+    "Rules/Appendix A. Options/Abilities/Moves/2/Deadly Volley.md",
+    "Rules/Appendix A. Options/Abilities/Moves/3/Command Ally.md",
+    "Rules/Appendix A. Options/Abilities/Moves/3/Charging Rage.md",
+    "Rules/Appendix A. Options/Abilities/Moves/3",
+    "Rules/Appendix A. Options/Abilities/Moves/3/Turn the Tide.md",
+    "Rules/Appendix A. Options/Abilities/Moves/3/Scurry from Danger.md",
+    "Rules/Appendix A. Options/Abilities/Moves/3/Backstab.md",
+    "Rules/Appendix A. Options/Abilities/Moves/2/Uncanny Dodge.md",
+    "Rules/Appendix A. Options/Abilities/Grace/Attack of Opportunity.md",
+    "Rules/Appendix A. Options/Abilities/Grace/Attack.md",
+    "Rules/Appendix A. Options/Abilities/Grace/Hide.md",
+    "Rules/Appendix A. Options/Abilities/Grace/Dash.md",
+    "Rules/Appendix A. Options/Abilities/Moves/1/Heavy Attack.md",
+    "Rules/Appendix A. Options/Abilities/Moves/1/Distraction.md",
+    "Rules/Appendix A. Options/Abilities/Moves/1/Confidence.md",
+    "Rules/Appendix A. Options/Abilities/Moves/2",
+    "Rules/Appendix A. Options/Abilities/Moves/1",
+    "Rules/Appendix A. Options/Abilities/Moves/0",
     "Rules/3. Expanded Rules/1. General/Dice",
-    "Rules/Appendix B. Conditions/Unconscious.md",
-    "Rules/Appendix B. Conditions/Stunned.md",
-    "Rules/Appendix B. Conditions/Slowed.md",
-    "Rules/Appendix B. Conditions/Scarred.md",
-    "Rules/Appendix B. Conditions/Restrained.md",
-    "Rules/Appendix B. Conditions/Prone.md",
-    "Rules/Appendix B. Conditions/Pinned.md",
-    "Rules/Appendix B. Conditions/Paralysed.md",
-    "Rules/Appendix B. Conditions/Invisible.md",
-    "Rules/Appendix B. Conditions/Incapacitated.md",
-    "Rules/Appendix B. Conditions/Hidden.md",
-    "Rules/Appendix B. Conditions/Frightened.md",
-    "Rules/Appendix B. Conditions/Exhaustion Points.md",
-    "Rules/Appendix B. Conditions/Exhausted.md",
-    "Rules/Appendix B. Conditions/Doomed.md",
-    "Rules/Appendix B. Conditions/Afflicted (Frozen).md",
-    "Rules/Appendix B. Conditions/Afflicted (Burning).md",
-    "Rules/Appendix B. Conditions/Afflicted (Hexed).md",
-    "Rules/Appendix B. Conditions/Afflicted (Poisoned).md",
-    "Rules/Appendix B. Conditions/Afflicted (Bleeding).md",
-    "Rules/Appendix B. Conditions/Deafened.md",
-    "Rules/Appendix B. Conditions/Charmed.md",
     "Rules/3. Expanded Rules/1. General/Stats",
     "Untitled 1",
     "Setting",
     "Rules",
-    "Rules/3. Expanded Rules/1. General/Resting",
-    "Rules/Appendix A. Options/Abilities/Grace",
-    "Rules/3. Expanded Rules/1. General/Abilities",
-    "_Main/Images",
-    "_Main/Templates"
+    "Rules/3. Expanded Rules/1. General/Resting"
   ]
 }
