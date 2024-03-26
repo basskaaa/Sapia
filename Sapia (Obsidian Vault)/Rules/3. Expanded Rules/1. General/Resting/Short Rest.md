@@ -1,0 +1,1 @@
+Takes 5 mins of rest to complete. At the start of a short rest, you can spend any [[Recovery Dice]] to regain [[hit points]].

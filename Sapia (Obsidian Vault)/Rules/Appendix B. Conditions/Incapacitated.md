@@ -1,0 +1,1 @@
+You cannot use any actions or maintain concentration on abilities.

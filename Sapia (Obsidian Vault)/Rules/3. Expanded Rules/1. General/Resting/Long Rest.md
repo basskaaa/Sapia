@@ -1,0 +1,1 @@
+Takes 8 hours of rest to complete. At the start of a long rest, you restore all spent [[Recovery Dice]] from the previous adventuring day. At the end of a long rest, you can spend [[Recovery Dice]] to regain [[hit points]].

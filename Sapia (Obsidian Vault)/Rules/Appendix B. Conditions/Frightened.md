@@ -1,0 +1,1 @@
+You suffer disadvantage on all attack rolls, saving throws, and skill checks while the source of fear can be seen or heard.

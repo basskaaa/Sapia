@@ -8,59 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "20a85455a45572fb",
+            "id": "62e3b312abdd7490",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appendix B. Conditions/Afflicted (Hexed).md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1020158b15f767e4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Long Rest.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "124683a89baaf91f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Short Rest.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8e670e25204dd5b0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Long Rest.md",
+                "file": "Rules/Appendix A. Options/Abilities/Moves/Quiet Step.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -126,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Long Rest.md",
+                "file": "Rules/Appendix A. Options/Abilities/Moves/Quiet Step.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Long Rest.md",
+                "file": "Rules/Appendix A. Options/Abilities/Moves/Quiet Step.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Long Rest.md"
+                "file": "Rules/Appendix A. Options/Abilities/Moves/Quiet Step.md"
               }
             }
           },
@@ -188,7 +148,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Long Rest.md"
+                "file": "Rules/Appendix A. Options/Abilities/Moves/Quiet Step.md"
               }
             }
           }
@@ -206,46 +166,48 @@
       "canvas:Create new canvas": true,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-projects:Open projects": false
     }
   },
-  "active": "8e670e25204dd5b0",
+  "active": "62e3b312abdd7490",
   "lastOpenFiles": [
-    "Short Rest.md",
-    "Recovery Dice.md",
-    "Long Rest.md",
-    "Untitled.md",
-    "Appendix B. Conditions/Afflicted (Hexed).md",
-    "Appendix B. Conditions/Afflicted (Burning).md",
-    "Appendix B. Conditions/Afflicted (Bleeding).md",
-    "Appendix B. Conditions/Scarred.md",
-    "Appendix B. Conditions/Unlucky.md",
-    "Appendix B. Conditions/Exhausted.md",
-    "Appendix B. Conditions/Paralysed.md",
-    "Appendix B. Conditions/Afflicted (Poisoned).md",
-    "Appendix B. Conditions/Afflicted (Frozen).md",
-    "Appendix B. Conditions/Wounded.md",
-    "Appendix B. Conditions/Unconscious.md",
-    "Appendix B. Conditions/Stunned.md",
-    "Appendix B. Conditions/Restrained.md",
-    "Appendix B. Conditions/Prone.md",
-    "Appendix B. Conditions/Pinned.md",
-    "Appendix B. Conditions/Invisible.md",
-    "Appendix B. Conditions/Hidden.md",
-    "Hidden.md",
-    "Appendix B. Conditions/Incapacitated.md",
-    "Appendix B. Conditions/Frightened.md",
-    "Appendix B. Conditions/Doomed.md",
-    "Appendix B. Conditions/Deafened.md",
-    "Appendix A. Options/Abilities/Grace",
-    "3. Expanded Rules/1. General/Abilities",
+    "Rules/Appendix A. Options/Abilities/Moves/Sweep.md",
+    "Rules/Appendix A. Options/Abilities/Moves/Two Handed Stance.md",
+    "Rules/Appendix A. Options/Abilities/Moves/Vanish From Sight.md",
+    "Rules/Appendix B. Conditions/Wounded.md",
+    "Rules/3. Expanded Rules/1. General/Dice",
+    "Rules/Appendix B. Conditions/Unconscious.md",
+    "Rules/Appendix B. Conditions/Stunned.md",
+    "Rules/Appendix B. Conditions/Slowed.md",
+    "Rules/Appendix B. Conditions/Scarred.md",
+    "Rules/Appendix B. Conditions/Restrained.md",
+    "Rules/Appendix B. Conditions/Prone.md",
+    "Rules/Appendix B. Conditions/Pinned.md",
+    "Rules/Appendix B. Conditions/Paralysed.md",
+    "Rules/Appendix B. Conditions/Invisible.md",
+    "Rules/Appendix B. Conditions/Incapacitated.md",
+    "Rules/Appendix B. Conditions/Hidden.md",
+    "Rules/Appendix B. Conditions/Frightened.md",
+    "Rules/Appendix B. Conditions/Exhaustion Points.md",
+    "Rules/Appendix B. Conditions/Exhausted.md",
+    "Rules/Appendix B. Conditions/Doomed.md",
+    "Rules/Appendix B. Conditions/Afflicted (Frozen).md",
+    "Rules/Appendix B. Conditions/Afflicted (Burning).md",
+    "Rules/Appendix B. Conditions/Afflicted (Hexed).md",
+    "Rules/Appendix B. Conditions/Afflicted (Poisoned).md",
+    "Rules/Appendix B. Conditions/Afflicted (Bleeding).md",
+    "Rules/Appendix B. Conditions/Deafened.md",
+    "Rules/Appendix B. Conditions/Charmed.md",
+    "Rules/3. Expanded Rules/1. General/Stats",
+    "Untitled 1",
+    "Setting",
+    "Rules",
+    "Rules/3. Expanded Rules/1. General/Resting",
+    "Rules/Appendix A. Options/Abilities/Grace",
+    "Rules/3. Expanded Rules/1. General/Abilities",
     "_Main/Images",
-    "_Main/Templates",
-    "_Main",
-    "Appendix A. Options/Gear/Tools/Potions",
-    "Appendix A. Options/Traits/Curse",
-    "3. Expanded Rules/1. General/Instincts",
-    "3. Expanded Rules/1. General/Attributes",
-    "3. Expanded Rules/1. General/Skills"
+    "_Main/Templates"
   ]
 }

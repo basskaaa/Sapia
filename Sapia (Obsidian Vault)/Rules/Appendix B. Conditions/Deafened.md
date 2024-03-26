@@ -1,0 +1,1 @@
+You cannot make skill checks or use abilities relying on hearing.

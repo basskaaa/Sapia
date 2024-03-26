@@ -1,0 +1,1 @@
+Your [[Defence]] is reduced by your [[Power Modifier]].

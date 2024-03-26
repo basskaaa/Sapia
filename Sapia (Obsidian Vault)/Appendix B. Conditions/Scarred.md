@@ -1,1 +1,0 @@
-You restore half of the normal hit points gained when using a recovery dice.
