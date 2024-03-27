@@ -1,5 +1,6 @@
 ---
-Rank: 6
+Rank:
+  - "[[Rank 6]]"
 Action:
   - "[[Attack Action]]"
 School: 

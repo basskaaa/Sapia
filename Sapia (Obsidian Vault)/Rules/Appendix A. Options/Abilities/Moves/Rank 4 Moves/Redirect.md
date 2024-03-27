@@ -1,16 +1,17 @@
 ---
-Rank: 4
+Rank:
+  - "[[Rank 4]]"
 Action:
-  - Reaction
+  - "[[Reaction]]"
 School: 
 Target: 
 Range: 
 Damage Type: 
 Duration:
-  - Instantaneous
+  - "[[Instantaneous]]"
 Attack/Save: 
 Classes:
-  - Fighter
+  - "[[Fighter]]"
 Concentration: false
 tags: 
 Prerequisite:

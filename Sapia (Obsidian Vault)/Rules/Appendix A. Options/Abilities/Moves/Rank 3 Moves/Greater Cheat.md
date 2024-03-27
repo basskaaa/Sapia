@@ -1,9 +1,11 @@
 ---
-Rank: 3
+Rank:
+  - "[[Rank 3]]"
 Action:
-  - Main Action
+  - "[[Main Action]]"
 School: 
-Target: Self
+Target:
+  - "[[Self]]"
 Range: 
 Damage Type: 
 Duration: 
@@ -11,7 +13,7 @@ Attack/Save:
 Classes: 
 Concentration: false
 tags: 
-Prerequisite: Cheat
+Prerequisite: "[[Cheat]]"
 ---
 When gaming or gambling, you alter or discern the outcome of the game. You gain +10 to skill checks made to conceal cheating in a game for the duration.
 

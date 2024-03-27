@@ -1,9 +1,11 @@
 ---
-Rank: 5
+Rank:
+  - "[[Rank 5]]"
 Action:
   - "[[Starter Action]]"
 School: 
-Target: "[[Self]]"
+Target:
+  - "[[Self]]"
 Range: 
 Damage Type: 
 Duration:
@@ -13,7 +15,8 @@ Classes:
 Concentration: false
 tags:
   - Buff
-Prerequisite: "[[Rage]]"
+Prerequisite:
+  - "[[Rage]]"
 ---
 For the duration, you gain the following benefits:
 

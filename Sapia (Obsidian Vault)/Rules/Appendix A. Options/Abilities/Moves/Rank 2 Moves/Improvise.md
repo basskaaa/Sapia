@@ -1,9 +1,11 @@
 ---
-Rank: 2
+Rank:
+  - "[[Rank 2]]"
 Action:
-  - Reaction
+  - "[[Reaction]]"
 School: 
-Target: Self
+Target:
+  - "[[Self]]"
 Range: 
 Damage Type: 
 Duration: 

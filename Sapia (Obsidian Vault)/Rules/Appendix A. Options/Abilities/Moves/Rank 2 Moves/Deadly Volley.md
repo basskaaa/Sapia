@@ -1,15 +1,16 @@
 ---
-Rank: 2
+Rank:
+  - "[[Rank 2]]"
 Action:
-  - Starter Action
+  - "[[Starter Action]]"
 School: 
 Target: 
 Range:
-  - Ranged
+  - "[[Ranged]]"
 Damage Type: 
 Duration: 
 Attack/Save:
-  - Ranged
+  - "[[Ranged Attack]]"
 Classes: 
 Concentration: false
 tags:

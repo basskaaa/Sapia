@@ -1,18 +1,19 @@
 ---
-Rank: 0
+Rank:
+  - "[[Rank 0]]"
 Action:
-  - Reaction
+  - "[[Reaction]]"
 School: 
 Target: 
 Range:
-  - Melee
+  - "[[Melee]]"
 Damage Type: 
 Duration:
-  - Instantaneous
+  - "[[Instantaneous]]"
 Attack/Save:
-  - Melee
+  - "[[Melee Attack]]"
 Classes:
-  - Fighter
+  - "[[Fighter]]"
 Concentration: false
 tags:
   - Attack

@@ -1,12 +1,14 @@
 ---
-Rank: 0
+Rank:
+  - "[[Rank 0]]"
 Action:
-  - Starter Action
+  - "[[Starter Action]]"
 School: 
 Range:
-  - 30ft
+  - "[[30ft]]"
 Damage Type: 
-Target: Self
+Target:
+  - "[[Self]]"
 Duration: 
 Attack/Save: 
 Classes: 

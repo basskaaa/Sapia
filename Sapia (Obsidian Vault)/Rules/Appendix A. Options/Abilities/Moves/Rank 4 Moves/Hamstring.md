@@ -1,17 +1,18 @@
 ---
-Rank: 4
+Rank:
+  - "[[Rank 4]]"
 Action:
-  - Starter Action
+  - "[[Starter Action]]"
 School: 
 Target: 
 Range: 
 Damage Type: 
 Duration:
-  - 1 Minute
+  - "[[1 Minute]]"
 Attack/Save:
-  - Fortitude
+  - "[[Fortitude Save]]"
 Classes:
-  - Fighter
+  - "[[Fighter]]"
 Concentration: false
 tags:
   - Debuff

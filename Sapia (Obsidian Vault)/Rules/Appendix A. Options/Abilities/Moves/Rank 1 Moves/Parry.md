@@ -1,17 +1,18 @@
 ---
-Rank: 1
+Rank:
+  - "[[Rank 1]]"
 Action:
-  - Main Action
+  - "[[Main Action]]"
 School: 
 Target: 
 Range: 
 Damage Type: 
 Duration:
-  - Until the start of your next turn
+  - "[[Until the start of your next turn]]"
 Attack/Save:
-  - Fortitude
+  - "[[Fortitude Save]]"
 Classes:
-  - Fighter
+  - "[[Fighter]]"
 Concentration: false
 tags:
   - Debuff

@@ -1,19 +1,22 @@
 ---
-Rank: 4
+Rank:
+  - "[[Rank 4]]"
 Action:
-  - Starter Action
+  - "[[Starter Action]]"
 School: 
 Range:
-  - 30ft
+  - "[[30ft]]"
 Damage Type: 
-Target: Self
+Target:
+  - "[[Self]]"
 Duration: 
 Attack/Save: 
 Classes: 
-Concentration: 
+Concentration: false
 tags:
   - Stealth
-Prerequisite: Quiet Step
+Prerequisite:
+  - "[[Quiet Step]]"
 ---
 You move unheard, provided you are outside of a creature's line of sight. Any creatures within 30ft remain unaware of you until you enter their line of sight or otherwise draw attention.
 

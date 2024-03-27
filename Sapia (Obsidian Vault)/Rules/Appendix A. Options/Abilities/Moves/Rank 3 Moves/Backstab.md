@@ -1,16 +1,17 @@
 ---
-Rank: 3
+Rank:
+  - "[[Rank 3]]"
 Action:
-  - Main Action
+  - "[[Main Action]]"
 School: 
 Target: 
 Range:
-  - Melee
+  - "[[Melee]]"
 Damage Type: 
 Duration: 
 Attack/Save:
-  - Reflex
-Classes: []
+  - "[[Reflex Save]]"
+Classes: 
 Concentration: false
 tags:
   - Attack

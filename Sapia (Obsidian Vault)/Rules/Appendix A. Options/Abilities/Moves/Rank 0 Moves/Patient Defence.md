@@ -1,9 +1,11 @@
 ---
-Rank: 0
+Rank:
+  - "[[Rank 0]]"
 Action:
-  - Starter Action
+  - "[[Starter Action]]"
 School: 
-Target: Self
+Target:
+  - "[[Self]]"
 Range: 
 Damage Type: 
 Duration: 

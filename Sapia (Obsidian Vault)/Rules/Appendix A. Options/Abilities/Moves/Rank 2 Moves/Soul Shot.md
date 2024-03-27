@@ -1,7 +1,8 @@
 ---
-Rank: 2
+Rank:
+  - "[[Rank 2]]"
 Action:
-  - Attack
+  - "[[Attack Action]]"
 School: 
 Target: 
 Range: 

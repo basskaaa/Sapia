@@ -1,17 +1,19 @@
 ---
 aliases:
   - attacks of opportunity
-Rank: 0
+Rank:
+  - "[[Rank 0]]"
 Action:
-  - Reaction
+  - "[[Reaction]]"
 School: 
-Target: Single
+Target:
+  - "[[Single Target]]"
 Range:
-  - Melee
+  - "[[Melee]]"
 Damage Type: 
 Duration: 
 Attack/Save:
-  - Melee
+  - "[[Melee Attack]]"
 Classes:
   - All
 Concentration: false

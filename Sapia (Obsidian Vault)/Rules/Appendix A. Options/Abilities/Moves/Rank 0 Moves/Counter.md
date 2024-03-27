@@ -1,13 +1,14 @@
 ---
-Rank: 0
+Rank:
+  - "[[Rank 0]]"
 Action:
-  - Reaction
+  - "[[Reaction]]"
 School: 
 Range: 
 Damage Type: 
-Target: Self
+Target: "[[Self]]"
 Duration:
-  - Instantaneous
+  - "[[Instantaneous]]"
 Attack/Save: 
 Classes: 
 Concentration: false

@@ -16,6 +16,8 @@
 	- Expression
 	- Effect
 	- Synergy
+- *Tabletop design goals:*
+	- *Rely less on DM interpretation and more on player creativity around official rulings*
 
 ## Prototype To Do
 

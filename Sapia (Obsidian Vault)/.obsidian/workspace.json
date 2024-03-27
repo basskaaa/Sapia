@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "968db2796899cedc",
+        "id": "20b990a8ddc36c53",
         "type": "tabs",
         "children": [
           {
-            "id": "5fea27c0afa1c3ba",
+            "id": "0b5a179dc960393c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rules/3. Expanded Rules/2. Combat/Target Types/Self.md",
+                "file": "Rules/3. Expanded Rules/2. Combat/Weapon Types/Misc Weapon Types/One handed weapon.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "dad2bfc039118f3d",
+            "id": "9efb002d401412c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rules/3. Expanded Rules/2. Combat/Target Types/Single Target.md",
+                "file": "Rules/Appendix A. Options/Abilities/Grace/Attack.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -34,116 +34,12 @@
             }
           },
           {
-            "id": "4a7b42c872aa38d5",
+            "id": "b646664a7d951a2b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rules/3. Expanded Rules/2. Combat/Duration Types/Instantaneous.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "22aa6c6740df88ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rules/3. Expanded Rules/2. Combat/Duration Types/1 Minute.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "77662e2a4ad7bab4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rules/3. Expanded Rules/2. Combat/Duration Types/1 Minute.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d4d1cd832578cf39",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rules/3. Expanded Rules/2. Combat/Range Types/Melee.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5895932ed36889c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rules/3. Expanded Rules/2. Combat/Range Types/Melee.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cae8cf96552a7685",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rules/3. Expanded Rules/2. Combat/Range Types/Ranged.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9fa631ee1f60cdf7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rules/3. Expanded Rules/2. Combat/Range Types/30ft.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1980f11fc2d72a84",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rules/Appendix A. Options/Abilities/Moves/Rank 7 Moves/Untitled.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "816a7fbf500f893e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rules/Appendix A. Options/Abilities/Moves/Rank 9 Moves/Untitled.md",
+                "file": "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Backstab.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -151,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -217,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rules/Appendix A. Options/Abilities/Moves/Rank 9 Moves/Untitled.md",
+                "file": "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Backstab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -234,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rules/Appendix A. Options/Abilities/Moves/Rank 9 Moves/Untitled.md",
+                "file": "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Backstab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -257,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rules/Appendix A. Options/Abilities/Moves/Rank 9 Moves/Untitled.md"
+                "file": "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Backstab.md"
               }
             }
           },
@@ -279,7 +175,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Rules/Appendix A. Options/Abilities/Moves/Rank 9 Moves/Untitled.md"
+                "file": "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Backstab.md"
               }
             }
           }
@@ -302,43 +198,43 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "3281c1b69e354674",
+  "active": "b646664a7d951a2b",
   "lastOpenFiles": [
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 7 Moves/Untitled.md",
+    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Vanish From Sight.md",
+    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Turn the Tide.md",
+    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Scurry from Danger.md",
+    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Greater Cheat.md",
+    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Drunken Technique.md",
+    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Command Ally.md",
+    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Charging Rage.md",
+    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Backstab.md",
+    "Rules/Appendix A. Options/Abilities/Grace/Search.md",
+    "Rules/Appendix A. Options/Abilities/Grace/Hide.md",
+    "Rules/Appendix A. Options/Abilities/Grace/Dash.md",
+    "Rules/Appendix A. Options/Abilities/Grace/Attack of Opportunity.md",
+    "Rules/Appendix A. Options/Abilities/Grace/Attack.md",
+    "Rules/3. Expanded Rules/2. Combat/Weapon Types/Misc Weapon Types/Any Weapon.md",
     "Rules/Appendix A. Options/Abilities/Moves/Rank 9 Moves/Untitled.md",
-    "Rules/3. Expanded Rules/2. Combat/Range Types/30ft.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 9 Moves",
-    "Rules/Appendix A. Options/Abilities/Moves/New folder",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 7 Moves",
-    "Rules/Appendix A. Options/Abilities/Moves/8/Hand of Ultimate Mercy.md",
     "Rules/Appendix A. Options/Abilities/Moves/Rank 8 Moves/Hand of Ultimate Mercy.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 8 Moves",
-    "Rules/3. Expanded Rules/2. Combat/Duration Types/1 Minute.md",
+    "Rules/Appendix A. Options/Abilities/Moves/Rank 7 Moves/Untitled.md",
     "Rules/Appendix A. Options/Abilities/Moves/Rank 6 Moves/Ground Pound.md",
     "Rules/Appendix A. Options/Abilities/Moves/Rank 6 Moves/Empty Body.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 6 Moves",
-    "Rules/3. Expanded Rules/2. Combat/Target Types/Single Target.md",
-    "Rules/3. Expanded Rules/2. Combat/Target Types/Self.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 5 Moves/Rapid Wind Strike.md",
     "Rules/Appendix A. Options/Abilities/Moves/Rank 5 Moves/Stunning Strike.md",
+    "Rules/Appendix A. Options/Abilities/Moves/Rank 5 Moves/Rapid Wind Strike.md",
     "Rules/Appendix A. Options/Abilities/Moves/Rank 5 Moves/Frenzy Rage.md",
     "Rules/Appendix A. Options/Abilities/Moves/Rank 5 Moves/Colossus.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 5 Moves",
     "Rules/Appendix A. Options/Abilities/Moves/Rank 4 Moves/Whirlwind Defender.md",
+    "Rules/Appendix A. Options/Abilities/Moves/Rank 4 Moves/Silent Step.md",
     "Rules/Appendix A. Options/Abilities/Moves/Rank 4 Moves/Relentless Rage.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 4 Moves/Redirect.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 4 Moves/Mage Rage.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 4 Moves/Persistent Rage.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 4 Moves/Grappling Attack.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 4 Moves/Hamstring.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 4 Moves/Counter Punch.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 4 Moves/Brawling Rage.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 4 Moves/Below the Belt.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 4 Moves",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Scurry from Danger.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Turn the Tide.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 2 Moves",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 1 Moves"
+    "Untitled",
+    "Rules/3. Expanded Rules/2. Combat/Weapon Types/Misc Weapon Types",
+    "Rules/3. Expanded Rules/2. Combat/Weapon Types/Weapon Categories",
+    "Rules/3. Expanded Rules/2. Combat/Weapon Types/Weapon Sizes",
+    "Rules/3. Expanded Rules/2. Combat/Weapon Types",
+    "Rules/3. Expanded Rules/2. Combat/Rank Types",
+    "Rules/3. Expanded Rules/2. Combat/AttackSave Types",
+    "Rules/Appendix A. Options/Abilities/Moves/Rank 9 Moves",
+    "Rules/Appendix A. Options/Abilities/Moves/New folder",
+    "Rules/Appendix A. Options/Abilities/Moves/Rank 7 Moves"
   ]
 }

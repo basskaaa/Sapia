@@ -1,17 +1,19 @@
 ---
-Rank: 1
+Rank:
+  - "[[Rank 1]]"
 Action:
-  - Free Action
+  - "[[Free Action]]"
 School: 
 Range: 
 Damage Type: 
-Target: Self
+Target:
+  - "[[Self]]"
 Duration:
-  - Instantaneous
+  - "[[Instantaneous]]"
 Attack/Save: 
 Classes: 
-Concentration: 
+Concentration: false
 tags: 
-Prerequisite: Counter
+Prerequisite: "[[Counter]]"
 ---
 Before you use the ability [[Counter]], the GM must tell you whether the counter will succeed, overriding the previous limits of the ability.

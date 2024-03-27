@@ -1,13 +1,15 @@
 ---
-Rank: 0
+Rank:
+  - "[[Rank 0]]"
 Action:
-  - Main Action
+  - "[[Main Action]]"
 School: 
-Target: Self
+Target:
+  - "[[Self]]"
 Range: 
 Damage Type: 
 Duration:
-  - Until the start of your next turn
+  - "[[Until the start of your next turn]]"
 Attack/Save: 
 Classes:
   - All

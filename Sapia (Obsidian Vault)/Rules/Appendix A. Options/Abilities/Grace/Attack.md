@@ -1,19 +1,22 @@
 ---
-Rank: 0
+Rank:
+  - "[[Rank 0]]"
 Action:
-  - Attack
+  - "[[Attack Action]]"
 School: 
 Range: 
 Damage Type: 
-Target: Single
+Target:
+  - "[[Single Target]]"
 Duration: 
 Attack/Save: 
 Classes:
   - All
-Concentration: 
+Concentration: false
 tags:
   - Attack
-Prerequisite: Any Weapon
+Prerequisite:
+  - "[[Any Weapon]]"
 ---
 Make an attack roll against a target within range of your weapon.
 

@@ -1,18 +1,20 @@
 ---
-Rank: 4
+Rank:
+  - "[[Rank 4]]"
 Action:
-  - Attack
+  - "[[Attack Action]]"
 School: 
 Target: 
 Range:
-  - Melee
+  - "[[Melee]]"
 Damage Type: 
 Duration: 
 Attack/Save: 
 Classes:
-  - Fighter
+  - "[[Fighter]]"
 Concentration: false
 tags: 
-Prerequisite: Grappling Manoeuvre
+Prerequisite:
+  - "[[Grappling Manoeuvre]]"
 ---
 When you make an attack against a target up to your size, they are immediately [[Pinned]] to you and [[Restrained]]. The grappled target can attempt to escape by succeeding on a Fortitude saving throw as a main action on their turn.

@@ -1,5 +1,6 @@
 ---
-Rank: 5
+Rank:
+  - "[[Rank 5]]"
 Action:
   - "[[Starter Action]]"
 School: 

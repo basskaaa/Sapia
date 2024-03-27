@@ -1,16 +1,18 @@
 ---
-Rank: 2
+Rank:
+  - "[[Rank 2]]"
 Action:
-  - Free Action
+  - "[[Free Action]]"
 School: 
-Target: Self
+Target:
+  - "[[Self]]"
 Range: 
 Damage Type: 
 Duration:
-  - Instantaneous
+  - "[[Instantaneous]]"
 Attack/Save: 
 Classes:
-  - Rogue
+  - "[[Rogue]]"
 Concentration: false
 tags:
   - Stealth

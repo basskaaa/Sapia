@@ -1,15 +1,17 @@
 ---
-Rank: 1
+Rank:
+  - "[[Rank 1]]"
 Action:
-  - Starter Action
+  - "[[Starter Action]]"
 School: 
-Target: Self
+Target:
+  - "[[Self]]"
 Range: 
 Damage Type: 
 Duration: 
 Attack/Save: 
 Classes:
-  - Fighter
+  - "[[Fighter]]"
 Concentration: false
 tags:
   - Buff

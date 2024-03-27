@@ -1,5 +1,6 @@
 ---
-Rank: 5
+Rank:
+  - "[[Rank 5]]"
 Action:
   - "[[Starter Action]]"
 School: 
@@ -8,7 +9,7 @@ Range:
 Damage Type: 
 Duration: 
 Attack/Save:
-  - "[[Fortitude]]"
+  - "[[Fortitude Save]]"
 Classes:
   - "[[Fighter]]"
 Concentration: false

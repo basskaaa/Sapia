@@ -1,18 +1,20 @@
 ---
-Rank: 0
+Rank:
+  - "[[Rank 0]]"
 Action:
-  - Starter Action
+  - "[[Starter Action]]"
 School: 
-Target: Single
+Target:
+  - "[[Single Target]]"
 Range: 
 Damage Type: 
 Duration:
-  - Instantaneous
+  - "[[Instantaneous]]"
 Attack/Save: 
 Classes: 
 Concentration: false
 tags:
   - Attack
-Prerequisite: Light Weapon
+Prerequisite: "[[Light Weapon]]"
 ---
 You make an attack roll against a target in range of your light weapon.

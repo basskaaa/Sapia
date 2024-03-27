@@ -1,7 +1,8 @@
 ---
-Rank: 3
+Rank:
+  - "[[Rank 3]]"
 Action:
-  - Attack
+  - "[[Attack Action]]"
 School: 
 Target: 
 Range: 
@@ -9,7 +10,7 @@ Damage Type:
 Duration: 
 Attack/Save: 
 Classes:
-  - Fighter
+  - "[[Fighter]]"
 Concentration: false
 tags: 
 Prerequisite:

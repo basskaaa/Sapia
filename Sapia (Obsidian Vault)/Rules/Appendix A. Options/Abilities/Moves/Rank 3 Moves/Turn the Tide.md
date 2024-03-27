@@ -1,11 +1,12 @@
 ---
-Rank: 3
+Rank:
+  - "[[Rank 3]]"
 Action:
-  - Starter Action
+  - "[[Starter Action]]"
 School: 
 Target: 
 Range:
-  - 60ft
+  - "[[60ft]]"
 Damage Type: 
 Duration: 
 Attack/Save: 
