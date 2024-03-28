@@ -1,0 +1,1 @@
+2nd level - Twice per long rest, when you finish a short rest, you recover mana equivalent to your [[Power Modifier]].

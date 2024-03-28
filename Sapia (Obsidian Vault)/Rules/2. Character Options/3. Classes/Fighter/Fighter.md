@@ -23,7 +23,7 @@ Those trained in the art of war, who will brave the terrors of the world for the
 [[Martial Archetype]]
 ### 3rd Level
 
-[[Experienced Adventurer]]
+[[Rules/2. Character Options/3. Classes/Class Features/Universal/Experienced Adventurer]]
 
 ### 5th Level
 

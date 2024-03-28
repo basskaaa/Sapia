@@ -1,0 +1,1 @@
+Cleric **attack modifier** = your proficiency bonus + your Wisdom modifier

@@ -1,0 +1,1 @@
+Cleric **DC** = 8 + your proficiency bonus + your Wisdom modifier

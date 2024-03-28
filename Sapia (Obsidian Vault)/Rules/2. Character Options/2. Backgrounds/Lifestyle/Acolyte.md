@@ -7,9 +7,4 @@ Proficiency in Intuition or Knowledge
 Specialism in Religion and one option of your choice
 Trait: [[Divine Expert]]
 
-Gear:
-- Symbol of Faith
-- Club: Medium (Wooden club)
-- Shield: Light
-- Clothing (Acolyte’s Robes)
-- Candle (Wax)
+[[Acolyte Starting Gear]]

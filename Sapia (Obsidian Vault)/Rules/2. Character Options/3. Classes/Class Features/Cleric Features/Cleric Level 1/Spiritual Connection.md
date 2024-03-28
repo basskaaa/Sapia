@@ -1,0 +1,1 @@
+When making a goal challenge to resurrect a creature, you gain one additional reroll per short rest.

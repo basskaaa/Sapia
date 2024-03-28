@@ -4,25 +4,54 @@
     "type": "split",
     "children": [
       {
-        "id": "fd9ea59a573ac589",
+        "id": "06fdd7dc3483e27a",
         "type": "tabs",
         "children": [
           {
-            "id": "830a46d527c01c28",
+            "id": "cdcc04a96c77c84f",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rules/Test Characters/Evad (L1 Fighter).md",
+                "file": "Rules/Test Characters/Tomas (L5 Cleric).md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "pinned": true
             }
+          },
+          {
+            "id": "e296eb67703b0f1a",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/2. Character Options/3. Classes/Cleric/Cleric.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "117d88790f209f94",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Acolyte Starting Gear.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -51,7 +80,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fighter",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -88,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rules/Test Characters/Evad (L1 Fighter).md",
+                "file": "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Acolyte Starting Gear.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rules/Test Characters/Evad (L1 Fighter).md",
+                "file": "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Acolyte Starting Gear.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rules/Test Characters/Evad (L1 Fighter).md"
+                "file": "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Acolyte Starting Gear.md"
               }
             }
           },
@@ -150,7 +179,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Rules/Test Characters/Evad (L1 Fighter).md"
+                "file": "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Acolyte Starting Gear.md"
               }
             }
           }
@@ -174,43 +203,42 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "830a46d527c01c28",
+  "active": "3281c1b69e354674",
   "lastOpenFiles": [
-    "Ideas.md",
+    "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Guard Starting Gear.md",
+    "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear",
+    "Rules/2. Character Options/2. Backgrounds/Lifestyle/Guard of the People.md",
     "Rules/Test Characters/Evad (L1 Fighter).md",
-    "Rules/1. Basic Rules/Ability Points.md",
-    "Rules/2. Character Options/0. General/TRAITS.md",
-    "Rules/2. Character Options/0. General/FEATURES.md",
-    "Rules/2. Character Options/0. General/GEAR.md",
-    "Rules/2. Character Options/0. General/ABILITIES.md",
-    "Rules/2. Character Options/0. General/SPECIALISMS.md",
-    "Rules/2. Character Options/0. General/SKILLS.md",
-    "Rules/2. Character Options/0. General/INSTINCTS.md",
-    "Rules/2. Character Options/0. General/ATTRIBUTES.md",
-    "Rules/2. Character Options/0. General/Speed.md",
-    "Rules/2. Character Options/0. General/Mana.md",
-    "Rules/2. Character Options/0. General/Stamina.md",
-    "Rules/2. Character Options/0. General/Culture.md",
-    "Rules/2. Character Options/0. General/Level.md",
-    "Rules/2. Character Options/0. General/Class.md",
-    "Rules/2. Character Options/0. General/Blessing.md",
-    "Rules/2. Character Options/0. General/Roots.md",
-    "Rules/2. Character Options/0. General/Lifestyle.md",
-    "Rules/2. Character Options/0. General/Environment.md",
-    "Rules/2. Character Options/0. General/Species.md",
-    "Rules/2. Character Options/0. General/Name.md",
-    "Rules/2. Character Options/0. General",
-    "Rules/2. Making an Adventurer/Step By Step.md",
-    "Rules/2. Character Options/2. Backgrounds/Lifestyle/Guard.md",
-    "Systems/Camera Toggle.md",
-    "Rules/2. Character Options/3. Classes/Class Features/Universal",
-    "Rules/2. Character Options/3. Classes/Class Features",
-    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 20",
-    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 13",
-    "Rules/2. Making an Adventurer/3. Classes/Fighter/Fighter Features/New folder",
-    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 10",
-    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 5",
-    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 3",
-    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 2"
+    "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Acolyte Starting Gear.md",
+    "Rules/2. Character Options/2. Backgrounds/Culture/Human Culture.md",
+    "Rules/Test Characters/Tomas (L5 Cleric).md",
+    "Rules/2. Character Options/2. Backgrounds/Lifestyle/Acolyte.md",
+    "Rules/2. Character Options/3. Classes/Cleric/Cleric.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 20/Prophet.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 1/Channel Divinity.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 2/Lay on Hands.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 2/Holy Domain.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 1/Divine Favour.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 1/Spiritual Connection.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Subclass Features/Aura of the Guardian.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 2/Divine Recovery.md",
+    "Spri.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Subclass Features",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Subclass Features/Voice of Authority.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 1/Cleric Max Abilities.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 1/Cleric Proficiencies.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 1/Cleric Hit Points.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 13/Spreading the Good Word.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 10/Divine Intervention.md",
+    "Experienced Adventurer.md",
+    "Untitled 1.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 20",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/New folder",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 13",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Clericn",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 10",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 5",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 3",
+    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 2"
   ]
 }

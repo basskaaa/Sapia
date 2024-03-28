@@ -1,0 +1,3 @@
+13th level - Once per long rest, you can attempt to inspire a friendly sentient creature with a display of your deity’s power. On a successful diplomacy check (DC set by the GM), one target is inspired, increasing their Defence and Saving Throws by 1 permanently as long as they follow your deity. A creature can only be inspired once.
+
+Your Willpower Saving Throw bonus increases by 1 per follower of your deity within 30 ft.

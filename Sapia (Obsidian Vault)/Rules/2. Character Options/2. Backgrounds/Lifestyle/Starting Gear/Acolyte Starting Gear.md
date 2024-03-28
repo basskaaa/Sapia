@@ -1,0 +1,5 @@
+- Symbol of Faith
+- Club: Medium (Wooden club)
+- Shield: Light
+- Clothing (Acolyte’s Robes)
+- Candle (Wax)

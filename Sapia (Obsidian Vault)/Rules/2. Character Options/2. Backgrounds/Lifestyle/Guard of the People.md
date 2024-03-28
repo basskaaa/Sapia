@@ -7,9 +7,4 @@ Proficiency in Perception or Athletics
 Specialism in Intimidation and one option of your choice
 Trait: [[Crowd Control]]
 
-Gear:
-- Blade: Medium (Shortsword) or Polearm: Medium (Spear)
-- Shield: Medium
-- Armour: Light
-- Torch
-- Clothing (Guard’s uniform)
+[[Guard Starting Gear]]
