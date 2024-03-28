@@ -22,6 +22,14 @@
 ## Prototype To Do
 
 - [ ] Tabletop mechanics
+	- [x] Migrate old rules into Obsidian ✅ 2024-03-28
+		- [x] Abilities ✅ 2024-03-28
+		- [x] Traits ✅ 2024-03-28
+		- [x] Gear ✅ 2024-03-28
+		- [x] Rules ✅ 2024-03-28
+		- [x] Example character sheets ✅ 2024-03-28
+	- [ ] Rule descriptions
+	- [ ] Review and iterate
 - [ ] Tabletop character sheet as basis for gameplay
 - [ ] Tabletop monster sheet as basis for gameplay
 - [ ] Concept art
@@ -40,7 +48,5 @@
 	- [ ] Class features
 	- [ ] Abilities (moves/spells)
 	- [ ] Condition
-- [ ] 
-
 # Pre-Production
 

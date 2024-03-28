@@ -8,50 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cdcc04a96c77c84f",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rules/Test Characters/Tomas (L5 Cleric).md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "e296eb67703b0f1a",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rules/2. Character Options/3. Classes/Cleric/Cleric.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "117d88790f209f94",
+            "id": "bbf0c66739b98690",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Acolyte Starting Gear.md",
+                "file": "_Main/_Short Term To Do.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -117,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Acolyte Starting Gear.md",
+                "file": "_Main/_Short Term To Do.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Acolyte Starting Gear.md",
+                "file": "_Main/_Short Term To Do.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Acolyte Starting Gear.md"
+                "file": "_Main/_Short Term To Do.md"
               }
             }
           },
@@ -179,7 +148,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Acolyte Starting Gear.md"
+                "file": "_Main/_Short Term To Do.md"
               }
             }
           }
@@ -203,17 +172,20 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "3281c1b69e354674",
+  "active": "bbf0c66739b98690",
   "lastOpenFiles": [
+    "_Main/_Development Doc.md",
+    "Rules/2. Character Options/5. Traits/Experience/Martial Artist II.md",
+    "_Main/_Short Term To Do.md",
+    "Rules/Test Characters/Tomas (L5 Cleric).md",
+    "Rules/2. Character Options/3. Classes/Cleric/Cleric.md",
+    "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Acolyte Starting Gear.md",
     "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Guard Starting Gear.md",
     "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear",
     "Rules/2. Character Options/2. Backgrounds/Lifestyle/Guard of the People.md",
     "Rules/Test Characters/Evad (L1 Fighter).md",
-    "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Acolyte Starting Gear.md",
     "Rules/2. Character Options/2. Backgrounds/Culture/Human Culture.md",
-    "Rules/Test Characters/Tomas (L5 Cleric).md",
     "Rules/2. Character Options/2. Backgrounds/Lifestyle/Acolyte.md",
-    "Rules/2. Character Options/3. Classes/Cleric/Cleric.md",
     "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 20/Prophet.md",
     "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 1/Channel Divinity.md",
     "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 2/Lay on Hands.md",
@@ -230,8 +202,6 @@
     "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 1/Cleric Hit Points.md",
     "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 13/Spreading the Good Word.md",
     "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 10/Divine Intervention.md",
-    "Experienced Adventurer.md",
-    "Untitled 1.md",
     "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 20",
     "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/New folder",
     "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 13",

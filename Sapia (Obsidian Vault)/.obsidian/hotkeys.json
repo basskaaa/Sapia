@@ -15,22 +15,22 @@
       "key": "T"
     }
   ],
-  "insert-current-time": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "/"
-    }
-  ],
   "insert-current-date": [
     {
       "modifiers": [
-        "Alt",
-        "Mod"
+        "Mod",
+        "Shift"
       ],
       "key": "."
+    }
+  ],
+  "insert-current-time": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "/"
     }
   ]
 }

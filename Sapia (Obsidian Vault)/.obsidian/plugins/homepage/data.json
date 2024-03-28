@@ -2,8 +2,8 @@
   "version": 3,
   "homepages": {
     "Main Homepage": {
-      "value": "Home",
-      "kind": "Graph view",
+      "value": "_Main/_Short Term To Do",
+      "kind": "File",
       "openOnStartup": true,
       "openMode": "Replace all open notes",
       "manualOpenMode": "Keep open notes",
