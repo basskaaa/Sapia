@@ -12,10 +12,10 @@
   "altBar": [
     {
       "prefix": "",
-      "suffix": " files",
+      "suffix": " total",
       "metric": {
         "type": 2,
-        "counter": 6
+        "counter": 0
       }
     }
   ],

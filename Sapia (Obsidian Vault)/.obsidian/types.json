@@ -3,7 +3,7 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
-    "Rank": "number",
+    "Rank": "multitext",
     "Action": "multitext",
     "Range": "multitext",
     "Duration": "multitext",
@@ -11,6 +11,8 @@
     "Concentration": "checkbox",
     "Classes": "multitext",
     "Damage Type": "multitext",
-    "School": "multitext"
+    "School": "multitext",
+    "Target": "multitext",
+    "Prerequisite": "multitext"
   }
 }
