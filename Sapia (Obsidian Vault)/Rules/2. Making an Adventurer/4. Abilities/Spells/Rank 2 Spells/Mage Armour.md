@@ -18,7 +18,7 @@ Concentration: false
 tags:
   - Buff
 Prerequisite:
-  - "[[Rules/4. Character Options/Abilities/Spells/Rank 1 Spells/Shield|Shield]]"
+  - "[[Rules/2. Making an Adventurer/4. Abilities/Spells/Rank 1 Spells/Shield|Shield]]"
 ---
 The target's base defence increases by 2 for the duration.
 

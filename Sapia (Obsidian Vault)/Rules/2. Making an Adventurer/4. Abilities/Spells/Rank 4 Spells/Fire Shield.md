@@ -22,7 +22,7 @@ Concentration: true
 tags: 
 Prerequisite:
   - "[[Flames]]"
-  - "[[Rules/4. Character Options/Abilities/Spells/Rank 1 Spells/Shield|Shield]]"
+  - "[[Rules/2. Making an Adventurer/4. Abilities/Spells/Rank 1 Spells/Shield|Shield]]"
 ---
 You gain resistance to fire damage for the duration, and when creatures within 5 ft attack you, they must succeed on a Reflex saving throw or suffer 4d8 damage, and half as much on a success.
 

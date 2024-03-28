@@ -4,29 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1a6da7bba93b6a3f",
+        "id": "fd9ea59a573ac589",
         "type": "tabs",
         "children": [
           {
-            "id": "b107fab064c8cdef",
+            "id": "830a46d527c01c28",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Rules/Test Characters/Evad (L1 Fighter).md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "25db7ca7d4bf7451",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rules/2. Making an Adventurer/2. Backgrounds/Lifestyle/Guard.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -185,14 +172,21 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "b107fab064c8cdef",
+  "active": "3281c1b69e354674",
   "lastOpenFiles": [
-    "Rules/4. Character Options/Traits/Species/Human Versatility.md",
+    "Rules/2. Making an Adventurer/Step By Step.md",
     "Rules/Test Characters/Evad (L1 Fighter).md",
+    "Rules/2. Making an Adventurer/2. Backgrounds/Lifestyle/Guard.md",
+    "Systems/Camera Toggle.md",
+    "Setting/Wider Narrative Ideas.md",
+    "Setting/Prototype Narrative Ideas.md",
+    "Systems/Travel transition.md",
+    "Setting/Setting Ideas.md",
+    "Setting/Town.md",
+    "Rules/2. Making an Adventurer/5. Traits/Species/Human Versatility.md",
     "Rules/2. Making an Adventurer/2. Backgrounds/Blessing/Jevel.md",
     "Rules/2. Making an Adventurer/2. Backgrounds/Environment/Grasslands.md",
     "Rules/2. Making an Adventurer/2. Backgrounds/Roots/Rural.md",
-    "Rules/2. Making an Adventurer/2. Backgrounds/Lifestyle/Guard.md",
     "Rules/4. Character Options/Gear/Worn/Worn Items/Guard's Shield.md",
     "Torch.md",
     "Rules/4. Character Options/Gear/Valuables/Gold Coin.md",
@@ -208,19 +202,12 @@
     "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighter Hit Points.md",
     "Rules/2. Making an Adventurer/3. Classes/Class Features/Universal",
     "Rules/2. Making an Adventurer/3. Classes/Class Features",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 10/Indomitable.md",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 13/Strength of Will.md",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 20/Born for Battle.md",
     "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 20",
     "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 13",
     "Rules/2. Making an Adventurer/3. Classes/Fighter/Fighter Features/New folder",
     "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 10",
     "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 5",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 5/Multiattack.md",
     "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 3",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 3/Experienced Adventurer.md",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 2/Martial Archetype.md",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 2/Physical Recovery.md",
     "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 2",
     "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 1"
   ]
