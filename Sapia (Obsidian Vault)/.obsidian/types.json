@@ -13,6 +13,11 @@
     "Damage Type": "multitext",
     "School": "multitext",
     "Target": "multitext",
-    "Prerequisite": "multitext"
+    "Prerequisite": "multitext",
+    "Damage Die": "multitext",
+    "Weight": "multitext",
+    "Value (gp)": "number",
+    "Item tags": "multitext",
+    "Rarity": "multitext"
   }
 }
