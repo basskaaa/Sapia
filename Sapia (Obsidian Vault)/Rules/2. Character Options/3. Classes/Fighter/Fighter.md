@@ -27,7 +27,7 @@ Those trained in the art of war, who will brave the terrors of the world for the
 
 ### 5th Level
 
-[[Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 5/Multiattack|Multiattack]]
+[[Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 5/Multiattack|Multiattack]]
 ### 10th Level
 
 [[Indomitable]]

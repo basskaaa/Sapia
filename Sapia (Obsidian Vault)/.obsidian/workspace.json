@@ -10,6 +10,7 @@
           {
             "id": "830a46d527c01c28",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -17,7 +18,8 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           }
         ]
@@ -172,43 +174,43 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "3281c1b69e354674",
+  "active": "830a46d527c01c28",
   "lastOpenFiles": [
-    "Rules/2. Making an Adventurer/Step By Step.md",
+    "Ideas.md",
     "Rules/Test Characters/Evad (L1 Fighter).md",
-    "Rules/2. Making an Adventurer/2. Backgrounds/Lifestyle/Guard.md",
+    "Rules/1. Basic Rules/Ability Points.md",
+    "Rules/2. Character Options/0. General/TRAITS.md",
+    "Rules/2. Character Options/0. General/FEATURES.md",
+    "Rules/2. Character Options/0. General/GEAR.md",
+    "Rules/2. Character Options/0. General/ABILITIES.md",
+    "Rules/2. Character Options/0. General/SPECIALISMS.md",
+    "Rules/2. Character Options/0. General/SKILLS.md",
+    "Rules/2. Character Options/0. General/INSTINCTS.md",
+    "Rules/2. Character Options/0. General/ATTRIBUTES.md",
+    "Rules/2. Character Options/0. General/Speed.md",
+    "Rules/2. Character Options/0. General/Mana.md",
+    "Rules/2. Character Options/0. General/Stamina.md",
+    "Rules/2. Character Options/0. General/Culture.md",
+    "Rules/2. Character Options/0. General/Level.md",
+    "Rules/2. Character Options/0. General/Class.md",
+    "Rules/2. Character Options/0. General/Blessing.md",
+    "Rules/2. Character Options/0. General/Roots.md",
+    "Rules/2. Character Options/0. General/Lifestyle.md",
+    "Rules/2. Character Options/0. General/Environment.md",
+    "Rules/2. Character Options/0. General/Species.md",
+    "Rules/2. Character Options/0. General/Name.md",
+    "Rules/2. Character Options/0. General",
+    "Rules/2. Making an Adventurer/Step By Step.md",
+    "Rules/2. Character Options/2. Backgrounds/Lifestyle/Guard.md",
     "Systems/Camera Toggle.md",
-    "Setting/Wider Narrative Ideas.md",
-    "Setting/Prototype Narrative Ideas.md",
-    "Systems/Travel transition.md",
-    "Setting/Setting Ideas.md",
-    "Setting/Town.md",
-    "Rules/2. Making an Adventurer/5. Traits/Species/Human Versatility.md",
-    "Rules/2. Making an Adventurer/2. Backgrounds/Blessing/Jevel.md",
-    "Rules/2. Making an Adventurer/2. Backgrounds/Environment/Grasslands.md",
-    "Rules/2. Making an Adventurer/2. Backgrounds/Roots/Rural.md",
-    "Rules/4. Character Options/Gear/Worn/Worn Items/Guard's Shield.md",
-    "Torch.md",
-    "Rules/4. Character Options/Gear/Valuables/Gold Coin.md",
-    "Rules/4. Character Options/Gear/Worn/Worn Items/Guard's Leathers.md",
-    "Rules/4. Character Options/Gear/Valuables/Silver Coin.md",
-    "Rules/4. Character Options/Gear/Tools & Trinkets/Guard's Symbol.md",
-    "Rules/4. Character Options/Gear/Worn/Worn Items/Guard's Uniform.md",
-    "Rules/2. Making an Adventurer/3. Classes/Fighter/Fighter.md",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighter Ability DC.md",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighter Max Abilities.md",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighter Ability Modifier.md",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighter Starting Gear.md",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighter Hit Points.md",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Universal",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 20",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 13",
+    "Rules/2. Character Options/3. Classes/Class Features/Universal",
+    "Rules/2. Character Options/3. Classes/Class Features",
+    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 20",
+    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 13",
     "Rules/2. Making an Adventurer/3. Classes/Fighter/Fighter Features/New folder",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 10",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 5",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 3",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 2",
-    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 1"
+    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 10",
+    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 5",
+    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 3",
+    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 2"
   ]
 }

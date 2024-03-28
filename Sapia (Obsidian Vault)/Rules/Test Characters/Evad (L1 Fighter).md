@@ -4,7 +4,7 @@
 [[Species]]: [[Human]]
 
 [[Environment]]: [[Grasslands]]
-[[Lifestyle]]: [[Rules/2. Making an Adventurer/2. Backgrounds/Lifestyle/Guard|Guard]]
+[[Lifestyle]]: [[Rules/2. Character Options/2. Backgrounds/Lifestyle/Guard|Guard]]
 [[Roots]]: [[Rural]]
 [[Culture]]: [[Human]]
 [[Blessing]]: [[Jevel]]
@@ -96,7 +96,7 @@ Crossbows
 	[[Fighting Style]]
 		[[Defender]]
 	[[Action Surge]]
-[[Rules/2. Making an Adventurer/2. Backgrounds/Lifestyle/Guard|Guard]]
+[[Rules/2. Character Options/2. Backgrounds/Lifestyle/Guard|Guard]]
 [[Human Culture]]
 [[Rural]]
 [[Human]]
