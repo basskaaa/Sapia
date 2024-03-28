@@ -1,0 +1,1 @@
+Fighter **ability modifier** = your proficiency bonus + your Strength modifier

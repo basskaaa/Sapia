@@ -4,16 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "5155c4f2220d0fc5",
+        "id": "1a6da7bba93b6a3f",
         "type": "tabs",
         "children": [
           {
-            "id": "3b4ef794a3eeeef8",
+            "id": "b107fab064c8cdef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Main/_Development Doc.md",
+                "file": "Rules/Test Characters/Evad (L1 Fighter).md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "25db7ca7d4bf7451",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/2. Making an Adventurer/2. Backgrounds/Lifestyle/Guard.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "fighter",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -70,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 254.5
   },
   "right": {
     "id": "eb19490116b74a1b",
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_Main/_Development Doc.md",
+                "file": "Rules/Test Characters/Evad (L1 Fighter).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_Main/_Development Doc.md",
+                "file": "Rules/Test Characters/Evad (L1 Fighter).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_Main/_Development Doc.md"
+                "file": "Rules/Test Characters/Evad (L1 Fighter).md"
               }
             }
           },
@@ -148,7 +161,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "_Main/_Development Doc.md"
+                "file": "Rules/Test Characters/Evad (L1 Fighter).md"
               }
             }
           }
@@ -172,43 +185,43 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "3281c1b69e354674",
+  "active": "b107fab064c8cdef",
   "lastOpenFiles": [
-    "Rules/3. Expanded Rules/7. Gear Properties/Rarity Types/Heroic.md",
-    "Rules/3. Expanded Rules/7. Gear Properties/Rarity Types/Mythical.md",
-    "Rules/3. Expanded Rules/7. Gear Properties/Rarity Types/Rare.md",
-    "Rules/3. Expanded Rules/7. Gear Properties/Rarity Types/Mundane.md",
-    "Rules/3. Expanded Rules/7. Gear Properties/Rarity Types/Masterwork.md",
-    "Rules/3. Expanded Rules/7. Gear Properties/Rarity Types/Uncommon.md",
-    "_Main/Templates/Item Template.md",
-    "Rules/3. Expanded Rules/7. Gear Properties/Rarity Types",
-    "Rules/3. Expanded Rules/7. Gear Properties",
-    "Rules/4. Character Options/Gear/Consumables/Basic Poison.md",
-    "Rules/4. Character Options/Gear/Tools/Medium Instrument.md",
-    "Rules/4. Character Options/Gear/Tools/Traveller's Gear.md",
-    "Rules/4. Character Options/Gear/Tools/Torch.md",
-    "Rules/4. Character Options/Gear/Tools/Tome of Knowledge.md",
-    "Rules/4. Character Options/Gear/Tools/Thieves' Tools.md",
-    "Rules/4. Character Options/Gear/Tools/Symbol of Faith.md",
-    "Rules/4. Character Options/Gear/Tools/Smith's Tools.md",
-    "Rules/4. Character Options/Gear/Tools/Writer's Tools.md",
-    "Rules/4. Character Options/Gear/Tools/Manacles.md",
-    "Rules/4. Character Options/Gear/Tools/Great Instrument.md",
-    "Rules/4. Character Options/Gear/Tools/Light Instrument.md",
-    "Rules/4. Character Options/Gear/Tools/Heavy Instrument.md",
-    "Rules/4. Character Options/Gear/Tools/Hempen Rope (30ft).md",
-    "Rules/4. Character Options/Gear/Tools/Candle.md",
-    "Rules/4. Character Options/Gear/Tools/Artist's Tools.md",
-    "Rules/4. Character Options/Gear/Worn/Worn Items/Clothing.md",
-    "Rules/4. Character Options/Gear/Worn/Worn Items/Medium Armour.md",
-    "Rules/4. Character Options/Gear/Worn/Worn Items/Light Armour.md",
-    "Rules/4. Character Options/Gear/Worn/Worn Items",
-    "Rules/4. Character Options/Gear/Worn/Worn Types",
-    "Rules/4. Character Options/Gear/Valuables",
-    "Rules/4. Character Options/Gear/Worn",
-    "Rules/4. Character Options/Gear/Weapons/Weapon Items",
-    "Rules/4. Character Options/Gear/Weapons/Weapon Types",
-    "Rules/4. Character Options/Gear/Weapons",
-    "Rules/4. Character Options/Magic Items"
+    "Rules/4. Character Options/Traits/Species/Human Versatility.md",
+    "Rules/Test Characters/Evad (L1 Fighter).md",
+    "Rules/2. Making an Adventurer/2. Backgrounds/Blessing/Jevel.md",
+    "Rules/2. Making an Adventurer/2. Backgrounds/Environment/Grasslands.md",
+    "Rules/2. Making an Adventurer/2. Backgrounds/Roots/Rural.md",
+    "Rules/2. Making an Adventurer/2. Backgrounds/Lifestyle/Guard.md",
+    "Rules/4. Character Options/Gear/Worn/Worn Items/Guard's Shield.md",
+    "Torch.md",
+    "Rules/4. Character Options/Gear/Valuables/Gold Coin.md",
+    "Rules/4. Character Options/Gear/Worn/Worn Items/Guard's Leathers.md",
+    "Rules/4. Character Options/Gear/Valuables/Silver Coin.md",
+    "Rules/4. Character Options/Gear/Tools & Trinkets/Guard's Symbol.md",
+    "Rules/4. Character Options/Gear/Worn/Worn Items/Guard's Uniform.md",
+    "Rules/2. Making an Adventurer/3. Classes/Fighter/Fighter.md",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighter Ability DC.md",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighter Max Abilities.md",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighter Ability Modifier.md",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighter Starting Gear.md",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighter Hit Points.md",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Universal",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 10/Indomitable.md",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 13/Strength of Will.md",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 20/Born for Battle.md",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 20",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 13",
+    "Rules/2. Making an Adventurer/3. Classes/Fighter/Fighter Features/New folder",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 10",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 5",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 5/Multiattack.md",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 3",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 3/Experienced Adventurer.md",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 2/Martial Archetype.md",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 2/Physical Recovery.md",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 2",
+    "Rules/2. Making an Adventurer/3. Classes/Class Features/Fighter Features/Fighter Level 1"
   ]
 }

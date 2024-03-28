@@ -1,0 +1,1 @@
+Fighter Ability **DC** = 8 + your proficiency bonus + your Strength modifier

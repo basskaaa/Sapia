@@ -6,7 +6,7 @@ Often [[Adventurers]] are required to trek far and wide across the realms. Some 
 
 To run travel encounters, you must carefully track time and distance. On foot and flat terrain, [[Adventurers]] move as a group at the pace of their slowest member. To calculate [[Overland Travel]] pace, divide your movement speed by 10. The resulting number is the amount of miles you can travel by foot in one hour.
 
-[[Environment|Environmental Conditions]] also affect the [[Overland Travel|Overland Travel Pace]], such as terrain, weather, and [[Mounts]].
+[[Environments|Environmental Conditions]] also affect the [[Overland Travel|Overland Travel Pace]], such as terrain, weather, and [[Mounts]].
 ##### Difficult Overland Terrain
 Unless the [[Overland Travel]] terrain is flat and navigable, [[Adventurers]] will be slowed down by it. Any difficult terrain such as mountains, swamps, or deserts, will reduce your [[Overland Travel|Overland Travel Pace]] by 1 mile per hour, unless your [[Mounts|Mount]] or [[Adventurers|Adventurer]] is specialised in these terrains.
 ##### Difficult Overland Weather

@@ -1,0 +1,1 @@
+2nd level - You regain some of your energy by resting. Twice per long rest, when you finish a short rest, you recover stamina equivalent to your [[Power Modifier]].

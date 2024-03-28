@@ -18,6 +18,9 @@
     "Weight": "multitext",
     "Value (gp)": "number",
     "Item tags": "multitext",
-    "Rarity": "multitext"
+    "Rarity": "multitext",
+    "Weapon Range": "multitext",
+    "Weapon Type": "multitext",
+    "Masterwork": "multitext"
   }
 }

@@ -2,4 +2,4 @@ You are from a small tribe, living on your own, with animal companions, or with 
 
 Nomadic roots include Evervescence, the Reghed Nomads, and the Paleorcs.
 
-Pick four [[Environment|Environment Specialisms]] of your choice.
+Pick four [[Environments|Environment Specialisms]] of your choice.

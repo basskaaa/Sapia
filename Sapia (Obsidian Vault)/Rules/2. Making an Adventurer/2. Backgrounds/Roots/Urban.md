@@ -2,4 +2,4 @@ You are from a sprawling citadel full of many different trades and people. These
 
 Urban roots include New Corogg, Porta Mosa, Baldakaad,
 
-Pick two [[Environment|Environment Specialisms]] of your choice.
+Pick two [[Environments|Environment Specialisms]] of your choice.

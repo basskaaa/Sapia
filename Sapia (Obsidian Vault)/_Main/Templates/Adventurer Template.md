@@ -6,7 +6,8 @@ Species:
 Environment:
 Lifestyle:
 Roots:
-Faith:
+Culture:
+Blessing:
 
 HP:
 Defence:

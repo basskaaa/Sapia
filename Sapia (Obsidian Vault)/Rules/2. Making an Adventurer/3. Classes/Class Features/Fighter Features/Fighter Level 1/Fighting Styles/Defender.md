@@ -1,0 +1,1 @@
+You gain a **+1** bonus to AC, and gain the feat [[Armour Expert I]]

@@ -1,0 +1,1 @@
+When you are only wielding a melee weapon in one hand, you gain a **+2** bonus to damage rolls with that weapon.

@@ -18,7 +18,7 @@ Concentration: false
 tags:
   - Attack
 Prerequisite:
-  - "[[Multiattack]]"
+  - "[[Rules/4. Character Options/Abilities/Moves/Rank 2 Moves/Multiattack]]"
 ---
 Make an attack against 5 targets within range. On a hit, the targets take 6d10 force damage and must succeed on a Fortitude saving throw or be [[Deafened]] for the duration.
 
