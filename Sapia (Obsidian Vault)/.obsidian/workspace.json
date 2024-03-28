@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "20b990a8ddc36c53",
+        "id": "25e2d03dd177c7d9",
         "type": "tabs",
         "children": [
           {
-            "id": "0b5a179dc960393c",
+            "id": "699a9d0429f8931d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rules/3. Expanded Rules/2. Combat/Weapon Types/Misc Weapon Types/One handed weapon.md",
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 0 Spells/Booming Blade.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "9efb002d401412c9",
+            "id": "975a4f788090f369",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rules/Appendix A. Options/Abilities/Grace/Attack.md",
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 0 Spells/Friends.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -34,12 +34,246 @@
             }
           },
           {
-            "id": "b646664a7d951a2b",
+            "id": "08f013c7c29f9398",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Backstab.md",
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 0 Spells/Frostbite.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "12f4a8a35d1a3b28",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 0 Spells/Prayer of Resistance.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5804638aa4f1bc55",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/3. Expanded Rules/6. Ability Properties/Spell Components/Verbal.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d5dc97f75ed881b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/3. Expanded Rules/6. Ability Properties/Spell Components/Somatic.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d4d1158dd2316023",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 0 Spells/Smite.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e31d6a46bc587a3e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 1 Spells/Burning Hands.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "913e4545b5425bec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 1 Spells/Find Familiar.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3476ed464b164aef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 1 Spells/Find Familiar.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "57ea8db47f39b6b4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 1 Spells/Find Familiar.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0fbfbc330c4fc6bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 1 Spells/Free Footing.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "daefc4adf2bdd219",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 2 Spells/Dragon's Fire.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "35202a1f2323bda6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 3 Spells/Flaming Missile.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2f3fcbc1492221a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 3 Spells/Prayer of Death Warding.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9e739b428382d8d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 4 Spells/Prayer of Sunlight.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "337816c30a6ea3fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 5 Spells/Prayer of Raise Dead.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8d81443699c9d4da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 6 Spells/Untitled.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "88735a00f348b51c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 7 Spells/Untitled 1.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9afbccb998eee46e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 8 Spells/Untitled 2.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5d465e2081847eb9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 9 Spells/Untitled 3.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -47,7 +281,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 20
       }
     ],
     "direction": "vertical"
@@ -113,7 +347,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Backstab.md",
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 9 Spells/Untitled 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +364,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Backstab.md",
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 9 Spells/Untitled 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +387,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Backstab.md"
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 9 Spells/Untitled 3.md"
               }
             }
           },
@@ -175,7 +409,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Backstab.md"
+                "file": "Rules/4. Character Options/Abilities/Spells/Rank 9 Spells/Untitled 3.md"
               }
             }
           }
@@ -198,43 +432,43 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "b646664a7d951a2b",
+  "active": "3281c1b69e354674",
   "lastOpenFiles": [
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Vanish From Sight.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Turn the Tide.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Scurry from Danger.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Greater Cheat.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Drunken Technique.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Command Ally.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Charging Rage.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 3 Moves/Backstab.md",
-    "Rules/Appendix A. Options/Abilities/Grace/Search.md",
-    "Rules/Appendix A. Options/Abilities/Grace/Hide.md",
-    "Rules/Appendix A. Options/Abilities/Grace/Dash.md",
-    "Rules/Appendix A. Options/Abilities/Grace/Attack of Opportunity.md",
-    "Rules/Appendix A. Options/Abilities/Grace/Attack.md",
-    "Rules/3. Expanded Rules/2. Combat/Weapon Types/Misc Weapon Types/Any Weapon.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 9 Moves/Untitled.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 8 Moves/Hand of Ultimate Mercy.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 7 Moves/Untitled.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 6 Moves/Ground Pound.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 6 Moves/Empty Body.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 5 Moves/Stunning Strike.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 5 Moves/Rapid Wind Strike.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 5 Moves/Frenzy Rage.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 5 Moves/Colossus.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 4 Moves/Whirlwind Defender.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 4 Moves/Silent Step.md",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 4 Moves/Relentless Rage.md",
-    "Untitled",
-    "Rules/3. Expanded Rules/2. Combat/Weapon Types/Misc Weapon Types",
-    "Rules/3. Expanded Rules/2. Combat/Weapon Types/Weapon Categories",
-    "Rules/3. Expanded Rules/2. Combat/Weapon Types/Weapon Sizes",
-    "Rules/3. Expanded Rules/2. Combat/Weapon Types",
-    "Rules/3. Expanded Rules/2. Combat/Rank Types",
-    "Rules/3. Expanded Rules/2. Combat/AttackSave Types",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 9 Moves",
-    "Rules/Appendix A. Options/Abilities/Moves/New folder",
-    "Rules/Appendix A. Options/Abilities/Moves/Rank 7 Moves"
+    "Rules/4. Character Options/Abilities/Spells/Rank 8 Spells/Untitled 2.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 9 Spells/Untitled 3.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 7 Spells/Untitled 1.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 6 Spells/Untitled.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 5 Spells/Prayer of Raise Dead.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 5 Spells/Mass Prayer of Cure Wounds.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 5 Spells/Mass Disguise.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 5 Spells/Avalanche.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 4 Spells/Prayer of Sunlight.md",
+    "Rules/3. Expanded Rules/6. Ability Properties/Range Types/120ft.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 4 Spells/Prayer of Life Transference.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 4 Spells/Kamikaze Familiar.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 4 Spells/Greater Smite.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 4 Spells/Greater Ice Burst.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 4 Spells/Fire Shield.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 3 Spells/Unseen Servant.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 3 Spells/Stoneskin.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 3 Spells/Prayer of Supernatural Protection.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 3 Spells/Prayer of Order.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 3 Spells/Prayer of Death Warding.md",
+    "Rules/3. Expanded Rules/6. Ability Properties/Damage Types/8 Hours.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 3 Spells/Prayer of Atonement.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 3 Spells/Greater Ward.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 3 Spells/Flaming Missile.md",
+    "Rules/4. Character Options/Abilities/Spells/Rank 3 Spells/Curse of Vulnerability.md",
+    "Rules/3. Expanded Rules/6. Ability Properties/Range Types/90ft.md",
+    "Rules/3. Expanded Rules/6. Ability Properties/Spell Components",
+    "Rules/3. Expanded Rules/6. Ability Properties/Damage Types",
+    "Rules/3. Expanded Rules/6. Ability Properties/School Types",
+    "Rules/3. Expanded Rules/6. Ability Properties",
+    "Rules/4. Character Options/Abilities/Spells/Rank 9 Spells",
+    "Rules/4. Character Options/Abilities/Spells/Rank 8 Spells",
+    "Rules/4. Character Options/Abilities/Spells/Rank 7 Spells",
+    "Rules/4. Character Options/Abilities/Spells/Rank 6 Spells",
+    "Rules/4. Character Options/Abilities/Spells/Rank 5 Spells",
+    "Rules/4. Character Options/Abilities/Spells/Rank 4 Spells"
   ]
 }
