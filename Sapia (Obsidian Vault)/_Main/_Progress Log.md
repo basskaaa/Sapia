@@ -18,4 +18,4 @@
 - Tested changing pixel size in material
 ![[Image Sequence_004_0000.jpg]]
 - Tested normal maps, rotation, and edit outline
-![[Image Sequence_005_0000.jpg]]
+![[Image Sequence_008_0000.jpg]]
