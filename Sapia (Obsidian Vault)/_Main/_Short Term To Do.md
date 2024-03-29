@@ -1,6 +1,10 @@
 # Luka
 
 ##### 28.03.2024
+- [ ] Game interaction examples
+	- [ ] Combat
+	- [ ] Social
+	- [ ] Downtime
 - [ ] Concept Art
 	- [ ] Isometric exploration
 	- [ ] Deck UI
@@ -18,3 +22,5 @@
 	- [ ] folder organisation
 - [ ] Monster stat blocks
 	- [ ] Rat/rat swarm
+- [ ] Test systems
+	- [x] Propixelizer ✅ 2024-03-29
