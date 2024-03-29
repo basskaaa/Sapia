@@ -1,6 +1,10 @@
 # Luka
 
 ##### 28.03.2024
+- [ ] Game interaction examples
+	- [ ] Combat
+	- [ ] Social
+	- [ ] Downtime
 - [ ] Concept Art
 	- [ ] Isometric exploration
 	- [ ] Deck UI
