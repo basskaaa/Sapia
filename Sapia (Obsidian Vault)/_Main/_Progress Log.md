@@ -12,3 +12,10 @@
 - Tested with plague doctor model
 ![[Image Sequence_003_0000.jpg]]
 - Colours still aren't working
+22:31
+- Tested Mapmagic terrain with pixel shader. Didn't work so removed it.
+- Fixed colour. Just requires resetting albedo map in material
+- Tested changing pixel size in material
+![[Image Sequence_004_0000.jpg]]
+- Tested normal maps, rotation, and edit outline
+![[Image Sequence_005_0000.jpg]]
