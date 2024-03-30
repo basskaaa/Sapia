@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "209588a73c405bd5",
+        "id": "3b8bc1b31f9bc7ac",
         "type": "tabs",
         "children": [
           {
-            "id": "45466ed724ee912b",
+            "id": "a8b22efd465e295d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Main/_Short Term To Do.md",
+                "file": "_Main/_Progress Log.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_Main/_Short Term To Do.md",
+                "file": "_Main/_Progress Log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_Main/_Short Term To Do.md",
+                "file": "_Main/_Progress Log.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_Main/_Short Term To Do.md"
+                "file": "_Main/_Progress Log.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "_Main/_Short Term To Do.md"
+                "file": "_Main/_Progress Log.md"
               }
             }
           }
@@ -172,37 +172,43 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "45466ed724ee912b",
+  "active": "a8b22efd465e295d",
   "lastOpenFiles": [
+    "Image Sequence_004_0000.jpg",
+    "Image Sequence_002_0000.jpg",
+    "Image Sequence_001_0000.jpg",
+    "_Main/_Short Term To Do.md",
+    "_Main/Ideas/Mechanic Ideas.md",
+    "_Main/_Progress Log.md",
+    "_Main/Images/Reference Images/GJWqJxyWUAApOfF.png",
+    "_Main/Images/Reference Images/GJWqJ5uWMAAdHsD-1.jpeg",
+    "_Main/Images/Reference Images/GJWJHYCXcAAIOeh.jpeg",
+    "_Main/Images/Reference Images/GJsklmTXsAAlTxG.jpeg",
+    "_Main/Images/Reference Images/GJrlRsUXIAAz9PZ.jpeg",
+    "_Main/Images/Reference Images/GJsklhiXwAEjXuS.jpeg",
+    "_Main/Images/Reference Images/GJrlRrmXYAAYkm4.jpeg",
+    "_Main/Images/Reference Images/ar8mkz.png",
+    "_Main/Images/Reference Images",
+    "_Main/Images/Progress Images",
+    "_Main/Images",
+    "_Main/Ideas/Wider Narrative Ideas.md",
+    "_Main/Ideas/Setting Ideas.md",
+    "_Main/Ideas/Rules Reference.md",
+    "_Main/Ideas/Prototype Narrative Ideas.md",
     "_Main/Ideas/Intended Interactions.md",
     "_Main/Ideas/Old Ideas.md",
-    "_Main/Ideas/Rules Reference.md",
+    "_Main/Ideas",
+    "Setting/Town.md",
+    "_Main/Old Ideas.md",
+    "Setting/Wider Narrative Ideas.md",
+    "Setting/Setting Ideas.md",
+    "Setting/Prototype Narrative Ideas.md",
     "_Main/Ideas/Ability Trait Ideas.md",
     "_Main/Ideas/Encounter Ideas.md",
     "_Main/Ideas/General Ideas.md",
-    "_Main/Images/Reference Images/ar8mkz.png",
     "_Main/Ideas/Monster Ideas.md",
-    "_Main/Ideas/Prototype Narrative Ideas.md",
-    "_Main/Images/Progress Images/Image Sequence_003_0000.jpg",
     "_Main/_Development Doc.md",
-    "_Main/_Progress Log.md",
-    "_Main/Images/Progress Images/Image Sequence_008_0000.jpg",
-    "_Main/Images/Progress Images/Image Sequence_005_0000.jpg",
-    "_Main/Images/Progress Images/Image Sequence_004_0000.jpg",
-    "_Main/Images/Progress Images/Image Sequence_002_0000.jpg",
-    "_Main/Images/Progress Images/Image Sequence_002_0000 1.jpg",
-    "_Main/Images/Reference Images",
-    "_Main/Images/Progress Images",
-    "Image Sequence_002_0000 1.jpg",
-    "_Main/Images/Reference Images/GJWJHYCXcAAIOeh.jpeg",
-    "_Main/Images/Reference Images/GJWqJ5uWMAAdHsD-1.jpeg",
-    "_Main/Images",
-    "Setting/Town.md",
-    "_Main/Ideas/Wider Narrative Ideas.md",
-    "_Main/Ideas/Setting Ideas.md",
-    "_Main/Ideas",
     "Rules/Test Monsters",
-    "_Main/_Short Term To Do.md",
     "Rules/2. Character Options/5. Traits/Experience/Martial Artist II.md",
     "Rules/Test Characters/Tomas (L5 Cleric).md",
     "Rules/2. Character Options/3. Classes/Cleric/Cleric.md",
@@ -210,11 +216,6 @@
     "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Guard Starting Gear.md",
     "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear",
     "Rules/2. Character Options/2. Backgrounds/Lifestyle/Guard of the People.md",
-    "Rules/Test Characters/Evad (L1 Fighter).md",
-    "Rules/2. Character Options/2. Backgrounds/Culture/Human Culture.md",
-    "Rules/2. Character Options/2. Backgrounds/Lifestyle/Acolyte.md",
-    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 20/Prophet.md",
-    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 1/Channel Divinity.md",
     "Rules/2. Character Options/3. Classes/Class Features/Cleric Subclass Features",
     "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 20",
     "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/New folder",

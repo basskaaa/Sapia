@@ -6,7 +6,7 @@
 - Got Propixeliser working in Unity
 - Tested with warrior model
 ![[Image Sequence_002_0000 1.jpg]]
-- Colours aren't working with this model
+- URP isn't working with this model
 - Tested with skeleton model
 ![[_Main/Images/Progress Images/Image Sequence_002_0000.jpg]]
 - Tested with plague doctor model
@@ -19,3 +19,12 @@
 ![[Image Sequence_004_0000.jpg]]
 - Tested normal maps, rotation, and edit outline
 ![[Image Sequence_008_0000.jpg]]
+##### 30.03.2024
+16:05
+- Tested pixel material on terrain
+![[Image Sequence_001_0000.jpg]]
+- When terrain pixel size is lower than object pixel size, it generates texture clipping spots
+- Doesn't work with terrain painting so might have to edit the terrain shader for this at some point
+![[Image Sequence_002_0000.jpg]]
+
+![[Image Sequence_004_0000.jpg]]
