@@ -18,6 +18,7 @@
 - Tested changing pixel size in material
 ![[Image Sequence_004_0000.jpg]]
 - Tested normal maps, rotation, and edit outline
+
 ![[Image Sequence_008_0000.jpg]]
 ##### 30.03.2024
 16:05
@@ -27,4 +28,6 @@
 - Doesn't work with terrain painting so might have to edit the terrain shader for this at some point
 ![[Image Sequence_002_0000.jpg]]
 
+
+=======
 ![[Image Sequence_004_0000.jpg]]
