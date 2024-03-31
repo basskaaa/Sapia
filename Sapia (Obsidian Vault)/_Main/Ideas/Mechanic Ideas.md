@@ -1,0 +1,1 @@
+Tutorial is optional and to accept it is to make a deal with the Khyall. The tutorial messages are then written in shadows on the ground. The Khyall will return for their part of the deal later.
