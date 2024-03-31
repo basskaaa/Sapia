@@ -28,8 +28,13 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Albedo:
+<<<<<<< Updated upstream
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
+=======
+        m_Texture: {fileID: 2800000, guid: 9d2b419d6e70ea94f9108b04a7cba442, type: 3}
+        m_Scale: {x: 100, y: 100}
+>>>>>>> Stashed changes
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 0}
