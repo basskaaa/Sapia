@@ -28,3 +28,23 @@
 ![[Image Sequence_002_0000.jpg]]
 
 ![[Image Sequence_004_0000.jpg]]
+
+##### 31.03.2024
+13:33
+- Tested pixel shader with proc gen terrain. Currently glitches out [Pixel shader on terrain - YouTube](https://youtu.be/BVTiKwlgx6Y)
+![[Image Sequence_005_0000 1.jpg]]
+14:22
+- Testing in dungeon demo scene
+![[Image Sequence_007_0000.jpg]]
+![[Image Sequence_009_0000.jpg]]
+
+21:53
+- Testing in isometric view
+![[Image Sequence_010_0000.jpg]]
+- Testing coloured lights
+![[Image Sequence_011_0000.jpg]]
+
+22:29
+- Testing UI
+![[Image Sequence_012_0000.jpg]]
+![[Image Sequence_012_0000_1.jpg]]

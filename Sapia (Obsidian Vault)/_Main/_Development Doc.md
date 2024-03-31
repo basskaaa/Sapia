@@ -11,6 +11,7 @@
 	- Combat: Diablo, Xcom
 	- Narrative: The Outer Wilds
 	- Music: Dune, Halo
+	- Inventory: Resident Evil 4, Terraria
 - Core pillars: 
 	- Nostalgia
 	- Expression
