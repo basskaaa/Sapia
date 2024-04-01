@@ -6,9 +6,9 @@
 	- [ ] Social
 	- [ ] Downtime
 - [ ] Concept Art
-	- [ ] Isometric exploration
+	- [x] Isometric exploration ✅ 2024-04-01
 	- [ ] Deck UI
-	- [ ] Travel
+	- [x] Travel ✅ 2024-04-01
 - [ ] Class features
 	- [ ] Fighter level 1-5
 	- [ ] Cleric level 1-5

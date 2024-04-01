@@ -16,7 +16,7 @@
 - Tested Mapmagic terrain with pixel shader. Didn't work so removed it.
 - Fixed colour. Just requires resetting albedo map in material
 - Tested changing pixel size in material
-![[Image Sequence_004_0000.jpg]]
+![[Image Sequence_004_0000 1.jpg]]
 - Tested normal maps, rotation, and edit outline
 ![[Image Sequence_008_0000.jpg]]
 ##### 30.03.2024
@@ -25,9 +25,9 @@
 ![[Image Sequence_001_0000.jpg]]
 - When terrain pixel size is lower than object pixel size, it generates texture clipping spots
 - Doesn't work with terrain painting so might have to edit the terrain shader for this at some point
-![[Image Sequence_002_0000.jpg]]
+![[Image Sequence_002_0000 2.jpg]]
 
-![[Image Sequence_004_0000.jpg]]
+![[Image Sequence_004_0000 1.jpg]]
 
 ##### 31.03.2024
 13:33

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "cbe636a3f43ba543",
+        "id": "8594e1defeff2a7c",
         "type": "tabs",
         "children": [
           {
-            "id": "ade93eeee9b90ca6",
+            "id": "f6a7bd625d7c63fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Main/_Progress Log.md",
+                "file": "_Main/Ideas/Intended Interactions.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_Main/_Progress Log.md",
+                "file": "_Main/Ideas/Intended Interactions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_Main/_Progress Log.md",
+                "file": "_Main/Ideas/Intended Interactions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_Main/_Progress Log.md"
+                "file": "_Main/Ideas/Intended Interactions.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "_Main/_Progress Log.md"
+                "file": "_Main/Ideas/Intended Interactions.md"
               }
             }
           }
@@ -172,50 +172,50 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "ade93eeee9b90ca6",
+  "active": "f6a7bd625d7c63fa",
   "lastOpenFiles": [
-    "Image Sequence_012_0000.jpg",
-    "Image Sequence_012_0000_1.jpg",
-    "_Main/_Development Doc.md",
-    "_Main/_Progress Log.md",
-    "Image Sequence_011_0000.jpg",
-    "Image Sequence_010_0000.jpg",
-    "Image Sequence_009_0000.jpg",
-    "Image Sequence_007_0000.jpg",
-    "Image Sequence_005_0000 1.jpg",
     "_Main/Ideas/Rules Reference.md",
-    "Image Sequence_004_0000.jpg",
-    "Image Sequence_005_0000.jpg",
-    "Image Sequence_002_0000.jpg",
-    "_Main/Ideas/Mechanic Ideas.md",
-    "Image Sequence_001_0000.jpg",
+    "_Main/Templates/Weapon Template.md",
+    "_Main/Templates/Item Template.md",
+    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Great Bow.md",
+    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Great Blade.md",
+    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Heavy Blade.md",
+    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Heavy Bow.md",
+    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Light Blade.md",
+    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Expert Brawling.md",
+    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Apprentice Brawling.md",
+    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Novice Brawling.md",
+    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Basic Brawling.md",
+    "Rules/2. Character Options/6. Gear/Weapons/Weapon Items/Longsword.md",
+    "_Main/Ideas/Intended Interactions.md",
+    "_Main/_Progress Log.md",
+    "_Main/Images/Progress Images/Image Sequence_012_0000_1.jpg",
     "_Main/_Short Term To Do.md",
+    "_Main/Images/Progress Images/Image Sequence_012_0000.jpg",
+    "_Main/_Development Doc.md",
+    "_Main/Images/Progress Images/Image Sequence_011_0000.jpg",
+    "_Main/Images/Progress Images/Image Sequence_010_0000.jpg",
+    "_Main/Images/Progress Images/Image Sequence_009_0000.jpg",
+    "_Main/Images/Progress Images/Image Sequence_007_0000.jpg",
+    "_Main/Images/Progress Images/Image Sequence_005_0000 1.jpg",
+    "_Main/Images/Progress Images/Image Sequence_004_0000 1.jpg",
+    "Image Sequence_005_0000.jpg",
+    "_Main/Images/Progress Images/Image Sequence_002_0000 2.jpg",
+    "_Main/Ideas/Mechanic Ideas.md",
     "_Main/Images/Reference Images",
     "_Main/Images/Progress Images",
     "_Main/Images",
     "_Main/Ideas/Wider Narrative Ideas.md",
     "_Main/Ideas/Setting Ideas.md",
     "_Main/Ideas/Prototype Narrative Ideas.md",
-    "_Main/Ideas/Intended Interactions.md",
     "_Main/Ideas/Old Ideas.md",
     "_Main/Ideas",
     "Setting/Town.md",
     "_Main/Old Ideas.md",
     "Setting/Wider Narrative Ideas.md",
     "Setting/Setting Ideas.md",
-    "Setting/Prototype Narrative Ideas.md",
-    "_Main/Ideas/Ability Trait Ideas.md",
-    "_Main/Ideas/Encounter Ideas.md",
-    "_Main/Ideas/General Ideas.md",
-    "_Main/Ideas/Monster Ideas.md",
     "Rules/Test Monsters",
-    "Rules/2. Character Options/5. Traits/Experience/Martial Artist II.md",
-    "Rules/Test Characters/Tomas (L5 Cleric).md",
-    "Rules/2. Character Options/3. Classes/Cleric/Cleric.md",
-    "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Acolyte Starting Gear.md",
-    "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear/Guard Starting Gear.md",
     "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear",
-    "Rules/2. Character Options/2. Backgrounds/Lifestyle/Guard of the People.md",
     "Rules/2. Character Options/3. Classes/Class Features/Cleric Subclass Features",
     "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 20",
     "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/New folder",
