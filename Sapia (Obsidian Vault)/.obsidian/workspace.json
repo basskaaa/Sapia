@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8594e1defeff2a7c",
+        "id": "cdce8974bcacfb24",
         "type": "tabs",
         "children": [
           {
-            "id": "f6a7bd625d7c63fa",
+            "id": "ec0ef4acc0ceeb1e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Main/Ideas/Intended Interactions.md",
+                "file": "_Main/_Short Term To Do.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_Main/Ideas/Intended Interactions.md",
+                "file": "_Main/_Short Term To Do.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_Main/Ideas/Intended Interactions.md",
+                "file": "_Main/_Short Term To Do.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_Main/Ideas/Intended Interactions.md"
+                "file": "_Main/_Short Term To Do.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "_Main/Ideas/Intended Interactions.md"
+                "file": "_Main/_Short Term To Do.md"
               }
             }
           }
@@ -166,13 +166,10 @@
       "canvas:Create new canvas": true,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-projects:Open projects": false,
-      "homepage:Open homepage": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "f6a7bd625d7c63fa",
+  "active": "ec0ef4acc0ceeb1e",
   "lastOpenFiles": [
     "_Main/Ideas/Rules Reference.md",
     "_Main/Templates/Weapon Template.md",
