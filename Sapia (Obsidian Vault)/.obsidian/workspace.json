@@ -13,14 +13,145 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Main/_Short Term To Do.md",
+                "file": "Setting/Locations/A Town Called Temple.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "37a77aeae222f601",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setting/Locations/A Town Called Temple.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5d444f6d1572fed6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setting/Lore/Regions/The Forhar.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7a8322f77ca54e9d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setting/Lore/Regions/Great Leaigin Ukari.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ae345933a64dabb9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setting/Lore/Regions/The Forhar.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e1cfed163fd7fa7a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setting/Lore/Regions/Corian Pale Alliance.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bbd3e771633cf4ba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setting/Lore/Events/Friat Coup.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d577af096b087bbb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setting/Lore/Regions/Corian Pale Alliance.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "da0e17b55814bf6a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setting/Lore/Regions/Corian Pale Alliance.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c2fcbc09c6d205a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setting/Lore/Characters/Gods and Spirits/Arioch.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "50112fea992e2fe8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setting/Lore/Events/Fraticiat Arcarum.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -86,7 +217,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_Main/_Short Term To Do.md",
+                "file": "Setting/Lore/Characters/Gods and Spirits/Arioch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +234,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_Main/_Short Term To Do.md",
+                "file": "Setting/Lore/Characters/Gods and Spirits/Arioch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +257,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_Main/_Short Term To Do.md"
+                "file": "Setting/Lore/Characters/Gods and Spirits/Arioch.md"
               }
             }
           },
@@ -148,7 +279,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "_Main/_Short Term To Do.md"
+                "file": "Setting/Lore/Characters/Gods and Spirits/Arioch.md"
               }
             }
           }
@@ -169,8 +300,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ec0ef4acc0ceeb1e",
+  "active": "c2fcbc09c6d205a8",
   "lastOpenFiles": [
+    "Setting/Lore/Regions/Corian Pale Alliance.md",
+    "Setting/Lore/Events/Friat Coup.md",
+    "Setting/Lore/Characters/Gods and Spirits/Herald and the Harbinger.md",
+    "Setting/Lore/Events/Fraticiat Arcarum.md",
+    "Setting/Lore/Regions/Great Leaigin Ukari.md",
+    "Setting/Lore/Regions/The Forhar.md",
+    "Setting/Lore/Factions/Foharim.md",
+    "Setting/Lore/Factions",
+    "Setting/Lore/Timeline.md",
+    "Setting/Locations/Fortified Outpost of Tur Domhainn.md",
+    "Setting/Locations/A Town Called Temple.md",
+    "Setting/Locations",
+    "Setting/Lore/Events",
+    "Setting/Lore/Characters/Gods and Spirits/Arioch.md",
+    "Setting/Lore/Characters/Gods.md",
+    "Setting/Lore/Characters/Gods and Spirits",
+    "Setting/Lore/Characters",
+    "Setting/Lore",
+    "Setting/Lore/Regions",
+    "_Main/_Short Term To Do.md",
     "_Main/Ideas/Rules Reference.md",
     "_Main/Templates/Weapon Template.md",
     "_Main/Templates/Item Template.md",
@@ -184,12 +335,8 @@
     "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Novice Brawling.md",
     "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Basic Brawling.md",
     "Rules/2. Character Options/6. Gear/Weapons/Weapon Items/Longsword.md",
-    "_Main/Ideas/Intended Interactions.md",
-    "_Main/_Progress Log.md",
     "_Main/Images/Progress Images/Image Sequence_012_0000_1.jpg",
-    "_Main/_Short Term To Do.md",
     "_Main/Images/Progress Images/Image Sequence_012_0000.jpg",
-    "_Main/_Development Doc.md",
     "_Main/Images/Progress Images/Image Sequence_011_0000.jpg",
     "_Main/Images/Progress Images/Image Sequence_010_0000.jpg",
     "_Main/Images/Progress Images/Image Sequence_009_0000.jpg",
@@ -198,24 +345,8 @@
     "_Main/Images/Progress Images/Image Sequence_004_0000 1.jpg",
     "Image Sequence_005_0000.jpg",
     "_Main/Images/Progress Images/Image Sequence_002_0000 2.jpg",
-    "_Main/Ideas/Mechanic Ideas.md",
     "_Main/Images/Reference Images",
     "_Main/Images/Progress Images",
-    "_Main/Images",
-    "_Main/Ideas/Wider Narrative Ideas.md",
-    "_Main/Ideas/Setting Ideas.md",
-    "_Main/Ideas/Prototype Narrative Ideas.md",
-    "_Main/Ideas/Old Ideas.md",
-    "_Main/Ideas",
-    "Setting/Town.md",
-    "_Main/Old Ideas.md",
-    "Setting/Wider Narrative Ideas.md",
-    "Setting/Setting Ideas.md",
-    "Rules/Test Monsters",
-    "Rules/2. Character Options/2. Backgrounds/Lifestyle/Starting Gear",
-    "Rules/2. Character Options/3. Classes/Class Features/Cleric Subclass Features",
-    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 20",
-    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/New folder",
-    "Rules/2. Character Options/3. Classes/Class Features/Cleric Features/Cleric Level 13"
+    "_Main/Images"
   ]
 }
