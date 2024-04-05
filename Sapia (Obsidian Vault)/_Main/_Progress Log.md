@@ -48,3 +48,8 @@
 - Testing UI
 ![[Image Sequence_012_0000.jpg]]
 ![[Image Sequence_012_0000_1.jpg]]
+
+##### 05.04.2024
+14:37
+- Tested low res terrain textures
+![[Image Sequence_013_0000.jpg]]

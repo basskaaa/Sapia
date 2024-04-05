@@ -4,18 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "a7e222889136b77d",
+        "id": "92e32ca7cf0076b3",
         "type": "tabs",
         "children": [
           {
-            "id": "b51c706610f25e1b",
+            "id": "fa6c9fff69a626d5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "_Main/_Short Term To Do.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6bda35e400f2a33f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_Main/_Asset Links.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_Main/_Asset Links.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "_Main/_Asset Links.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +139,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "_Main/_Asset Links.md"
+              }
             }
           },
           {
@@ -138,7 +161,9 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {}
+              "state": {
+                "file": "_Main/_Asset Links.md"
+              }
             }
           }
         ]
@@ -161,8 +186,11 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "b51c706610f25e1b",
+  "active": "6bda35e400f2a33f",
   "lastOpenFiles": [
+    "_Main/Images/Progress Images/Image Sequence_013_0000.jpg",
+    "_Main/_Asset Links.md",
+    "_Main/_Short Term To Do.md",
     "_Main/Refence/Art Reference.md",
     "_Main/Refence",
     "_Main/Images/Reference Images/GKQGI5UXwAAOus4.jpeg",
@@ -188,8 +216,6 @@
     "Setting/Lore/Factions/Evervescence.md",
     "Setting/Locations/Fortified Outpost of Tur Domhainn.md",
     "Setting/Locations/Redwater Pass.md",
-    "Setting/Locations/A Town Called Temple.md",
-    "Setting/Lore/Characters/Gods and Spirits/Arioch.md",
     "Setting/Lore/Factions",
     "Setting/Locations",
     "Setting/Lore/Events",
@@ -205,7 +231,6 @@
     "_Main/Images/Progress Images/Image Sequence_007_0000.jpg",
     "_Main/Images/Progress Images/Image Sequence_005_0000 1.jpg",
     "_Main/Images/Progress Images/Image Sequence_004_0000 1.jpg",
-    "Image Sequence_005_0000.jpg",
     "_Main/Images/Reference Images",
     "_Main/Images/Progress Images"
   ]
