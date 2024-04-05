@@ -1,0 +1,1 @@
+Lonely giant of the desert and artisan of goblinoid heritage.

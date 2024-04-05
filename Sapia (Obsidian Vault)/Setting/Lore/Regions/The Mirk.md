@@ -1,0 +1,1 @@
+Cursed woods of the south of the realms. Home of the high elves and the only remaining presence of active wild magic through the astral weave.

@@ -4,154 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "cdce8974bcacfb24",
+        "id": "a7e222889136b77d",
         "type": "tabs",
         "children": [
           {
-            "id": "ec0ef4acc0ceeb1e",
+            "id": "b51c706610f25e1b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setting/Locations/A Town Called Temple.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "37a77aeae222f601",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setting/Locations/A Town Called Temple.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5d444f6d1572fed6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setting/Lore/Regions/The Forhar.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7a8322f77ca54e9d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setting/Lore/Regions/Great Leaigin Ukari.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ae345933a64dabb9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setting/Lore/Regions/The Forhar.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e1cfed163fd7fa7a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setting/Lore/Regions/Corian Pale Alliance.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bbd3e771633cf4ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setting/Lore/Events/Friat Coup.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d577af096b087bbb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setting/Lore/Regions/Corian Pale Alliance.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "da0e17b55814bf6a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setting/Lore/Regions/Corian Pale Alliance.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c2fcbc09c6d205a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setting/Lore/Characters/Gods and Spirits/Arioch.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "50112fea992e2fe8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Setting/Lore/Events/Fraticiat Arcarum.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 9
+        ]
       }
     ],
     "direction": "vertical"
@@ -217,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Setting/Lore/Characters/Gods and Spirits/Arioch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -234,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Setting/Lore/Characters/Gods and Spirits/Arioch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -256,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Setting/Lore/Characters/Gods and Spirits/Arioch.md"
-              }
+              "state": {}
             }
           },
           {
@@ -278,9 +138,7 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "Setting/Lore/Characters/Gods and Spirits/Arioch.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -297,44 +155,48 @@
       "canvas:Create new canvas": true,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-projects:Open projects": false,
+      "homepage:Open homepage": false
     }
   },
-  "active": "c2fcbc09c6d205a8",
+  "active": "b51c706610f25e1b",
   "lastOpenFiles": [
-    "Setting/Lore/Regions/Corian Pale Alliance.md",
-    "Setting/Lore/Events/Friat Coup.md",
-    "Setting/Lore/Characters/Gods and Spirits/Herald and the Harbinger.md",
-    "Setting/Lore/Events/Fraticiat Arcarum.md",
-    "Setting/Lore/Regions/Great Leaigin Ukari.md",
-    "Setting/Lore/Regions/The Forhar.md",
+    "_Main/Refence/Art Reference.md",
+    "_Main/Refence",
+    "_Main/Images/Reference Images/GKQGI5UXwAAOus4.jpeg",
+    "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Quick Attack.md",
+    "_Main/Ideas/Intended Interactions.md",
+    "_Main/Ideas/Prototype Narrative Ideas.md",
+    "_Main/_Progress Log.md",
+    "Rules/2. Character Options/6. Gear/Weapons/Weapon Items/Longsword.md",
+    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Heavy Blade.md",
+    "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Grapple.md",
+    "Rules/3. Expanded Rules/6. Ability Properties/Action Types/Attack Action.md",
+    "Rules/3. Expanded Rules/5. Conditions/Pinned.md",
+    "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Dodge.md",
+    "Setting/Lore/Regions/The Mabet.md",
+    "Setting/Lore/Characters/Gods and Spirits/Damh.md",
+    "Setting/Lore/Regions/The Mirk.md",
+    "Setting/Lore/Regions/The Verdant.md",
+    "Setting/Lore/Factions/Tribes of the Pale.md",
+    "Setting/Lore/Factions/Corian Republic.md",
     "Setting/Lore/Factions/Foharim.md",
-    "Setting/Lore/Factions",
-    "Setting/Lore/Timeline.md",
+    "Setting/Lore/Events/Daalsdoom.md",
+    "Setting/Lore/Characters/Gods and Spirits/Ilmater.md",
+    "Setting/Lore/Factions/Evervescence.md",
     "Setting/Locations/Fortified Outpost of Tur Domhainn.md",
+    "Setting/Locations/Redwater Pass.md",
     "Setting/Locations/A Town Called Temple.md",
+    "Setting/Lore/Characters/Gods and Spirits/Arioch.md",
+    "Setting/Lore/Factions",
     "Setting/Locations",
     "Setting/Lore/Events",
-    "Setting/Lore/Characters/Gods and Spirits/Arioch.md",
-    "Setting/Lore/Characters/Gods.md",
     "Setting/Lore/Characters/Gods and Spirits",
     "Setting/Lore/Characters",
     "Setting/Lore",
     "Setting/Lore/Regions",
-    "_Main/_Short Term To Do.md",
-    "_Main/Ideas/Rules Reference.md",
-    "_Main/Templates/Weapon Template.md",
-    "_Main/Templates/Item Template.md",
-    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Great Bow.md",
-    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Great Blade.md",
-    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Heavy Blade.md",
-    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Heavy Bow.md",
-    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Light Blade.md",
-    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Expert Brawling.md",
-    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Apprentice Brawling.md",
-    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Novice Brawling.md",
-    "Rules/2. Character Options/6. Gear/Weapons/Weapon Types/Basic Brawling.md",
-    "Rules/2. Character Options/6. Gear/Weapons/Weapon Items/Longsword.md",
     "_Main/Images/Progress Images/Image Sequence_012_0000_1.jpg",
     "_Main/Images/Progress Images/Image Sequence_012_0000.jpg",
     "_Main/Images/Progress Images/Image Sequence_011_0000.jpg",
@@ -344,9 +206,7 @@
     "_Main/Images/Progress Images/Image Sequence_005_0000 1.jpg",
     "_Main/Images/Progress Images/Image Sequence_004_0000 1.jpg",
     "Image Sequence_005_0000.jpg",
-    "_Main/Images/Progress Images/Image Sequence_002_0000 2.jpg",
     "_Main/Images/Reference Images",
-    "_Main/Images/Progress Images",
-    "_Main/Images"
+    "_Main/Images/Progress Images"
   ]
 }

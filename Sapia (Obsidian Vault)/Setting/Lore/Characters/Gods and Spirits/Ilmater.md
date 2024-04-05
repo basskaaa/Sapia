@@ -1,0 +1,1 @@
+Dwarven legend and Empyrean deity who rescued their people after the Daalsdoom genocide ambush upon the Dalladh Dominion by the Elves of Leor. Following the attack, he dedicated the rest of his life to freeing those trapped within the great mines and restored his kin from near extinction. Was granted Empyrean godhood by Jevel upon his death.

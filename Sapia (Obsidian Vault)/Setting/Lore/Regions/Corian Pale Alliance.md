@@ -1,1 +1,0 @@
-Republic of the great houses of the west who came together against the [[Fraticiat Arcarum]] under the wisdom of the [[Herald and the Harbinger]] in the decade 910.
