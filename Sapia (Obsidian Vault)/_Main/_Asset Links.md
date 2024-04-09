@@ -15,3 +15,6 @@
 [Lowpoly Modular Armors- MEDIEVAL FANTASY SERIES | 3D Humanoids | Unity Asset Store](https://assetstore.unity.com/packages/3d/characters/humanoids/lowpoly-modular-armors-medieval-fantasy-series-229963) $50
 [Modular RPG Hero Polyart | Characters | Unity Asset Store](https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/modular-rpg-hero-polyart-138600) $20
 [Humans Complete Pack | 3D Humanoids | Unity Asset Store](https://assetstore.unity.com/packages/3d/characters/humanoids/humans-complete-pack-245175) $20
+
+##### Environments
+[POLYGON Fantasy Kingdom - Low Poly 3D Art by Synty | 3D Fantasy | Unity Asset Store](https://assetstore.unity.com/packages/3d/environments/fantasy/polygon-fantasy-kingdom-low-poly-3d-art-by-synty-164532) $350
