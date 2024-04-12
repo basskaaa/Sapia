@@ -1,0 +1,15 @@
+{
+  "DamageDie": "d12",
+  "Weight": "Heavy",
+  "Range": "",
+  "Id": "heavy-axe",
+  "Name": "Heavy Axe",
+  "Value": 12.0,
+  "Description": [
+    "- Lumber axe. 3gp",
+    "- Bardiche. 12gp"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

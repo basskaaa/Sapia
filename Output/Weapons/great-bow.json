@@ -1,0 +1,12 @@
+{
+  "DamageDie": "d12",
+  "Weight": "Great",
+  "Range": "300ft",
+  "Id": "great-bow",
+  "Name": "Great Bow",
+  "Value": 15.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ]
+}

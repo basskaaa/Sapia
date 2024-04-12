@@ -1,0 +1,14 @@
+{
+  "DamageDie": "d20",
+  "Weight": "Great",
+  "Range": "",
+  "Id": "great-crossbow",
+  "Name": "Great Crossbow",
+  "Value": 30.0,
+  "Description": [
+    "- Great crossbow. 30gp"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "DamageDie": "d12",
+  "Weight": "Heavy",
+  "Range": "",
+  "Id": "heavy-hammer",
+  "Name": "Heavy Hammer",
+  "Value": 5.0,
+  "Description": [
+    "- Maul"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

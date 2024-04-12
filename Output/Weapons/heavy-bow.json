@@ -1,0 +1,14 @@
+{
+  "DamageDie": "d8",
+  "Weight": "Heavy",
+  "Range": "",
+  "Id": "heavy-bow",
+  "Name": "Heavy Bow",
+  "Value": 15.0,
+  "Description": [
+    "- Longbow"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

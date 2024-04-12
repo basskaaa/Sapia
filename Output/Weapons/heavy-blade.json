@@ -1,0 +1,14 @@
+{
+  "DamageDie": "d10",
+  "Weight": "Great",
+  "Range": "",
+  "Id": "heavy-blade",
+  "Name": "Heavy Blade",
+  "Value": 8.0,
+  "Description": [
+    "- Longsword. 8gp"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

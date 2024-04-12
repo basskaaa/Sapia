@@ -1,0 +1,11 @@
+{
+  "DamageDie": "d3",
+  "Weight": "None",
+  "Range": "3ft",
+  "Id": "basic-brawling",
+  "Name": "Basic Brawling",
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ]
+}

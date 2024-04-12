@@ -1,0 +1,14 @@
+{
+  "DamageDie": "d8",
+  "Weight": "Light",
+  "Range": "",
+  "Id": "light-crossbow",
+  "Name": "Light Crossbow",
+  "Value": 15.0,
+  "Description": [
+    "- Hand crossbow. 15gp"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

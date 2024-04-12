@@ -1,0 +1,14 @@
+{
+  "DamageDie": "d4",
+  "Weight": "Light",
+  "Range": "",
+  "Id": "light-blade",
+  "Name": "Light Blade",
+  "Value": 1.0,
+  "Description": [
+    "- Dagger. 1gp"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

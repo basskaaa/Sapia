@@ -1,0 +1,14 @@
+{
+  "DamageDie": "d6",
+  "Weight": "Light",
+  "Range": "",
+  "Id": "light-axe",
+  "Name": "Light Axe",
+  "Value": 2.0,
+  "Description": [
+    "- Hatchet. 2gp\n- Tomahawk. 4gp"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "DamageDie": "d6",
+  "Weight": "None",
+  "Range": "6ft",
+  "Id": "novice-brawling",
+  "Name": "Novice Brawling",
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ]
+}

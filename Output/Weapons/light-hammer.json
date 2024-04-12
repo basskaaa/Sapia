@@ -1,0 +1,14 @@
+{
+  "DamageDie": "d6",
+  "Weight": "Light",
+  "Range": "",
+  "Id": "light-hammer",
+  "Name": "Light Hammer",
+  "Value": 1.0,
+  "Description": [
+    "A hammer which lights up the room"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

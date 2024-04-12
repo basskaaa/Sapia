@@ -9,12 +9,15 @@
 
   <ItemGroup>
     <PackageReference Include="PtahBuilder.BuildSystem" Version="20240318.1.0" />
-    <PackageReference Include="PtahBuilder.Plugins.NewtonsoftJson" Version="20240318.1.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\ptahbuilder\src\PtahBuilder.BuildSystem\PtahBuilder.BuildSystem.csproj" />
     <ProjectReference Include="..\Sapia.Game\Sapia.Game.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
   </ItemGroup>
 
 </Project>

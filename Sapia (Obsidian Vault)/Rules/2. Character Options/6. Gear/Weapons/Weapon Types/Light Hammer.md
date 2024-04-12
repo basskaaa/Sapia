@@ -7,3 +7,4 @@ Value (gp): 1
 Item tags:
   - Combat
 ---
+A hammer which lights up the room

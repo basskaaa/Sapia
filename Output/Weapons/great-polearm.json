@@ -1,0 +1,13 @@
+{
+  "DamageDie": "d12",
+  "Weight": "Great",
+  "Range": "",
+  "Id": "great-polearm",
+  "Name": "Great Polearm",
+  "Description": [
+    ""
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

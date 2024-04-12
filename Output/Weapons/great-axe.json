@@ -1,0 +1,14 @@
+{
+  "DamageDie": "d20",
+  "Weight": "Great",
+  "Range": "",
+  "Id": "great-axe",
+  "Name": "Great Axe",
+  "Value": 15.0,
+  "Description": [
+    "This axe is great."
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

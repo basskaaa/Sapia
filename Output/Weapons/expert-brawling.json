@@ -1,0 +1,11 @@
+{
+  "DamageDie": "d10",
+  "Weight": "None",
+  "Range": "9ft",
+  "Id": "expert-brawling",
+  "Name": "Expert Brawling",
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ]
+}
