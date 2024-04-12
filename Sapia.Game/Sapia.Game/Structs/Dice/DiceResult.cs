@@ -1,80 +1,78 @@
 ﻿using System.Diagnostics;
 
-namespace Sapia.Game.Structs.Dice
+namespace Sapia.Game.Structs.Dice;
+
+public interface IDiceResult
 {
+    int Result { get; }
+}
 
-    public interface IDiceResult
+[DebuggerDisplay("{Result}")]
+public readonly struct ConstantResult : IDiceResult
+{
+    public ConstantResult(int result)
     {
-        int Result { get; }
+        Result = result;
     }
 
-    [DebuggerDisplay("{Result}")]
-    public readonly struct ConstantResult : IDiceResult
-    {
-        public ConstantResult(int result)
-        {
-            Result = result;
-        }
+    public int Result { get; }
+}
 
-        public int Result { get; }
+[DebuggerDisplay("{Result} / {Sides}")]
+public readonly struct DiceResult : IDiceResult
+{
+    public DiceResult(int sides, int result)
+    {
+        Sides = sides;
+        Result = result;
     }
 
-    [DebuggerDisplay("{Result} / {Sides}")]
-    public readonly struct DiceResult : IDiceResult
+    public int Result { get; }
+    public int Sides { get; }
+
+    public bool WasCritical => Result == Sides;
+}
+
+public readonly struct DiceSetResult : IDiceResult
+{
+    public DiceSetResult(IEnumerable<DiceResult> dice)
     {
-        public DiceResult(int sides, int result)
-        {
-            Sides = sides;
-            Result = result;
-        }
-
-        public int Result { get; }
-        public int Sides { get; }
-
-        public bool WasCritical => Result == Sides;
+        Dice = dice.ToArray();
+        Result = Dice.Sum(x => x.Result);
     }
 
-    public readonly struct DiceSetResult : IDiceResult
-    {
-        public DiceSetResult(IEnumerable<DiceResult> dice)
-        {
-            Dice = dice.ToArray();
-            Result = Dice.Sum(x => x.Result);
-        }
+    public int Result { get; }
+    public IReadOnlyCollection<DiceResult> Dice { get; }
+}
 
-        public int Result { get; }
-        public IReadOnlyCollection<DiceResult> Dice { get; }
+public readonly struct DiceEquationResult : IDiceResult
+{
+    public DiceEquationResult(IDiceResult left, IDiceResult right, EquationOperator @operator)
+    {
+        Left = left;
+        Right = right;
+        Operator = @operator;
+        Result = @operator == EquationOperator.Add ? Left.Result + Right.Result : Left.Result - Right.Result;
     }
 
-    public readonly struct DiceEquationResult : IDiceResult
+    public EquationOperator Operator { get; }
+
+    public int Result { get; }
+
+    public IDiceResult Right { get; }
+
+    public IDiceResult Left { get; }
+}
+
+public readonly struct DiceSumResult : IDiceResult
+{
+    public DiceSumResult(IReadOnlyCollection<IDiceResult> results)
     {
-        public DiceEquationResult(IDiceResult left, IDiceResult right, EquationOperator @operator)
-        {
-            Left = left;
-            Right = right;
-            Operator = @operator;
-            Result = @operator == EquationOperator.Add ? Left.Result + Right.Result : Left.Result - Right.Result;
-        }
-
-        public EquationOperator Operator { get; }
-
-        public int Result { get; }
-
-        public IDiceResult Right { get; }
-
-        public IDiceResult Left { get; }
+        Results = results;
+        Result = Result = results.Sum(x => x.Result);
     }
 
-    public readonly struct DiceSumResult : IDiceResult
-    {
-        public DiceSumResult(IReadOnlyCollection<IDiceResult> results)
-        {
-            Results = results;
-            Result = Result = results.Sum(x => x.Result);
-        }
+    public IReadOnlyCollection<IDiceResult> Results { get; }
 
-        public IReadOnlyCollection<IDiceResult> Results { get; }
-
-        public int Result { get; }
-    }
+    public int Result { get; }
 }

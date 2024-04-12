@@ -1,7 +1,6 @@
-﻿namespace Sapia.Game.Structs.Dice
-{
-    public interface IDiceValue
-    {
+﻿namespace Sapia.Game.Structs.Dice;
 
-    }
+public interface IDiceValue
+{
+
 }

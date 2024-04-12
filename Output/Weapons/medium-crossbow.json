@@ -1,14 +1,12 @@
 {
-  "DamageDie": "d10",
-  "Weight": "Medium",
-  "Range": "",
   "Id": "medium-crossbow",
   "Name": "Medium Crossbow",
   "Value": 10.0,
-  "Description": [
-    "- Crossbow. 10gp"
-  ],
+  "Description": [],
   "Tags": [
     "Combat"
-  ]
+  ],
+  "DamageDie": "d10",
+  "Weight": "Medium",
+  "Range": ""
 }

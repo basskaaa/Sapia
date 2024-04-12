@@ -1,7 +1,4 @@
 {
-  "DamageDie": "d8",
-  "Weight": "None",
-  "Range": "6ft",
   "Id": "apprentice-brawling",
   "Name": "Apprentice Brawling",
   "Description": [
@@ -9,5 +6,8 @@
   ],
   "Tags": [
     "Combat"
-  ]
+  ],
+  "DamageDie": "d8",
+  "Weight": "None",
+  "Range": "6ft"
 }

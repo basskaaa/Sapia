@@ -1,36 +1,35 @@
-﻿namespace Sapia.Game.Structs.Dice
+﻿namespace Sapia.Game.Structs.Dice;
+
+public readonly struct Dice : IDiceValue
 {
-    public readonly struct Dice : IDiceValue
+    public int Sides { get; }
+    public int Quantity { get; }
+
+    public Dice(int sides, int quantity = 1)
     {
-        public int Sides { get; }
-        public int Quantity { get; }
+        Sides = sides;
+        Quantity = quantity;
+    }
 
-        public Dice(int sides, int quantity = 1)
+    public override string ToString()
+    {
+        if (Quantity == 1)
         {
-            Sides = sides;
-            Quantity = quantity;
+            return $"d{Sides}";
         }
 
-        public override string ToString()
-        {
-            if (Quantity == 1)
-            {
-                return $"d{Sides}";
-            }
+        return $"{Quantity}d{Sides}";
+    }
 
-            return $"{Quantity}d{Sides}";
+    public static Dice Parse(string text)
+    {
+        var parts = text.ToLower().Split('d', StringSplitOptions.RemoveEmptyEntries);
+
+        if (parts.Length == 2)
+        {
+            return new(Convert.ToInt32(parts[1]), Convert.ToInt32(parts[0]));
         }
 
-        public static Dice Parse(string text)
-        {
-            var parts = text.ToLower().Split('d', StringSplitOptions.RemoveEmptyEntries);
-
-            if (parts.Length == 2)
-            {
-                return new(Convert.ToInt32(parts[1]), Convert.ToInt32(parts[0]));
-            }
-
-            return new(Convert.ToInt32(parts[0]));
-        }
+        return new(Convert.ToInt32(parts[0]));
     }
 }

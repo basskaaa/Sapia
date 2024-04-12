@@ -1,14 +1,12 @@
 {
-  "DamageDie": "d12",
-  "Weight": "Great",
-  "Range": "",
   "Id": "great-club",
   "Name": "Great Club",
   "Value": 5.0,
-  "Description": [
-    "- Great Staff. 5gp"
-  ],
+  "Description": [],
   "Tags": [
     "Combat"
-  ]
+  ],
+  "DamageDie": "d12",
+  "Weight": "Great",
+  "Range": ""
 }

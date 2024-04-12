@@ -1,7 +1,4 @@
 {
-  "DamageDie": "d6",
-  "Weight": "Light",
-  "Range": "",
   "Id": "light-hammer",
   "Name": "Light Hammer",
   "Value": 1.0,
@@ -10,5 +7,8 @@
   ],
   "Tags": [
     "Combat"
-  ]
+  ],
+  "DamageDie": "d6",
+  "Weight": "Light",
+  "Range": ""
 }

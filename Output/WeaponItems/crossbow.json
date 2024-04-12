@@ -1,0 +1,10 @@
+{
+  "Id": "crossbow",
+  "WeaponType": "medium-crossbow",
+  "Masterwork": "",
+  "Range": "",
+  "Name": "Crossbow",
+  "Value": 10.0,
+  "Description": [],
+  "Tags": []
+}

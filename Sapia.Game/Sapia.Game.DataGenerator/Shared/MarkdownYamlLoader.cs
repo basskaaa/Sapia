@@ -5,45 +5,44 @@ using PtahBuilder.BuildSystem.Extensions;
 using PtahBuilder.BuildSystem.Services.Serialization;
 using Sapia.Game.Entities.Interfaces;
 
-namespace Sapia.Game.DataGenerator.Shared
+namespace Sapia.Game.DataGenerator.Shared;
+
+public class MarkdownYamlLoader<T> : IStep<T> where T : IHasDescription
 {
-    public class MarkdownYamlLoader<T> : IStep<T> where T : IHasDescription
+    private readonly IFilesConfig _filesConfig;
+    private readonly IYamlService _yamlService;
+    private readonly string _directory;
+    private readonly Dictionary<string, string>? _nodeNameToPropertyMappings;
+
+    public MarkdownYamlLoader(IFilesConfig filesConfig, IYamlService yamlService, string directory, Dictionary<string, string>? nodeNameToPropertyMappings = null)
     {
-        private readonly IFilesConfig _filesConfig;
-        private readonly IYamlService _yamlService;
-        private readonly string _directory;
-        private readonly Dictionary<string, string>? _nodeNameToPropertyMappings;
+        _filesConfig = filesConfig;
+        _directory = directory;
+        _yamlService = yamlService;
+        _nodeNameToPropertyMappings = nodeNameToPropertyMappings;
+    }
 
-        public MarkdownYamlLoader(IFilesConfig filesConfig, IYamlService yamlService,string directory, Dictionary<string,string>? nodeNameToPropertyMappings = null)
+    public Task Execute(IPipelineContext<T> context, IReadOnlyCollection<Entity<T>> entities)
+    {
+        foreach (var file in Directory.GetFiles(Path.Combine(_filesConfig.DataDirectory, _directory), "*.md"))
         {
-            _filesConfig = filesConfig;
-            _directory = directory;
-            _yamlService = yamlService;
-            _nodeNameToPropertyMappings = nodeNameToPropertyMappings;
+            ProcessFile(context, file);
         }
 
-        public Task Execute(IPipelineContext<T> context, IReadOnlyCollection<Entity<T>> entities)
-        {
-            foreach (var file in Directory.GetFiles(Path.Combine(_filesConfig.DataDirectory, _directory), "*.md"))
-            {
-                ProcessFile(context, file);
-            }
+        return Task.CompletedTask;
+    }
 
-            return Task.CompletedTask;
-        }
+    private void ProcessFile(IPipelineContext<T> context, string file)
+    {
+        var text = File.ReadAllText(file);
 
-        private void ProcessFile(IPipelineContext<T> context, string file)
-        {
-            var text = File.ReadAllText(file);
+        var parts = text.Split("---", StringSplitOptions.RemoveEmptyEntries);
 
-            var parts = text.Split("---", StringSplitOptions.RemoveEmptyEntries);
+        var (entity, metadata) = _yamlService.DeserializeAndGetMetadata<T>(parts[0], _nodeNameToPropertyMappings);
 
-            var (entity, metadata) = _yamlService.DeserializeAndGetMetadata<T>(parts[0], _nodeNameToPropertyMappings);
+        entity.Name = Path.GetFileNameWithoutExtension(file).Trim();
+        entity.Description = parts[1].Split(new string[] { Environment.NewLine, "\n" }, StringSplitOptions.RemoveEmptyEntries).Select(x => x.Trim()).ToArray();
 
-            entity.Name = Path.GetFileNameWithoutExtension(file).Trim();
-            entity.Description = parts[1].Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries).Select(x=>x.Trim()).ToArray();
-
-            context.AddEntityFromFile(entity, file, metadata);
-        }
+        context.AddEntityFromFile(entity, file, metadata);
     }
 }

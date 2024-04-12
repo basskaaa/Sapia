@@ -1,14 +1,12 @@
 {
-  "DamageDie": "d6",
-  "Weight": "Great",
-  "Range": "",
   "Id": "medium-bow",
   "Name": "Medium Bow",
   "Value": 15.0,
-  "Description": [
-    "- Hunting bow"
-  ],
+  "Description": [],
   "Tags": [
     "Combat"
-  ]
+  ],
+  "DamageDie": "d6",
+  "Weight": "Great",
+  "Range": ""
 }

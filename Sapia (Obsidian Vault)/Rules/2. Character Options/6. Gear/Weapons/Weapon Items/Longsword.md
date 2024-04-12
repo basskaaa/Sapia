@@ -1,5 +1,5 @@
 ---
-Item Type: "[[Heavy Blade]]"
+Weapon Type: "[[Heavy Blade]]"
 Value (gp): 10
 Masterwork:
   - "[[Lunge]]"

@@ -1,14 +1,12 @@
 {
-  "DamageDie": "d8",
-  "Weight": "Heavy",
-  "Range": "",
   "Id": "heavy-club",
   "Name": "Heavy Club",
   "Value": 3.0,
-  "Description": [
-    "- Mages Staff. 3gp"
-  ],
+  "Description": [],
   "Tags": [
     "Combat"
-  ]
+  ],
+  "DamageDie": "d8",
+  "Weight": "Heavy",
+  "Range": ""
 }

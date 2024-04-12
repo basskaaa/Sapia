@@ -5,6 +5,7 @@ using PtahBuilder.Util.Helpers;
 using Sapia.Game.DataGenerator;
 using Sapia.Game.DataGenerator.JsonConverters;
 using Sapia.Game.DataGenerator.Pipelines.Weapons;
+using Sapia.Game.Extensions;
 
 const string DataDirectory = "Sapia (Obsidian Vault)";
 
@@ -14,17 +15,22 @@ await new BuilderFactory()
     {
         f.Configure(PathHelper.GetRootPath(DataDirectory, args), relativeDataDirectory: DataDirectory);
     })
-    .AddJsonConverterTypes(typeof(Program).Assembly)
-    .AddFusionShiftTypeHandling()
-    .ConfigureExecution(x =>
+    .ConfigureServices(services =>
     {
-        x.DeleteOutputDirectory = true;
-        x.MissingIdPreference = MissingIdPreference.SourceFile;
-
-        x.AddPipelinePhase(phase =>
-        {
-            phase.AddWeaponTypePipeline();
-        });
-
+        services.AddSapiaGameServices();
     })
-    .Run();
+    .AddJsonConverterTypes(typeof(Program).Assembly)
+        .AddFusionShiftTypeHandling()
+        .ConfigureExecution(x =>
+        {
+            x.DeleteOutputDirectory = true;
+            x.MissingIdPreference = MissingIdPreference.SourceFile;
+
+            x.AddPipelinePhase(phase =>
+            {
+                phase.AddWeaponTypePipeline();
+                phase.AddWeaponItemPipeline();
+            });
+
+        })
+        .Run();
