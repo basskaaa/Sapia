@@ -1,0 +1,10 @@
+{
+  "Id": "longsword",
+  "WeaponType": "heavy-blade",
+  "Masterwork": "[[Lunge]]",
+  "Range": "",
+  "Name": "Longsword",
+  "Value": 10.0,
+  "Description": [],
+  "Tags": []
+}

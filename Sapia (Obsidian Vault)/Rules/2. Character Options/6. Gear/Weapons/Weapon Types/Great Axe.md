@@ -7,3 +7,4 @@ Value (gp): 15
 Item tags:
   - Combat
 ---
+This axe is great.

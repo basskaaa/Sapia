@@ -1,0 +1,11 @@
+{
+  "Id": "medium-polearm",
+  "Name": "Medium Polearm",
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "DamageDie": "d8",
+  "Weight": "Medium",
+  "Range": ""
+}

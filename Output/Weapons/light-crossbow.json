@@ -1,0 +1,12 @@
+{
+  "Id": "light-crossbow",
+  "Name": "Light Crossbow",
+  "Value": 15.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "DamageDie": "d8",
+  "Weight": "Light",
+  "Range": ""
+}

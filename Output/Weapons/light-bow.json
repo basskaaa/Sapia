@@ -1,0 +1,12 @@
+{
+  "Id": "light-bow",
+  "Name": "Light Bow",
+  "Value": 15.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "DamageDie": "d4",
+  "Weight": "Great",
+  "Range": ""
+}

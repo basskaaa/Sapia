@@ -1,0 +1,11 @@
+{
+  "Id": "medium-hammer",
+  "Name": "Medium Hammer",
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "DamageDie": "d10",
+  "Weight": "Medium",
+  "Range": ""
+}

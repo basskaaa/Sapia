@@ -1,0 +1,12 @@
+{
+  "Id": "guards-crossbow",
+  "WeaponType": "medium-crossbow",
+  "Masterwork": "",
+  "Range": "90ft",
+  "Name": "Guard's Crossbow",
+  "Description": [],
+  "Tags": [
+    "Ammunition",
+    "Two-Handed"
+  ]
+}

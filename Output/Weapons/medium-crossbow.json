@@ -1,0 +1,12 @@
+{
+  "Id": "medium-crossbow",
+  "Name": "Medium Crossbow",
+  "Value": 10.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "DamageDie": "d10",
+  "Weight": "Medium",
+  "Range": ""
+}

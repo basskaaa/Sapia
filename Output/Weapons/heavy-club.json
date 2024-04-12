@@ -1,0 +1,12 @@
+{
+  "Id": "heavy-club",
+  "Name": "Heavy Club",
+  "Value": 3.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "DamageDie": "d8",
+  "Weight": "Heavy",
+  "Range": ""
+}

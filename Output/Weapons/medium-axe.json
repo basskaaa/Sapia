@@ -1,0 +1,12 @@
+{
+  "Id": "medium-axe",
+  "Name": "Medium Axe",
+  "Value": 6.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "DamageDie": "d10",
+  "Weight": "Medium",
+  "Range": ""
+}
