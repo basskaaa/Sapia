@@ -32,5 +32,13 @@
       ],
       "key": "/"
     }
+  ],
+  "file-explorer:new-folder": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "N"
+    }
   ]
 }

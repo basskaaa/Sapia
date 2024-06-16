@@ -1,5 +1,5 @@
 ---
-Item Type: "[[Light Shield]]"
+Worn Type: "[[Light Shield]]"
 Value (gp): 
 Item tags: 
 Weight:

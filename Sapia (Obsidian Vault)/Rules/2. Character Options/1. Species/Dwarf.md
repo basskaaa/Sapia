@@ -1,19 +1,17 @@
-A dwarf is an obsessive creature. He loves to create. When he discovers what craft most interests him, he dedicates himself completely to it. His hours are spent perfecting his craft, innovating in his craft, critiquing examples of his craft, and tearing it all down so he can start again and do it right this time. Really, drinking is the only thing that keeps a dwarf steady. It evens him out, mellows him down, lets his mind work on problems that aren't exclusively about his craftwork.
+Dwarves are short, stocky creatures, known widely for their obsessive tendencies and love of all things fermented. As a people, they value honour and tradition of the clan above all, though an innate greed runs through their blood. Their dreams are inlaid with promises of great hoards of gems and metals. Promises that can lead them down paths of greatness or corruption. For most dwarves, drinking is the accepted way to quell their golden obsession, and therefore it is foundational in the survival of the clan.
 
-All this obsessiveness pays off. Dwarf-craft is both practical and beautiful. It is highly sought after, which makes them rich. This is important for dwarves, who know the purpose of life: construct your tomb, because that's where you're going to spend the rest of eternity. Woe to the dwarf whose ghost goes into the afterlife bored.
-
-Gear: Hipflask, tinker's kit, half-filled book of grudges
+Gear: [[Hipflask]], [[Tinker's Kit]], [[Book of Grudges]]
 Language: [[Dwarven]]
 Avg lifespan: 200 years
 Size: medium
 Avg height: 4'6"
 Avg weight: 80kg
 
-Base Defence: 10
-Movement speed: 25ft (5)
-+2 Constitution
-Proficiency in fortitude
-Proficiency in precision
+[[Base Defence]]: 10
+[[Speed|Movement Speed]]: 25ft (5)
++2 [[Constitution]]
+Proficiency in [[Fortitude]]
+Proficiency in [[Precision]]
 Specialism in endurance
 [[Dwarven Resilience]]
 [[Goldnose]]

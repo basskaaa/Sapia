@@ -1,5 +1,5 @@
 ---
-Item Type: "[[Clothing]]"
+Worn Type: "[[Clothing]]"
 Weight:
   - Light
 Rarity:

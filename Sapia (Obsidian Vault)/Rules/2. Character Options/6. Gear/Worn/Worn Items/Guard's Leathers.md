@@ -1,5 +1,5 @@
 ---
-Item Type: "[[Light Armour]]"
+Worn Type: "[[Light Armour]]"
 Weight:
   - Light
 Rarity:
