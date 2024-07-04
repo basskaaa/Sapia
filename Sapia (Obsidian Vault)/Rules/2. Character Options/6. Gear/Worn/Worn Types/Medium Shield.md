@@ -1,7 +1,5 @@
 ---
-Item tags:
-  - Worn
-  - Combat
+Item tags: []
 Weight:
   - Medium
 ---

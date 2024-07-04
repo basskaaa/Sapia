@@ -1,5 +1,5 @@
 ---
-Item Type: "[[Medium Shield]]"
+Worn Type: "[[Medium Shield]]"
 Weight:
   - Medium
 Rarity:
