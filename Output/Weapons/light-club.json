@@ -1,0 +1,12 @@
+{
+  "Id": "light-club",
+  "Name": "Light Club",
+  "Value": 0.5,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "DamageDie": "d4",
+  "Weight": "Light",
+  "Range": ""
+}

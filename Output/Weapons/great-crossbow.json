@@ -1,0 +1,12 @@
+{
+  "Id": "great-crossbow",
+  "Name": "Great Crossbow",
+  "Value": 30.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "DamageDie": "d20",
+  "Weight": "Great",
+  "Range": ""
+}

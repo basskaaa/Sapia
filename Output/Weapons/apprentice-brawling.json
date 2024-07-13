@@ -1,0 +1,13 @@
+{
+  "Id": "apprentice-brawling",
+  "Name": "Apprentice Brawling",
+  "Description": [
+    "Apprentice Brawling is for people who are apprentices and they do brawling."
+  ],
+  "Tags": [
+    "Combat"
+  ],
+  "DamageDie": "d8",
+  "Weight": "None",
+  "Range": "6ft"
+}
