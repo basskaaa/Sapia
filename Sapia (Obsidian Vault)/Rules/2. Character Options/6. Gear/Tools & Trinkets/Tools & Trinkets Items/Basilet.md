@@ -1,5 +1,5 @@
 ---
-Tools & Trinkets Type: "[[Instrument]]"
+Tools & Trinkets Type: "[[Musical Instrument]]"
 Weight:
   - Medium
 Rarity: 

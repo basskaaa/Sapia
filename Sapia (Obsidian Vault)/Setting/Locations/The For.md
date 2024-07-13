@@ -1,0 +1,1 @@
+The glacial region beyond the Arivegg Mountains. The main route south through the mountains to Coria is through the ancient quarry city of Baldakaad. Home to the Fors, the residents of the Fortons, and the Wilders, those who roam beyond the safety of the walls. 

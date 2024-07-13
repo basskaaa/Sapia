@@ -1,5 +1,5 @@
 ---
-Tools & Trinkets Type: "[[Container]]"
+Item Type: Tools & Trinkets
 Weight: 
 Rarity: 
 Value (gp): 

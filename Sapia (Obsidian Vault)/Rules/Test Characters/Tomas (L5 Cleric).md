@@ -1,7 +1,7 @@
 [[Name]]: Tomas
 [[Class]]: [[Cleric]]
 [[Level]]: 5
-[[Species]]: [[Elf]]
+[[Species]]: [[Elf Species]]
 
 [[Environment]]: [[Mountainous]]
 [[Lifestyle]]: [[Acolyte]]
@@ -111,7 +111,7 @@ Clubs
 	[[Lay on Hands]]
 	[[Experienced Adventurer]]
 	[[Aura of the Guardian]]
-[[Elf]]
+[[Elf Species]]
 	[[Star Eyed]]
 	[[Elven Technique]]
 [[Acolyte]]

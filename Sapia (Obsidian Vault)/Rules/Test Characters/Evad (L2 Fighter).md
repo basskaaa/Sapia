@@ -1,18 +1,18 @@
 [[Name]]: Evad
 [[Class]]: [[Fighter]]
-[[Level]]: 1
-[[Species]]: [[Human]]
+[[Level]]: 2
+[[Species]]: [[Human Species]]
 
 [[Environment]]: [[Grasslands]]
 [[Lifestyle]]: [[Guard of the People|Guard of the People]]
 [[Roots]]: [[Rural]]
-[[Culture]]: [[Human]]
+[[Culture]]: [[Human Species]]
 [[Blessing]]: [[Jevel]]
 
 [[Hit Points|HP]]: 11
 [[Defence]]: 14 (+2) 
 [[Power Modifier]]: +1
-[[Stamina]]: 3/3
+[[Stamina]]: 6/6
 [[Mana]]: 0/0
 [[Speed]]: 30ft
 
@@ -55,7 +55,7 @@ Crossbows
 [[ABILITIES]]
 [[Fighter Ability DC]]: 13
 [[Fighter Ability Modifier]]: +4
-[[Fighter Max Abilities]]: 4
+[[Fighter Max Abilities]]: 5
 
 [[Attack]]: 0 stamina, [[Attack Action]] 
 	[[Longsword]] +5 to hit, 1d10+3 physical damage, 5 ft
@@ -66,7 +66,9 @@ Crossbows
 [[Parry]]: 1 stamina, [[Main Action]]
 [[Cleave]]: 1 stamina, [[Reaction]]
 [[Distraction]]: 1 stamina, [[Reaction]]
-[[Prayer of Order]]: 2 mana, [[Main Action]]
+[[Quick Attack]]: 1 stamina, [[Starter Action]]
+[[Rules/2. Character Options/4. Abilities/Moves/Rank 2 Moves/Multiattack|Multiattack]]: 2 stamina, [[Main Action]]
+
 
 [[TRAITS]]
 
@@ -101,6 +103,6 @@ Crossbows
 	[[Guard Starting Gear]]
 [[Human Culture]]
 [[Rural]]
-[[Human]]
+[[Human Species]]
 [[Grasslands]]
 [[Jevel]]
