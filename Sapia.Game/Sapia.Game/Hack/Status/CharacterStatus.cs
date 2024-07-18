@@ -1,6 +1,6 @@
 ﻿namespace Sapia.Game.Hack.Status;
 
-public class CharacterStatus
+public class CharacterStatus : ICharacterStatus
 {
     public int CurrentHealth { get; set; }
     public int MaxHealth { get; }
