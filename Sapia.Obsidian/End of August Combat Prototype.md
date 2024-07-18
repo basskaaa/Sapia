@@ -8,6 +8,8 @@ Premade character - fighter class level 2: [[Proto Fighter]]
 - Abilities system
 	-  Stamina points - Fighter has 6
 	- basic abilities - Fighter can choose 5 from 10 options
+- Conditions system
+	- Frightened condition reverses target movement direction
 - Proto-Gear system
 	- Ability to equip weapons and armour
 	- Fighter has light armour and longsword
@@ -21,7 +23,7 @@ Premade character - fighter class level 2: [[Proto Fighter]]
 
 
 # Combat Script
-Setup: Fighter ([[Evad (L2 Fighter)]]) approaches 2 giant rats (green and blue)
+Setup: Fighter ([[Proto Fighter]]) approaches 2 giant rats (green and blue)
 
 1. Roll [[Initiative]] instinct - based off of dex stat
 	1. Fighter rolls 10
