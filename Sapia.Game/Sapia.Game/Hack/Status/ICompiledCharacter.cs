@@ -6,4 +6,6 @@ public interface ICompiledCharacter
     public CharacterStats Stats { get; }
     IReadOnlyCollection<PreparedAbility> Abilities { get; }
     int TotalLevel { get; }
+
+    bool IsPlayer { get; }
 }
