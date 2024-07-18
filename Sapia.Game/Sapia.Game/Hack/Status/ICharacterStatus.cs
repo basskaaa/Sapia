@@ -3,7 +3,7 @@
 public interface ICharacterStatus
 {
     int CurrentHealth { get; set; }
-    int MaxHealth { get; }
+    public CharacterStats Stats { get; }
     IReadOnlyCollection<PreparedAbility> Abilities { get; }
     int TotalLevel { get; }
 }

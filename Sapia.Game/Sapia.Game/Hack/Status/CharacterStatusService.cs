@@ -60,6 +60,11 @@ public class CharacterStatusService
             }
         }
 
-        return new(abilities, maxHealth, classLevels);
+        var stats = new CharacterStats
+        {
+            MaxHealth = maxHealth
+        };
+
+        return new(abilities, stats, classLevels);
     }
 }

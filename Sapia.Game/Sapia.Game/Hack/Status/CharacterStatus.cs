@@ -3,17 +3,24 @@
 public class CharacterStatus : ICharacterStatus
 {
     public int CurrentHealth { get; set; }
-    public int MaxHealth { get; }
+    public CharacterStats Stats { get; }
 
     public IReadOnlyCollection<PreparedAbility> Abilities { get; }
     public Dictionary<string, int> ClassLevels { get; }
 
     public int TotalLevel => ClassLevels.Sum(x => x.Value);
 
-    public CharacterStatus(IReadOnlyCollection<PreparedAbility> abilities, int maxHealth, Dictionary<string, int> classLevels)
+    public CharacterStatus(IReadOnlyCollection<PreparedAbility> abilities, CharacterStats stats, Dictionary<string, int> classLevels)
     {
         Abilities = abilities;
         ClassLevels = classLevels;
-        CurrentHealth = MaxHealth = maxHealth;
+        Stats = stats;
+        CurrentHealth = stats.MaxHealth;
     }
+}
+
+public class CharacterStats
+{
+    public int MaxHealth { get; internal set; }
+    public int MovementSpeed { get;internal set; } = 30;
 }
