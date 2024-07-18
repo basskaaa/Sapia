@@ -20,7 +20,7 @@ public static class TypeDataFactory
             Id = "Whirlwind"
         };
 
-        return new TestTypeDataProvider<AbilityType>(slash, parry, whirlwind);
+        return new(slash, parry, whirlwind);
     }
 
     private static TestTypeDataProvider<ClassType> CreateClassTypeData()
@@ -28,6 +28,7 @@ public static class TypeDataFactory
         var fighter = new ClassType
         {
             Id = "Fighter",
+            HealthPerLevel = 5,
             AbilitiesAtLevels = new()
             {
                 {"Slash", 1},
@@ -36,7 +37,7 @@ public static class TypeDataFactory
             }
         };
 
-        return new TestTypeDataProvider<ClassType>(fighter);
+        return new(fighter);
     }
 
     public static TestTypeDataRoot CreateTypeData()
@@ -45,6 +46,6 @@ public static class TypeDataFactory
 
         var classes = CreateClassTypeData();
 
-        return new TestTypeDataRoot(abilities, classes);
+        return new(abilities, classes);
     }
 }

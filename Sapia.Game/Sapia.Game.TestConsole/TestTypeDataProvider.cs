@@ -1,4 +1,5 @@
-﻿using Sapia.Game.Entities.Interfaces;
+﻿using System.Diagnostics.CodeAnalysis;
+using Sapia.Game.Entities.Interfaces;
 using Sapia.Game.Hack.Types;
 
 namespace Sapia.Game.TestConsole;
@@ -16,6 +17,8 @@ public class TestTypeDataProvider<T> : ITypeDataProvider<T> where T : ITypeData
     {
         _data = data.ToDictionary(x => x.Id, x => x);
     }
+
+    public bool TryFind(string id, [MaybeNullWhen(false)] out T value) => _data.TryGetValue(id, out value);
 
     public T? Find(string id)
     {
