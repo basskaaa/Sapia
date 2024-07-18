@@ -9,7 +9,7 @@
 [[Culture]]: [[Human Species]]
 [[Blessing]]: [[Jevel]]
 
-[[Hit Points|HP]]: 11
+[[Hit Points|HP]]: 18
 [[Defence]]: 14 (+2) 
 [[Power Modifier]]: +1
 [[Stamina]]: 6/6

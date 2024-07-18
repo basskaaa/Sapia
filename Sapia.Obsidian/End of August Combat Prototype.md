@@ -1,25 +1,27 @@
-Premade character - fighter class level 2: [[Evad (L2 Fighter)]]
+Premade character - fighter class level 2: [[Proto Fighter]]
 
-- Attribute system
-	- Attribute scores and dice rolling
-	- Hp
-	- defence
+- [[ATTRIBUTES|Attributes]] & attribute scores
+	- [[Dice Rolling]]
+		- Only need implementation for Attribute Checks for prototype. These will be replaced with skill checks and instinct checks later, but are all thats needed for now.
+	- Hp - Fighter has 18, ([[Fighter Hit Points]] systems not needed currently)
+	- defence - Fighter has 14 
 - Abilities system
-	- Stamina points
-	- 10 basic abilities
+	-  Stamina points - Fighter has 6
+	- basic abilities - Fighter can choose 5 from 10 options
 - Proto-Gear system
 	- Ability to equip weapons and armour
+	- Fighter has light armour and longsword
 - Ability/attribute card UI
 - Turn based system
-	- Action types: main action/starter action
+	- Action types: main action and starter action
 	- Top down movement
-	- Basic enemy ai (can use simplified player stats for enemy)
+	- Basic enemy ai
 
 ![[sapiaShitCardTest.jpg]]
 
 
 # Combat Script
-Setup: Fighter approaches 2 giant rats (green and blue)
+Setup: Fighter ([[Evad (L2 Fighter)]]) approaches 2 giant rats (green and blue)
 
 1. Roll [[Initiative]] instinct - based off of dex stat
 	1. Fighter rolls 10
@@ -44,5 +46,5 @@ Setup: Fighter approaches 2 giant rats (green and blue)
 	3. Fails - takes 1d6 bashing damage from fall
 	4. Main action uses 'Raging Hiss' - fighter makes will saving throw or is frightened until the end of their next turn
 	5. Reaction prompt - card menu appears with appropriate reaction 'Brave Front' - fighter gets advantage on next will save.
-	6. Fighter succeeds will save.
+	6. Fighter succeeds wisdom save.
 	7. Turn ends
