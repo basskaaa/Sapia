@@ -3,16 +3,16 @@ using Sapia.Game.Hack.Types;
 
 namespace Sapia.Game.Hack.Status;
 
-public class CharacterStatusService
+public class CharacterService
 {
     private readonly ITypeDataRoot _typeData;
 
-    public CharacterStatusService(ITypeDataRoot typeData)
+    public CharacterService(ITypeDataRoot typeData)
     {
         _typeData = typeData;
     }
 
-    public CharacterStatus CreateCharacterStatus(CharacterConfiguration configuration, IReadOnlyCollection<string> chosenAbilities)
+    public CompiledCharacter CompileCharacter(CharacterConfiguration configuration, IReadOnlyCollection<string> chosenAbilities)
     {
         var maxHealth = 0;
 

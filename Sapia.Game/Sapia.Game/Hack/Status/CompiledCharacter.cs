@@ -1,6 +1,6 @@
 ﻿namespace Sapia.Game.Hack.Status;
 
-public class CharacterStatus : ICharacterStatus
+public class CompiledCharacter : ICompiledCharacter
 {
     public int CurrentHealth { get; set; }
     public CharacterStats Stats { get; }
@@ -10,7 +10,7 @@ public class CharacterStatus : ICharacterStatus
 
     public int TotalLevel => ClassLevels.Sum(x => x.Value);
 
-    public CharacterStatus(IReadOnlyCollection<PreparedAbility> abilities, CharacterStats stats, Dictionary<string, int> classLevels)
+    public CompiledCharacter(IReadOnlyCollection<PreparedAbility> abilities, CharacterStats stats, Dictionary<string, int> classLevels)
     {
         Abilities = abilities;
         ClassLevels = classLevels;
@@ -22,5 +22,5 @@ public class CharacterStatus : ICharacterStatus
 public class CharacterStats
 {
     public int MaxHealth { get; internal set; }
-    public int MovementSpeed { get;internal set; } = 30;
+    public int MovementSpeed { get;internal set; } = 6;
 }

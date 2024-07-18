@@ -20,6 +20,6 @@ var theRockConfiguration = new CharacterConfiguration
 
 
 var typeData = TypeDataFactory.CreateTypeData();
-var characterStatusService = new CharacterStatusService(typeData);
+var characterStatusService = new CharacterService(typeData);
 
-var theRockStatus = characterStatusService.CreateCharacterStatus(theRockConfiguration, ["Parry", "Whirlwind"]);
+var theRockStatus = characterStatusService.CompileCharacter(theRockConfiguration, ["Parry", "Whirlwind"]);

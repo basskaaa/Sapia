@@ -1,6 +1,6 @@
 ﻿namespace Sapia.Game.Hack.Status;
 
-public interface ICharacterStatus
+public interface ICompiledCharacter
 {
     int CurrentHealth { get; set; }
     public CharacterStats Stats { get; }

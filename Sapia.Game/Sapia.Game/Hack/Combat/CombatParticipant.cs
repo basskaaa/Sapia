@@ -1,21 +1,29 @@
 ﻿using Sapia.Game.Hack.Status;
+using Sapia.Game.Hack.Structs;
 
 namespace Sapia.Game.Hack.Combat;
 
 public class CombatParticipant
 {
-    public CombatParticipant(string id, ICharacterStatus status, int initiativeRoll, int initiativeOrder)
+    public CombatParticipant(string id, ICompiledCharacter character, int initiativeRoll, int initiativeOrder, Coord position)
     {
-        Status = status;
+        Character = character;
         InitiativeRoll = initiativeRoll;
         InitiativeOrder = initiativeOrder;
+        Position = position;
 
         Id = id;
+
+        Status = new CombatStatus();
     }
 
     public string Id { get; }
 
-    public ICharacterStatus Status { get; }
+    public ICompiledCharacter Character { get; }
+    public CombatStatus Status { get; internal set; }
+
     public int InitiativeRoll { get; }
     public int InitiativeOrder { get; }
+    public Coord Position { get; internal set; }
+
 }
