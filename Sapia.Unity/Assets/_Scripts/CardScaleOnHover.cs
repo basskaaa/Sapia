@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Nova;
 
 public class CardScaleOnHover : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Interactable interactable;
+
+    private void Start()
     {
-        
+        interactable = GetComponent<Interactable>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
     }
