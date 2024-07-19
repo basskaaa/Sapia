@@ -10,5 +10,10 @@ namespace Sapia.Game.Hack.Combat.Steps
         {
             Participant = participant;
         }
+
+        public override string ToString()
+        {
+            return $"{GetType().Name}: {Participant.Id}";
+        }
     }
 }

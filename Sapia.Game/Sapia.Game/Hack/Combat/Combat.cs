@@ -6,7 +6,7 @@ namespace Sapia.Game.Hack.Combat;
 
 public class Combat
 {
-    public int CurrentRound { get; private set; } 
+    public int CurrentRound { get; private set; }
 
     private readonly ITypeDataRoot _typeData;
     private readonly Dictionary<int, CombatParticipant> _participants;
@@ -14,7 +14,7 @@ public class Combat
     public Combat(ITypeDataRoot typeData, IReadOnlyCollection<CombatParticipant> participants)
     {
         _typeData = typeData;
-        _participants = participants.ToDictionary(x=>x.InitiativeOrder, x=>x);
+        _participants = participants.ToDictionary(x => x.InitiativeOrder, x => x);
 
         StartNextRound();
     }
@@ -22,7 +22,7 @@ public class Combat
     public int CurrentInitiativeOrder { get; private set; }
     public IReadOnlyCollection<CombatParticipant> Participants => _participants.Values;
 
-    public CombatParticipant CurrentParticipant() => _participants[0];
+    public CombatParticipant CurrentParticipant() => _participants[CurrentInitiativeOrder];
 
     public void EndTurn(string participantId)
     {
@@ -73,7 +73,7 @@ public class Combat
     {
         var participant = Participants.FirstOrDefault(x => x.Id == id);
 
-        if (participant == null)
+        if (participant == null || !participant.Character.IsAlive)
         {
             return false;
         }
@@ -96,7 +96,7 @@ public class Combat
             .Where(x => !x.Character.IsPlayer)
             .All(x => !x.Character.IsAlive);
 
-        if (!allOthersDead)
+        if (allOthersDead)
         {
             return CombatResult.PlayerVictory;
         }

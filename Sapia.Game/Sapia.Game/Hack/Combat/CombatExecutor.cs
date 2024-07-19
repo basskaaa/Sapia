@@ -13,6 +13,8 @@ namespace Sapia.Game.Hack.Combat
 
         public IEnumerator<CombatStep> Execute()
         {
+            yield return new CombatStartStep(Combat);
+
             CombatResult? result = null;
 
             while (!result.HasValue)
@@ -26,6 +28,11 @@ namespace Sapia.Game.Hack.Combat
                 }
 
                 result = Combat.CheckForComplete();
+
+                if (!result.HasValue)
+                {
+                    Combat.EndTurn(participant.Id);
+                }
             }
 
             yield return new CombatFinishedStep(Combat, result.Value);

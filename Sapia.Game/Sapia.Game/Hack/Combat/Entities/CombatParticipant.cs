@@ -1,8 +1,10 @@
-﻿using Sapia.Game.Hack.Characters;
+﻿using System.Diagnostics;
+using Sapia.Game.Hack.Characters;
 using Sapia.Game.Hack.Structs;
 
 namespace Sapia.Game.Hack.Combat.Entities;
 
+[DebuggerDisplay("{Id}")]
 public class CombatParticipant
 {
     public CombatParticipant(string id, ICompiledCharacter character, int initiativeRoll, int initiativeOrder, Coord position)

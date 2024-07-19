@@ -1,5 +1,6 @@
 ﻿using Sapia.Game.Hack.Characters;
 using Sapia.Game.Hack.Combat;
+using Sapia.Game.Hack.Combat.Steps;
 using Sapia.Game.Hack.Configuration;
 using Sapia.Game.TestConsole;
 
@@ -45,4 +46,16 @@ var executor = new CombatExecutor(combat);
 
 var combatExecution = executor.Execute();
 
-// TODO: handle each step
+var num = 0;
+
+while (num++ < 10 && combatExecution.MoveNext())
+{
+    var step = combatExecution.Current;
+
+    Console.WriteLine(step);
+
+    if (step is TurnStep turn)
+    {
+        turn.EndTurn();
+    }
+}
