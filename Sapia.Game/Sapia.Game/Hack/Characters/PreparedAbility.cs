@@ -10,4 +10,6 @@ public class PreparedAbility
 
     public string AbilityId { get; }
     public int? UsesRemaining { get; set; }
+
+    public bool HasAvailableUses => !UsesRemaining.HasValue || UsesRemaining.Value > 0;
 }

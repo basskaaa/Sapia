@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Sapia.Game.Hack.Types;
+﻿using Sapia.Game.Hack.Types;
 using Sapia.Game.Structs.Dice;
 
 namespace Sapia.Game.Hack.Combat.Entities;

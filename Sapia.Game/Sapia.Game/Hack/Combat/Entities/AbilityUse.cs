@@ -1,23 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Sapia.Game.Hack.Combat.Entities;
 
-namespace Sapia.Game.Hack.Combat.Entities
+public class AbilityUse
 {
-    public readonly struct AbilityUse
+    public AbilityUse(string abilityId)
     {
-        public AbilityUse(string abilityId)
-        {
-            AbilityId = abilityId;
-        }
-
-        public string AbilityId { get; }
+        AbilityId = abilityId;
     }
 
-    public readonly struct TargetedAbilityUse //: AbilityUse
+    public string AbilityId { get; }
+}
+
+public class TargetedAbilityUse : AbilityUse
+{
+    public string TargetParticipantId { get; }
+
+    public TargetedAbilityUse(string abilityId, string targetParticipantId) : base(abilityId)
     {
-        public string TargetParticipantId { get; }
+        TargetParticipantId = targetParticipantId;
     }
 }

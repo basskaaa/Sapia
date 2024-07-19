@@ -4,22 +4,22 @@ using Sapia.Game.Hack.Structs;
 
 namespace Sapia.Game.Hack.Combat.Entities;
 
-[DebuggerDisplay("{Id}")]
+[DebuggerDisplay("{ParticipantId}")]
 public class CombatParticipant
 {
-    public CombatParticipant(string id, ICompiledCharacter character, int initiativeRoll, int initiativeOrder, Coord position)
+    public CombatParticipant(string participantId, ICompiledCharacter character, int initiativeRoll, int initiativeOrder, Coord position)
     {
         Character = character;
         InitiativeRoll = initiativeRoll;
         InitiativeOrder = initiativeOrder;
         Position = position;
 
-        Id = id;
+        ParticipantId = participantId;
 
         Status = new CombatStatus();
     }
 
-    public string Id { get; }
+    public string ParticipantId { get; }
 
     public ICompiledCharacter Character { get; }
     public CombatStatus Status { get; internal set; }

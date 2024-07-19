@@ -24,7 +24,7 @@ public class CombatExecutor
 
             do
             {
-                var abilities = Combat.GetUsableAbilities(participant.Id);
+                var abilities = Combat.GetUsableAbilities(participant.ParticipantId);
                 turn = new TurnStep(Combat, participant, abilities.ToArray());
 
                 yield return turn;
@@ -35,7 +35,7 @@ public class CombatExecutor
 
             if (!result.HasValue)
             {
-                Combat.EndTurn(participant.Id);
+                Combat.EndTurn(participant.ParticipantId);
             }
         }
 

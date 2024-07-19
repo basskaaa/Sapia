@@ -13,6 +13,6 @@ public abstract class CombatParticipantStep : CombatStep
 
     public override string ToString()
     {
-        return $"{GetType().Name}: {Participant.Id} ({Participant.Character.CurrentHealth} / {Participant.Character.Stats.MaxHealth})";
+        return $"{GetType().Name}: {Participant.ParticipantId} ({Participant.Character.CurrentHealth} / {Participant.Character.Stats.MaxHealth})";
     }
 }

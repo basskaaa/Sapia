@@ -7,4 +7,6 @@ public class AbilityType : TypeData
 {
     public CombatActionType Action { get; set; } = CombatActionType.Main;
     public TargetType Target { get; set; } = TargetType.Other;
+
+    public int Damage { get; set; } = 1;
 }

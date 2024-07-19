@@ -1,6 +1,7 @@
 ﻿using Sapia.Game.Hack.Combat.Entities;
 using Sapia.Game.Hack.Structs;
 using Sapia.Game.Hack.Types;
+using Sapia.Game.Hack.Types.Enums;
 
 namespace Sapia.Game.Hack.Combat;
 
@@ -16,7 +17,7 @@ public class Combat
     {
         _typeData = typeData;
         _participantsByInitiativeOrder = participants.ToDictionary(x => x.InitiativeOrder, x => x);
-        _participantsById = participants.ToDictionary(x => x.Id, x => x);
+        _participantsById = participants.ToDictionary(x => x.ParticipantId, x => x);
 
         StartNextRound();
     }
@@ -28,7 +29,7 @@ public class Combat
 
     public void EndTurn(string participantId)
     {
-        if (CurrentParticipant().Id == participantId)
+        if (CurrentParticipant().ParticipantId == participantId)
         {
             CurrentInitiativeOrder++;
             if (!_participantsByInitiativeOrder.ContainsKey(CurrentInitiativeOrder))
@@ -71,14 +72,16 @@ public class Combat
         });
     }
 
-    private bool Try(string participantId, Func<CombatParticipant, bool> act)
+    private bool Try(string participantId, Func<CombatParticipant, bool> act) => Try<bool>(participantId, act);
+
+    private T? Try<T>(string participantId, Func<CombatParticipant, T> act)
     {
         if (_participantsById.TryGetValue(participantId, out var participant) && participant.Character.IsAlive)
         {
             return act(participant);
         }
 
-        return false;
+        return default;
     }
 
     public CombatResult? CheckForComplete()
@@ -106,13 +109,11 @@ public class Combat
 
     public IEnumerable<UsableAbility> GetUsableAbilities(string participantId)
     {
-        if (_participantsById.TryGetValue(participantId, out var participant))
+        if (_participantsById.TryGetValue(participantId, out var participant) && participant.Character.IsAlive)
         {
             foreach (var ability in participant.Character.Abilities)
             {
-                var hasUses = !ability.UsesRemaining.HasValue || ability.UsesRemaining.Value > 0;
-
-                if (hasUses && _typeData.Abilities.TryFind(ability.AbilityId, out var abilityType))
+                if (ability.HasAvailableUses && _typeData.Abilities.TryFind(ability.AbilityId, out var abilityType))
                 {
                     if (participant.Status.RemainingActions.Contains(abilityType.Action))
                     {
@@ -121,6 +122,88 @@ public class Combat
                 }
             }
         }
+    }
+
+    public AbilityResult? UseAbility(string participantId, AbilityUse abilityUse)
+    {
+        return Try<AbilityResult?>(participantId, cp =>
+        {
+            var availableAbility = cp.Character.Abilities.FirstOrDefault(x => x.AbilityId == abilityUse.AbilityId);
+
+            if (availableAbility != null &&
+                availableAbility.HasAvailableUses &&
+                _typeData.Abilities.TryFind(abilityUse.AbilityId, out var abilityType) &&
+                cp.Status.RemainingActions.Contains(abilityType.Action))
+            {
+                var result = ExecuteAbility(cp, abilityType, abilityUse);
+
+                if (result.HasValue)
+                {
+                    if (availableAbility.UsesRemaining.HasValue)
+                    {
+                        availableAbility.UsesRemaining--;
+                    }
+
+                    cp.Status.RemainingActions = cp.Status.RemainingActions.Except([abilityType.Action]).ToArray();
+
+                    return result;
+                }
+            }
+
+            return null;
+        });
+    }
+
+    private AbilityResult? ExecuteAbility(CombatParticipant participant, AbilityType abilityType, AbilityUse abilityUse)
+    {
+        var targets = GetTargets(participant, abilityType, abilityUse).ToArray();
+
+        if (abilityType.Target != TargetType.None && targets.Length == 0)
+        {
+            return null;
+        }
+
+        var affectedTargets = targets.Select(x => ApplyAbilityToParticipant(participant, x, abilityType));
+
+        return new AbilityResult(affectedTargets.ToArray());
+    }
+
+    private AffectedParticipant ApplyAbilityToParticipant(CombatParticipant applier, CombatParticipant target, AbilityType abilityType)
+    {
+        if (abilityType.Damage > 0)
+        {
+            var damage = abilityType.Damage;
+
+            target.Character.CurrentHealth -= damage;
+
+            return new AffectedParticipant(target.ParticipantId, damage);
+        }
+
+        throw new NotImplementedException();
+    }
+
+    private IEnumerable<CombatParticipant> GetTargets(CombatParticipant participant, AbilityType abilityType, AbilityUse abilityUse)
+    {
+        if (abilityType.Target == TargetType.Self)
+        {
+            yield return participant;
+            yield break;
+        }
+
+        if (abilityType.Target == TargetType.Other)
+        {
+            if (abilityUse is TargetedAbilityUse targeted)
+            {
+                if (_participantsById.TryGetValue(targeted.TargetParticipantId, out var target))
+                {
+                    yield return target;
+                }
+            }
+
+            yield break;
+        }
+
+        throw new NotImplementedException();
     }
 }
 
