@@ -1,7 +1,7 @@
-﻿using Sapia.Game.Hack.Status;
+﻿using Sapia.Game.Hack.Characters;
 using Sapia.Game.Hack.Structs;
 
-namespace Sapia.Game.Hack.Combat;
+namespace Sapia.Game.Hack.Combat.Entities;
 
 public class CombatParticipant
 {

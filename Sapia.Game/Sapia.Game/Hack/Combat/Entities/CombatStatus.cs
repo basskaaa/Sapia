@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sapia.Game.Hack.Combat
+﻿namespace Sapia.Game.Hack.Combat.Entities
 {
     public class CombatStatus
     {

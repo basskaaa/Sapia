@@ -1,5 +1,6 @@
-﻿using Sapia.Game.Hack.Configuration;
-using Sapia.Game.Hack.Status;
+﻿using Sapia.Game.Hack.Characters;
+using Sapia.Game.Hack.Combat;
+using Sapia.Game.Hack.Configuration;
 using Sapia.Game.TestConsole;
 
 var theRockConfiguration = new CharacterConfiguration
@@ -18,8 +19,30 @@ var theRockConfiguration = new CharacterConfiguration
     }
 };
 
-
 var typeData = TypeDataFactory.CreateTypeData();
 var characterStatusService = new CharacterService(typeData);
 
-var theRockStatus = characterStatusService.CompileCharacter(theRockConfiguration, ["Parry", "Whirlwind"]);
+var theRock = characterStatusService.CompileCharacter(theRockConfiguration, ["Parry", "Whirlwind"]);
+
+var goblinA = new SimpleCharacter("GoblinA", new CharacterStats(5))
+{
+    Abilities = new[] { new PreparedAbility("Slash") }
+};
+
+var goblinB = new SimpleCharacter("GoblinB", new CharacterStats(5))
+{
+    Abilities = new[] { new PreparedAbility("Slash") }
+};
+
+var combat = CombatFactory.Create(typeData, new[]
+{
+    new CombatFactory.CombatParticipantEntry("Player", theRock, 5, (0,0)),
+    new CombatFactory.CombatParticipantEntry("GoblinA", goblinA, 2, (1,0)),
+    new CombatFactory.CombatParticipantEntry("GoblinB", goblinB, 10, (0,1)),
+});
+
+var executor = new CombatExecutor(combat);
+
+var combatExecution = executor.Execute();
+
+// TODO: handle each step

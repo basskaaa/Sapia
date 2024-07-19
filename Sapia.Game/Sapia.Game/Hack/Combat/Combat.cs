@@ -1,10 +1,13 @@
-﻿using Sapia.Game.Hack.Structs;
+﻿using Sapia.Game.Hack.Combat.Entities;
+using Sapia.Game.Hack.Structs;
 using Sapia.Game.Hack.Types;
 
 namespace Sapia.Game.Hack.Combat;
 
 public class Combat
 {
+    public int CurrentRound { get; private set; } 
+
     private readonly ITypeDataRoot _typeData;
     private readonly Dictionary<int, CombatParticipant> _participants;
 
@@ -35,6 +38,7 @@ public class Combat
 
     private void StartNextRound()
     {
+        CurrentRound++;
         CurrentInitiativeOrder = 0;
 
         foreach (var combatParticipant in _participants)
@@ -76,4 +80,33 @@ public class Combat
 
         return act(participant);
     }
+
+    public CombatResult? CheckForComplete()
+    {
+        var allPlayersDead = Participants
+            .Where(x => x.Character.IsPlayer)
+            .All(x => !x.Character.IsAlive);
+
+        if (allPlayersDead)
+        {
+            return CombatResult.PlayerDefeat;
+        }
+
+        var allOthersDead = Participants
+            .Where(x => !x.Character.IsPlayer)
+            .All(x => !x.Character.IsAlive);
+
+        if (!allOthersDead)
+        {
+            return CombatResult.PlayerVictory;
+        }
+
+        return null;
+    }
+}
+
+public enum CombatResult
+{
+    PlayerDefeat,
+    PlayerVictory
 }

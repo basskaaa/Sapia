@@ -1,4 +1,5 @@
-﻿using Sapia.Game.Hack.Status;
+﻿using Sapia.Game.Hack.Characters;
+using Sapia.Game.Hack.Combat.Entities;
 using Sapia.Game.Hack.Structs;
 using Sapia.Game.Hack.Types;
 

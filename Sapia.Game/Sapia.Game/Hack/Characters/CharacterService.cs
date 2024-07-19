@@ -1,7 +1,7 @@
 ﻿using Sapia.Game.Hack.Configuration;
 using Sapia.Game.Hack.Types;
 
-namespace Sapia.Game.Hack.Status;
+namespace Sapia.Game.Hack.Characters;
 
 public class CharacterService
 {

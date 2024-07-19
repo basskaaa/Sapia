@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Sapia.Game.Hack.Combat.Steps;
+﻿using Sapia.Game.Hack.Combat.Steps;
 
 namespace Sapia.Game.Hack.Combat
 {
@@ -16,9 +11,24 @@ namespace Sapia.Game.Hack.Combat
 
         public Combat Combat { get; }
 
-        public CombatStep Next()
+        public IEnumerator<CombatStep> Execute()
         {
-            throw new NotImplementedException();
+            CombatResult? result = null;
+
+            while (!result.HasValue)
+            {
+                var participant = Combat.CurrentParticipant();
+                var turn = new TurnStep(Combat, participant);
+
+                while (!turn.HasEnded)
+                {
+                    yield return turn;
+                }
+
+                result = Combat.CheckForComplete();
+            }
+
+            yield return new CombatFinishedStep(Combat, result.Value);
         }
     }
 }
