@@ -1,6 +1,6 @@
 ﻿using Sapia.Game.Hack.Types;
 
-namespace Sapia.Game.TestConsole;
+namespace Sapia.Game.TestConsole.TypeData;
 
 public class TestTypeDataRoot : ITypeDataRoot
 {
@@ -10,6 +10,6 @@ public class TestTypeDataRoot : ITypeDataRoot
         Classes = classes;
     }
 
-    public ITypeDataProvider<AbilityType> Abilities { get;  }
-    public ITypeDataProvider<ClassType> Classes { get;  }
+    public ITypeDataProvider<AbilityType> Abilities { get; }
+    public ITypeDataProvider<ClassType> Classes { get; }
 }

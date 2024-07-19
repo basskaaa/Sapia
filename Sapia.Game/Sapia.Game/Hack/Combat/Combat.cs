@@ -9,27 +9,29 @@ public class Combat
     public int CurrentRound { get; private set; }
 
     private readonly ITypeDataRoot _typeData;
-    private readonly Dictionary<int, CombatParticipant> _participants;
+    private readonly Dictionary<int, CombatParticipant> _participantsByInitiativeOrder;
+    private readonly Dictionary<string, CombatParticipant> _participantsById;
 
     public Combat(ITypeDataRoot typeData, IReadOnlyCollection<CombatParticipant> participants)
     {
         _typeData = typeData;
-        _participants = participants.ToDictionary(x => x.InitiativeOrder, x => x);
+        _participantsByInitiativeOrder = participants.ToDictionary(x => x.InitiativeOrder, x => x);
+        _participantsById = participants.ToDictionary(x => x.Id, x => x);
 
         StartNextRound();
     }
 
     public int CurrentInitiativeOrder { get; private set; }
-    public IReadOnlyCollection<CombatParticipant> Participants => _participants.Values;
+    public IReadOnlyCollection<CombatParticipant> Participants => _participantsByInitiativeOrder.Values;
 
-    public CombatParticipant CurrentParticipant() => _participants[CurrentInitiativeOrder];
+    public CombatParticipant CurrentParticipant() => _participantsByInitiativeOrder[CurrentInitiativeOrder];
 
     public void EndTurn(string participantId)
     {
         if (CurrentParticipant().Id == participantId)
         {
             CurrentInitiativeOrder++;
-            if (!_participants.ContainsKey(CurrentInitiativeOrder))
+            if (!_participantsByInitiativeOrder.ContainsKey(CurrentInitiativeOrder))
             {
                 StartNextRound();
             }
@@ -41,7 +43,7 @@ public class Combat
         CurrentRound++;
         CurrentInitiativeOrder = 0;
 
-        foreach (var combatParticipant in _participants)
+        foreach (var combatParticipant in _participantsByInitiativeOrder)
         {
             combatParticipant.Value.Status = new CombatStatus
             {
@@ -51,9 +53,9 @@ public class Combat
         }
     }
 
-    public bool Move(string id, Coord to)
+    public bool Move(string participantId, Coord to)
     {
-        return Try(id, cp =>
+        return Try(participantId, cp =>
         {
             var distance = Coord.Distance(cp.Position, to);
 
@@ -69,16 +71,14 @@ public class Combat
         });
     }
 
-    private bool Try(string id, Func<CombatParticipant, bool> act)
+    private bool Try(string participantId, Func<CombatParticipant, bool> act)
     {
-        var participant = Participants.FirstOrDefault(x => x.Id == id);
-
-        if (participant == null || !participant.Character.IsAlive)
+        if (_participantsById.TryGetValue(participantId, out var participant) && participant.Character.IsAlive)
         {
-            return false;
+            return act(participant);
         }
 
-        return act(participant);
+        return false;
     }
 
     public CombatResult? CheckForComplete()
@@ -102,6 +102,25 @@ public class Combat
         }
 
         return null;
+    }
+
+    public IEnumerable<UsableAbility> GetUsableAbilities(string participantId)
+    {
+        if (_participantsById.TryGetValue(participantId, out var participant))
+        {
+            foreach (var ability in participant.Character.Abilities)
+            {
+                var hasUses = !ability.UsesRemaining.HasValue || ability.UsesRemaining.Value > 0;
+
+                if (hasUses && _typeData.Abilities.TryFind(ability.AbilityId, out var abilityType))
+                {
+                    if (participant.Status.RemainingActions.Contains(abilityType.Action))
+                    {
+                        yield return new UsableAbility(abilityType, null);
+                    }
+                }
+            }
+        }
     }
 }
 

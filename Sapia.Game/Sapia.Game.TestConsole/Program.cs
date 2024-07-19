@@ -2,7 +2,7 @@
 using Sapia.Game.Hack.Combat;
 using Sapia.Game.Hack.Combat.Steps;
 using Sapia.Game.Hack.Configuration;
-using Sapia.Game.TestConsole;
+using Sapia.Game.TestConsole.TypeData;
 
 var theRockConfiguration = new CharacterConfiguration
 {
@@ -23,7 +23,7 @@ var theRockConfiguration = new CharacterConfiguration
 var typeData = TypeDataFactory.CreateTypeData();
 var characterStatusService = new CharacterService(typeData);
 
-var theRock = characterStatusService.CompileCharacter(theRockConfiguration, ["Parry", "Whirlwind"]);
+var theRock = characterStatusService.CompileCharacter(theRockConfiguration, ["Jab", "Slash"]);
 
 var goblinA = new SimpleCharacter("GoblinA", new CharacterStats(5))
 {
@@ -48,14 +48,18 @@ var combatExecution = executor.Execute();
 
 var num = 0;
 
+var t = "  ";
+
 while (num++ < 10 && combatExecution.MoveNext())
 {
     var step = combatExecution.Current;
 
-    Console.WriteLine(step);
+    Console.WriteLine($"{combat.CurrentRound}: {step}");
 
     if (step is TurnStep turn)
     {
+        Console.WriteLine(t + string.Join(", ", turn.Abilities.Select(x => x.AbilityType.Id)));
+
         turn.EndTurn();
     }
 }

@@ -2,7 +2,7 @@
 using Sapia.Game.Entities.Interfaces;
 using Sapia.Game.Hack.Types;
 
-namespace Sapia.Game.TestConsole;
+namespace Sapia.Game.TestConsole.TypeData;
 
 public class TestTypeDataProvider<T> : ITypeDataProvider<T> where T : ITypeData
 {

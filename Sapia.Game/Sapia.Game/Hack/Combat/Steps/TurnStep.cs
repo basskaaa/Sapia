@@ -1,18 +1,20 @@
 ﻿using Sapia.Game.Hack.Combat.Entities;
 
-namespace Sapia.Game.Hack.Combat.Steps
+namespace Sapia.Game.Hack.Combat.Steps;
+
+public class TurnStep : CombatParticipantStep
 {
-    public class TurnStep : CombatParticipantStep
+    public IReadOnlyCollection<UsableAbility> Abilities { get; }
+
+    public bool HasEnded { get; private set; }
+
+    public TurnStep(Combat combat, CombatParticipant participant, IReadOnlyCollection<UsableAbility> abilities) : base(combat, participant)
     {
-        public bool HasEnded { get; private set; }
+        Abilities = abilities;
+    }
 
-        public TurnStep(Combat combat, CombatParticipant participant) : base(combat, participant)
-        {
-        }
-
-        public void EndTurn()
-        {
-            HasEnded = true;
-        }
+    public void EndTurn()
+    {
+        HasEnded = true;
     }
 }

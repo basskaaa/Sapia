@@ -1,41 +1,44 @@
 ﻿using Sapia.Game.Hack.Combat.Steps;
 
-namespace Sapia.Game.Hack.Combat
+namespace Sapia.Game.Hack.Combat;
+
+public class CombatExecutor
 {
-    public class CombatExecutor
+    public CombatExecutor(Combat combat)
     {
-        public CombatExecutor(Combat combat)
+        Combat = combat;
+    }
+
+    public Combat Combat { get; }
+
+    public IEnumerator<CombatStep> Execute()
+    {
+        yield return new CombatStartStep(Combat);
+
+        CombatResult? result = null;
+
+        while (!result.HasValue)
         {
-            Combat = combat;
-        }
+            var participant = Combat.CurrentParticipant();
+            TurnStep turn;
 
-        public Combat Combat { get; }
-
-        public IEnumerator<CombatStep> Execute()
-        {
-            yield return new CombatStartStep(Combat);
-
-            CombatResult? result = null;
-
-            while (!result.HasValue)
+            do
             {
-                var participant = Combat.CurrentParticipant();
-                var turn = new TurnStep(Combat, participant);
+                var abilities = Combat.GetUsableAbilities(participant.Id);
+                turn = new TurnStep(Combat, participant, abilities.ToArray());
 
-                while (!turn.HasEnded)
-                {
-                    yield return turn;
-                }
+                yield return turn;
 
-                result = Combat.CheckForComplete();
+            } while (!turn.HasEnded);
 
-                if (!result.HasValue)
-                {
-                    Combat.EndTurn(participant.Id);
-                }
+            result = Combat.CheckForComplete();
+
+            if (!result.HasValue)
+            {
+                Combat.EndTurn(participant.Id);
             }
-
-            yield return new CombatFinishedStep(Combat, result.Value);
         }
+
+        yield return new CombatFinishedStep(Combat, result.Value);
     }
 }

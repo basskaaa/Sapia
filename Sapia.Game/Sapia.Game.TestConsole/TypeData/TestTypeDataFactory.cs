@@ -1,6 +1,6 @@
 ﻿using Sapia.Game.Hack.Types;
 
-namespace Sapia.Game.TestConsole;
+namespace Sapia.Game.TestConsole.TypeData;
 
 public static class TypeDataFactory
 {
@@ -12,9 +12,8 @@ public static class TypeDataFactory
         };
         var parry = new AbilityType
         {
-            Id = "Parry"
+            Id = "Jab"
         };
-
         var whirlwind = new AbilityType
         {
             Id = "Whirlwind"
@@ -32,7 +31,7 @@ public static class TypeDataFactory
             AbilitiesAtLevels = new()
             {
                 {"Slash", 1},
-                {"Parry", 1},
+                {"Jab", 1},
                 {"Whirlwind", 1}
             }
         };

@@ -1,12 +1,11 @@
-﻿namespace Sapia.Game.Hack.Combat.Steps
-{
-    public abstract class CombatStep
-    {
-        protected CombatStep(Combat combat)
-        {
-            Combat = combat;
-        }
+﻿namespace Sapia.Game.Hack.Combat.Steps;
 
-        public Combat Combat { get; }
+public abstract class CombatStep
+{
+    protected CombatStep(Combat combat)
+    {
+        Combat = combat;
     }
+
+    public Combat Combat { get; }
 }

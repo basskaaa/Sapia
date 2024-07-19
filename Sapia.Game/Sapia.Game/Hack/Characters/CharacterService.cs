@@ -53,7 +53,7 @@ public class CharacterService
 
         foreach (var ability in allowedAbilities)
         {
-            if (_typeData.Abilities.TryFind(ability, out var abilityType))
+            if (chosenAbilities.Contains(ability) && _typeData.Abilities.TryFind(ability, out var abilityType))
             {
                 // TODO: limit uses etc
                 abilities.Add(new(ability));

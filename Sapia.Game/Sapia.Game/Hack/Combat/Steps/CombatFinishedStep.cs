@@ -1,17 +1,16 @@
-﻿namespace Sapia.Game.Hack.Combat.Steps
+﻿namespace Sapia.Game.Hack.Combat.Steps;
+
+public class CombatFinishedStep : CombatStep
 {
-    public class CombatFinishedStep : CombatStep
+    public CombatResult Result { get; }
+
+    public CombatFinishedStep(Combat combat, CombatResult result) : base(combat)
     {
-        public CombatResult Result { get; }
+        Result = result;
+    }
 
-        public CombatFinishedStep(Combat combat, CombatResult result) : base(combat)
-        {
-            Result = result;
-        }
-
-        public override string ToString()
-        {
-            return $"{base.ToString()}: {Result}";
-        }
+    public override string ToString()
+    {
+        return $"{base.ToString()}: {Result}";
     }
 }
