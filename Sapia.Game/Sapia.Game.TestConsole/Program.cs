@@ -1,5 +1,6 @@
 ﻿using Sapia.Game.Hack.Characters;
 using Sapia.Game.Hack.Combat;
+using Sapia.Game.Hack.Combat.Entities;
 using Sapia.Game.Hack.Combat.Steps;
 using Sapia.Game.Hack.Configuration;
 using Sapia.Game.TestConsole.TypeData;
@@ -25,12 +26,12 @@ var characterStatusService = new CharacterService(typeData);
 
 var theRock = characterStatusService.CompileCharacter(theRockConfiguration, ["Jab", "Slash"]);
 
-var goblinA = new SimpleCharacter("GoblinA", new CharacterStats(5))
+var goblinA = new SimpleCharacter("GoblinA", new CharacterStats(3))
 {
     Abilities = new[] { new PreparedAbility("Slash") }
 };
 
-var goblinB = new SimpleCharacter("GoblinB", new CharacterStats(5))
+var goblinB = new SimpleCharacter("GoblinB", new CharacterStats(4))
 {
     Abilities = new[] { new PreparedAbility("Slash") }
 };
@@ -50,7 +51,20 @@ var num = 0;
 
 var t = "  ";
 
-while (num++ < 10 && combatExecution.MoveNext())
+CombatParticipant? FindTargetFor(CombatParticipant participant)
+{
+    foreach (var other in combat.Participants)
+    {
+        if (other.Character.IsPlayer != participant.Character.IsPlayer && other.Character.IsAlive)
+        {
+            return other;
+        }
+    }
+
+    return null;
+}
+
+while (combatExecution.MoveNext())
 {
     var step = combatExecution.Current;
 
@@ -58,7 +72,23 @@ while (num++ < 10 && combatExecution.MoveNext())
 
     if (step is TurnStep turn)
     {
-        Console.WriteLine(t + string.Join(", ", turn.Abilities.Select(x => x.AbilityType.Id)));
+        if (turn.Abilities.Any())
+        {
+            var ability = turn.Abilities.Last();
+
+            var target = FindTargetFor(turn.Participant);
+
+            if (target != null)
+            {
+                var result = turn.UseAbility(new TargetedAbilityUse(ability.AbilityType.Id, target.ParticipantId));
+
+                if (result.HasValue)
+                {
+                    var targetInfo = result.Value.AffectedParticipants.Select(x => $"{x.ParticipantId} {x.HealthChange}").ToArray();
+                    Console.WriteLine(t + $"{result.Value.Ability.Id}: {string.Join(", ", targetInfo)}");
+                }
+            }
+        }
 
         turn.EndTurn();
     }

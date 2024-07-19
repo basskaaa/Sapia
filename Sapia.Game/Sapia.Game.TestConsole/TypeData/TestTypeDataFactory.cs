@@ -10,16 +10,17 @@ public static class TypeDataFactory
         {
             Id = "Slash"
         };
-        var parry = new AbilityType
+        var jab = new AbilityType
         {
-            Id = "Jab"
+            Id = "Jab", 
+            Damage = 2
         };
         var whirlwind = new AbilityType
         {
             Id = "Whirlwind"
         };
 
-        return new(slash, parry, whirlwind);
+        return new(slash, jab, whirlwind);
     }
 
     private static TestTypeDataProvider<ClassType> CreateClassTypeData()
@@ -27,7 +28,7 @@ public static class TypeDataFactory
         var fighter = new ClassType
         {
             Id = "Fighter",
-            HealthPerLevel = 5,
+            HealthPerLevel = 8,
             AbilitiesAtLevels = new()
             {
                 {"Slash", 1},

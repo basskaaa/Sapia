@@ -17,4 +17,6 @@ public class TurnStep : CombatParticipantStep
     {
         HasEnded = true;
     }
+
+    public AbilityResult? UseAbility(AbilityUse use) => Combat.UseAbility(Participant.ParticipantId, use);
 }

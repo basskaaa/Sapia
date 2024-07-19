@@ -165,7 +165,7 @@ public class Combat
 
         var affectedTargets = targets.Select(x => ApplyAbilityToParticipant(participant, x, abilityType));
 
-        return new AbilityResult(affectedTargets.ToArray());
+        return new AbilityResult(abilityType, affectedTargets.ToArray());
     }
 
     private AffectedParticipant ApplyAbilityToParticipant(CombatParticipant applier, CombatParticipant target, AbilityType abilityType)
@@ -176,7 +176,7 @@ public class Combat
 
             target.Character.CurrentHealth -= damage;
 
-            return new AffectedParticipant(target.ParticipantId, damage);
+            return new AffectedParticipant(target.ParticipantId, -damage);
         }
 
         throw new NotImplementedException();
