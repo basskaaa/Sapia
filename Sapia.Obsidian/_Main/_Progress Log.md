@@ -53,3 +53,11 @@
 14:37
 - Tested low res terrain textures
 ![[Image Sequence_013_0000.jpg]]
+
+##### 19.07.2024
+17:33
+
+Swapped to post processing pixel shader
+![[Pasted image 20240719193350.png]]
+
+![[Pasted image 20240719194444.png]]
