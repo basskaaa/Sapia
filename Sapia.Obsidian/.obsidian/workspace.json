@@ -11,9 +11,12 @@
             "id": "20d33f16e2036038",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "_Main/Images/Progress Images/Image Sequence_001_0000 1.jpg"
+                "file": "_Main/_Progress Log.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -83,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_Main/Images/Progress Images/Image Sequence_001_0000 1.jpg",
+                "file": "_Main/_Progress Log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_Main/Images/Progress Images/Image Sequence_001_0000 1.jpg",
+                "file": "_Main/_Progress Log.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_Main/Images/Progress Images/Image Sequence_001_0000 1.jpg"
+                "file": "_Main/_Progress Log.md"
               }
             }
           }
@@ -163,9 +166,9 @@
   },
   "active": "e44616da125fab47",
   "lastOpenFiles": [
-    "End of August Combat Prototype.md",
-    "_Main/_Progress Log.md",
     "_Main/Images/Progress Images/Image Sequence_001_0000 1.jpg",
+    "_Main/End of August Combat Prototype.md",
+    "_Main/_Progress Log.md",
     "_Main/Images/Progress Images/Pasted image 20240719194444.png",
     "_Main/Images/Progress Images/Pasted image 20240719193350.png",
     "_Main/_Development Doc.md",

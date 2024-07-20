@@ -10,6 +10,7 @@ namespace NovaSamples.UIControls
     public class CardScaleOnHover : UIControl<ButtonVisuals>
     {
         [SerializeField] private Vector2 hoverScale = new Vector2 (1f, 1.05f);
+        [SerializeField] private int sortFront = 100;
         [SerializeField] private bool isTop = false;
 
         public UnityEvent OnHover = null;
@@ -18,7 +19,6 @@ namespace NovaSamples.UIControls
         private UIBlock2D uiBlock;
         private SortGroup sortGroup;
         private int sortBase;
-        private int sortFront = 10;
         
         private void OnEnable()
         {
@@ -62,7 +62,6 @@ namespace NovaSamples.UIControls
         {
             Debug.Log("Hover" + uiBlock.name);
             Vector2 cardScale = new Vector2(baseScale.x * hoverScale.x, baseScale.y * hoverScale.y);
-            Debug.Log(cardScale.ToString());
             uiBlock.Size.XY.Percent = cardScale;
             sortGroup.SortingOrder = sortFront;
         }

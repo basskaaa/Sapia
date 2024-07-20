@@ -245,6 +245,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8592257457280639050, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -86.939995
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -382,6 +387,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Card (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592257457280639050, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -86.939995
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1699,6 +1709,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8592257457280639050, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -86.939995
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1901,6 +1916,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8592257457280639050, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -86.939995
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1924,6 +1944,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1488969030}
     m_Modifications:
+    - target: {fileID: 422591555068496358, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
+        type: 3}
+      propertyPath: DragThreshold
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 640877564915260057, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
         type: 3}
       propertyPath: info.SortingOrder
@@ -2079,7 +2104,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -86.939995
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8853522918139134312, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -3697,6 +3723,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8592257457280639050, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -86.939995
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3909,6 +3940,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1488969030}
     m_Modifications:
+    - target: {fileID: 3376472758020639723, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 169.9
+      objectReference: {fileID: 0}
     - target: {fileID: 4899559233307898125, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4013,6 +4049,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Card
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592257457280639050, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -86.939995
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

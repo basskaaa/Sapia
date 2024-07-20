@@ -63,3 +63,7 @@ Swapped to post processing pixel shader
 ![[Pasted image 20240719194444.png]]
 
 ![[Image Sequence_001_0000 1.jpg]]
+
+##### 20.07.2024
+14:26
+- Card interact system [Sapia Card Interact Test 1 - YouTube](https://www.youtube.com/watch?v=BBp4WI5612s)

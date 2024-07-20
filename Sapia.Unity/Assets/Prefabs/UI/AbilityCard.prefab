@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5730355894592574903}
   - component: {fileID: 4443669189041101656}
   - component: {fileID: 422591555068496358}
-  - component: {fileID: -8853522918139134312}
   - component: {fileID: 640877564915260057}
   - component: {fileID: 716725932533384032}
   m_Layer: 5
@@ -388,49 +387,6 @@ MonoBehaviour:
     Y: 1
     Z: 0
   GestureSpace: 0
---- !u!114 &-8853522918139134312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4980356366649025096}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7a4b3377c521da41bda5f5033ef3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnHover:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: -8853522918139134312}
-        m_TargetAssemblyTypeName: NovaSamples.UIControls.CardScaleOnHover, Assembly-CSharp
-        m_MethodName: Hover
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnUnhover:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: -8853522918139134312}
-        m_TargetAssemblyTypeName: NovaSamples.UIControls.CardScaleOnHover, Assembly-CSharp
-        m_MethodName: Unhover
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  hoverScale: {x: 1, y: 1.05}
 --- !u!114 &640877564915260057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,7 +454,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 169.9}
+  m_AnchoredPosition: {x: 0, y: -19.5}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &8736289521926619825
@@ -783,7 +739,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 312.5
+  m_fontSize: 18
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -819,7 +775,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -124.2, y: -20, z: -124.2, w: -20}
+  m_margin: {x: -0.5, y: -20, z: -0.5, w: -20}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -858,7 +814,7 @@ Transform:
   m_GameObject: {fileID: 9050290693775596512}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -86.939995, y: 0, z: 0}
+  m_LocalPosition: {x: -0.35, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1171,6 +1127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7a4b3377c521da41bda5f5033ef3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverScale: {x: 1, y: 1.05}
+  isTop: 0
   OnHover:
     m_PersistentCalls:
       m_Calls:
@@ -1201,7 +1159,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  hoverScale: {x: 1, y: 1.05}
 --- !u!114 &948135600668204385
 MonoBehaviour:
   m_ObjectHideFlags: 0
