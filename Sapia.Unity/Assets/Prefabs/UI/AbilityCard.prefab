@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 422591555068496358}
   - component: {fileID: 640877564915260057}
   - component: {fileID: 716725932533384032}
+  - component: {fileID: 5274102833107839504}
   m_Layer: 5
   m_Name: AbilityCard
   m_TagString: Untagged
@@ -417,7 +418,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnClicked:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5274102833107839504}
+        m_TargetAssemblyTypeName: CardSelect, Assembly-CSharp
+        m_MethodName: OnCardDrag
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5274102833107839504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4980356366649025096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924a4ccff628dd743890e2ad372d1596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedCardPivot: {fileID: 0}
+  onCardRelease: {fileID: 11400000, guid: 09e06b0b6fb9fb14081ddde318135276, type: 2}
+  OnReleased:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5274102833107839504}
+        m_TargetAssemblyTypeName: CardSelect, Assembly-CSharp
+        m_MethodName: OnCardRelease
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7116693855761460976
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,8 +1169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7a4b3377c521da41bda5f5033ef3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sortFront: 100
   hoverScale: {x: 1, y: 1.05}
-  isTop: 0
   OnHover:
     m_PersistentCalls:
       m_Calls:

@@ -6,31 +6,30 @@ using Nova;
 using NovaSamples.UIControls;
 
 namespace NovaSamples.UIControls
-{ 
+{
     public class CardScaleOnHover : UIControl<ButtonVisuals>
     {
-        [SerializeField] private Vector2 hoverScale = new Vector2 (1f, 1.05f);
         [SerializeField] private int sortFront = 100;
-        [SerializeField] private bool isTop = false;
+        [SerializeField] private Vector2 hoverScale = new Vector2(1f, 1.05f);
 
         public UnityEvent OnHover = null;
         public UnityEvent OnUnhover = null;
-        private Vector2 baseScale; 
+        private Vector2 baseScale;
         private UIBlock2D uiBlock;
         private SortGroup sortGroup;
         private int sortBase;
-        
-        private void OnEnable()
+
+        private void Awake()
         {
             sortGroup = GetComponentInParent<SortGroup>();
             uiBlock = sortGroup.GetComponent<UIBlock2D>();
+        }
+
+
+        private void OnEnable()
+        { 
             View.UIBlock.AddGestureHandler<Gesture.OnHover, ButtonVisuals>(HandleHovered);
             View.UIBlock.AddGestureHandler<Gesture.OnUnhover, ButtonVisuals>(HandleUnhovered);
-
-            if (isTop) 
-            { 
-                SetTopCardWidth();
-            }
 
             GetInitialData();
         }
@@ -44,18 +43,10 @@ namespace NovaSamples.UIControls
         private void HandleHovered(Gesture.OnHover evt, ButtonVisuals visuals) => OnHover?.Invoke();
         private void HandleUnhovered(Gesture.OnUnhover evt, ButtonVisuals visuals) => OnUnhover?.Invoke();
 
-
-        private void SetTopCardWidth()
-        {
-            UIBlock2D hoverBlock = GetComponent<UIBlock2D>();
-            hoverBlock.Size.X.Percent = 1;
-        }
-
         private void GetInitialData()
         {
             sortBase = sortGroup.SortingOrder;
             baseScale = new Vector2(uiBlock.Size.Percent.x, uiBlock.Size.Percent.y);
-            Debug.Log(baseScale.ToString());
         }
 
         public void Hover()
