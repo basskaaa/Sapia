@@ -45,13 +45,13 @@ namespace NovaSamples.UIControls
 
         private void GetInitialData()
         {
-            sortBase = sortGroup.SortingOrder;
+            //sortBase = sortGroup.SortingOrder;
             baseScale = new Vector2(uiBlock.Size.Percent.x, uiBlock.Size.Percent.y);
         }
 
         public void Hover()
         {
-            Debug.Log("Hover" + uiBlock.name);
+            sortBase = sortGroup.SortingOrder;
             Vector2 cardScale = new Vector2(baseScale.x * hoverScale.x, baseScale.y * hoverScale.y);
             uiBlock.Size.XY.Percent = cardScale;
             sortGroup.SortingOrder = sortFront;
@@ -59,7 +59,6 @@ namespace NovaSamples.UIControls
 
         public void Unhover() 
         {
-            Debug.Log("Unhover" + uiBlock.name);
             uiBlock.Size.XY.Percent = new Vector2(baseScale.x, baseScale.y);
             sortGroup.SortingOrder = sortBase;
         }

@@ -8,6 +8,10 @@ using UnityEngine.Events;
 
 public class TopCardSetter : MonoBehaviour
 {
+    [SerializeField] private float setSortOrderDelay = 0.1f; 
+    [SerializeField] private float topCardHoverWidth = 1f; 
+    [SerializeField] private float belowCardHoverWidth = 0.3f; 
+
     private UIBlock2D hoverBlock;
 
     private void Start()
@@ -17,11 +21,11 @@ public class TopCardSetter : MonoBehaviour
 
     public void FindTopCard()
     {
-        CardScaleOnHover[] cards = GetComponentsInChildren<CardScaleOnHover>();
+        CardScaleOnHover[] cardsHover = GetComponentsInChildren<CardScaleOnHover>();
         
-        foreach (CardScaleOnHover card in cards) 
+        foreach (CardScaleOnHover card in cardsHover) 
         { 
-            if (card == cards.Last())
+            if (card == cardsHover.Last())
             {
                 SetHoverColliderX(card, true);
             }
@@ -31,17 +35,33 @@ public class TopCardSetter : MonoBehaviour
                 SetHoverColliderX(card, false);
             }
         }
+
+        StartCoroutine(SetSortingOrder());
     }
 
     private void SetHoverColliderX(CardScaleOnHover card, bool isTop)
     {
         hoverBlock = card.GetComponent<UIBlock2D>();
 
-        hoverBlock.Size.X.Percent = 0.3f;
+        hoverBlock.Size.X.Percent = belowCardHoverWidth;
 
         if (isTop) 
         {
-            hoverBlock.Size.X.Percent = 1;
+            hoverBlock.Size.X.Percent = topCardHoverWidth;
+        }
+    }
+
+    private IEnumerator SetSortingOrder()
+    {
+        yield return new WaitForSeconds(setSortOrderDelay);
+
+        CardSelect[] cards = GetComponentsInChildren<CardSelect>();
+
+        for (int i = 0; i < cards.Length; i++) 
+        {
+            SortGroup cardsSort = cards[i].GetComponent<SortGroup>();
+
+            cardsSort.SortingOrder = i;
         }
     }
 }

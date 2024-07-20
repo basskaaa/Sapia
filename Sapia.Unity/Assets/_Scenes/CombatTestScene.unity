@@ -3045,6 +3045,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c67ed95ffa385e44ba198b85ffcc444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  setSortOrderDelay: 0
+  topCardHoverWidth: 1
+  belowCardHoverWidth: 0.3
 --- !u!114 &1488969035
 MonoBehaviour:
   m_ObjectHideFlags: 0
