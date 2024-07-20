@@ -1936,8 +1936,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4898857198659010351, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
         type: 3}
+      propertyPath: layout.AutoSize.X
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898857198659010351, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
+        type: 3}
       propertyPath: layout.AutoSize.Y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898857198659010351, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
+        type: 3}
+      propertyPath: layout.Size.X.Raw
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 4899559233307898125, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
         type: 3}
@@ -2058,6 +2068,16 @@ PrefabInstance:
         type: 3}
       propertyPath: layout.PositionMinMax.X.Min
       value: -Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 6850231640871297960, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
+        type: 3}
+      propertyPath: isTop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592257457280639050, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -86.939995
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
