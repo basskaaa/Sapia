@@ -47,7 +47,7 @@ MonoBehaviour:
     m_Bits: 31
   m_TransparentLayerMask:
     serializedVersion: 2
-    m_Bits: 31
+    m_Bits: 4294967295
   m_DefaultStencilState:
     overrideStencilState: 0
     stencilReference: 0
@@ -73,7 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f721b01929a8934997780b44ab135e7, type: 3}
   m_Name: PixelizeFeature
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   settings:
     renderPassEvent: 550
     screenHeight: 200

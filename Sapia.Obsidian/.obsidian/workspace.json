@@ -4,19 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "efa2707a63464d72",
+        "id": "af3a72b2dfc7022c",
         "type": "tabs",
         "children": [
           {
-            "id": "c67e870faeb12757",
+            "id": "20d33f16e2036038",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "_Main/_Progress Log.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "_Main/Images/Progress Images/Image Sequence_001_0000 1.jpg"
               }
             }
           }
@@ -86,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_Main/_Progress Log.md",
+                "file": "_Main/Images/Progress Images/Image Sequence_001_0000 1.jpg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_Main/_Progress Log.md",
+                "file": "_Main/Images/Progress Images/Image Sequence_001_0000 1.jpg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_Main/_Progress Log.md"
+                "file": "_Main/Images/Progress Images/Image Sequence_001_0000 1.jpg"
               }
             }
           }
@@ -164,13 +161,14 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "c67e870faeb12757",
+  "active": "e44616da125fab47",
   "lastOpenFiles": [
-    "Pasted image 20240719194444.png",
-    "Pasted image 20240719193350.png",
-    "_Main/_Development Doc.md",
-    "_Main/_Progress Log.md",
     "End of August Combat Prototype.md",
+    "_Main/_Progress Log.md",
+    "_Main/Images/Progress Images/Image Sequence_001_0000 1.jpg",
+    "_Main/Images/Progress Images/Pasted image 20240719194444.png",
+    "_Main/Images/Progress Images/Pasted image 20240719193350.png",
+    "_Main/_Development Doc.md",
     "Rules/Test Characters/Proto Fighter.md",
     "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 1/Action Surge.md",
     "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighting Styles/Defender.md",
@@ -205,8 +203,6 @@
     "_Main/Images/Progress Images/Image Sequence_012_0000_1.jpg",
     "_Main/Images/Progress Images/Image Sequence_012_0000.jpg",
     "_Main/Images/Progress Images/Image Sequence_011_0000.jpg",
-    "_Main/Images/Progress Images/Image Sequence_010_0000.jpg",
-    "_Main/Images/Progress Images/Image Sequence_009_0000.jpg",
     "_Main/Images/Progress Images",
     "_Main/Images/Reference Images",
     "_Main/Images",

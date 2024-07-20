@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 5730355894592574903}
   - component: {fileID: 4443669189041101656}
   - component: {fileID: 422591555068496358}
-  - component: {fileID: 2383155515026836081}
-  - component: {fileID: 1352344740346985191}
+  - component: {fileID: -8853522918139134312}
+  - component: {fileID: 640877564915260057}
   m_Layer: 5
   m_Name: AbilityCard
   m_TagString: Untagged
@@ -322,7 +322,7 @@ MonoBehaviour:
       type: {class: ButtonVisuals, ns: NovaSamples.UIControls, asm: Nova.UIControls}
       data:
         TransitionType: 1
-        transitionTarget: {fileID: 0}
+        transitionTarget: {fileID: 5730355894592574903}
         DefaultColor: {r: 1, g: 1, b: 1, a: 1}
         HoveredColor: {r: 0.75, g: 0.75, b: 0.75, a: 1}
         PressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -336,7 +336,7 @@ MonoBehaviour:
           HoveredAnimation: Highlighted
           PressedAnimation: Pressed
         Background: {fileID: 5730355894592574903}
-        Label: {fileID: 0}
+        Label: {fileID: 4330496979430321143}
 --- !u!114 &422591555068496358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,8 +352,8 @@ MonoBehaviour:
   ObstructDrags: 0
   DragThreshold: 1
   LowAccuracyDragThreshold: 30
-  ClickBehavior: 0
-  navigable: 0
+  ClickBehavior: 1
+  navigable: 1
   onSelect: 0
   autoSelect: 0
   Navigation:
@@ -382,11 +382,11 @@ MonoBehaviour:
       Fallback: 1
       Target: {fileID: 0}
   draggable:
-    X: 0
-    Y: 0
+    X: 1
+    Y: 1
     Z: 0
   GestureSpace: 0
---- !u!114 &2383155515026836081
+--- !u!114 &-8853522918139134312
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -398,7 +398,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7a4b3377c521da41bda5f5033ef3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1352344740346985191
+  OnHover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -8853522918139134312}
+        m_TargetAssemblyTypeName: NovaSamples.UIControls.CardScaleOnHover, Assembly-CSharp
+        m_MethodName: LogHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &640877564915260057
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -407,12 +422,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4980356366649025096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e8eaa600bb80d04992471d49e941b0b, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b2a531bfddefda4e85a827979d250a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnClicked:
-    m_PersistentCalls:
-      m_Calls: []
+  info:
+    SortingOrder: 0
+    RenderQueue: 3000
+    RenderOverOpaqueGeometry: 0
 --- !u!1 &7116693855761460976
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +786,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -126, y: -20, z: -126, w: -20}
+  m_margin: {x: -124.2, y: -20, z: -124.2, w: -20}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
