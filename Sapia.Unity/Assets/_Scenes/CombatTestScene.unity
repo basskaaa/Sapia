@@ -1520,16 +1520,16 @@ MonoBehaviour:
     AspectRatio: {x: 0, y: 0, z: 0}
     AspectRatioAxis: 0
   autoLayout:
-    Axis: 0
+    Axis: 1
     Spacing:
-      Raw: -200
+      Raw: 0
       Type: 0
     SpacingMinMax:
-      Min: -200
+      Min: -Infinity
       Max: Infinity
     AutoSpace: 0
     ReverseOrder: 0
-    alignment: -1
+    alignment: 0
     Offset: 0
     Cross:
       Axis: 0
@@ -2340,10 +2340,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_margin.z
       value: -124.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: OnClicked.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3376472758020639723, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
         type: 3}
