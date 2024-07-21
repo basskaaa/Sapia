@@ -11,16 +11,15 @@ using static Nova.Gesture;
 public class CardSelect : UIControl<ButtonVisuals>
 {
     [SerializeField] private GameEvent onCardRelease;
+    public bool isCardSelected = false;
 
     private Transform selectedCardPivot;
     private Transform abilityCardHolder;
     public UnityEvent OnReleased = null;
     private UIBlock2D cardBlock;
 
-    [SerializeField] private Vector3 mouseOffset;
     private Vector3 cardPos;
     private Vector3 pivotPos;
-    private bool isCardSelected = false;
 
     [SerializeField] private float opacityOnSelect = 0.5f;
     private Color color;
@@ -75,7 +74,7 @@ public class CardSelect : UIControl<ButtonVisuals>
     {
         transform.SetParent(selectedCardPivot, true);
 
-        if (GetMousePosition.Instance.TryGetCurrentRay(out Ray ray) && TryProjectRay(ray, out Vector3 worldPos))
+        if (GetMousePosition.Instance.TryGetCurrentRay(out Ray ray) && GetMousePosition.Instance.TryProjectRay(ray, out Vector3 worldPos))
         {
             selectedCardPivot.position = worldPos;
             SetSelectedColor();
@@ -83,21 +82,6 @@ public class CardSelect : UIControl<ButtonVisuals>
         }
     }
 
-    private bool TryProjectRay(Ray ray, out Vector3 worldPos)
-    {
-        Plane plane = new Plane(-transform.forward, transform.position);
-
-        if (plane.Raycast(ray, out float distance))
-        {
-            worldPos = ray.GetPoint(distance);
-            return true;
-        }
-        else
-        {
-            worldPos = default;
-            return false;
-        }
-    }
     public void GetInitPosData()
     {
         pivotPos = selectedCardPivot.position;

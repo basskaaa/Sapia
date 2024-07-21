@@ -7,10 +7,11 @@ using NovaSamples.UIControls;
 
 namespace NovaSamples.UIControls
 {
-    public class CardScaleOnHover : UIControl<ButtonVisuals>
+    public class CardHover : UIControl<ButtonVisuals>
     {
         [SerializeField] private int sortFront = 100;
         [SerializeField] private Vector2 hoverScale = new Vector2(1f, 1.05f);
+        public bool isHover = false;
 
         public UnityEvent OnHover = null;
         public UnityEvent OnUnhover = null;
@@ -51,6 +52,7 @@ namespace NovaSamples.UIControls
 
         public void Hover()
         {
+            isHover = true;
             sortBase = sortGroup.SortingOrder;
             Vector2 cardScale = new Vector2(baseScale.x * hoverScale.x, baseScale.y * hoverScale.y);
             uiBlock.Size.XY.Percent = cardScale;
@@ -59,6 +61,7 @@ namespace NovaSamples.UIControls
 
         public void Unhover() 
         {
+            isHover = false;
             uiBlock.Size.XY.Percent = new Vector2(baseScale.x, baseScale.y);
             sortGroup.SortingOrder = sortBase;
         }

@@ -71,3 +71,7 @@ Swapped to post processing pixel shader
 ##### 21.07.2024
 13:08
 - Card interact system updates to interact polish [Sapia Card Interact Test 2 - YouTube](https://www.youtube.com/watch?v=FHqlhGvcq4k)
+
+##### 21.07.2024
+20:45
+- Cards draggable and detect target

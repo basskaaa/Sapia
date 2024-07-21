@@ -17,4 +17,20 @@ public class GetMousePosition : Singleton<GetMousePosition>
             return false;
         }
     }
+
+    public bool TryProjectRay(Ray ray, out Vector3 worldPos)
+    {
+        Plane plane = new Plane(-transform.forward, transform.position);
+
+        if (plane.Raycast(ray, out float distance))
+        {
+            worldPos = ray.GetPoint(distance);
+            return true;
+        }
+        else
+        {
+            worldPos = default;
+            return false;
+        }
+    }
 }

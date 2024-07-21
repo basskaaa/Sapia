@@ -21,9 +21,9 @@ public class TopCardSetter : MonoBehaviour
 
     public void FindTopCard()
     {
-        CardScaleOnHover[] cardsHover = GetComponentsInChildren<CardScaleOnHover>();
+        CardHover[] cardsHover = GetComponentsInChildren<CardHover>();
         
-        foreach (CardScaleOnHover card in cardsHover) 
+        foreach (CardHover card in cardsHover) 
         { 
             if (card == cardsHover.Last())
             {
@@ -39,7 +39,7 @@ public class TopCardSetter : MonoBehaviour
         StartCoroutine(SetSortingOrder());
     }
 
-    private void SetHoverColliderX(CardScaleOnHover card, bool isTop)
+    private void SetHoverColliderX(CardHover card, bool isTop)
     {
         hoverBlock = card.GetComponent<UIBlock2D>();
 

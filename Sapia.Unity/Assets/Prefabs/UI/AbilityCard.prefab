@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 640877564915260057}
   - component: {fileID: 8345293694002728165}
   - component: {fileID: 5274102833107839504}
+  - component: {fileID: 5555745021062099754}
   m_Layer: 5
   m_Name: AbilityCard
   m_TagString: Untagged
@@ -41,7 +42,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.5, y: 0.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4775605100873223083
@@ -432,7 +433,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 6850231640871297960}
-        m_TargetAssemblyTypeName: NovaSamples.UIControls.CardScaleOnHover, Assembly-CSharp
+        m_TargetAssemblyTypeName: NovaSamples.UIControls.CardHover, Assembly-CSharp
         m_MethodName: Hover
         m_Mode: 1
         m_Arguments:
@@ -456,6 +457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onCardRelease: {fileID: 11400000, guid: 09e06b0b6fb9fb14081ddde318135276, type: 2}
+  isCardSelected: 0
   OnReleased:
     m_PersistentCalls:
       m_Calls:
@@ -472,7 +474,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 6850231640871297960}
-        m_TargetAssemblyTypeName: NovaSamples.UIControls.CardScaleOnHover, Assembly-CSharp
+        m_TargetAssemblyTypeName: NovaSamples.UIControls.CardHover, Assembly-CSharp
         m_MethodName: Unhover
         m_Mode: 1
         m_Arguments:
@@ -485,6 +487,18 @@ MonoBehaviour:
         m_CallState: 2
   mouseOffset: {x: 687, y: 281, z: 0}
   opacityOnSelect: 0.5
+--- !u!114 &5555745021062099754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4980356366649025096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f20e095d2bcf7a42a1cf4a20d0d0aea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7116693855761460976
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +535,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -20}
+  m_AnchoredPosition: {x: 0, y: -19.5}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &8736289521926619825
@@ -842,7 +856,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0, y: -20, z: -0, w: -20}
+  m_margin: {x: -0.5, y: -20, z: -0.5, w: -20}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -881,7 +895,7 @@ Transform:
   m_GameObject: {fileID: 9050290693775596512}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.35, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1191,16 +1205,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 9050290693775596512}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7a4b3377c521da41bda5f5033ef3bd8, type: 3}
+  m_Script: {fileID: 11500000, guid: 5576b162337c1b544af27bada47e413d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sortFront: 100
   hoverScale: {x: 1, y: 1.05}
+  isHover: 0
   OnHover:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6850231640871297960}
-        m_TargetAssemblyTypeName: NovaSamples.UIControls.CardScaleOnHover, Assembly-CSharp
+        m_TargetAssemblyTypeName: NovaSamples.UIControls.CardHover, Assembly-CSharp
         m_MethodName: Hover
         m_Mode: 1
         m_Arguments:
@@ -1215,7 +1230,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6850231640871297960}
-        m_TargetAssemblyTypeName: NovaSamples.UIControls.CardScaleOnHover, Assembly-CSharp
+        m_TargetAssemblyTypeName: NovaSamples.UIControls.CardHover, Assembly-CSharp
         m_MethodName: Unhover
         m_Mode: 1
         m_Arguments:
