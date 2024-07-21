@@ -61,6 +61,8 @@ public class CardSelect : UIControl<ButtonVisuals>
     }
     public void OnCardRelease()
     {
+        CheckTarget();
+
         SetInitPos();
         SetInitColor();
 
@@ -123,5 +125,22 @@ public class CardSelect : UIControl<ButtonVisuals>
     private void SetInitColor()
     {
         cardBlock.Color = color;
+    }
+
+    private void CheckTarget()
+    {
+        Vector3 mousePos = Input.mousePosition;
+
+        Ray ray = Camera.main.ScreenPointToRay(mousePos);
+
+        RaycastHit raycastHit;
+
+        bool isHit = Physics.Raycast(ray, out raycastHit);
+
+        if (raycastHit.transform.CompareTag("Target"))
+        {
+            Debug.Log(raycastHit.transform.name);
+            //raycastHit.transform.AddComponent<Outline>();
+        }
     }
 }
