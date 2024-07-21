@@ -60,8 +60,11 @@ public class TopCardSetter : MonoBehaviour
         for (int i = 0; i < cards.Length; i++) 
         {
             SortGroup cardsSort = cards[i].GetComponent<SortGroup>();
+            UIBlock2D cardsBlock = cards[i].GetComponent<UIBlock2D>();
 
             cardsSort.SortingOrder = i;
+            cardsBlock.Position.Y = 0f;
+            cardsBlock.Position.Z = 0f;
         }
     }
 }

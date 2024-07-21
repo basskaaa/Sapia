@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4443669189041101656}
   - component: {fileID: 422591555068496358}
   - component: {fileID: 640877564915260057}
-  - component: {fileID: 716725932533384032}
+  - component: {fileID: 8345293694002728165}
   - component: {fileID: 5274102833107839504}
   m_Layer: 5
   m_Name: AbilityCard
@@ -404,7 +404,7 @@ MonoBehaviour:
     SortingOrder: 4
     RenderQueue: 3000
     RenderOverOpaqueGeometry: 0
---- !u!114 &716725932533384032
+--- !u!114 &8345293694002728165
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -431,6 +431,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6850231640871297960}
+        m_TargetAssemblyTypeName: NovaSamples.UIControls.CardScaleOnHover, Assembly-CSharp
+        m_MethodName: Hover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5274102833107839504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,7 +455,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 924a4ccff628dd743890e2ad372d1596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedCardPivot: {fileID: 0}
   onCardRelease: {fileID: 11400000, guid: 09e06b0b6fb9fb14081ddde318135276, type: 2}
   OnReleased:
     m_PersistentCalls:
@@ -460,6 +471,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  mouseOffset: {x: 687, y: 281, z: 0}
 --- !u!1 &7116693855761460976
 GameObject:
   m_ObjectHideFlags: 0
