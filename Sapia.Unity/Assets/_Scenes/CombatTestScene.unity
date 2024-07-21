@@ -2461,6 +2461,21 @@ PrefabInstance:
       propertyPath: OnReleased.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5730355894592574903, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
+        type: 3}
+      propertyPath: visuals.Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5730355894592574903, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
+        type: 3}
+      propertyPath: layout.Position.X.Raw
+      value: 456
+      objectReference: {fileID: 0}
+    - target: {fileID: 5730355894592574903, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
+        type: 3}
+      propertyPath: visuals.Gradient.Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6850231640871297960, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
         type: 3}
       propertyPath: isTop

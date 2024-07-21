@@ -22,6 +22,12 @@ public class CardSelect : UIControl<ButtonVisuals>
     private Vector3 pivotPos;
     private bool isCardSelected = false;
 
+    [SerializeField] private float opacityOnSelect = 0.5f;
+    private Color color;
+    private RadialGradient gradient;
+    private Color border;
+    
+
 
     private void OnEnable()
     {
@@ -30,8 +36,8 @@ public class CardSelect : UIControl<ButtonVisuals>
         cardBlock = GetComponent<UIBlock2D>();
         selectedCardPivot = FindObjectOfType<SelectedCardPivot>().transform;
 
-        pivotPos = selectedCardPivot.position;
-        cardPos = cardBlock.transform.position;
+        GetInitPosData();
+        GetInitColorData();
     }
 
     private void OnDisable()
@@ -55,13 +61,12 @@ public class CardSelect : UIControl<ButtonVisuals>
     }
     public void OnCardRelease()
     {
-        cardBlock.transform.position = cardPos;
-        selectedCardPivot.position = pivotPos;
+        SetInitPos();
+        SetInitColor();
 
         isCardSelected = false;
         transform.SetParent(abilityCardHolder, true);
         onCardRelease.Raise();
-        //cardBlock.Position.Y = 0f;
     }
 
     public void OnCardDrag()
@@ -71,17 +76,10 @@ public class CardSelect : UIControl<ButtonVisuals>
         if (GetMousePosition.Instance.TryGetCurrentRay(out Ray ray) && TryProjectRay(ray, out Vector3 worldPos))
         {
             selectedCardPivot.position = worldPos;
+            SetSelectedColor();
             isCardSelected = true;
         }
     }
-
-    //public void GetInitPosData()
-    //{
-    //    pivotPos = selectedCardPivot.position;
-    //    Debug.Log(pivotPos + " pivot");
-    //    cardPos = cardBlock.transform.position;
-    //    Debug.Log(cardPos + " card");
-    //}
 
     private bool TryProjectRay(Ray ray, out Vector3 worldPos)
     {
@@ -97,5 +95,33 @@ public class CardSelect : UIControl<ButtonVisuals>
             worldPos = default;
             return false;
         }
+    }
+    public void GetInitPosData()
+    {
+        pivotPos = selectedCardPivot.position;
+        cardPos = cardBlock.transform.position;
+    }
+
+    private void SetInitPos()
+    {
+        cardBlock.transform.position = cardPos;
+        selectedCardPivot.position = pivotPos;
+    }
+
+    public void GetInitColorData()
+    {
+        color = cardBlock.Color;
+        gradient = cardBlock.Gradient;
+        border = cardBlock.Border.Color;
+    }
+
+    private void SetSelectedColor()
+    {
+        cardBlock.Color = new Color(color.r, color.g, color.b, opacityOnSelect);
+    }
+
+    private void SetInitColor()
+    {
+        cardBlock.Color = color;
     }
 }
