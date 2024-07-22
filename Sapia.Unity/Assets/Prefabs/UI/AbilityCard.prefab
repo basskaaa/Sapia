@@ -485,7 +485,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  mouseOffset: {x: 687, y: 281, z: 0}
   opacityOnSelect: 0.5
 --- !u!114 &5555745021062099754
 MonoBehaviour:
@@ -499,6 +498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f20e095d2bcf7a42a1cf4a20d0d0aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardData: {fileID: 0}
 --- !u!1 &7116693855761460976
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,6 +1210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sortFront: 100
   hoverScale: {x: 1, y: 1.05}
+  onUnhover: {fileID: 11400000, guid: f47d538362f74504c86a4e0b9a0c0c5a, type: 2}
   isHover: 0
   OnHover:
     m_PersistentCalls:

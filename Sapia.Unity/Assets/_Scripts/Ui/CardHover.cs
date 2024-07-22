@@ -20,6 +20,7 @@ namespace NovaSamples.UIControls
         private SortGroup sortGroup;
         private int sortBase;
 
+
         private void Awake()
         {
             sortGroup = GetComponentInParent<SortGroup>();
