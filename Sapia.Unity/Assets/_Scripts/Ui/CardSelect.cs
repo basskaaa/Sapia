@@ -14,12 +14,14 @@ public class CardSelect : UIControl<ButtonVisuals>
     public bool isCardSelected = false;
 
     private Transform selectedCardPivot;
+    private Transform selectionScreenPivot;
     private Transform abilityCardHolder;
     public UnityEvent OnReleased = null;
     private UIBlock2D cardBlock;
 
     private Vector3 cardPos;
     private Vector3 pivotPos;
+    private Vector3 screenPos;
 
     [SerializeField] private float opacityOnSelect = 0.5f;
     private Color color;
@@ -34,6 +36,7 @@ public class CardSelect : UIControl<ButtonVisuals>
         View.UIBlock.AddGestureHandler<Gesture.OnRelease, ButtonVisuals>(HandleReleased);
         cardBlock = GetComponent<UIBlock2D>();
         selectedCardPivot = FindObjectOfType<SelectedCardPivot>().transform;
+        selectionScreenPivot = FindObjectOfType<SelectionScreen>().transform;
 
         GetInitPosData();
         GetInitColorData();
@@ -76,7 +79,8 @@ public class CardSelect : UIControl<ButtonVisuals>
 
         if (GetMousePosition.Instance.TryGetCurrentRay(out Ray ray) && GetMousePosition.Instance.TryProjectRay(ray, out Vector3 worldPos))
         {
-            selectedCardPivot.position = worldPos;
+            selectionScreenPivot = selectedCardPivot.GetComponentInParent<SelectionScreen>().transform;
+            selectionScreenPivot.position = worldPos;
             SetSelectedColor();
             isCardSelected = true;
         }
@@ -84,14 +88,14 @@ public class CardSelect : UIControl<ButtonVisuals>
 
     public void GetInitPosData()
     {
-        pivotPos = selectedCardPivot.position;
+        pivotPos = selectionScreenPivot.position;
         cardPos = cardBlock.transform.position;
     }
 
     private void SetInitPos()
     {
         cardBlock.transform.position = cardPos;
-        selectedCardPivot.position = pivotPos;
+        selectionScreenPivot.position = pivotPos;
     }
 
     public void GetInitColorData()
