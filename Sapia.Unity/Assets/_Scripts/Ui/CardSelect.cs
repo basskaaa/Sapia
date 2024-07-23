@@ -11,6 +11,7 @@ using static Nova.Gesture;
 public class CardSelect : UIControl<ButtonVisuals>
 {
     [SerializeField] private GameEvent onCardRelease;
+    [SerializeField] private float highlightTime = 1f;
     public bool isCardSelected = false;
 
     private Transform selectedCardPivot;
@@ -27,6 +28,7 @@ public class CardSelect : UIControl<ButtonVisuals>
     private Color color;
     private RadialGradient gradient;
     private Color border;
+    private bool isTargetHighlighted = false;
     
 
 
@@ -59,6 +61,7 @@ public class CardSelect : UIControl<ButtonVisuals>
         if (isCardSelected) 
         {
             OnCardDrag();
+            CheckTarget();
         }
     }
     public void OnCardRelease()
@@ -125,10 +128,20 @@ public class CardSelect : UIControl<ButtonVisuals>
 
         bool isHit = Physics.Raycast(ray, out raycastHit);
 
-        if (raycastHit.transform.CompareTag("Target"))
+        if (raycastHit.transform.CompareTag("Target") && !isTargetHighlighted)
         {
-            Debug.Log(raycastHit.transform.name);
-            //raycastHit.transform.AddComponent<Outline>();
+            //Debug.Log(raycastHit.transform.name);
+            StartCoroutine(HighlightTarget(raycastHit));
         }
+    }
+
+    private IEnumerator HighlightTarget(RaycastHit hit)
+    {
+        hit.transform.GetComponent<MeshRenderer>().enabled = true;
+        isTargetHighlighted = true;
+
+        yield return new WaitForSeconds(highlightTime);
+        hit.transform.GetComponent<MeshRenderer>().enabled = false;
+        isTargetHighlighted = false;
     }
 }

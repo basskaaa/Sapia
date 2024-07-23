@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Main/End of August Combat Prototype.md",
+                "file": "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Cleave.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_Main/End of August Combat Prototype.md",
+                "file": "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Cleave.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_Main/End of August Combat Prototype.md",
+                "file": "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Cleave.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_Main/End of August Combat Prototype.md"
+                "file": "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Cleave.md"
               }
             }
           }
@@ -166,8 +166,11 @@
   },
   "active": "9d69a3cdf7bb7760",
   "lastOpenFiles": [
-    "_Main/_Progress Log.md",
+    "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Disengage.md",
+    "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Counter.md",
+    "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Cleave.md",
     "_Main/End of August Combat Prototype.md",
+    "_Main/_Progress Log.md",
     "_Main/Images/Progress Images/Image Sequence_001_0000 1.jpg",
     "_Main/Images/Progress Images/Pasted image 20240719194444.png",
     "_Main/Images/Progress Images/Pasted image 20240719193350.png",
@@ -193,8 +196,6 @@
     "Setting/Creatures/Ogre.md",
     "Setting/Creatures/Human.md",
     "Setting/Creatures/Hobgoblin.md",
-    "Setting/Creatures/Halfling.md",
-    "Setting/Creatures/Goliath.md",
     "Setting/Creatures",
     "_Main/Images/Progress Images/Pasted image 20240423173609.png",
     "_Main/Images/Progress Images/Pasted image 20240423165153.png",
