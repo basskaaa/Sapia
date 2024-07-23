@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "657b08a32dd5c00a",
+        "id": "bbfde9b0766aa0b9",
         "type": "tabs",
         "children": [
           {
-            "id": "85cc86ba5dd958d1",
+            "id": "9d69a3cdf7bb7760",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Main/_Progress Log.md",
+                "file": "_Main/End of August Combat Prototype.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_Main/_Progress Log.md",
+                "file": "_Main/End of August Combat Prototype.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_Main/_Progress Log.md",
+                "file": "_Main/End of August Combat Prototype.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_Main/_Progress Log.md"
+                "file": "_Main/End of August Combat Prototype.md"
               }
             }
           }
@@ -164,10 +164,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "85cc86ba5dd958d1",
+  "active": "9d69a3cdf7bb7760",
   "lastOpenFiles": [
-    "_Main/End of August Combat Prototype.md",
     "_Main/_Progress Log.md",
+    "_Main/End of August Combat Prototype.md",
     "_Main/Images/Progress Images/Image Sequence_001_0000 1.jpg",
     "_Main/Images/Progress Images/Pasted image 20240719194444.png",
     "_Main/Images/Progress Images/Pasted image 20240719193350.png",

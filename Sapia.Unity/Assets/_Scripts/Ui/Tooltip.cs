@@ -91,7 +91,9 @@ public class Tooltip : MonoBehaviour
         {
             if (card.isHover)
             {
-                return card.GetComponent<UIBlock2D>().Position.X.Value;
+                float xPos = card.GetComponentInParent<CardSelect>().GetComponent<UIBlock2D>().Position.X.Value;
+                Debug.Log(xPos + " " + card.transform.name);
+                return xPos;
             }
         }
 
