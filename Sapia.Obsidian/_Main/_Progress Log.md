@@ -22,7 +22,7 @@
 ##### 30.03.2024
 16:05
 - Tested pixel material on terrain
-![[Image Sequence_001_0000.jpg]]
+![[Image Sequence_001_0000 1.jpg]]
 - When terrain pixel size is lower than object pixel size, it generates texture clipping spots
 - Doesn't work with terrain painting so might have to edit the terrain shader for this at some point
 ![[Image Sequence_002_0000 2.jpg]]
@@ -61,3 +61,17 @@ Swapped to post processing pixel shader
 ![[Pasted image 20240719193350.png]]
 
 ![[Pasted image 20240719194444.png]]
+
+![[Image Sequence_001_0000 1.jpg]]
+
+##### 20.07.2024
+14:26
+- Card interact system [Sapia Card Interact Test 1 - YouTube](https://www.youtube.com/watch?v=BBp4WI5612s)
+
+##### 21.07.2024
+13:08
+- Card interact system updates to interact polish [Sapia Card Interact Test 2 - YouTube](https://www.youtube.com/watch?v=FHqlhGvcq4k)
+
+##### 21.07.2024
+20:45
+- Cards draggable and detect target

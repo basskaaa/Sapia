@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "efa2707a63464d72",
+        "id": "bbfde9b0766aa0b9",
         "type": "tabs",
         "children": [
           {
-            "id": "c67e870faeb12757",
+            "id": "9d69a3cdf7bb7760",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Main/_Progress Log.md",
+                "file": "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Cleave.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_Main/_Progress Log.md",
+                "file": "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Cleave.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_Main/_Progress Log.md",
+                "file": "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Cleave.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_Main/_Progress Log.md"
+                "file": "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Cleave.md"
               }
             }
           }
@@ -164,13 +164,17 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "c67e870faeb12757",
+  "active": "9d69a3cdf7bb7760",
   "lastOpenFiles": [
-    "Pasted image 20240719194444.png",
-    "Pasted image 20240719193350.png",
-    "_Main/_Development Doc.md",
+    "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Disengage.md",
+    "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Counter.md",
+    "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Cleave.md",
+    "_Main/End of August Combat Prototype.md",
     "_Main/_Progress Log.md",
-    "End of August Combat Prototype.md",
+    "_Main/Images/Progress Images/Image Sequence_001_0000 1.jpg",
+    "_Main/Images/Progress Images/Pasted image 20240719194444.png",
+    "_Main/Images/Progress Images/Pasted image 20240719193350.png",
+    "_Main/_Development Doc.md",
     "Rules/Test Characters/Proto Fighter.md",
     "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 1/Action Surge.md",
     "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighting Styles/Defender.md",
@@ -192,8 +196,6 @@
     "Setting/Creatures/Ogre.md",
     "Setting/Creatures/Human.md",
     "Setting/Creatures/Hobgoblin.md",
-    "Setting/Creatures/Halfling.md",
-    "Setting/Creatures/Goliath.md",
     "Setting/Creatures",
     "_Main/Images/Progress Images/Pasted image 20240423173609.png",
     "_Main/Images/Progress Images/Pasted image 20240423165153.png",
@@ -205,8 +207,6 @@
     "_Main/Images/Progress Images/Image Sequence_012_0000_1.jpg",
     "_Main/Images/Progress Images/Image Sequence_012_0000.jpg",
     "_Main/Images/Progress Images/Image Sequence_011_0000.jpg",
-    "_Main/Images/Progress Images/Image Sequence_010_0000.jpg",
-    "_Main/Images/Progress Images/Image Sequence_009_0000.jpg",
     "_Main/Images/Progress Images",
     "_Main/Images/Reference Images",
     "_Main/Images",
