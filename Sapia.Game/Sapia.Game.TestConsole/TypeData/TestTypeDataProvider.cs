@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using Sapia.Game.Entities.Interfaces;
-using Sapia.Game.Hack.Types;
+using Sapia.Game.Types;
 
 namespace Sapia.Game.TestConsole.TypeData;
 

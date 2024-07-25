@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Events;
 using Nova;
 using NovaSamples.UIControls;
+using UnityEngine;
+using UnityEngine.Events;
 
-namespace NovaSamples.UIControls
+namespace Assets._Scripts.Ui
 {
     public class CardHover : UIControl<ButtonVisuals>
     {

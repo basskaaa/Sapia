@@ -1,8 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class CardData : ScriptableObject
+namespace Assets._Scripts.ScripableObjects
 {
+    public class CardData : ScriptableObject
+    {
 
+    }
 }

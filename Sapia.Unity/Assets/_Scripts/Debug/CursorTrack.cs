@@ -1,15 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
+using Assets._Scripts.Input;
 using UnityEngine;
 
-public class CursorTrack : MonoBehaviour
+namespace Assets._Scripts.Debug
 {
-    private void Update()
+    public class CursorTrack : MonoBehaviour
     {
-        if (GetMousePosition.Instance.TryGetCurrentRay(out Ray ray) && GetMousePosition.Instance.TryProjectRay(ray, out Vector3 worldPos))
+        private void Update()
         {
-            transform.position = worldPos;
-        }
+            if (GetMousePosition.Instance.TryGetCurrentRay(out Ray ray) && GetMousePosition.Instance.TryProjectRay(ray, out Vector3 worldPos))
+            {
+                transform.position = worldPos;
+            }
 
+        }
     }
 }

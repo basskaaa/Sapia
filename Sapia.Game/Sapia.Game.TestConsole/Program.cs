@@ -1,8 +1,8 @@
-﻿using Sapia.Game.Hack.Characters;
-using Sapia.Game.Hack.Combat;
-using Sapia.Game.Hack.Combat.Entities;
-using Sapia.Game.Hack.Combat.Steps;
-using Sapia.Game.Hack.Configuration;
+﻿using Sapia.Game.Characters;
+using Sapia.Game.Characters.Configuration;
+using Sapia.Game.Combat;
+using Sapia.Game.Combat.Entities;
+using Sapia.Game.Combat.Steps;
 using Sapia.Game.TestConsole.TypeData;
 
 var theRockConfiguration = new CharacterConfiguration

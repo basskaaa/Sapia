@@ -3,7 +3,7 @@ param([String]$workingDirectory = ".",
 
 $ErrorActionPreference = "Stop"
 
-$Directory = $workingDirectory + "/Sapia.Unity/Assets/Scripts/Config/"
+$Directory = $workingDirectory + "/Sapia.Unity/Assets/_Scripts/Config/"
 
 New-Item -ItemType Directory -Force -Path $Directory > $null
 

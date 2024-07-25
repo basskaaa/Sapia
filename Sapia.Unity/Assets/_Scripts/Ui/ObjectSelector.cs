@@ -1,7 +1,9 @@
 using UnityEngine;
-using System.Collections;
 
-public class ObjectSelector : MonoBehaviour
+namespace Assets._Scripts.Ui
 {
+    public class ObjectSelector : MonoBehaviour
+    {
 
+    }
 }

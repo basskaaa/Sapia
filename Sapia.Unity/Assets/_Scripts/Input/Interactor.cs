@@ -1,28 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-interface IInteractable
+namespace Assets._Scripts.Input
 {
-    public void OnInteract();
-}
-
-public class Interactor : MonoBehaviour
-{
-    public Transform InteractorSource;
-    public float InteractRange;
-    [HideInInspector] public bool canInteract = true;
-
-    private void Update()
+    interface IInteractable
     {
-        if (Input.GetKeyDown(KeyCode.E) && canInteract)
+        public void OnInteract();
+    }
+
+    public class Interactor : MonoBehaviour
+    {
+        public Transform InteractorSource;
+        public float InteractRange;
+        [HideInInspector] public bool canInteract = true;
+
+        private void Update()
         {
-            Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
-            if (Physics.Raycast(r, out RaycastHit hitInfo, InteractRange)) 
+            if (UnityEngine.Input.GetKeyDown(KeyCode.E) && canInteract)
             {
-                if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj)) 
-                { 
-                    interactObj.OnInteract();
+                Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
+                if (Physics.Raycast(r, out RaycastHit hitInfo, InteractRange)) 
+                {
+                    if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj)) 
+                    { 
+                        interactObj.OnInteract();
+                    }
                 }
             }
         }
