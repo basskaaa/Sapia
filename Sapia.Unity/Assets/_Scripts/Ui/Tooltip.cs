@@ -27,8 +27,8 @@ namespace Assets._Scripts.Ui
 
             Hide();
 
-            cardsSelect = FindObjectsOfType<CardSelect>();
-            cardsHover = FindObjectsOfType<CardHover>();
+            cardsSelect = FindObjectsByType<CardSelect>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+            cardsHover = FindObjectsByType<CardHover>(FindObjectsInactive.Include, FindObjectsSortMode.None);
         }
 
         private void Update()

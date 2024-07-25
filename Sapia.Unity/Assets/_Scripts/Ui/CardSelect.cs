@@ -37,8 +37,8 @@ namespace Assets._Scripts.Ui
             abilityCardHolder = GetComponentInParent<AbilityCardHolder>().transform;
             View.UIBlock.AddGestureHandler<Gesture.OnRelease, ButtonVisuals>(HandleReleased);
             cardBlock = GetComponent<UIBlock2D>();
-            selectedCardPivot = FindObjectOfType<SelectedCardPivot>().transform;
-            selectionScreenPivot = FindObjectOfType<SelectionScreen>().transform;
+            selectedCardPivot = FindFirstObjectByType<SelectedCardPivot>().transform;
+            selectionScreenPivot = FindFirstObjectByType<SelectionScreen>().transform;
 
             GetInitPosData();
             GetInitColorData();

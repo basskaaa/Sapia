@@ -16,7 +16,7 @@ namespace Assets._Scripts.Patterns
             {
                 if (instance == null) // If no instance exists
                 {
-                    instance = FindObjectOfType<T>(); // Look for an existing instance in the scene
+                    instance = FindFirstObjectByType<T>(); // Look for an existing instance in the scene
 
                     if (instance == null) // If still no instance found
                     {
