@@ -141,26 +141,44 @@ namespace Assets._Scripts.Game
 
             if (target != null)
             {
-                var result = turn.UseAbility(new TargetedAbilityUse(ability.AbilityType.Id, target.ParticipantId));
+                var abilityId = ability.AbilityType.Id;
+                var targetParticipantId = target.ParticipantId;
 
-                if (_combatBag.Execution.MoveNext())
-                {
-                    _currentStep = _combatBag.Execution.Current;
-                }
-
-                if (result.HasValue)
-                {
-                    var targetInfo = result.Value.AffectedParticipants.Select(x => $"{x.ParticipantId} {x.HealthChange}").ToArray();
-                    ShowDebugText($"Used {result.Value.Ability.Id}: {string.Join(", ", targetInfo)}");
-                }
-                else
-                {
-                    ShowDebugText($"Failed to use {ability.AbilityType.Id}");
-                }
+                UseAbilityInCurrentTurn(turn, abilityId, targetParticipantId);
             }
             else
             {
                 ShowDebugText($"Unable to find a target for {ability.AbilityType.Id}");
+            }
+        }
+
+        private void UseAbilityInCurrentTurn(TurnStep turn, string abilityId, string targetParticipantId)
+        {
+            var result = turn.UseAbility(new TargetedAbilityUse(abilityId, targetParticipantId));
+
+            if (_combatBag.Execution.MoveNext())
+            {
+                _currentStep = _combatBag.Execution.Current;
+            }
+
+            if (result.HasValue)
+            {
+                var targetInfo = result.Value.AffectedParticipants.Select(x => $"{x.ParticipantId} {x.HealthChange}").ToArray();
+                ShowDebugText($"Used {result.Value.Ability.Id}: {string.Join(", ", targetInfo)}");
+            }
+            else
+            {
+                ShowDebugText($"Failed to use {abilityId}");
+            }
+
+            RaiseStepChanged();
+        }
+
+        public void UseAbility(string userParticipantId, UsableAbility ability, string targetParticipantId)
+        {
+            if (_currentStep is TurnStep turn && turn.Participant.ParticipantId == userParticipantId)
+            {
+                UseAbilityInCurrentTurn(turn, ability.AbilityType.Id, targetParticipantId);
             }
         }
 

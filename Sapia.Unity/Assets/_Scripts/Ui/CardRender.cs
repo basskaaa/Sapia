@@ -8,11 +8,11 @@ namespace Assets._Scripts.Ui
     {
         public TextBlock Name;
 
-        public UsableAbility Rendering { get; private set; }
+        public UsableAbility Ability { get; private set; }
 
         public void Render(UsableAbility ability)
         {
-            Rendering = ability;
+            Ability = ability;
 
             gameObject.name = $"Card_{ability.AbilityType.Id}";
 

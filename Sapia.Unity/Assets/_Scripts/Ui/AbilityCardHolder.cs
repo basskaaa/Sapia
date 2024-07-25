@@ -1,13 +1,17 @@
 using System.Collections.Generic;
 using System.Linq;
+using Assets._Scripts.Game;
 using Sapia.Game.Combat.Entities;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Assets._Scripts.Ui
 {
-    public class AbilityCardHolder : MonoBehaviour
+    public class AbilityCardHolder : MonoBehaviour, ICardUsedListener
     {
         public GameObject CardPrefab;
+
+        public UnityEvent<UsableAbility, CombatParticipantRef> CardUsed;
 
         public void Show(IReadOnlyCollection<UsableAbility> abilities)
         {
@@ -40,11 +44,18 @@ namespace Assets._Scripts.Ui
 
         private CardRender InstantiateCard()
         {
-            var card = Instantiate(CardPrefab);
+            var card = Instantiate(CardPrefab, transform);
 
-            card.transform.SetParent(transform);
+            var select = card.GetComponentInChildren<CardSelect>();
+
+            select.CardUsedListener = this;
 
             return card.GetComponent<CardRender>();
+        }
+
+        public void OnCardUsed(UsableAbility ability, CombatParticipantRef target)
+        {
+            CardUsed.Invoke(ability, target);
         }
     }
 }

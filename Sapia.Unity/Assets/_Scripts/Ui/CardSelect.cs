@@ -1,4 +1,5 @@
 using System.Collections;
+using Assets._Scripts.Game;
 using Assets._Scripts.Input;
 using Assets._Scripts.Patterns;
 using Nova;
@@ -10,7 +11,10 @@ namespace Assets._Scripts.Ui
 {
     public class CardSelect : UIControl<ButtonVisuals>
     {
-        [SerializeField] private GameEvent onCardRelease;
+        public CombatParticipantRef CurrentTarget { get; private set; }
+
+        public ICardUsedListener CardUsedListener;
+
         [SerializeField] private float highlightTime = 1f;
         public bool isCardSelected = false;
 
@@ -30,7 +34,6 @@ namespace Assets._Scripts.Ui
         private Color border;
         private bool isTargetHighlighted = false;
     
-
 
         private void OnEnable()
         {
@@ -64,8 +67,11 @@ namespace Assets._Scripts.Ui
                 CheckTarget();
             }
         }
+
         public void OnCardRelease()
         {
+            UnityEngine.Debug.Log("Released");
+
             CheckTarget();
 
             SetInitPos();
@@ -73,7 +79,16 @@ namespace Assets._Scripts.Ui
 
             isCardSelected = false;
             transform.SetParent(abilityCardHolder, true);
-            onCardRelease.Raise();
+      
+            var render = GetComponentInChildren<CardRender>();
+
+            if (render == null)
+            {
+                UnityEngine.Debug.LogWarning($"Unable to find a {nameof(CardRender)} on {gameObject}");
+                return;
+            }
+
+            CardUsedListener?.OnCardUsed(render.Ability, CurrentTarget);
         }
 
         public void OnCardDrag()
@@ -130,6 +145,7 @@ namespace Assets._Scripts.Ui
 
             if (isHit && raycastHit.transform.CompareTag("Target") && !isTargetHighlighted)
             {
+                CurrentTarget = raycastHit.transform.GetComponentInParent<CombatParticipantRef>();
                 //Debug.Log(raycastHit.transform.name);
                 StartCoroutine(HighlightTarget(raycastHit));
             }

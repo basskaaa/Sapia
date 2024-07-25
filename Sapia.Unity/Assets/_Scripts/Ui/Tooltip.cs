@@ -96,7 +96,7 @@ namespace Assets._Scripts.Ui
                     float xPos = card.GetComponentInParent<CardSelect>().GetComponent<UIBlock2D>().Position.X.Value;
                     var render = card.GetComponentInParent<CardRender>();
 
-                    return (render.Rendering, xPos);
+                    return (render.Ability, xPos);
                 }
             }
 
