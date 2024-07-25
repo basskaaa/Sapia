@@ -1,4 +1,4 @@
-﻿using Sapia.Game.Hack.Types;
+﻿using Sapia.Game.Types;
 
 namespace Sapia.Game.TestConsole.TypeData;
 
