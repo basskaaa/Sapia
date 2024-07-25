@@ -20,12 +20,11 @@ namespace Assets._Scripts.Game
 
         private CombatBag _combatBag;
         private CombatStep _currentStep;
-        private CombatUi _combatUi;
+        private HashSet<ICombatListener> _listeners = new();
 
         void Start()
         {
             _debug = FindFirstObjectByType<DebugText>();
-            _combatUi = FindFirstObjectByType<CombatUi>();
 
             _combatBag = CreateCombat();
             Step();
@@ -85,7 +84,15 @@ namespace Assets._Scripts.Game
                 ShowDebugText("Combat finished");
             }
 
-            _combatUi.StepChanged(_combatBag.Combat, _currentStep);
+            RaiseStepChanged();
+        }
+
+        private void RaiseStepChanged()
+        {
+            foreach (var combatListener in _listeners)
+            {
+                combatListener.StepChanged(_combatBag.Combat, _currentStep);
+            }
         }
 
         public void Act()
@@ -111,6 +118,7 @@ namespace Assets._Scripts.Game
             {
                 turn.EndTurn();
                 ShowDebugText("Ended turn", "Use Step to advance combat");
+                RaiseStepChanged();
                 return;
             }
 
@@ -203,6 +211,11 @@ namespace Assets._Scripts.Game
             textToShow.AddRange(text);
 
             _debug.Show(textToShow.ToArray());
+        }
+
+        public void AddListener(ICombatListener listener)
+        {
+            _listeners.Add(listener);
         }
     }
 }

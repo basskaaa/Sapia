@@ -128,7 +128,7 @@ namespace Assets._Scripts.Ui
 
             bool isHit = Physics.Raycast(ray, out raycastHit);
 
-            if (raycastHit.transform.CompareTag("Target") && !isTargetHighlighted)
+            if (isHit && raycastHit.transform.CompareTag("Target") && !isTargetHighlighted)
             {
                 //Debug.Log(raycastHit.transform.name);
                 StartCoroutine(HighlightTarget(raycastHit));
