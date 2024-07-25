@@ -25,6 +25,7 @@ namespace Assets._Scripts.Game
             _debug = FindFirstObjectByType<DebugText>();
 
             _combatBag = CreateCombat();
+            Step();
 
             ShowDebugText("Combat runner has started");
         }
@@ -73,7 +74,7 @@ namespace Assets._Scripts.Game
             if (_combatBag.Execution.MoveNext())
             {
                 _currentStep = _combatBag.Execution.Current;
-                ShowDebugText("Stepped");
+                ShowDebugText();
             }
             else
             {
@@ -128,6 +129,11 @@ namespace Assets._Scripts.Game
             if (target != null)
             {
                 var result = turn.UseAbility(new TargetedAbilityUse(ability.AbilityType.Id, target.ParticipantId));
+
+                if (_combatBag.Execution.MoveNext())
+                {
+                    _currentStep = _combatBag.Execution.Current;
+                }
 
                 if (result.HasValue)
                 {
