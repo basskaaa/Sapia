@@ -9,7 +9,7 @@ public class CombatStatus
 public enum CombatActionType
 {
     Starter = 1,
-    Main = 1,
-    Free = 2,
-    Reaction = 3
+    Main = 2,
+    Free = 3,
+    Reaction = 4
 }
