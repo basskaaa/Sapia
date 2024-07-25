@@ -25,7 +25,7 @@ public class PixelizePass : ScriptableRenderPass
 
     public override void OnCameraSetup(CommandBuffer cmd, ref RenderingData renderingData)
     {
-        colorBuffer = renderingData.cameraData.renderer.cameraColorTarget;
+        colorBuffer = renderingData.cameraData.renderer.cameraColorTargetHandle;
         RenderTextureDescriptor descriptor = renderingData.cameraData.cameraTargetDescriptor;
 
         //cmd.GetTemporaryRT(pointBufferID, descriptor.width, descriptor.height, 0, FilterMode.Point);
@@ -55,8 +55,8 @@ public class PixelizePass : ScriptableRenderPass
             //Blit(cmd, pointBuffer, pixelBuffer);
             //Blit(cmd, pixelBuffer, colorBuffer);
 
-            Blit(cmd, colorBuffer, pixelBuffer, material);
-            Blit(cmd, pixelBuffer, colorBuffer);
+            cmd.Blit(colorBuffer, pixelBuffer, material);
+            cmd.Blit(pixelBuffer, colorBuffer);
         }
 
         context.ExecuteCommandBuffer(cmd);

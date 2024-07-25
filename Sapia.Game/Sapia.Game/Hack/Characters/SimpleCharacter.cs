@@ -13,7 +13,7 @@ public class SimpleCharacter : ICompiledCharacter
     public string Name { get; }
     public int CurrentHealth { get; set; }
     public CharacterStats Stats { get; }
-    public IReadOnlyCollection<PreparedAbility> Abilities { get; init; } = Array.Empty<PreparedAbility>();
+    public IReadOnlyCollection<PreparedAbility> Abilities { get; set; } = Array.Empty<PreparedAbility>();
     public int TotalLevel { get; }
     public bool IsPlayer => false;
 }

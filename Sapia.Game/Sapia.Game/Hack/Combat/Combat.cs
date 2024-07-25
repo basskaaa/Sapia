@@ -49,7 +49,7 @@ public class Combat
             combatParticipant.Value.Status = new CombatStatus
             {
                 RemainingMovement = combatParticipant.Value.Character.Stats.MovementSpeed,
-                RemainingActions = Enum.GetValues<CombatActionType>()
+                RemainingActions = (CombatActionType[])Enum.GetValues(typeof(CombatActionType)) 
             };
         }
     }
