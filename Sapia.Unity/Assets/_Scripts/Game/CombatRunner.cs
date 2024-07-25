@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Assets._Scripts.TypeData;
+using Assets._Scripts.Ui;
 using Assets._Scripts.Ui.Test;
 using Sapia.Game.Characters;
 using Sapia.Game.Characters.Configuration;
@@ -19,10 +20,12 @@ namespace Assets._Scripts.Game
 
         private CombatBag _combatBag;
         private CombatStep _currentStep;
+        private CombatUi _combatUi;
 
         void Start()
         {
             _debug = FindFirstObjectByType<DebugText>();
+            _combatUi = FindFirstObjectByType<CombatUi>();
 
             _combatBag = CreateCombat();
             Step();
@@ -81,6 +84,8 @@ namespace Assets._Scripts.Game
                 _currentStep = null;
                 ShowDebugText("Combat finished");
             }
+
+            _combatUi.StepChanged(_combatBag.Combat, _currentStep);
         }
 
         public void Act()

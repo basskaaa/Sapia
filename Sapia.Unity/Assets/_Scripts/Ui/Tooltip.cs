@@ -1,5 +1,7 @@
 using System.Collections;
 using Nova;
+using Sapia.Game.Combat.Entities;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Assets._Scripts.Ui
@@ -18,9 +20,11 @@ namespace Assets._Scripts.Ui
         private CardSelect[] cardsSelect;
         private CardHover[] cardsHover;
         private UIBlock2D[] cardsBlock;
+        private TooltipRenderer tooltipRenderer;
 
         private void OnEnable()
         {
+            tooltipRenderer = GetComponent<TooltipRenderer>();
             tooltipBlock = GetComponent<UIBlock2D>();
             tooltipHolder = GetComponentInParent<TooltipHolder>().GetComponent<UIBlock2D>();
             tooltipXPos = tooltipHolder.Position.X.Value;
@@ -40,7 +44,7 @@ namespace Assets._Scripts.Ui
         {
             if (!isDisplayed && CheckIfHovered() && !CheckIfSelect() && UnityEngine.Input.GetKeyDown(KeyCode.Q))
             {
-                Display(GetXPos());
+                Display(GetHoveredCardDetails());
             }
 
             if (isDisplayed && UnityEngine.Input.GetKeyDown(KeyCode.Q))
@@ -83,26 +87,38 @@ namespace Assets._Scripts.Ui
             return false;
         }
 
-        private float GetXPos()
+        private (UsableAbility ability, float xPos)? GetHoveredCardDetails()
         {
             foreach (CardHover card in cardsHover)
             {
                 if (card.isHover)
                 {
                     float xPos = card.GetComponentInParent<CardSelect>().GetComponent<UIBlock2D>().Position.X.Value;
-                    return xPos;
+                    var render = card.GetComponentInParent<CardRender>();
+
+                    return (render.Rendering, xPos);
                 }
             }
 
-            return 0;
+            return null;
         }
 
-        public void Display(float xPos)
+        public void Display((UsableAbility ability, float xPos)? details)
         {
+            if (!details.HasValue)
+            {
+                Hide();
+                return;
+            }
+
             StartCoroutine(TooltipDelay(true));
+            
             tooltipBlock.BodyEnabled = true;
             tooltipBlock.Shadow.Enabled = true;
-            tooltipHolder.Position.X.Value = xPos + xOffset;
+            
+            tooltipHolder.Position.X.Value = details.Value.xPos + xOffset;
+
+            tooltipRenderer.Render(details.Value.ability);
         }
 
         public void Hide()

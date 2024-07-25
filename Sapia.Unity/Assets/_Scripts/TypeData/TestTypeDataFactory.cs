@@ -8,16 +8,20 @@ namespace Assets._Scripts.TypeData
         {
             var slash = new AbilityType
             {
-                Id = "Slash"
+                Id = "Slash",
+                Description = "Slash your opponent with slashiness"
+
             };
             var jab = new AbilityType
             {
                 Id = "Jab",
-                Damage = 2
+                Damage = 2,
+                Description = "Jab your opponent with jabjab"
             };
             var whirlwind = new AbilityType
             {
-                Id = "Whirlwind"
+                Id = "Whirlwind",
+                Description = "Whoooosh don't forget helicopter noises"
             };
 
             return new(slash, jab, whirlwind);
