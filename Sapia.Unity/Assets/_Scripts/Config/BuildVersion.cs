@@ -1,4 +1,4 @@
-namespace Assets.Scripts.Config
+namespace Assets._Scripts.Config
 {
     public class BuildVersion
     {

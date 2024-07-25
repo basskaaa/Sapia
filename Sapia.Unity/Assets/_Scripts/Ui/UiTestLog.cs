@@ -1,11 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class UiTestLog : MonoBehaviour
+namespace Assets._Scripts.Ui
 {
-    public void Log()
+    public class UiTestLog : MonoBehaviour
     {
-        Debug.Log(gameObject.name);
+        public void Log()
+        {
+            UnityEngine.Debug.Log(gameObject.name);
+        }
     }
 }

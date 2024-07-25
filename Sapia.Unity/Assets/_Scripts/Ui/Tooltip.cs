@@ -1,123 +1,122 @@
-using Nova;
-using NovaSamples.UIControls;
 using System.Collections;
-using System.Collections.Generic;
+using Nova;
 using UnityEngine;
-using UnityEngine.Rendering;
-using static Nova.Gesture;
 
-public class Tooltip : MonoBehaviour
+namespace Assets._Scripts.Ui
 {
-    public bool isDisplayed;
-    [SerializeField] private float inputDelay = 0.4f;
-    [SerializeField] private float xOffset = -480;
-
-    private UIBlock2D tooltipBlock;
-    private UIBlock2D tooltipHolder;
-
-    private float tooltipXPos;
-
-    private CardSelect[] cardsSelect;
-    private CardHover[] cardsHover;
-    private UIBlock2D[] cardsBlock;
-
-    private void OnEnable()
+    public class Tooltip : MonoBehaviour
     {
-        tooltipBlock = GetComponent<UIBlock2D>();
-        tooltipHolder = GetComponentInParent<TooltipHolder>().GetComponent<UIBlock2D>();
-        tooltipXPos = tooltipHolder.Position.X.Value;
+        public bool isDisplayed;
+        [SerializeField] private float inputDelay = 0.4f;
+        [SerializeField] private float xOffset = -480;
 
-        Hide();
+        private UIBlock2D tooltipBlock;
+        private UIBlock2D tooltipHolder;
 
-        cardsSelect = FindObjectsOfType<CardSelect>();
-        cardsHover = FindObjectsOfType<CardHover>();
-    }
+        private float tooltipXPos;
 
-    private void Update()
-    {
-        CheckIfDisplay();
-    }
+        private CardSelect[] cardsSelect;
+        private CardHover[] cardsHover;
+        private UIBlock2D[] cardsBlock;
 
-    private void CheckIfDisplay()
-    {
-        if (!isDisplayed && CheckIfHovered() && !CheckIfSelect() && Input.GetKeyDown(KeyCode.Q))
+        private void OnEnable()
         {
-            Display(GetXPos());
-        }
+            tooltipBlock = GetComponent<UIBlock2D>();
+            tooltipHolder = GetComponentInParent<TooltipHolder>().GetComponent<UIBlock2D>();
+            tooltipXPos = tooltipHolder.Position.X.Value;
 
-        if (isDisplayed && Input.GetKeyDown(KeyCode.Q))
-        {
             Hide();
+
+            cardsSelect = FindObjectsOfType<CardSelect>();
+            cardsHover = FindObjectsOfType<CardHover>();
         }
 
-        if (isDisplayed && CheckIfSelect())
+        private void Update()
         {
-            Hide();
+            CheckIfDisplay();
         }
 
-        if (isDisplayed && !CheckIfHovered())
+        private void CheckIfDisplay()
         {
-            Hide();
-        }
-    }
-
-    private bool CheckIfHovered()
-    {
-        foreach (CardHover card in cardsHover)
-        {
-            if (card.isHover)
+            if (!isDisplayed && CheckIfHovered() && !CheckIfSelect() && UnityEngine.Input.GetKeyDown(KeyCode.Q))
             {
-                return true;
+                Display(GetXPos());
             }
-        }
-        return false;
-    }
 
-    private bool CheckIfSelect()
-    {
-        foreach (CardSelect card in cardsSelect)
-        {
-            if (card.isCardSelected)
+            if (isDisplayed && UnityEngine.Input.GetKeyDown(KeyCode.Q))
             {
-                return true;
+                Hide();
             }
-        }
-        return false;
-    }
 
-    private float GetXPos()
-    {
-        foreach (CardHover card in cardsHover)
-        {
-            if (card.isHover)
+            if (isDisplayed && CheckIfSelect())
             {
-                float xPos = card.GetComponentInParent<CardSelect>().GetComponent<UIBlock2D>().Position.X.Value;
-                return xPos;
+                Hide();
+            }
+
+            if (isDisplayed && !CheckIfHovered())
+            {
+                Hide();
             }
         }
 
-        return 0;
-    }
+        private bool CheckIfHovered()
+        {
+            foreach (CardHover card in cardsHover)
+            {
+                if (card.isHover)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
-    public void Display(float xPos)
-    {
-        StartCoroutine(TooltipDelay(true));
-        tooltipBlock.BodyEnabled = true;
-        tooltipBlock.Shadow.Enabled = true;
-        tooltipHolder.Position.X.Value = xPos + xOffset;
-    }
+        private bool CheckIfSelect()
+        {
+            foreach (CardSelect card in cardsSelect)
+            {
+                if (card.isCardSelected)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
-    public void Hide()
-    {
-        StartCoroutine(TooltipDelay(false));
-        tooltipBlock.BodyEnabled = false;
-        tooltipBlock.Shadow.Enabled = false;
-        tooltipHolder.Position.X.Value = tooltipXPos;
-    }
+        private float GetXPos()
+        {
+            foreach (CardHover card in cardsHover)
+            {
+                if (card.isHover)
+                {
+                    float xPos = card.GetComponentInParent<CardSelect>().GetComponent<UIBlock2D>().Position.X.Value;
+                    return xPos;
+                }
+            }
 
-    private IEnumerator TooltipDelay(bool displayed)
-    {
-        yield return new WaitForSeconds(inputDelay);
-        isDisplayed = displayed;
+            return 0;
+        }
+
+        public void Display(float xPos)
+        {
+            StartCoroutine(TooltipDelay(true));
+            tooltipBlock.BodyEnabled = true;
+            tooltipBlock.Shadow.Enabled = true;
+            tooltipHolder.Position.X.Value = xPos + xOffset;
+        }
+
+        public void Hide()
+        {
+            StartCoroutine(TooltipDelay(false));
+            tooltipBlock.BodyEnabled = false;
+            tooltipBlock.Shadow.Enabled = false;
+            tooltipHolder.Position.X.Value = tooltipXPos;
+        }
+
+        private IEnumerator TooltipDelay(bool displayed)
+        {
+            yield return new WaitForSeconds(inputDelay);
+            isDisplayed = displayed;
+        }
     }
 }
