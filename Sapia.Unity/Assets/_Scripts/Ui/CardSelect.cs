@@ -143,20 +143,27 @@ namespace Assets._Scripts.Ui
 
             bool isHit = Physics.Raycast(ray, out raycastHit);
 
-            if (isHit && raycastHit.transform.CompareTag("Target") && !isTargetHighlighted)
+            if (isHit && raycastHit.transform.CompareTag("Target") && !isTargetHighlighted && isCardSelected)
             {
                 CurrentTarget = raycastHit.transform.GetComponentInParent<CombatParticipantRef>();
                 //Debug.Log(raycastHit.transform.name);
-                StartCoroutine(HighlightTarget(raycastHit));
+                HighlightTarget(raycastHit);
+            }
+
+            if (!isCardSelected)
+            {
+                UnhighlightTarget(raycastHit);
             }
         }
 
-        private IEnumerator HighlightTarget(RaycastHit hit)
+        private void HighlightTarget(RaycastHit hit)
         {
             hit.transform.GetComponent<MeshRenderer>().enabled = true;
             isTargetHighlighted = true;
+        }
 
-            yield return new WaitForSeconds(highlightTime);
+        private void UnhighlightTarget(RaycastHit hit)
+        {
             hit.transform.GetComponent<MeshRenderer>().enabled = false;
             isTargetHighlighted = false;
         }

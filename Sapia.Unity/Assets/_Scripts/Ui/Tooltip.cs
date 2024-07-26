@@ -1,5 +1,6 @@
 using System.Collections;
 using Nova;
+using Nova.TMP;
 using Sapia.Game.Combat.Entities;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -17,6 +18,7 @@ namespace Assets._Scripts.Ui
 
         private float tooltipXPos;
 
+        private TextMeshProTextBlock[] tooltipText;
         private CardSelect[] cardsSelect;
         private CardHover[] cardsHover;
         private UIBlock2D[] cardsBlock;
@@ -27,12 +29,8 @@ namespace Assets._Scripts.Ui
             tooltipRenderer = GetComponent<TooltipRenderer>();
             tooltipBlock = GetComponent<UIBlock2D>();
             tooltipHolder = GetComponentInParent<TooltipHolder>().GetComponent<UIBlock2D>();
+            tooltipText = GetComponentsInChildren<TextMeshProTextBlock>();
             tooltipXPos = tooltipHolder.Position.X.Value;
-
-            Hide();
-
-            cardsSelect = FindObjectsByType<CardSelect>(FindObjectsInactive.Include, FindObjectsSortMode.None);
-            cardsHover = FindObjectsByType<CardHover>(FindObjectsInactive.Include, FindObjectsSortMode.None);
         }
 
         private void Update()
@@ -65,6 +63,8 @@ namespace Assets._Scripts.Ui
 
         private bool CheckIfHovered()
         {
+            cardsHover = FindObjectsByType<CardHover>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+
             foreach (CardHover card in cardsHover)
             {
                 if (card.isHover)
@@ -77,6 +77,8 @@ namespace Assets._Scripts.Ui
 
         private bool CheckIfSelect()
         {
+            cardsSelect = FindObjectsByType<CardSelect>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+
             foreach (CardSelect card in cardsSelect)
             {
                 if (card.isCardSelected)
@@ -118,6 +120,11 @@ namespace Assets._Scripts.Ui
             
             tooltipHolder.Position.X.Value = details.Value.xPos + xOffset;
 
+            foreach (TextMeshProTextBlock text in tooltipText)
+            {
+                text.gameObject.SetActive(true);
+            }
+
             tooltipRenderer.Render(details.Value.ability);
         }
 
@@ -127,6 +134,11 @@ namespace Assets._Scripts.Ui
             tooltipBlock.BodyEnabled = false;
             tooltipBlock.Shadow.Enabled = false;
             tooltipHolder.Position.X.Value = tooltipXPos;
+
+            foreach (TextMeshProTextBlock text in tooltipText)
+            {
+                text.gameObject.SetActive(false);
+            }
         }
 
         private IEnumerator TooltipDelay(bool displayed)
