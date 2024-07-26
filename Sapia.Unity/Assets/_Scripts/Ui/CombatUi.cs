@@ -9,11 +9,13 @@ namespace Assets._Scripts.Ui
     public class CombatUi : MonoBehaviour, ICombatListener
     {
         private AbilityCardHolder _cards;
+        private TopCardSetter _topCardSetter;
         private CombatRunner _combatRunner;
 
         void Awake()
         {
             _cards = GetComponentInChildren<AbilityCardHolder>();
+            _topCardSetter = GetComponentInChildren<TopCardSetter>();
 
             _cards.CardUsed.AddListener(CardUsed);
 
@@ -33,6 +35,7 @@ namespace Assets._Scripts.Ui
             if (step is TurnStep turn && turn.Participant.Character.IsPlayer)
             {
                 _cards.Show(turn.Abilities);
+                _topCardSetter.FindTopCard();
             }
         }
     }
