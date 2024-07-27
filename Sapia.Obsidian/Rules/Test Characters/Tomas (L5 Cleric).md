@@ -7,7 +7,7 @@
 [[Lifestyle]]: [[Acolyte]]
 [[Roots]]: [[Urban]]
 [[Culture]]: [[Elven]]
-[[Blessing]]: [[Baldur]]
+[[Blessing]]: [[Rules/2. Character Options/2. Backgrounds/Blessing/Baldur]]
 
 [[Hit Points|HP]]: 38/38
 [[Defence]]: 11 (+2) 
@@ -79,7 +79,7 @@ Clubs
 [[Divine Expert]]
 [[Urban|Urban Inspiration]]
 [[Mountainous]]
-[[Baldur]]
+[[Rules/2. Character Options/2. Backgrounds/Blessing/Baldur]]
 [[Channel Divinity]]
 [[Divine Recovery]]
 [[Voice of Authority]]
@@ -120,4 +120,4 @@ Clubs
 [[Elven Culture]]
 [[Urban]]
 [[Mountainous]]
-[[Baldur]]
+[[Rules/2. Character Options/2. Backgrounds/Blessing/Baldur]]

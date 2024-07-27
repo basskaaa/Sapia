@@ -1,1 +1,4 @@
 - A curse which disconnects you from sensing other living creatures. You can still sense their impact on the world and be influenced by them, but have no concrete awareness of the presence of life. Other living creatures can sense you as normal, though have no way of communicating with you through normal means.
+- Giants dont have souls - this is why the reghed nomads revere them so powerfully
+- As runic magic comes from giants, it is seen as a material truth not relying on the soul of the caster. It exists and lingers purely based on the material composition, the patterns inscribed upon such material, and the components used to make the inscription.
+- Draconic, arcane, and divine magics are considered soul magics as they descend from the action and intervention of dragons, the ancestors of sapian mages and the cause of the weave.

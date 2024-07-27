@@ -1,0 +1,1 @@
+Great silver dragon of [[Mount Empyrean]]. God of patience and justice.

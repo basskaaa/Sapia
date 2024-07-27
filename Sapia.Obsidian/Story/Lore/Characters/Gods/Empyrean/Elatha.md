@@ -1,0 +1,1 @@
+God of the moon [[Sa]] and fate, once elven mage who studied the art of chronomancy.

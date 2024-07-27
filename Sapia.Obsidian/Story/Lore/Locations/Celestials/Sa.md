@@ -1,0 +1,1 @@
+The great moon and divine body of the god [[Elatha]].

@@ -1,1 +1,0 @@
-Lands of the [[Corian Republic]] and the [[Tribes of the Pale]] who came together against the [[Fraticiat Arcarum]] under the wisdom of the [[Herald and the Harbinger]] in the decade 910.

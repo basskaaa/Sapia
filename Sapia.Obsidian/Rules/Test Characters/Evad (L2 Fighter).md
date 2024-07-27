@@ -7,7 +7,7 @@
 [[Lifestyle]]: [[Guard of the People|Guard of the People]]
 [[Roots]]: [[Rural]]
 [[Culture]]: [[Human Species]]
-[[Blessing]]: [[Jevel]]
+[[Blessing]]: [[Rules/2. Character Options/2. Backgrounds/Blessing/Jevel]]
 
 [[Hit Points|HP]]: 18
 [[Defence]]: 14 (+2) 
@@ -75,7 +75,7 @@ Crossbows
 [[Human Versatility]]
 [[Crowd Control]]
 [[Grasslands|Grasslands Adept]]
-[[Jevel|Blessing of Jevel]]
+[[Rules/2. Character Options/2. Backgrounds/Blessing/Jevel|Blessing of Jevel]]
 
 [[GEAR]]
 
@@ -105,4 +105,4 @@ Crossbows
 [[Rural]]
 [[Human Species]]
 [[Grasslands]]
-[[Jevel]]
+[[Rules/2. Character Options/2. Backgrounds/Blessing/Jevel]]

@@ -1,0 +1,1 @@
+The dry desert east of the realms afflicted by proximity to the great giant [[Daamh]]. Origin of the goblin kin.

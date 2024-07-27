@@ -1,0 +1,1 @@
+God of the sun and atonement, once ruler of the [[Durum Dominion]] at the height of their power.

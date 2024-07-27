@@ -1,0 +1,1 @@
+God of death and judgement, determines which god your soul shall belong to after death.

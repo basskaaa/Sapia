@@ -1,0 +1,1 @@
+Mountain range created aeons ago to fortify the realm of the frost giants from the return of the dragon[[Arioch]]. Separates the Northlands of [[Story/Lore/Locations/Regions/The For/The For]] from the Westlands of the [[The Verdant]].
