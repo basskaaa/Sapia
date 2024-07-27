@@ -36,6 +36,17 @@ namespace Assets._Scripts.Ui
             {
                 _cards.Show(turn.Abilities);
                 _topCardSetter.FindTopCard();
+                GetCardsPos();
+            }
+        }
+
+        private void GetCardsPos()
+        {
+            CardSelect[] _cardSelects = _cards.GetComponentsInChildren<CardSelect>();
+
+            foreach (CardSelect cardSelect in _cardSelects)
+            {
+                cardSelect.GetInitPosData();
             }
         }
     }
