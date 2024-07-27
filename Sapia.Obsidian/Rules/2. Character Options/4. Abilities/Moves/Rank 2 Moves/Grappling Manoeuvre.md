@@ -12,7 +12,7 @@ Duration:
 Attack/Save:
   - "[[Fortitude Save]]"
 Classes:
-  - "[[Fighter]]"
+  - "[[Rules/2. Character Options/3. Classes/Fighter/Fighter]]"
 Concentration: false
 tags: 
 Prerequisite: Grapple

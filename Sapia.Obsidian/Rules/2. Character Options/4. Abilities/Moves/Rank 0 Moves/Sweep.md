@@ -12,11 +12,11 @@ Duration:
 Attack/Save:
   - "[[Melee Attack]]"
 Classes:
-  - "[[Fighter]]"
+  - "[[Rules/2. Character Options/3. Classes/Fighter/Fighter]]"
 Concentration: false
 tags:
   - Attack
-Prerequisite:
+Prerequisite: 
 ---
 You make one attack roll against three targets within range, dealing damage equal to your ability modifier on a hit.
 

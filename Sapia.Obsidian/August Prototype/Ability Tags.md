@@ -1,0 +1,101 @@
+- Type: - determines what action points are used
+	- Move - uses stamina points
+	- Spell - uses mana points
+- Rank: - determines ability point cost, increases exponentially
+	- 0 - 0 ap
+	- 1 - 1 ap
+	- 2 - 3 ap
+	- 3 - 6 ap
+	- 4 - 10 ap
+	- 5 - 15 ap
+	- 6 - 21 ap
+	- 7 - 28 ap
+	- 8 - 36 ap
+	- 9 - 45 ap
+- Action: - the required action type for the ability to be used
+	- Starter Action - must be taken before any other action on your turn
+	- Main Action - can be taken on your turn
+	- Attack Action - usually consumes your main action unless using abilities such as Multiattack
+	- Movement - can be split between actions on your turn
+	- Free Action - can be taken freely on your turn without restriction on usage
+	- Reaction - can only be taken in reaction to the specified events
+- Range: - the maximum distance required between the caster and the target
+	- Melee - range specified by selected melee weapon
+	- Ranged - range specified by selected ranged weapon
+	- Touch - requires physical contact with the target
+	- 5 ft/1 unit
+	- 10 ft/2 units
+	- 30 ft/6 units
+	- 60 ft/12 units
+	- 90 ft/18 units
+	- 120 ft/24 units
+	- Cone
+	- Line
+	- Radius
+- Damage Type: - impacts damage multipliers if target is vulnerable/resistant
+	- Bleeding
+	- Bashing
+- Target: - determines number of targets affected by ability
+	- Single Target
+	- Self
+	- Area of Effect
+- Duration: - determines how long ability is in effect for
+	- Until the start of your next turn
+	- Instantaneous
+	- Until dispelled
+	- 1 minute
+	- 1 hour
+	- 8 hours
+- Attack/Save: - major descriptors
+	- Melee attack
+	- Ranged attack
+	- Will save
+	- Fortitude save
+	- Reflex save
+- Concentration: - determines whether the caster is affected by the [[Concentrating]] condition for the abilities duration
+	-  yes
+	- no
+- Special Tags: - minor descriptors
+	- Attack
+	- Buff
+	- Debuff
+	- Defence
+	- Heal
+	- Movement
+	- Stealth
+	- Utility
+- Prerequisite: - determines what factors are needed to be able to use ability
+	- *Gear in inventory*
+	- *Gear equipped*
+	- *Ability equipped*
+	- *Character condition is met*
+	- *Environmental condition is met*
+- Upcast: - determines whether the ability can be upcast or not
+	- yes
+	- no
+
+- Description tags:
+	- Make an attack roll - roll d20 + weapon attribute bonus + weapon power (proficiency) bonus (if true) + weapon upgrade bonus (if true)
+	- Target within range of your weapon
+	- Your movement speed is halved/doubled
+	- Attacks against you are made at advantage/disadvantage
+	- A target up to X size
+	- Must succeed on an X saving throw or X
+	- The target can attempt to repeat the saving throw as an X action on their turn.
+	- When you make a killing blow against a creature
+	- You can deal the remaining damage from your attack to another target within reach
+	- When a creature makes a melee/ranged attack against you
+	- the next attack made against X has X
+	- When you miss on an attack roll against a target
+	- you reduce its X by X
+	- You have an additional X action
+
+- Upcast tags:
+	- Add X to the result of the attack roll
+	- Movement speed increases/decreases by an additional X units
+	- You deal the remaining damage to an additional X target(s) within range
+	- You reduce the target’s X by an additional X
+	- You have another X additional X action(s)
+
+- Notes tags:
+	- Can only be used once per turn

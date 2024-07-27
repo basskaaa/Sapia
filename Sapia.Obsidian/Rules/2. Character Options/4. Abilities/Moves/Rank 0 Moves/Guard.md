@@ -12,12 +12,12 @@ Duration:
   - "[[Until the start of your next turn]]"
 Attack/Save: 
 Classes:
-  - "[[Fighter]]"
+  - "[[Rules/2. Character Options/3. Classes/Fighter/Fighter]]"
 Concentration: false
 tags:
   - Buff
   - Defence
-Prerequisite:
+Prerequisite: 
 ---
 When an attack is made against you, your defence increases by 1 until the start of your next turn.
 

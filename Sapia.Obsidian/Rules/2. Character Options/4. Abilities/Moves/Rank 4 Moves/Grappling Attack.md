@@ -11,7 +11,7 @@ Damage Type:
 Duration: 
 Attack/Save: 
 Classes:
-  - "[[Fighter]]"
+  - "[[Rules/2. Character Options/3. Classes/Fighter/Fighter]]"
 Concentration: false
 tags: 
 Prerequisite:

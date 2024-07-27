@@ -11,9 +11,9 @@ Duration:
   - "[[Instantaneous]]"
 Attack/Save: 
 Classes:
-  - "[[Fighter]]"
+  - "[[Rules/2. Character Options/3. Classes/Fighter/Fighter]]"
 Concentration: false
 tags: 
-Prerequisite:
+Prerequisite: 
 ---
 When a creature makes a melee attack against you, you redirect the attack to miss you or hit another target within range of you and the attacker.

@@ -11,10 +11,10 @@ Duration:
 Attack/Save:
   - "[[Fortitude Save]]"
 Classes:
-  - "[[Fighter]]"
+  - "[[Rules/2. Character Options/3. Classes/Fighter/Fighter]]"
 Concentration: false
 tags:
   - Debuff
-Prerequisite:
+Prerequisite: 
 ---
 When you make an attack against a target, they must succeed a Fortitude saving throw or become vulnerable to physical damage until the start of your next turn.

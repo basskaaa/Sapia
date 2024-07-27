@@ -11,11 +11,11 @@ Damage Type:
 Duration: 
 Attack/Save: 
 Classes:
-  - "[[Fighter]]"
+  - "[[Rules/2. Character Options/3. Classes/Fighter/Fighter]]"
 Concentration: false
 tags:
   - Buff
-Prerequisite:
+Prerequisite: 
 ---
 When you make a charisma skill check, you add 1d6 to the roll.
 

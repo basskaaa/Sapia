@@ -1,0 +1,1 @@
+If you take damage while concentrating on maintaining an abilities effects, you must make a [[Concentration]] check against a DC equal to the total number of damage taken. On a failed [[Concentration]] check, the ability ends.
