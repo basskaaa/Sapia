@@ -23,6 +23,7 @@ namespace Assets._Scripts.Ui
         private Transform abilityCardHolder;
         public UnityEvent OnReleased = null;
         private UIBlock2D cardBlock;
+        private UIBlock2D pivotBlock;
 
         private Vector3 cardPos;
         private Vector3 pivotPos;
@@ -33,6 +34,8 @@ namespace Assets._Scripts.Ui
         private RadialGradient gradient;
         private Color border;
         private bool isTargetHighlighted = false;
+
+        private bool isReleased = false;
     
 
         private void OnEnable()
@@ -42,6 +45,8 @@ namespace Assets._Scripts.Ui
             cardBlock = GetComponent<UIBlock2D>();
             selectedCardPivot = FindFirstObjectByType<SelectedCardPivot>().transform;
             selectionScreenPivot = FindFirstObjectByType<SelectionScreen>().transform;
+            pivotBlock = selectionScreenPivot.GetComponent<UIBlock2D>();
+            pivotPos = pivotBlock.transform.position;
 
             GetInitPosData();
             GetInitColorData();
@@ -56,6 +61,8 @@ namespace Assets._Scripts.Ui
 
         private void Update()
         {
+            //CheckTarget();
+
             if (!isCardSelected)
             {
                 return;
@@ -70,29 +77,33 @@ namespace Assets._Scripts.Ui
 
         public void OnCardRelease()
         {
-            UnityEngine.Debug.Log("Released");
-
-            CheckTarget();
-
-            SetInitPos();
-            SetInitColor();
-
-            isCardSelected = false;
-            transform.SetParent(abilityCardHolder, true);
-      
-            var render = GetComponentInChildren<CardRender>();
-
-            if (render == null)
+            if (!isReleased)
             {
-                UnityEngine.Debug.LogWarning($"Unable to find a {nameof(CardRender)} on {gameObject}");
-                return;
-            }
+                UnityEngine.Debug.Log("Released");
+                isReleased = true;
 
-            CardUsedListener?.OnCardUsed(render.Ability, CurrentTarget);
+                SetInitPos();
+                SetInitColor();
+
+                isCardSelected = false;
+                transform.SetParent(abilityCardHolder, false);
+
+                var render = GetComponentInChildren<CardRender>();
+
+                if (render == null)
+                {
+                    UnityEngine.Debug.LogWarning($"Unable to find a {nameof(CardRender)} on {gameObject}");
+                    return;
+                }
+
+                CheckTarget();
+                CardUsedListener?.OnCardUsed(render.Ability, CurrentTarget);
+            }
         }
 
         public void OnCardDrag()
         {
+            isReleased = false;
             transform.SetParent(selectedCardPivot, true);
 
             if (GetMousePosition.Instance.TryGetCurrentRay(out Ray ray) && GetMousePosition.Instance.TryProjectRay(ray, out Vector3 worldPos))
@@ -106,14 +117,14 @@ namespace Assets._Scripts.Ui
 
         public void GetInitPosData()
         {
-            pivotPos = selectionScreenPivot.position;
-            cardPos = cardBlock.transform.position;
+            cardPos = cardBlock.Position.Value;
         }
 
         private void SetInitPos()
         {
-            cardBlock.transform.position = cardPos;
-            selectionScreenPivot.position = pivotPos;
+            pivotBlock.transform.position = pivotPos;
+            cardBlock.Position.Y.Value = cardPos.y;
+            cardBlock.Position.Z.Value = cardPos.z;
         }
 
         public void GetInitColorData()
@@ -150,7 +161,7 @@ namespace Assets._Scripts.Ui
                 HighlightTarget(raycastHit);
             }
 
-            if (!isCardSelected)
+            if (raycastHit.transform.CompareTag("Target") && !isCardSelected)
             {
                 UnhighlightTarget(raycastHit);
             }
