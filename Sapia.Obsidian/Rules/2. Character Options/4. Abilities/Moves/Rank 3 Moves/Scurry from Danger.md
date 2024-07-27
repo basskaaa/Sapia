@@ -11,9 +11,9 @@ Damage Type:
 Duration: 
 Attack/Save: 
 Classes:
-  - "[[Fighter]]"
+  - "[[Rules/2. Character Options/3. Classes/Fighter/Fighter]]"
 Concentration: false
 tags: 
-Prerequisite:
+Prerequisite: 
 ---
 When you take damage, you can move up to your movement speed.

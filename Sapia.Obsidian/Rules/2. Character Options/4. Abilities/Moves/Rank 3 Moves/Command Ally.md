@@ -10,9 +10,9 @@ Damage Type:
 Duration: 
 Attack/Save: 
 Classes:
-  - "[[Fighter]]"
+  - "[[Rules/2. Character Options/3. Classes/Fighter/Fighter]]"
 Concentration: false
 tags: 
-Prerequisite:
+Prerequisite: 
 ---
 A friendly creature of your choice within 30 ft makes an attack at advantage against a target of your choice within range.

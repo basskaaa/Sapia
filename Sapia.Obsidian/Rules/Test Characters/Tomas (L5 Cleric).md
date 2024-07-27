@@ -56,11 +56,11 @@ Clubs
 [[Cleric Ability Modifier]]: +7
 [[Cleric Max Abilities]]: 9
 
-[[Attack]]: 0 stamina, [[Attack Action]] 
+[[Rules/2. Character Options/4. Abilities/Grace/Attack]]: 0 stamina, [[Attack Action]] 
 	Quarterstaff: +2 to hit, 1d8+2 physical damage, 5 ft
 	Shortsword: +2 to hit, 1d6+2 physical damage, 5 ft
-[[Dash]]:  0 stamina, [[Main Action]]
-[[Dodge]]: 0 stamina, [[Main Action]]
+[[Rules/2. Character Options/4. Abilities/Grace/Dash]]:  0 stamina, [[Main Action]]
+[[Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Dodge]]: 0 stamina, [[Main Action]]
 [[Disengage]]: 0 stamina, [[Main Action]]
 [[Divine Smite]]: 0 mana, [[Main Action]]
 [[Light]]: 1 mana, [[Main Action]]

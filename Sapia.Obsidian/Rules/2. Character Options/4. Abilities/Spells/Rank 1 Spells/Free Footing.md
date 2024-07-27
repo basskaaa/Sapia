@@ -13,8 +13,8 @@ Duration:
   - "[[1 Hour]]"
 Attack/Save: 
 Classes:
-  - "[[Fighter]]"
+  - "[[Rules/2. Character Options/3. Classes/Fighter/Fighter]]"
 Concentration: true
 tags: 
-Prerequisite:
+Prerequisite: 
 ---

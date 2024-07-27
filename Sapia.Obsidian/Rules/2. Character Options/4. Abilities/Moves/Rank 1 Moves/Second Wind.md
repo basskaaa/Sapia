@@ -11,11 +11,11 @@ Damage Type:
 Duration: 
 Attack/Save: 
 Classes:
-  - "[[Fighter]]"
+  - "[[Rules/2. Character Options/3. Classes/Fighter/Fighter]]"
 Concentration: false
 tags:
   - Heal
-Prerequisite:
+Prerequisite: 
 ---
 You restore hit points equal to 1d10 + your level.
 

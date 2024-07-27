@@ -4,20 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "36116cc2396dbe89",
+        "id": "8a4f359b7f19dea9",
         "type": "tabs",
         "children": [
           {
-            "id": "c31b90a9858eeb45",
+            "id": "d7ea9f5b977072bc",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Main/End of August Combat Prototype.md",
+                "file": "August Prototype/Ability Tags.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           }
         ]
@@ -49,10 +51,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "concentration",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -86,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_Main/End of August Combat Prototype.md",
+                "file": "August Prototype/Ability Tags.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_Main/End of August Combat Prototype.md",
+                "file": "August Prototype/Ability Tags.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_Main/End of August Combat Prototype.md"
+                "file": "August Prototype/Ability Tags.md"
               }
             }
           }
@@ -152,50 +154,52 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-kanban:Create new board": false,
+      "obsidian-projects:Open projects": false,
+      "homepage:Open homepage": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-kanban:Create new board": false,
-      "obsidian-projects:Open projects": false,
-      "homepage:Open homepage": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "c31b90a9858eeb45",
+  "active": "d7ea9f5b977072bc",
   "lastOpenFiles": [
+    "August Prototype/Abilities/Multiattack.md",
+    "August Prototype/Ability Tags.md",
+    "August Prototype/Fighter Sheet.md",
+    "August Prototype/Abilities/Distraction.md",
+    "August Prototype/Abilities/Parry.md",
+    "Rules/3. Expanded Rules/6. Ability Properties/Action Types/Starter Action.md",
+    "August Prototype/Abilities/Quick Attack.md",
+    "August Prototype/Abilities/Cleave.md",
+    "August Prototype/Abilities/Grapple.md",
+    "August Prototype/Abilities/Dodge.md",
+    "August Prototype/Abilities/Dash.md",
+    "August Prototype/Abilities/Attack.md",
+    "Rules/3. Expanded Rules/5. Conditions/Concentrating.md",
+    "Rules/3. Expanded Rules/1. General/Instincts/Concentration.md",
+    "Rules/3. Expanded Rules/5. Conditions/Doomed.md",
+    "Rules/2. Character Options/4. Abilities/Moves/Rank 2 Moves/Multiattack.md",
+    "August Prototype/Abilities/Multiattack 1.md",
+    "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Quick Attack.md",
+    "Rules/2. Character Options/4. Abilities/Moves/Rank 1 Moves/Distraction.md",
     "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Cleave.md",
-    "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Disengage.md",
-    "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Counter.md",
-    "_Main/End of August Combat Prototype.md",
-    "_Main/_Progress Log.md",
+    "Rules/2. Character Options/4. Abilities/Moves/Rank 1 Moves/Parry.md",
+    "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Grapple.md",
+    "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Dodge.md",
+    "Rules/2. Character Options/4. Abilities/Grace/Dash.md",
+    "Rules/2. Character Options/4. Abilities/Grace/Attack.md",
+    "August Prototype/End of August Combat Prototype.md",
+    "August Prototype/Abilities",
+    "August Prototype",
     "_Main/Images/Progress Images/Image Sequence_001_0000 1.jpg",
     "_Main/Images/Progress Images/Pasted image 20240719194444.png",
     "_Main/Images/Progress Images/Pasted image 20240719193350.png",
-    "_Main/_Development Doc.md",
-    "Rules/Test Characters/Proto Fighter.md",
-    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 1/Action Surge.md",
-    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighting Styles/Defender.md",
-    "Rules/2. Character Options/2. Backgrounds/Lifestyle/Guard of the People.md",
-    "Rules/2. Character Options/3. Classes/Fighter/Fighter.md",
-    "Rules/Test Characters/Evad (L2 Fighter).md",
-    "Rules/2. Character Options/6. Gear/Worn/Worn Items/Guard's Leathers.md",
-    "Rules/3. Expanded Rules/1. General/Stats/Defence.md",
-    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighter Hit Points.md",
-    "Systems/Dice Rolling.md",
-    "Rules/2. Character Options/0. General/ATTRIBUTES.md",
-    "Rules/1. Basic Rules/Attributes, Instincts, and Skills.md",
-    "Systems/Camera Toggle.md",
-    "_Main/_Short Term To Do.md",
     "_Main/Images/Reference Images/sapiaShitCardTest.jpg",
-    "Setting/Locations/The Fortons.md",
-    "Setting/Locations/The For.md",
-    "Setting/Creatures/Orc.md",
-    "Setting/Creatures/Ogre.md",
-    "Setting/Creatures/Human.md",
-    "Setting/Creatures/Hobgoblin.md",
     "Setting/Creatures",
     "_Main/Images/Progress Images/Pasted image 20240423173609.png",
     "_Main/Images/Progress Images/Pasted image 20240423165153.png",
@@ -209,8 +213,6 @@
     "_Main/Images/Progress Images/Image Sequence_011_0000.jpg",
     "_Main/Images/Progress Images",
     "_Main/Images/Reference Images",
-    "_Main/Images",
-    "_Main/Ideas",
-    "Setting/Lore/Characters/Gods and Spirits"
+    "_Main/Images"
   ]
 }

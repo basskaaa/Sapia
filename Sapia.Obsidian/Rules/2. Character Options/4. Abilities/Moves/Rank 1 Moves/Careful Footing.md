@@ -12,12 +12,12 @@ Duration:
   - "[[Until the start of your next turn]]"
 Attack/Save: 
 Classes:
-  - "[[Fighter]]"
+  - "[[Rules/2. Character Options/3. Classes/Fighter/Fighter]]"
 Concentration: false
 tags:
   - Buff
   - Movement
-Prerequisite:
+Prerequisite: 
 ---
 You ignore difficult terrain until the start of your next turn.
 

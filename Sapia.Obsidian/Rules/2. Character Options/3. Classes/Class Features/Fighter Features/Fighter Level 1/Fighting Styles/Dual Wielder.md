@@ -1,1 +1,1 @@
-When you are dual wielding weapons, you can use the move [[Quick Attack]] with a medium weight weapon, and add your ability modifier to the damage roll for the ability.
+When you are dual wielding weapons, you can use the move [[Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Quick Attack]] with a medium weight weapon, and add your ability modifier to the damage roll for the ability.
