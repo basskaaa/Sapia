@@ -1,4 +1,4 @@
-﻿namespace CoA.Pathing;
+﻿namespace Sapia.Game.Combat.Pathing;
 
 public interface IPathManager<T>
 {

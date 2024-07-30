@@ -1,4 +1,4 @@
-﻿namespace CoA.Pathing;
+﻿namespace Sapia.Game.Combat.Pathing;
 
 // https://visualstudiomagazine.com/Articles/2012/11/01/Priority-Queues-with-C.aspx?Page=2
 public class PriorityQueue<T> where T : IComparable<T>

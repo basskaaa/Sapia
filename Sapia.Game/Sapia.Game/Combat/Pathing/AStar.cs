@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace CoA.Pathing;
+namespace Sapia.Game.Combat.Pathing;
 
 public readonly struct AStarSettings
 {
