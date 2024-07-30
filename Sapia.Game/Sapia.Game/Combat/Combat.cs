@@ -1,12 +1,13 @@
 ﻿using Sapia.Game.Combat.Entities;
-using Sapia.Game.Structs;
+using Sapia.Game.Combat.Pathing;
 using Sapia.Game.Types;
-using Sapia.Game.Types.Enums;
 
 namespace Sapia.Game.Combat;
 
-public class Combat
+public partial class Combat
 {
+    public CombatPather Pather { get; }
+
     public int CurrentRound { get; private set; }
 
     private readonly ITypeDataRoot _typeData;
@@ -18,6 +19,8 @@ public class Combat
         _typeData = typeData;
         _participantsByInitiativeOrder = participants.ToDictionary(x => x.InitiativeOrder, x => x);
         _participantsById = participants.ToDictionary(x => x.ParticipantId, x => x);
+
+        Pather = new(this);
 
         StartNextRound();
     }
@@ -54,24 +57,6 @@ public class Combat
         }
     }
 
-    public bool Move(string participantId, Coord to)
-    {
-        return Try(participantId, cp =>
-        {
-            var distance = Coord.Distance(cp.Position, to);
-
-            if (distance > cp.Status.RemainingMovement)
-            {
-                return false;
-            }
-
-            cp.Status.RemainingMovement -= distance;
-            cp.Position = to;
-
-            return true;
-        });
-    }
-
     private bool Try(string participantId, Func<CombatParticipant, bool> act) => Try<bool>(participantId, act);
 
     private T? Try<T>(string participantId, Func<CombatParticipant, T> act)
@@ -105,105 +90,6 @@ public class Combat
         }
 
         return null;
-    }
-
-    public IEnumerable<UsableAbility> GetUsableAbilities(string participantId)
-    {
-        if (_participantsById.TryGetValue(participantId, out var participant) && participant.Character.IsAlive)
-        {
-            foreach (var ability in participant.Character.Abilities)
-            {
-                if (ability.HasAvailableUses && _typeData.Abilities.TryFind(ability.AbilityId, out var abilityType))
-                {
-                    if (participant.Status.RemainingActions.Contains(abilityType.Action))
-                    {
-                        yield return new UsableAbility(abilityType, null);
-                    }
-                }
-            }
-        }
-    }
-
-    public AbilityResult? UseAbility(string participantId, AbilityUse abilityUse)
-    {
-        return Try(participantId, cp =>
-        {
-            var availableAbility = cp.Character.Abilities.FirstOrDefault(x => x.AbilityId == abilityUse.AbilityId);
-
-            if (availableAbility != null &&
-                availableAbility.HasAvailableUses &&
-                _typeData.Abilities.TryFind(abilityUse.AbilityId, out var abilityType) &&
-                cp.Status.RemainingActions.Contains(abilityType.Action))
-            {
-                var result = ExecuteAbility(cp, abilityType, abilityUse);
-
-                if (result.HasValue)
-                {
-                    if (availableAbility.UsesRemaining.HasValue)
-                    {
-                        availableAbility.UsesRemaining--;
-                    }
-
-                    cp.Status.RemainingActions = cp.Status.RemainingActions.Except([abilityType.Action]).ToArray();
-
-                    return result;
-                }
-            }
-
-            return null;
-        });
-    }
-
-    private AbilityResult? ExecuteAbility(CombatParticipant participant, AbilityType abilityType, AbilityUse abilityUse)
-    {
-        var targets = GetTargets(participant, abilityType, abilityUse).ToArray();
-
-        if (abilityType.Target != TargetType.None && targets.Length == 0)
-        {
-            return null;
-        }
-
-        var affectedTargets = targets.Select(x => ApplyAbilityToParticipant(participant, x, abilityType));
-
-        return new AbilityResult(abilityType, affectedTargets.ToArray());
-    }
-
-    private AffectedParticipant ApplyAbilityToParticipant(CombatParticipant applier, CombatParticipant target, AbilityType abilityType)
-    {
-        if (abilityType.Damage > 0)
-        {
-            var damage = abilityType.Damage;
-
-            target.Character.CurrentHealth -= damage;
-
-            return new AffectedParticipant(target.ParticipantId, -damage);
-        }
-
-        throw new NotImplementedException();
-    }
-
-    private IEnumerable<CombatParticipant> GetTargets(CombatParticipant participant, AbilityType abilityType, AbilityUse abilityUse)
-    {
-        if (abilityType.Target == TargetType.Self)
-        {
-            yield return participant;
-            yield break;
-        }
-
-        if (abilityType.Target == TargetType.Other)
-        {
-            if (abilityUse is TargetedAbilityUse targeted)
-            {
-                if (_participantsById.TryGetValue(targeted.TargetParticipantId, out var target))
-                {
-                    yield return target;
-                }
-            }
-
-            yield break;
-        }
-
-        throw new NotImplementedException();
     }
 }
 
