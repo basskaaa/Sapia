@@ -9,6 +9,7 @@ using Sapia.Game.Characters.Configuration;
 using Sapia.Game.Combat;
 using Sapia.Game.Combat.Entities;
 using Sapia.Game.Combat.Steps;
+using Sapia.Game.Structs;
 using Sapia.Game.Types;
 using UnityEngine;
 
@@ -55,19 +56,32 @@ namespace Assets._Scripts.Game
 
             var theRock = characterStatusService.CompileCharacter(theRockConfiguration, new[] { "Jab", "Slash" });
 
-            var skeleton = new SimpleCharacter("Skeleton", new CharacterStats(3))
+            ICompiledCharacter CreateSkeleton() =>  new SimpleCharacter("Skeleton", new CharacterStats(3))
             {
                 Abilities = new[] { new PreparedAbility("Slash") }
             };
 
-            var combat = CombatFactory.Create(typeData, new[]
+            var participantRefs = FindObjectsByType<CombatParticipantRef>( FindObjectsInactive.Include, FindObjectsSortMode.None);
+
+            var participants = participantRefs.Select(x =>
             {
-                new CombatFactory.CombatParticipantEntry("Player", theRock, 5, (0,0)),
-                new CombatFactory.CombatParticipantEntry("Skeleton", skeleton, 2, (1,0)),
+                var pos = new Coord((int)x.transform.position.x, (int)x.transform.position.z);
+                var id = x.ParticipantId;
+
+                var character = x.ParticipantId == "Player" ? theRock : CreateSkeleton();
+
+                return new CombatFactory.CombatParticipantEntry(id, character, id == "Player" ? 20 : 5, pos);
             });
 
-            var executor = new CombatExecutor(combat);
+            var combat = CombatFactory.Create(typeData, participants);
 
+            foreach (var combatParticipantRef in participantRefs)
+            {
+                combatParticipantRef.JoinCombat(this, combat);
+            }
+
+            var executor = new CombatExecutor(combat);
+            
             return new CombatBag(typeData, executor, combat.Participants);
         }
 
@@ -172,6 +186,24 @@ namespace Assets._Scripts.Game
             }
 
             RaiseStepChanged();
+        }
+
+        public bool Move(string participantId, Coord coord)
+        {
+            if (_currentStep is TurnStep turn && participantId == turn.Participant.ParticipantId)
+            {
+                if (turn.TryMove(coord))
+                {
+                    Step();
+                    return true;
+                }
+                else
+                {
+                    UnityEngine.Debug.Log("Failed to move");
+                }
+            }
+
+            return false;
         }
 
         public void UseAbility(string userParticipantId, UsableAbility ability, string targetParticipantId)

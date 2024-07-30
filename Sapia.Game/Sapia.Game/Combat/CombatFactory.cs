@@ -9,7 +9,7 @@ public static class CombatFactory
 {
     public static Combat Create(ITypeDataRoot typeData, IEnumerable<CombatParticipantEntry> participants)
     {
-        var builtParticipants = participants.OrderBy(x => x.InitiativeRoll)
+        var builtParticipants = participants.OrderByDescending(x => x.InitiativeRoll)
             .Select((x, i) => new CombatParticipant(x.Id, x.Character, x.InitiativeRoll, i, x.Position))
             .ToArray();
 

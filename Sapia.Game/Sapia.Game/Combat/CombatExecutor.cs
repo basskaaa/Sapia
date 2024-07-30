@@ -29,6 +29,25 @@ public class CombatExecutor
 
                 yield return turn;
 
+                if (turn.MovementRoute != null)
+                {
+                    var path = turn.MovementRoute;
+
+                    foreach (var coord in path)
+                    {
+                        var previousPosition = participant.Position;
+
+                        if (Combat.Move(participant.ParticipantId, coord))
+                        {
+                            yield return new MovedStep(Combat, participant, previousPosition);
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+                }
+
             } while (!turn.HasEnded);
 
             result = Combat.CheckForComplete();
