@@ -1,4 +1,5 @@
 using Assets._Scripts.Game;
+using Assets._Scripts.Input;
 using Sapia.Game.Combat;
 using Sapia.Game.Combat.Entities;
 using Sapia.Game.Combat.Steps;
@@ -11,11 +12,15 @@ namespace Assets._Scripts.Ui
         private AbilityCardHolder _cards;
         private TopCardSetter _topCardSetter;
         private CombatRunner _combatRunner;
+        private UtilityActions _utilityActions;
+
+        public InteractionMode InteractionMode { get; private set; }= InteractionMode.None;
 
         void Awake()
         {
-            _cards = GetComponentInChildren<AbilityCardHolder>();
-            _topCardSetter = GetComponentInChildren<TopCardSetter>();
+            _cards = GetComponentInChildren<AbilityCardHolder>(true);
+            _topCardSetter = GetComponentInChildren<TopCardSetter>(true);
+            _utilityActions = GetComponentInChildren<UtilityActions>(true);
 
             _cards.CardUsed.AddListener(CardUsed);
 
@@ -37,6 +42,12 @@ namespace Assets._Scripts.Ui
                 _cards.Show(turn.Abilities);
                 _topCardSetter.FindTopCard();
                 GetCardsPos();
+
+                _utilityActions.Show();
+            }
+            else
+            {
+                _utilityActions.Hide();
             }
         }
 
@@ -49,5 +60,46 @@ namespace Assets._Scripts.Ui
                 cardSelect.GetInitPosData();
             }
         }
+
+        public void ChangeInteractionMode(InteractionMode switchToInteractionMode)
+        {
+            InteractionMode = switchToInteractionMode;
+
+            switch (InteractionMode)
+            {
+                case InteractionMode.Move:
+                    _cards.gameObject.SetActive(false);
+                    break;
+
+                default:
+                case InteractionMode.None:
+                    _cards.gameObject.SetActive(true);
+                    break;
+            }
+        }
+
+        void Update()
+        {
+            if (InteractionMode == InteractionMode.Move && UnityEngine.Input.GetMouseButtonUp(0))
+            {
+                TryMove();
+            }
+        }
+
+        private void TryMove()
+        {
+            if (GetMousePosition.Instance.TryGetCurrentRay(out var ray) && GetMousePosition.Instance.TryProjectGroundRay(ray, out var worldPos))
+            {
+                UnityEngine.Debug.Log($"Clicked at {worldPos}");
+
+                _combatRunner.Move("Player", worldPos);
+            }
+        }
+    }
+
+    public enum InteractionMode
+    {
+        None,
+        Move
     }
 }

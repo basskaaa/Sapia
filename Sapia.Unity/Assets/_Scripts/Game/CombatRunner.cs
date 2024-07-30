@@ -188,6 +188,23 @@ namespace Assets._Scripts.Game
             RaiseStepChanged();
         }
 
+        public void Move(string participantId, Vector3 worldPos)
+        {
+            if (_currentStep is TurnStep turn && participantId == turn.Participant.ParticipantId)
+            {
+                var coord = new Coord((int)worldPos.x, (int)worldPos.z);
+
+                if (turn.TryMove(coord))
+                {
+                    Step();
+                }
+                else
+                {
+                    UnityEngine.Debug.Log("Failed to move");
+                }
+            }
+        }
+
         public void UseAbility(string userParticipantId, UsableAbility ability, string targetParticipantId)
         {
             if (_currentStep is TurnStep turn && turn.Participant.ParticipantId == userParticipantId)

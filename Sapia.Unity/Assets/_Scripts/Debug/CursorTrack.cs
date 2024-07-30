@@ -11,7 +11,6 @@ namespace Assets._Scripts.Debug
             {
                 transform.position = worldPos;
             }
-
         }
     }
 }
