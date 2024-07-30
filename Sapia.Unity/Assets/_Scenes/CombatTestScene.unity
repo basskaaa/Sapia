@@ -1954,8 +1954,9 @@ GameObject:
   - component: {fileID: 286645267}
   - component: {fileID: 286645269}
   - component: {fileID: 286645268}
+  - component: {fileID: 286645270}
   m_Layer: 5
-  m_Name: UtilityOptions
+  m_Name: UtilityActions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2165,6 +2166,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9117b6d975111c47b064a4373cc67ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &286645270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286645266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 063a34e463207df42bc4f4de9b12772a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &316929334
@@ -5022,6 +5035,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 286645267}
     m_Modifications:
+    - target: {fileID: 3560440973864529082, guid: 843ee4a761688b345a28fcfb4086d56f,
+        type: 3}
+      propertyPath: OnClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 286645270}
+    - target: {fileID: 3560440973864529082, guid: 843ee4a761688b345a28fcfb4086d56f,
+        type: 3}
+      propertyPath: OnClicked.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleMoveMode
+      objectReference: {fileID: 0}
+    - target: {fileID: 3560440973864529082, guid: 843ee4a761688b345a28fcfb4086d56f,
+        type: 3}
+      propertyPath: OnClicked.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Assets._Scripts.Ui.UtilityActions, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4425938259930078347, guid: 843ee4a761688b345a28fcfb4086d56f,
         type: 3}
       propertyPath: m_Name
