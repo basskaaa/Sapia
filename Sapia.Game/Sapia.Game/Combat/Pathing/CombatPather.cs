@@ -7,12 +7,14 @@ public class CombatPather : IPathManager<Coord>
 {
     public IReadOnlyCollection<Coord> Obstructed => _obstructed;
 
+    private readonly AStar<Coord> _aStar;
     private readonly HashSet<Coord> _obstructed = new();
     private readonly Combat _combat;
 
     public CombatPather(Combat combat)
     {
         _combat = combat;
+        _aStar = new(this);
     }
 
     public IReadOnlyCollection<Coord> OutboundPaths(Coord node)
@@ -50,4 +52,6 @@ public class CombatPather : IPathManager<Coord>
             _obstructed.Add(pos);
         }
     }
+
+    public AStarResult<Coord>? GetPath(Coord start, Coord goal, AStarSettings settings = default) => _aStar.GetPath(start, goal, settings);
 }
