@@ -188,12 +188,10 @@ namespace Assets._Scripts.Game
             RaiseStepChanged();
         }
 
-        public void Move(string participantId, Vector3 worldPos)
+        public void Move(string participantId, Coord coord)
         {
             if (_currentStep is TurnStep turn && participantId == turn.Participant.ParticipantId)
             {
-                var coord = new Coord((int)worldPos.x, (int)worldPos.z);
-
                 if (turn.TryMove(coord))
                 {
                     Step();

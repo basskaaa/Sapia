@@ -3,6 +3,7 @@ using Assets._Scripts.Input;
 using Sapia.Game.Combat;
 using Sapia.Game.Combat.Entities;
 using Sapia.Game.Combat.Steps;
+using Sapia.Game.Structs;
 using UnityEngine;
 
 namespace Assets._Scripts.Ui
@@ -14,7 +15,7 @@ namespace Assets._Scripts.Ui
         private CombatRunner _combatRunner;
         private UtilityActions _utilityActions;
 
-        public InteractionMode InteractionMode { get; private set; }= InteractionMode.None;
+        public InteractionMode InteractionMode { get; private set; } = InteractionMode.None;
 
         void Awake()
         {
@@ -39,6 +40,10 @@ namespace Assets._Scripts.Ui
         {
             if (step is TurnStep turn && turn.Participant.Character.IsPlayer)
             {
+                if (InteractionMode != InteractionMode.None)
+                {
+                    ChangeInteractionMode(InteractionMode.None);
+                }
                 _cards.Show(turn.Abilities);
                 _topCardSetter.FindTopCard();
                 GetCardsPos();
@@ -90,10 +95,20 @@ namespace Assets._Scripts.Ui
         {
             if (GetMousePosition.Instance.TryGetCurrentRay(out var ray) && GetMousePosition.Instance.TryProjectGroundRay(ray, out var worldPos))
             {
-                UnityEngine.Debug.Log($"Clicked at {worldPos}");
+                var coord = TransformWorldToCoord(worldPos);
 
-                _combatRunner.Move("Player", worldPos);
+                UnityEngine.Debug.Log($"Clicked at {worldPos} -> {coord}");
+
+                _combatRunner.Move("Player", coord);
             }
+        }
+
+        public Coord TransformWorldToCoord(Vector3 worldPos) => new Coord((int)worldPos.x, (int)worldPos.z);
+
+        public Vector3 TransformWorldToCoordVector(Vector3 worldPos)
+        {
+            var coord = TransformWorldToCoord(worldPos);
+            return new Vector3(coord.X, 0, coord.Y);
         }
     }
 
