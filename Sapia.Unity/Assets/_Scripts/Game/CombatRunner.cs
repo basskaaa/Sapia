@@ -188,19 +188,22 @@ namespace Assets._Scripts.Game
             RaiseStepChanged();
         }
 
-        public void Move(string participantId, Coord coord)
+        public bool Move(string participantId, Coord coord)
         {
             if (_currentStep is TurnStep turn && participantId == turn.Participant.ParticipantId)
             {
                 if (turn.TryMove(coord))
                 {
                     Step();
+                    return true;
                 }
                 else
                 {
                     UnityEngine.Debug.Log("Failed to move");
                 }
             }
+
+            return false;
         }
 
         public void UseAbility(string userParticipantId, UsableAbility ability, string targetParticipantId)

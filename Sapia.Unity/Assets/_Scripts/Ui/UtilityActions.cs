@@ -26,7 +26,7 @@ namespace Assets._Scripts.Ui
 
         public void ToggleMoveMode()
         {
-            _combatUi.ChangeInteractionMode(_combatUi.InteractionMode == InteractionMode.Move ? InteractionMode.None : InteractionMode.Move);
+            _combatUi.ChangeInteractionMode(_combatUi.InteractionMode == InteractionMode.Move ? InteractionMode.Ready : InteractionMode.Move);
         }
     }
 }

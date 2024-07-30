@@ -15,7 +15,7 @@ namespace Assets._Scripts.Ui
         private CombatRunner _combatRunner;
         private UtilityActions _utilityActions;
 
-        public InteractionMode InteractionMode { get; private set; } = InteractionMode.None;
+        public InteractionMode InteractionMode { get; private set; } = InteractionMode.Ready;
 
         void Awake()
         {
@@ -40,9 +40,9 @@ namespace Assets._Scripts.Ui
         {
             if (step is TurnStep turn && turn.Participant.Character.IsPlayer)
             {
-                if (InteractionMode != InteractionMode.None)
+                if (InteractionMode != InteractionMode.Ready)
                 {
-                    ChangeInteractionMode(InteractionMode.None);
+                    ChangeInteractionMode(InteractionMode.Ready);
                 }
                 _cards.Show(turn.Abilities);
                 _topCardSetter.FindTopCard();
@@ -72,12 +72,13 @@ namespace Assets._Scripts.Ui
 
             switch (InteractionMode)
             {
+                case InteractionMode.Disabled:
                 case InteractionMode.Move:
                     _cards.gameObject.SetActive(false);
                     break;
 
                 default:
-                case InteractionMode.None:
+                case InteractionMode.Ready:
                     _cards.gameObject.SetActive(true);
                     break;
             }
@@ -99,7 +100,10 @@ namespace Assets._Scripts.Ui
 
                 UnityEngine.Debug.Log($"Clicked at {worldPos} -> {coord}");
 
-                _combatRunner.Move("Player", coord);
+                if (_combatRunner.Move("Player", coord))
+                {
+                    ChangeInteractionMode(InteractionMode.Disabled);
+                }
             }
         }
 
@@ -114,7 +118,8 @@ namespace Assets._Scripts.Ui
 
     public enum InteractionMode
     {
-        None,
+        Ready,
+        Disabled,
         Move
     }
 }

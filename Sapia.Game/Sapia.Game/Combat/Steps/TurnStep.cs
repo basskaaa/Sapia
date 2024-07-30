@@ -25,12 +25,21 @@ public class TurnStep : CombatParticipantStep
     {
         var path = Combat.Pather.GetPath(Participant.Position, target, new AStarSettings(20));
 
-        if (!path.HasValue || path.Value.Count > Participant.Status.RemainingMovement)
+        if (!path.HasValue)
         {
             return false;
         }
 
-        MovementRoute = path.Value.ToNodesArray();
+        var pathToUse = path.Value.ToNodesArray()
+            .Where(x => x != Participant.Position)
+            .ToArray();
+
+        if (pathToUse.Length > Participant.Status.RemainingMovement)
+        {
+            return false;
+        }
+
+        MovementRoute = pathToUse;
 
         return true;
     }
