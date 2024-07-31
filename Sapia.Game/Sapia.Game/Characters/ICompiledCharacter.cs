@@ -9,5 +9,6 @@ public interface ICompiledCharacter
 
     bool IsPlayer { get; }
 
+    bool IsNpc => !IsPlayer;
     bool IsAlive => CurrentHealth > 0;
 }

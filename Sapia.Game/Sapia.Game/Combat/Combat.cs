@@ -1,55 +1,90 @@
 ﻿using Sapia.Game.Combat.Entities;
-using Sapia.Game.Combat.Pathing;
+using Sapia.Game.Combat.Entities.Enums;
+using Sapia.Game.Combat.Steps;
 using Sapia.Game.Types;
 
 namespace Sapia.Game.Combat;
 
-public partial class Combat
+public class Combat
 {
-    public CombatPather Pather { get; }
+    private readonly CombatExecutor _executor;
+    private readonly IEnumerator<CombatStep> _execution;
+
+    public CombatStep? CurrentStep => _execution.Current;
 
     public int CurrentRound { get; private set; }
+    public int CurrentInitiativeOrder { get; private set; }
 
-    private readonly ITypeDataRoot _typeData;
-    private readonly Dictionary<int, CombatParticipant> _participantsByInitiativeOrder;
-    private readonly Dictionary<string, CombatParticipant> _participantsById;
+    public ITypeDataRoot TypeData { get; }
+
+    public CombatParticipants Participants { get; }
+    public CombatMovement Movement { get; }
+    public CombatAbilities Abilities { get; }
+    public CombatAiController AIController { get; }
 
     public Combat(ITypeDataRoot typeData, IReadOnlyCollection<CombatParticipant> participants)
     {
-        _typeData = typeData;
-        _participantsByInitiativeOrder = participants.ToDictionary(x => x.InitiativeOrder, x => x);
-        _participantsById = participants.ToDictionary(x => x.ParticipantId, x => x);
+        TypeData = typeData;
 
-        Pather = new(this);
+        Participants = new(participants);
+        Movement = new(this);
+        Abilities = new(this);
+        AIController = new(this);
 
         StartNextRound();
+
+        _executor = new(this);
+        _execution = _executor.Execute();
+        Step();
     }
 
-    public int CurrentInitiativeOrder { get; private set; }
-    public IReadOnlyCollection<CombatParticipant> Participants => _participantsByInitiativeOrder.Values;
+#if DEBUG
+    public List<string> _debugs = new();
+#endif
 
-    public CombatParticipant CurrentParticipant() => _participantsByInitiativeOrder[CurrentInitiativeOrder];
+    public bool Step()
+    {
+        var result = _execution.MoveNext();
 
-    public void EndTurn(string participantId)
+#if DEBUG
+        _debugs.Add(CurrentStep?.ToString() ?? "Nothing");
+#endif
+
+        return result;
+    }
+
+    public bool ExecuteAi()
+    {
+        if (CurrentStep is ParticipantChoiceStep participantChoiceStep && participantChoiceStep.Participant.Character.IsNpc)
+        {
+            return AIController.ExecuteStep(participantChoiceStep);
+        }
+
+        return false;
+    }
+
+    internal void EndTurn(string participantId)
     {
         if (CurrentParticipant().ParticipantId == participantId)
         {
             CurrentInitiativeOrder++;
-            if (!_participantsByInitiativeOrder.ContainsKey(CurrentInitiativeOrder))
+            if (!Participants.ByInitiativeOrder.ContainsKey(CurrentInitiativeOrder))
             {
                 StartNextRound();
             }
         }
     }
 
+    internal CombatParticipant CurrentParticipant() => Participants.GetParticipantByInitiativeOrder(CurrentInitiativeOrder);
+
     private void StartNextRound()
     {
         CurrentRound++;
         CurrentInitiativeOrder = 0;
 
-        foreach (var combatParticipant in _participantsByInitiativeOrder)
+        foreach (var combatParticipant in Participants.ByInitiativeOrder)
         {
-            combatParticipant.Value.Status = new CombatStatus
+            combatParticipant.Value.Status = new()
             {
                 RemainingMovement = combatParticipant.Value.Character.Stats.MovementSpeed,
                 RemainingActions = (CombatActionType[])Enum.GetValues(typeof(CombatActionType))
@@ -57,11 +92,11 @@ public partial class Combat
         }
     }
 
-    private bool Try(string participantId, Func<CombatParticipant, bool> act) => Try<bool>(participantId, act);
+    internal bool Try(string participantId, Func<CombatParticipant, bool> act) => Try<bool>(participantId, act);
 
-    private T? Try<T>(string participantId, Func<CombatParticipant, T> act)
+    internal T? Try<T>(string participantId, Func<CombatParticipant, T> act)
     {
-        if (_participantsById.TryGetValue(participantId, out var participant) && participant.Character.IsAlive)
+        if (Participants.TryGetParticipantById(participantId, out var participant) && participant.Character.IsAlive)
         {
             return act(participant);
         }
@@ -72,6 +107,7 @@ public partial class Combat
     public CombatResult? CheckForComplete()
     {
         var allPlayersDead = Participants
+            .All
             .Where(x => x.Character.IsPlayer)
             .All(x => !x.Character.IsAlive);
 
@@ -81,6 +117,7 @@ public partial class Combat
         }
 
         var allOthersDead = Participants
+            .All
             .Where(x => !x.Character.IsPlayer)
             .All(x => !x.Character.IsAlive);
 
@@ -91,10 +128,4 @@ public partial class Combat
 
         return null;
     }
-}
-
-public enum CombatResult
-{
-    PlayerDefeat,
-    PlayerVictory
 }

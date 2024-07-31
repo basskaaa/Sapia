@@ -1,10 +1,9 @@
 ﻿using Sapia.Game.Combat.Entities;
-using Sapia.Game.Combat.Pathing;
 using Sapia.Game.Structs;
 
 namespace Sapia.Game.Combat.Steps;
 
-public class TurnStep : CombatParticipantStep
+public class TurnStep : ParticipantChoiceStep
 {
     public IReadOnlyCollection<UsableAbility> Abilities { get; }
 
@@ -23,7 +22,7 @@ public class TurnStep : CombatParticipantStep
 
     public bool TryMove(Coord target)
     {
-        var path = Combat.Pather.GetPath(Participant.Position, target, new AStarSettings(20));
+        var path = Combat.Movement.Pather.GetPath(Participant.Position, target, new(20));
 
         if (!path.HasValue)
         {
@@ -31,7 +30,6 @@ public class TurnStep : CombatParticipantStep
         }
 
         var pathToUse = path.Value.ToNodesArray()
-            .Where(x => x != Participant.Position)
             .ToArray();
 
         if (pathToUse.Length > Participant.Status.RemainingMovement)
@@ -44,5 +42,5 @@ public class TurnStep : CombatParticipantStep
         return true;
     }
 
-    public AbilityResult? UseAbility(AbilityUse use) => Combat.UseAbility(Participant.ParticipantId, use);
+    public AbilityResult? UseAbility(AbilityUse use) => Combat.Abilities.UseAbility(Participant.ParticipantId, use);
 }

@@ -26,12 +26,12 @@ var characterStatusService = new CharacterService(typeData);
 
 var theRock = characterStatusService.CompileCharacter(theRockConfiguration, ["Jab", "Slash"]);
 
-var goblinA = new SimpleCharacter("GoblinA", new CharacterStats(3))
+var goblinA = new SimpleCharacter("GoblinA", new(3))
 {
     Abilities = new[] { new PreparedAbility("Slash") }
 };
 
-var goblinB = new SimpleCharacter("GoblinB", new CharacterStats(4))
+var goblinB = new SimpleCharacter("GoblinB", new(4))
 {
     Abilities = new[] { new PreparedAbility("Slash") }
 };
@@ -43,17 +43,13 @@ var combat = CombatFactory.Create(typeData, new[]
     new CombatFactory.CombatParticipantEntry("GoblinB", goblinB, 10, (0,1)),
 });
 
-var executor = new CombatExecutor(combat);
-
-var combatExecution = executor.Execute();
-
 var num = 0;
 
 var t = "  ";
 
 CombatParticipant? FindTargetFor(CombatParticipant participant)
 {
-    foreach (var other in combat.Participants)
+    foreach (var other in combat.Participants.All)
     {
         if (other.Character.IsPlayer != participant.Character.IsPlayer && other.Character.IsAlive)
         {
@@ -64,9 +60,9 @@ CombatParticipant? FindTargetFor(CombatParticipant participant)
     return null;
 }
 
-while (combatExecution.MoveNext())
+while (combat.Step())
 {
-    var step = combatExecution.Current;
+    var step = combat.CurrentStep;
 
     Console.WriteLine($"{combat.CurrentRound}: {step}");
 

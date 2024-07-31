@@ -23,7 +23,7 @@ public class CombatPather : IPathManager<Coord>
         {
             foreach (var coord in node.GetAdjacent())
             {
-                if (_obstructed.Contains(coord) || _combat.GetParticipantAtPosition(coord) != null)
+                if (IsObstructed(coord))
                 {
                     continue;
                 }
@@ -34,6 +34,8 @@ public class CombatPather : IPathManager<Coord>
 
         return Inner().ToArray();
     }
+
+    public bool IsObstructed(Coord coord) => _obstructed.Contains(coord) || _combat.Participants.GetParticipantAtPosition(coord) != null;
 
     public (float actualToNext, float heuristicToGoal) GetCosts(Coord currentNode, Coord nextNode, Coord goal)
     {

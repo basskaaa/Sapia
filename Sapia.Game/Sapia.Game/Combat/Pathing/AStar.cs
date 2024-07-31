@@ -74,7 +74,7 @@ public class AStar<T>
         _visited.Clear();
 
         // start a new search
-        _queue.Enqueue(new Path<T>(null, start, 0, 0, 0));
+        _queue.Enqueue(new(null, start, 0, 0, 0));
         _visited.Add(start);
 
         while (!_queue.IsEmpty)
@@ -108,7 +108,7 @@ public class AStar<T>
 
                 if (_pathManager.EqualsOtherNode(nextNode, goal))
                 {
-                    return new AStarResult<T>(newPath.CurrentPath);
+                    return new AStarResult<T>(newPath.CurrentPath.Skip(1).ToArray());
                 }
 
                 if (!settings.MaximumHeuristicCost.HasValue || newPath.HeuristicFromNextToGoal < settings.MaximumHeuristicCost.Value)

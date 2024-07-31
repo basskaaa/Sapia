@@ -1,7 +1,5 @@
-using System.Collections;
 using Assets._Scripts.Game;
 using Assets._Scripts.Input;
-using Assets._Scripts.Patterns;
 using Nova;
 using NovaSamples.UIControls;
 using UnityEngine;

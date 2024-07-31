@@ -28,7 +28,7 @@ public readonly struct Path<T> : IComparable<Path<T>>
         HeuristicFromNextToGoal = heuristicCost + ActualFromStartToNext;
 
         CurrentPath = (pathToHere ?? Array.Empty<PathItem<T>>())
-            .Append(new PathItem<T>(newNode, actualFromPreviousToNext))
+            .Append(new(newNode, actualFromPreviousToNext))
             .ToArray();
     }
 

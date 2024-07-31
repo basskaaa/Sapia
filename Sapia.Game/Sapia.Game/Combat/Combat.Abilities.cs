@@ -4,19 +4,26 @@ using Sapia.Game.Types;
 
 namespace Sapia.Game.Combat;
 
-public partial class Combat
+public class CombatAbilities
 {
+    private readonly Combat _combat;
+
+    public CombatAbilities(Combat combat)
+    {
+        _combat = combat;
+    }
+
     public IEnumerable<UsableAbility> GetUsableAbilities(string participantId)
     {
-        if (_participantsById.TryGetValue(participantId, out var participant) && participant.Character.IsAlive)
+        if (_combat.Participants.TryGetParticipantById(participantId, out var participant) && participant.Character.IsAlive)
         {
             foreach (var ability in participant.Character.Abilities)
             {
-                if (ability.HasAvailableUses && _typeData.Abilities.TryFind(ability.AbilityId, out var abilityType))
+                if (ability.HasAvailableUses && _combat.TypeData.Abilities.TryFind(ability.AbilityId, out var abilityType))
                 {
                     if (participant.Status.RemainingActions.Contains(abilityType.Action))
                     {
-                        yield return new UsableAbility(abilityType, null);
+                        yield return new(abilityType, null);
                     }
                 }
             }
@@ -25,13 +32,13 @@ public partial class Combat
 
     public AbilityResult? UseAbility(string participantId, AbilityUse abilityUse)
     {
-        return Try(participantId, cp =>
+        return _combat.Try(participantId, cp =>
         {
             var availableAbility = cp.Character.Abilities.FirstOrDefault(x => x.AbilityId == abilityUse.AbilityId);
 
             if (availableAbility != null &&
                 availableAbility.HasAvailableUses &&
-                _typeData.Abilities.TryFind(abilityUse.AbilityId, out var abilityType) &&
+                _combat.TypeData.Abilities.TryFind(abilityUse.AbilityId, out var abilityType) &&
                 cp.Status.RemainingActions.Contains(abilityType.Action))
             {
                 var result = ExecuteAbility(cp, abilityType, abilityUse);
@@ -75,7 +82,7 @@ public partial class Combat
 
             target.Character.CurrentHealth -= damage;
 
-            return new AffectedParticipant(target.ParticipantId, -damage);
+            return new(target.ParticipantId, -damage);
         }
 
         throw new NotImplementedException();
@@ -93,7 +100,7 @@ public partial class Combat
         {
             if (abilityUse is TargetedAbilityUse targeted)
             {
-                if (_participantsById.TryGetValue(targeted.TargetParticipantId, out var target))
+                if (_combat.Participants.TryGetParticipantById(targeted.TargetParticipantId, out var target))
                 {
                     yield return target;
                 }
