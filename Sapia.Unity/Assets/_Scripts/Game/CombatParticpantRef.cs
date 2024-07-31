@@ -1,4 +1,3 @@
-using System.Linq;
 using Sapia.Game.Combat;
 using Sapia.Game.Combat.Entities;
 using Sapia.Game.Combat.Steps;
@@ -15,7 +14,7 @@ namespace Assets._Scripts.Game
         {
             combatRunner.AddListener(this);
 
-            Participant = combat.Participants.Single(x => x.ParticipantId == ParticipantId);
+            Participant = combat.Participants[ParticipantId];
         }
 
         public void StepChanged(Combat combat, CombatStep step)

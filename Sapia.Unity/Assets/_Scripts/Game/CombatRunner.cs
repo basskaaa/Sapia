@@ -1,8 +1,6 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using Assets._Scripts.TypeData;
-using Assets._Scripts.Ui;
 using Assets._Scripts.Ui.Test;
 using Sapia.Game.Characters;
 using Sapia.Game.Characters.Configuration;
@@ -10,7 +8,6 @@ using Sapia.Game.Combat;
 using Sapia.Game.Combat.Entities;
 using Sapia.Game.Combat.Steps;
 using Sapia.Game.Structs;
-using Sapia.Game.Types;
 using UnityEngine;
 
 namespace Assets._Scripts.Game
@@ -19,21 +16,20 @@ namespace Assets._Scripts.Game
     {
         private DebugText _debug;
 
-        private CombatBag _combatBag;
-        private CombatStep _currentStep;
+        private Combat _combat;
         private HashSet<ICombatListener> _listeners = new();
 
         void Start()
         {
             _debug = FindFirstObjectByType<DebugText>();
 
-            _combatBag = CreateCombat();
+            _combat = CreateCombat();
             Step();
 
             ShowDebugText("Combat runner has started");
         }
 
-        private CombatBag CreateCombat()
+        private Combat CreateCombat()
         {
             var theRockConfiguration = new CharacterConfiguration
             {
@@ -80,21 +76,17 @@ namespace Assets._Scripts.Game
                 combatParticipantRef.JoinCombat(this, combat);
             }
 
-            var executor = new CombatExecutor(combat);
-            
-            return new CombatBag(typeData, executor, combat.Participants);
+            return combat;
         }
 
         public void Step()
         {
-            if (_combatBag.Execution.MoveNext())
+            if (_combat.Step())
             {
-                _currentStep = _combatBag.Execution.Current;
                 ShowDebugText();
             }
             else
             {
-                _currentStep = null;
                 ShowDebugText("Combat finished");
             }
 
@@ -105,7 +97,7 @@ namespace Assets._Scripts.Game
         {
             foreach (var combatListener in _listeners)
             {
-                combatListener.StepChanged(_combatBag.Combat, _currentStep);
+                combatListener.StepChanged(_combat, _combat.CurrentStep);
             }
         }
 
@@ -116,12 +108,12 @@ namespace Assets._Scripts.Game
 
         private void AutoRunStep()
         {
-            if (_combatBag == null || _currentStep == null)
+            if (_combat == null || _combat.CurrentStep == null)
             {
                 return;
             }
 
-            var turn = _currentStep as TurnStep;
+            var turn = _combat.CurrentStep as TurnStep;
 
             if (turn == null)
             {
@@ -138,7 +130,7 @@ namespace Assets._Scripts.Game
 
             CombatParticipant FindTargetFor(CombatParticipant participant)
             {
-                foreach (var other in _combatBag.Combat.Participants)
+                foreach (var other in _combat.Participants.All)
                 {
                     if (other.Character.IsPlayer != participant.Character.IsPlayer && other.Character.IsAlive)
                     {
@@ -170,10 +162,7 @@ namespace Assets._Scripts.Game
         {
             var result = turn.UseAbility(new TargetedAbilityUse(abilityId, targetParticipantId));
 
-            if (_combatBag.Execution.MoveNext())
-            {
-                _currentStep = _combatBag.Execution.Current;
-            }
+            _combat.Step();
 
             if (result.HasValue)
             {
@@ -190,7 +179,7 @@ namespace Assets._Scripts.Game
 
         public bool Move(string participantId, Coord coord)
         {
-            if (_currentStep is TurnStep turn && participantId == turn.Participant.ParticipantId)
+            if (_combat.CurrentStep is TurnStep turn && participantId == turn.Participant.ParticipantId)
             {
                 if (turn.TryMove(coord))
                 {
@@ -208,49 +197,31 @@ namespace Assets._Scripts.Game
 
         public void UseAbility(string userParticipantId, UsableAbility ability, string targetParticipantId)
         {
-            if (_currentStep is TurnStep turn && turn.Participant.ParticipantId == userParticipantId)
+            if (_combat.CurrentStep is TurnStep turn && turn.Participant.ParticipantId == userParticipantId)
             {
                 UseAbilityInCurrentTurn(turn, ability.AbilityType.Id, targetParticipantId);
             }
         }
-
-        public class CombatBag
-        {
-            public CombatBag(ITypeDataRoot typeData, CombatExecutor combatExecutor, IReadOnlyCollection<CombatParticipant> participants)
-            {
-                TypeData = typeData;
-                CombatExecutor = combatExecutor;
-                Participants = participants;
-                Execution = combatExecutor.Execute();
-            }
-
-            public IReadOnlyCollection<CombatParticipant> Participants { get; }
-            public ITypeDataRoot TypeData { get; }
-            public CombatExecutor CombatExecutor { get; }
-            public IEnumerator<CombatStep> Execution { get; }
-            public Combat Combat => CombatExecutor.Combat;
-        }
-
-
+        
         private void ShowDebugText(params string[] text)
         {
             var textToShow = new List<string>();
 
-            if (_combatBag != null)
+            if (_combat != null)
             {
-                textToShow.Add($"Combat round: {_combatBag.Combat.CurrentRound}");
+                textToShow.Add($"Combat round: {_combat.CurrentRound}");
 
-                foreach (var participant in _combatBag.Participants)
+                foreach (var participant in _combat.Participants.All)
                 {
                     var participantText = $"{participant.ParticipantId}: {participant.Character.CurrentHealth} / {participant.Character.Stats.MaxHealth}";
                     textToShow.Add(participantText);
                 }
             }
 
-            if (_currentStep != null)
+            if (_combat?.CurrentStep != null)
             {
-                textToShow.Add(_currentStep.ToString());
-                if (_currentStep is TurnStep turn)
+                textToShow.Add(_combat.CurrentStep.ToString());
+                if (_combat.CurrentStep is TurnStep turn)
                 {
                     textToShow.Add($"Remaining Movement: {turn.Participant.Status.RemainingMovement}");
                     textToShow.Add($"Remaining Actions: {string.Join(",", turn.Participant.Status.RemainingActions)}");

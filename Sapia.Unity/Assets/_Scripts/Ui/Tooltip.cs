@@ -2,7 +2,6 @@ using System.Collections;
 using Nova;
 using Nova.TMP;
 using Sapia.Game.Combat.Entities;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Assets._Scripts.Ui
