@@ -16,14 +16,15 @@ namespace Assets._Scripts.Ui
         [SerializeField] private float highlightTime = 1f;
         public bool isCardSelected = false;
 
-        private Transform selectedCardPivot;
-        private Transform selectionScreenPivot;
-        private Transform abilityCardHolder;
+        private RectTransform selectedCardPivot;
+        private RectTransform selectionScreenPivot;
+        private RectTransform abilityCardHolder;
         public UnityEvent OnReleased = null;
         private UIBlock2D cardBlock;
         private UIBlock2D pivotBlock;
 
         private Vector3 cardPos;
+        private Vector3 cardSize;
         private Vector3 pivotPos;
         private Vector3 screenPos;
 
@@ -31,18 +32,18 @@ namespace Assets._Scripts.Ui
         private Color color;
         private RadialGradient gradient;
         private Color border;
-        private bool isTargetHighlighted = false;
 
         private bool isReleased = false;
+        private bool hasTarget = false;
     
 
         private void OnEnable()
         {
-            abilityCardHolder = GetComponentInParent<AbilityCardHolder>().transform;
+            abilityCardHolder = GetComponentInParent<AbilityCardHolder>().GetComponent<RectTransform>();
             View.UIBlock.AddGestureHandler<Gesture.OnRelease, ButtonVisuals>(HandleReleased);
             cardBlock = GetComponent<UIBlock2D>();
-            selectedCardPivot = FindFirstObjectByType<SelectedCardPivot>().transform;
-            selectionScreenPivot = FindFirstObjectByType<SelectionScreen>().transform;
+            selectedCardPivot = FindFirstObjectByType<SelectedCardPivot>().GetComponent<RectTransform>();
+            selectionScreenPivot = FindFirstObjectByType<SelectionScreen>().GetComponent<RectTransform>();
             pivotBlock = selectionScreenPivot.GetComponent<UIBlock2D>();
             pivotPos = pivotBlock.transform.position;
 
@@ -103,9 +104,11 @@ namespace Assets._Scripts.Ui
             isReleased = false;
             transform.SetParent(selectedCardPivot, true);
 
+            cardBlock.Position.XY.Value = new Vector2(0,0);
+
             if (GetMousePosition.Instance.TryGetCurrentRay(out Ray ray) && GetMousePosition.Instance.TryProjectRay(ray, out Vector3 worldPos))
             {
-                selectionScreenPivot = selectedCardPivot.GetComponentInParent<SelectionScreen>().transform;
+                selectionScreenPivot = selectedCardPivot.GetComponentInParent<SelectionScreen>().GetComponent<RectTransform>();
                 selectionScreenPivot.position = worldPos;
                 SetSelectedColor();
                 isCardSelected = true;
@@ -115,6 +118,7 @@ namespace Assets._Scripts.Ui
         public void GetInitPosData()
         {
             cardPos = cardBlock.Position.Value;
+            cardSize = cardBlock.Size.Value;
         }
 
         private void SetInitPos()
@@ -122,6 +126,7 @@ namespace Assets._Scripts.Ui
             pivotBlock.transform.position = pivotPos;
             cardBlock.Position.Y.Value = cardPos.y;
             cardBlock.Position.Z.Value = cardPos.z;
+            cardBlock.Size.Value = cardSize;
         }
 
         public void GetInitColorData()
@@ -151,29 +156,39 @@ namespace Assets._Scripts.Ui
 
             bool isHit = Physics.Raycast(ray, out raycastHit);
 
-            if (isHit && raycastHit.transform.CompareTag("Target") && !isTargetHighlighted && isCardSelected)
+            if (isHit && raycastHit.transform.CompareTag("Target") && isCardSelected && !hasTarget)
             {
                 CurrentTarget = raycastHit.transform.GetComponentInParent<CombatParticipantRef>();
                 //Debug.Log(raycastHit.transform.name);
                 HighlightTarget(raycastHit);
             }
 
+            if (CurrentTarget != null && !raycastHit.transform.CompareTag("Target"))
+            {
+                UnhighlightTargets();
+                CurrentTarget = null;
+            }
+
             if (raycastHit.transform.CompareTag("Target") && !isCardSelected)
             {
-                UnhighlightTarget(raycastHit);
+                UnhighlightTargets();
             }
         }
 
         private void HighlightTarget(RaycastHit hit)
         {
             hit.transform.GetComponent<MeshRenderer>().enabled = true;
-            isTargetHighlighted = true;
+            hasTarget = true;
         }
 
-        private void UnhighlightTarget(RaycastHit hit)
+        private void UnhighlightTargets()
         {
-            hit.transform.GetComponent<MeshRenderer>().enabled = false;
-            isTargetHighlighted = false;
+            hasTarget = false;
+            TargetCollider[] targets = FindObjectsOfType<TargetCollider>();
+            foreach (TargetCollider target in targets)
+            {
+                target.GetComponent<MeshRenderer>().enabled = false;
+            }
         }
     }
 }
