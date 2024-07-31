@@ -64,7 +64,7 @@ namespace Assets._Scripts.Game
 
             if (_combat.ExecuteAi())
             {
-                Step();
+                Invoke(nameof(Step), 1f);
             }
         }
 

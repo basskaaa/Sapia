@@ -3,6 +3,7 @@ using System.Linq;
 using Assets._Scripts.Game;
 using Nova;
 using Sapia.Game.Combat;
+using Sapia.Game.Combat.Entities;
 using Sapia.Game.Combat.Steps;
 using UnityEngine;
 
@@ -48,10 +49,43 @@ namespace Assets._Scripts.Ui
             }
         }
 
+        private CombatParticipant _lastParticipant;
+        private bool _wasMoveStep = false;
+
         private string CreateLog(CombatStep step)
         {
-            return step.ToString();
+            if (step is ParticipantStep participantStep)
+            {
+                var participantChanged = participantStep.Participant != _lastParticipant;
+
+                _lastParticipant = participantStep.Participant;
+
+                if (step is MovedStep && _wasMoveStep == false)
+                {
+                    _wasMoveStep = true;
+                    return $"{Name(participantStep.Participant)} is moving";
+                }
+                else
+                {
+                    _wasMoveStep = false;
+                }
+
+                if (participantChanged && participantStep is TurnStep)
+                {
+                    return $"{Possessive(participantStep.Participant)} turn";
+                }
+
+                if (participantStep is AbilityUsedStep abilityStep)
+                {
+                    return $"{Name(participantStep.Participant)} used {abilityStep.Result.Ability.Id}";
+                }
+            }
+
+            return null;
         }
+
+        private string Name(CombatParticipant participant) => participant.Character.IsPlayer ? "You" : participant.ParticipantId;
+        private string Possessive(CombatParticipant participant) => participant.Character.IsPlayer ? "Your" : $"{participant.ParticipantId}'s";
     }
 
     public class LogItemVisuals : ItemVisuals
