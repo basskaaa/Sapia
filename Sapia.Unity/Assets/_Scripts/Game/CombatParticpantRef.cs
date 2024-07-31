@@ -13,14 +13,14 @@ namespace Assets._Scripts.Game
         public string ParticipantId;
         public CombatParticipant Participant { get; private set; }
 
-        private AnimationController _animationController;
+        private AnimManager _anim;
         private CombatParticipantRef[] _others;
         private bool _isResponsibleForNextStep = false;
         private CombatRunner _combatRunner;
 
         void Awake()
         {
-            _animationController = gameObject.GetOrAddComponent<AnimationController>();
+            _anim = gameObject.GetOrAddComponent<AnimManager>();
 
             _others = FindObjectsByType<CombatParticipantRef>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID)
                 .Where(x => x != this)
@@ -36,7 +36,7 @@ namespace Assets._Scripts.Game
             {
                 foreach (var other in _others)
                 {
-                    if (other._animationController.IsPlaying)
+                    if (other._anim.IsPlaying())
                     {
                         return;
                     }
@@ -72,7 +72,7 @@ namespace Assets._Scripts.Game
                 {
                     // An ability was used by this actor. Play the attack animation t
                     // Then wait for all others to finish animating
-                    _animationController.Attack();
+                    _anim.PlayAnim(AnimManager.animName.ability, 0);
                     _isResponsibleForNextStep = true;
                 }
                 else
@@ -85,11 +85,11 @@ namespace Assets._Scripts.Game
                         {
                             if (Participant.Character.IsAlive)
                             {
-                                _animationController.Hit();
+                                _anim.PlayAnim(AnimManager.animName.hit, 0);
                             }
                             else
                             {
-                                _animationController.Die();
+                                _anim.PlayAnim(AnimManager.animName.death, 0);
                             }
                             break;
                         }
