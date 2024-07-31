@@ -110,6 +110,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3477649858576784250, guid: 0e60f286e7cfcd2478d4404c5b623ec3,
         type: 3}
+      propertyPath: m_fontSize
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477649858576784250, guid: 0e60f286e7cfcd2478d4404c5b623ec3,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477649858576784250, guid: 0e60f286e7cfcd2478d4404c5b623ec3,
+        type: 3}
       propertyPath: m_HorizontalAlignment
       value: 4
       objectReference: {fileID: 0}
@@ -122,6 +132,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8833131728229835106, guid: 0e60f286e7cfcd2478d4404c5b623ec3,
+        type: 3}
+      propertyPath: layout.Alignment.X
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

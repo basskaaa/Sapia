@@ -25,7 +25,7 @@ public class DieAnimation : MonoBehaviour, ITestAnimation
         while (t < _duration)
         {
             t += Time.deltaTime;
-            transform.rotation = startRot * Quaternion.AngleAxis(t / _duration * -90f, transform.right); //or transform.right if you want it to be locally based
+            transform.rotation = startRot * Quaternion.AngleAxis(t / _duration * 90f, transform.right); //or transform.right if you want it to be locally based
             yield return null;
         }
 

@@ -48,8 +48,6 @@ namespace Assets._Scripts.Game
 
         public void Step()
         {
-            _combat.ExecuteAi();
-
             if (_combat.Step())
             {
                 ShowDebugText();
@@ -62,6 +60,11 @@ namespace Assets._Scripts.Game
             foreach (var combatListener in _listeners)
             {
                 combatListener.StepChanged(_combat, _combat.CurrentStep);
+            }
+
+            if (_combat.ExecuteAi())
+            {
+                Step();
             }
         }
 
