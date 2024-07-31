@@ -1,6 +1,7 @@
 ﻿using AutoFixture;
 using AutoFixture.AutoNSubstitute;
 using AutoFixture.Xunit2;
+using Sapia.Game.Tests.Configuration.Fixtures;
 
 namespace Sapia.Game.Tests.Configuration;
 
@@ -29,7 +30,7 @@ public class AutoNSubstituteDataAttribute : AutoDataAttribute
 public class SapiaTheoryAttribute : AutoNSubstituteDataAttribute
 {
     public SapiaTheoryAttribute() :
-        base()
+        base(typeof(TypeDataRootFixture))
     {
 
     }

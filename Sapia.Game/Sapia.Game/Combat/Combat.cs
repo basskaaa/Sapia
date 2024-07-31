@@ -1,6 +1,5 @@
 ﻿using Sapia.Game.Combat.Entities;
 using Sapia.Game.Combat.Entities.Enums;
-using Sapia.Game.Combat.Pathing;
 using Sapia.Game.Combat.Steps;
 using Sapia.Game.Types;
 
@@ -21,6 +20,7 @@ public class Combat
     public CombatParticipants Participants { get; }
     public CombatMovement Movement { get; }
     public CombatAbilities Abilities { get; }
+    public CombatAIController AIController { get; }
 
     public Combat(ITypeDataRoot typeData, IReadOnlyCollection<CombatParticipant> participants)
     {
@@ -29,6 +29,7 @@ public class Combat
         Participants = new(participants);
         Movement = new(this);
         Abilities = new(this);
+        AIController = new(this);
 
         StartNextRound();
 
@@ -37,6 +38,16 @@ public class Combat
     }
 
     public bool Step() => _execution.MoveNext();
+
+    public bool ExecuteAi()
+    {
+        if (CurrentStep is CombatParticipantStep participantStep && participantStep.Participant.Character.IsNpc)
+        {
+            return AIController.ExecuteStep(participantStep);
+        }
+
+        return false;
+    }
 
     internal void EndTurn(string participantId)
     {
