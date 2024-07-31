@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using Sapia.Game.Combat.Entities;
 using Sapia.Game.Combat.Steps;
 
 namespace Sapia.Game.Tests.Extensions;
@@ -20,7 +21,7 @@ public static class CombatExtensions
             }
         }
 
-        numTries.Should().BeLessThan(maxTries);
+        numTries.Should().BeLessThan(maxTries, "too many tries were attempted");
     }
 
     public static void SkipTurn(this Game.Combat.Combat combat)
@@ -49,4 +50,7 @@ public static class CombatExtensions
     {
         combat.SkipTurnIf(t => t.Participant.Character.IsNpc);
     }
+
+    public static CombatParticipant Player(this Game.Combat.Combat combat) => combat.Participants["Player"];
+    public static CombatParticipant Goblin(this Game.Combat.Combat combat) => combat.Participants["Goblin"];
 }

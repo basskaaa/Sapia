@@ -37,7 +37,7 @@ public static class PlayerVsGoblin
         var combat = CombatFactory.Create(typeData, new[]
         {
             new CombatFactory.CombatParticipantEntry("Player", theRock, 5, (0,0)),
-            new CombatFactory.CombatParticipantEntry("Goblin", goblinA, 2, (1,0))
+            new CombatFactory.CombatParticipantEntry("Goblin", goblinA, 2, (5,0))
         });
 
         return combat;
