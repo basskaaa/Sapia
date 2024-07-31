@@ -24,6 +24,7 @@ namespace Assets._Scripts.Ui
         private UIBlock2D pivotBlock;
 
         private Vector3 cardPos;
+        private Vector3 cardSize;
         private Vector3 pivotPos;
         private Vector3 screenPos;
 
@@ -31,9 +32,9 @@ namespace Assets._Scripts.Ui
         private Color color;
         private RadialGradient gradient;
         private Color border;
-        private bool isTargetHighlighted = false;
 
         private bool isReleased = false;
+        private bool hasTarget = false;
     
 
         private void OnEnable()
@@ -117,6 +118,7 @@ namespace Assets._Scripts.Ui
         public void GetInitPosData()
         {
             cardPos = cardBlock.Position.Value;
+            cardSize = cardBlock.Size.Value;
         }
 
         private void SetInitPos()
@@ -124,6 +126,7 @@ namespace Assets._Scripts.Ui
             pivotBlock.transform.position = pivotPos;
             cardBlock.Position.Y.Value = cardPos.y;
             cardBlock.Position.Z.Value = cardPos.z;
+            cardBlock.Size.Value = cardSize;
         }
 
         public void GetInitColorData()
@@ -153,29 +156,39 @@ namespace Assets._Scripts.Ui
 
             bool isHit = Physics.Raycast(ray, out raycastHit);
 
-            if (isHit && raycastHit.transform.CompareTag("Target") && !isTargetHighlighted && isCardSelected)
+            if (isHit && raycastHit.transform.CompareTag("Target") && isCardSelected && !hasTarget)
             {
                 CurrentTarget = raycastHit.transform.GetComponentInParent<CombatParticipantRef>();
                 //Debug.Log(raycastHit.transform.name);
                 HighlightTarget(raycastHit);
             }
 
+            if (CurrentTarget != null && !raycastHit.transform.CompareTag("Target"))
+            {
+                UnhighlightTargets();
+                CurrentTarget = null;
+            }
+
             if (raycastHit.transform.CompareTag("Target") && !isCardSelected)
             {
-                UnhighlightTarget(raycastHit);
+                UnhighlightTargets();
             }
         }
 
         private void HighlightTarget(RaycastHit hit)
         {
             hit.transform.GetComponent<MeshRenderer>().enabled = true;
-            isTargetHighlighted = true;
+            hasTarget = true;
         }
 
-        private void UnhighlightTarget(RaycastHit hit)
+        private void UnhighlightTargets()
         {
-            hit.transform.GetComponent<MeshRenderer>().enabled = false;
-            isTargetHighlighted = false;
+            hasTarget = false;
+            TargetCollider[] targets = FindObjectsOfType<TargetCollider>();
+            foreach (TargetCollider target in targets)
+            {
+                target.GetComponent<MeshRenderer>().enabled = false;
+            }
         }
     }
 }

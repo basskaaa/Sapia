@@ -44,7 +44,7 @@ namespace Assets._Scripts.Ui
                 }
                 _cards.Show(turn.Abilities);
                 _topCardSetter.FindTopCard();
-                GetCardsPos();
+                //GetCardsPos();
 
                 _utilityActions.Show();
             }
