@@ -14,7 +14,6 @@ namespace Assets._Scripts.Game
         public CombatParticipant Participant { get; private set; }
 
         private AnimationController _animationController;
-        private Combat _combat;
         private CombatParticipantRef[] _others;
         private bool _isResponsibleForNextStep = false;
         private CombatRunner _combatRunner;
@@ -30,6 +29,9 @@ namespace Assets._Scripts.Game
 
         void Update()
         {
+            // This actor is responsible for advancing the step
+            // This is usually because an ability has been used
+            // Wait until all the other actors have stopped animating
             if (_isResponsibleForNextStep)
             {
                 foreach (var other in _others)
@@ -40,6 +42,7 @@ namespace Assets._Scripts.Game
                     }
                 }
 
+                // No one is animating - step
                 _isResponsibleForNextStep = false;
                 Step();
             }
@@ -47,7 +50,6 @@ namespace Assets._Scripts.Game
 
         public void JoinCombat(CombatRunner combatRunner, Combat combat)
         {
-            _combat = combat;
             _combatRunner = combatRunner;
 
             _combatRunner.AddListener(this);
@@ -59,6 +61,7 @@ namespace Assets._Scripts.Game
         {
             if (step is MovedStep move && move.Participant.ParticipantId == ParticipantId)
             {
+                // This is a move step for this actor, move to the new position then invoke step
                 transform.position = new Vector3(move.Participant.Position.X, transform.position.y, move.Participant.Position.Y);
                 Invoke(nameof(Step), .5f);
             }
@@ -67,13 +70,17 @@ namespace Assets._Scripts.Game
             {
                 if (abilityUsedStep.Participant.ParticipantId == ParticipantId)
                 {
+                    // An ability was used by this actor. Play the attack animation t
+                    // Then wait for all others to finish animating
                     _animationController.Attack();
                     _isResponsibleForNextStep = true;
                 }
                 else
                 {
+                    // Check if anyone affected by the ability was this actor
                     foreach (var affectedParticipant in abilityUsedStep.Result.AffectedParticipants)
                     {
+                        // Play appropriate animation if this actor was effected
                         if (affectedParticipant.ParticipantId == ParticipantId)
                         {
                             if (Participant.Character.IsAlive)
@@ -91,9 +98,6 @@ namespace Assets._Scripts.Game
             }
         }
 
-        private void Step()
-        {
-            _combatRunner.Step();
-        }
+        private void Step() => _combatRunner.Step();
     }
 }
