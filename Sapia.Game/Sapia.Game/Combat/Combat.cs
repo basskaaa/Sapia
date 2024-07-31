@@ -91,6 +91,11 @@ public partial class Combat
 
         return null;
     }
+
+    public CombatParticipant GetParticipantById(string participantId)
+    {
+        throw new NotImplementedException();
+    }
 }
 
 public enum CombatResult
