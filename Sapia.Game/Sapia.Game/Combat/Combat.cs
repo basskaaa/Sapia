@@ -1,49 +1,65 @@
 ﻿using Sapia.Game.Combat.Entities;
 using Sapia.Game.Combat.Entities.Enums;
 using Sapia.Game.Combat.Pathing;
+using Sapia.Game.Combat.Steps;
 using Sapia.Game.Types;
 
 namespace Sapia.Game.Combat;
 
-public partial class Combat
+public class Combat
 {
+    private readonly CombatExecutor _executor;
+    private readonly IEnumerator<CombatStep> _execution;
+
+    public CombatStep? CurrentStep => _execution.Current;
+
     public int CurrentRound { get; private set; }
+    public int CurrentInitiativeOrder { get; private set; }
 
     public ITypeDataRoot TypeData { get; }
+
+    public CombatParticipants Participants { get; }
+    public CombatMovement Movement { get; }
+    public CombatAbilities Abilities { get; }
 
     public Combat(ITypeDataRoot typeData, IReadOnlyCollection<CombatParticipant> participants)
     {
         TypeData = typeData;
-        _participantsByInitiativeOrder = participants.ToDictionary(x => x.InitiativeOrder, x => x);
-        _participantsById = participants.ToDictionary(x => x.ParticipantId, x => x);
 
-        Pather = new(this);
+        Participants = new(participants);
+        Movement = new(this);
+        Abilities = new(this);
 
         StartNextRound();
+
+        _executor = new CombatExecutor(this);
+        _execution = _executor.Execute();
     }
 
-    public int CurrentInitiativeOrder { get; private set; }
+    public bool Step() => _execution.MoveNext();
 
-    public void EndTurn(string participantId)
+    internal void EndTurn(string participantId)
     {
         if (CurrentParticipant().ParticipantId == participantId)
         {
             CurrentInitiativeOrder++;
-            if (!_participantsByInitiativeOrder.ContainsKey(CurrentInitiativeOrder))
+            if (!Participants.ByInitiativeOrder.ContainsKey(CurrentInitiativeOrder))
             {
                 StartNextRound();
             }
         }
     }
 
+    internal CombatParticipant CurrentParticipant() => Participants.GetParticipantByInitiativeOrder(CurrentInitiativeOrder);
+
     private void StartNextRound()
     {
         CurrentRound++;
         CurrentInitiativeOrder = 0;
 
-        foreach (var combatParticipant in _participantsByInitiativeOrder)
+        foreach (var combatParticipant in Participants.ByInitiativeOrder)
         {
-            combatParticipant.Value.Status = new CombatStatus
+            combatParticipant.Value.Status = new()
             {
                 RemainingMovement = combatParticipant.Value.Character.Stats.MovementSpeed,
                 RemainingActions = (CombatActionType[])Enum.GetValues(typeof(CombatActionType))
@@ -51,11 +67,11 @@ public partial class Combat
         }
     }
 
-    private bool Try(string participantId, Func<CombatParticipant, bool> act) => Try<bool>(participantId, act);
+    internal bool Try(string participantId, Func<CombatParticipant, bool> act) => Try<bool>(participantId, act);
 
-    private T? Try<T>(string participantId, Func<CombatParticipant, T> act)
+    internal T? Try<T>(string participantId, Func<CombatParticipant, T> act)
     {
-        if (_participantsById.TryGetValue(participantId, out var participant) && participant.Character.IsAlive)
+        if (Participants.TryGetParticipantById(participantId, out var participant) && participant.Character.IsAlive)
         {
             return act(participant);
         }
@@ -66,6 +82,7 @@ public partial class Combat
     public CombatResult? CheckForComplete()
     {
         var allPlayersDead = Participants
+            .All
             .Where(x => x.Character.IsPlayer)
             .All(x => !x.Character.IsAlive);
 
@@ -75,6 +92,7 @@ public partial class Combat
         }
 
         var allOthersDead = Participants
+            .All
             .Where(x => !x.Character.IsPlayer)
             .All(x => !x.Character.IsAlive);
 

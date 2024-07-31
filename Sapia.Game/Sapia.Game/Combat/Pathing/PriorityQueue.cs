@@ -11,7 +11,7 @@ public class PriorityQueue<T> where T : IComparable<T>
 
     public PriorityQueue()
     {
-        _data = new List<T>();
+        _data = new();
     }
 
     public void Clear()

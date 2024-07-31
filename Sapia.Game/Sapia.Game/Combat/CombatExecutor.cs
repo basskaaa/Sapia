@@ -25,8 +25,8 @@ public class CombatExecutor
 
             do
             {
-                var abilities = Combat.GetUsableAbilities(participant.ParticipantId);
-                turn = new TurnStep(Combat, participant, abilities.ToArray());
+                var abilities = Combat.Abilities.GetUsableAbilities(participant.ParticipantId);
+                turn = new(Combat, participant, abilities.ToArray());
 
                 yield return turn;
 
@@ -38,7 +38,7 @@ public class CombatExecutor
                     {
                         var previousPosition = participant.Position;
 
-                        if (Combat.Move(participant.ParticipantId, coord))
+                        if (Combat.Movement.Move(participant.ParticipantId, coord))
                         {
                             yield return new MovedStep(Combat, participant, previousPosition);
                         }

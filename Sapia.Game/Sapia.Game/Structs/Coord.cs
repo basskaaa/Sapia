@@ -53,7 +53,7 @@ public readonly struct Coord : IComparable<Coord>, IEquatable<Coord>
 
     public static Coord operator +(Coord a, Coord b)
     {
-        return new Coord(a.X + b.X, a.Y + b.Y);
+        return new(a.X + b.X, a.Y + b.Y);
     }
 
     public static bool operator ==(Coord a, Coord b)

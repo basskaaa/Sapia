@@ -23,7 +23,7 @@ public class TurnStep : CombatParticipantStep
 
     public bool TryMove(Coord target)
     {
-        var path = Combat.Pather.GetPath(Participant.Position, target, new AStarSettings(20));
+        var path = Combat.Movement.Pather.GetPath(Participant.Position, target, new AStarSettings(20));
 
         if (!path.HasValue)
         {
@@ -44,5 +44,5 @@ public class TurnStep : CombatParticipantStep
         return true;
     }
 
-    public AbilityResult? UseAbility(AbilityUse use) => Combat.UseAbility(Participant.ParticipantId, use);
+    public AbilityResult? UseAbility(AbilityUse use) => Combat.Abilities.UseAbility(Participant.ParticipantId, use);
 }

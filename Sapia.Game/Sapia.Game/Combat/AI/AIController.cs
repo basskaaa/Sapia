@@ -10,6 +10,6 @@ public class AiController
     public AiController(Combat combat, string participantId)
     {
         Combat = combat;
-        Participant = combat.GetParticipantById(participantId);
+        Participant = combat.Participants[participantId];
     }
 }

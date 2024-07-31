@@ -49,7 +49,7 @@ var t = "  ";
 
 CombatParticipant? FindTargetFor(CombatParticipant participant)
 {
-    foreach (var other in combat.Combat.Participants)
+    foreach (var other in combat.Participants.All)
     {
         if (other.Character.IsPlayer != participant.Character.IsPlayer && other.Character.IsAlive)
         {
@@ -64,7 +64,7 @@ while (combat.Step())
 {
     var step = combat.CurrentStep;
 
-    Console.WriteLine($"{combat.Combat.CurrentRound}: {step}");
+    Console.WriteLine($"{combat.CurrentRound}: {step}");
 
     if (step is TurnStep turn)
     {

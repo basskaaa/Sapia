@@ -4,13 +4,22 @@ using Sapia.Game.Structs;
 
 namespace Sapia.Game.Combat;
 
-public partial class Combat
+public  class CombatMovement
 {
     public CombatPather Pather { get; }
 
+    private readonly Combat _combat;
+
+    public CombatMovement(Combat combat)
+    {
+        _combat = combat;
+
+        Pather = new(_combat);
+    }
+
     public bool Move(string participantId, Coord to)
     {
-        return Try(participantId, cp =>
+        return _combat.Try(participantId, cp =>
         {
             var distance = Coord.Distance(cp.Position, to);
 
@@ -24,18 +33,5 @@ public partial class Combat
 
             return true;
         });
-    }
-
-    public CombatParticipant? GetParticipantAtPosition(Coord coord)
-    {
-        foreach (var combatParticipant in Participants)
-        {
-            if (combatParticipant.Character.IsAlive && combatParticipant.Position == coord)
-            {
-                return combatParticipant;
-            }
-        }
-
-        return null;
     }
 }

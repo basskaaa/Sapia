@@ -7,16 +7,13 @@ namespace Sapia.Game.Combat;
 
 public static class CombatFactory
 {
-    public static CombatBag Create(ITypeDataRoot typeData, IEnumerable<CombatParticipantEntry> participants)
+    public static Combat Create(ITypeDataRoot typeData, IEnumerable<CombatParticipantEntry> participants)
     {
         var builtParticipants = participants.OrderByDescending(x => x.InitiativeRoll)
             .Select((x, i) => new CombatParticipant(x.Id, x.Character, x.InitiativeRoll, i, x.Position))
             .ToArray();
 
-        var combat = new Combat(typeData, builtParticipants);
-        var executor = new CombatExecutor(combat);
-
-        return new CombatBag(executor);
+        return new Combat(typeData, builtParticipants);
     }
 
     public readonly struct CombatParticipantEntry

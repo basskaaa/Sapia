@@ -23,7 +23,7 @@ public class CombatPather : IPathManager<Coord>
         {
             foreach (var coord in node.GetAdjacent())
             {
-                if (_obstructed.Contains(coord) || _combat.GetParticipantAtPosition(coord) != null)
+                if (_obstructed.Contains(coord) || _combat.Participants.GetParticipantAtPosition(coord) != null)
                 {
                     continue;
                 }

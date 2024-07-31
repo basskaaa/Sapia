@@ -16,7 +16,7 @@ public class CombatParticipant
 
         ParticipantId = participantId;
 
-        Status = new CombatStatus();
+        Status = new();
     }
 
     public string ParticipantId { get; }

@@ -74,7 +74,7 @@ public class AStar<T>
         _visited.Clear();
 
         // start a new search
-        _queue.Enqueue(new Path<T>(null, start, 0, 0, 0));
+        _queue.Enqueue(new(null, start, 0, 0, 0));
         _visited.Add(start);
 
         while (!_queue.IsEmpty)
