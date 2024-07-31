@@ -3,7 +3,7 @@ using Sapia.Game.Structs;
 
 namespace Sapia.Game.Combat.Steps;
 
-public class MovedStep : CombatParticipantStep
+public class MovedStep : ParticipantStep
 {
     public Coord PreviousPosition { get; }
 

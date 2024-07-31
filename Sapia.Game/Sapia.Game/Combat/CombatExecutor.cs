@@ -59,6 +59,6 @@ public class CombatExecutor
             }
         }
 
-        yield return new CombatFinishedStep(Combat, result.Value);
+        yield return new FinishedStep(Combat, result.Value);
     }
 }
