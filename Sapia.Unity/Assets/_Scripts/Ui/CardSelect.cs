@@ -16,9 +16,9 @@ namespace Assets._Scripts.Ui
         [SerializeField] private float highlightTime = 1f;
         public bool isCardSelected = false;
 
-        private Transform selectedCardPivot;
-        private Transform selectionScreenPivot;
-        private Transform abilityCardHolder;
+        private RectTransform selectedCardPivot;
+        private RectTransform selectionScreenPivot;
+        private RectTransform abilityCardHolder;
         public UnityEvent OnReleased = null;
         private UIBlock2D cardBlock;
         private UIBlock2D pivotBlock;
@@ -38,11 +38,11 @@ namespace Assets._Scripts.Ui
 
         private void OnEnable()
         {
-            abilityCardHolder = GetComponentInParent<AbilityCardHolder>().transform;
+            abilityCardHolder = GetComponentInParent<AbilityCardHolder>().GetComponent<RectTransform>();
             View.UIBlock.AddGestureHandler<Gesture.OnRelease, ButtonVisuals>(HandleReleased);
             cardBlock = GetComponent<UIBlock2D>();
-            selectedCardPivot = FindFirstObjectByType<SelectedCardPivot>().transform;
-            selectionScreenPivot = FindFirstObjectByType<SelectionScreen>().transform;
+            selectedCardPivot = FindFirstObjectByType<SelectedCardPivot>().GetComponent<RectTransform>();
+            selectionScreenPivot = FindFirstObjectByType<SelectionScreen>().GetComponent<RectTransform>();
             pivotBlock = selectionScreenPivot.GetComponent<UIBlock2D>();
             pivotPos = pivotBlock.transform.position;
 
@@ -103,9 +103,11 @@ namespace Assets._Scripts.Ui
             isReleased = false;
             transform.SetParent(selectedCardPivot, true);
 
+            cardBlock.Position.XY.Value = new Vector2(0,0);
+
             if (GetMousePosition.Instance.TryGetCurrentRay(out Ray ray) && GetMousePosition.Instance.TryProjectRay(ray, out Vector3 worldPos))
             {
-                selectionScreenPivot = selectedCardPivot.GetComponentInParent<SelectionScreen>().transform;
+                selectionScreenPivot = selectedCardPivot.GetComponentInParent<SelectionScreen>().GetComponent<RectTransform>();
                 selectionScreenPivot.position = worldPos;
                 SetSelectedColor();
                 isCardSelected = true;
