@@ -63,9 +63,9 @@ namespace Assets._Scripts.Ui
                 if (step is MovedStep && _wasMoveStep == false)
                 {
                     _wasMoveStep = true;
-                    return $"{Name(participantStep.Participant)} is moving";
+                    return $"{Name(participantStep.Participant)} {(participantStep.Participant.Character.IsPlayer ? "are" : "is")} moving";
                 }
-                else
+                else if(step is not MovedStep)
                 {
                     _wasMoveStep = false;
                 }

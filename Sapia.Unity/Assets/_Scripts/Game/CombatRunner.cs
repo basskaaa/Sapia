@@ -57,6 +57,8 @@ namespace Assets._Scripts.Game
                 ShowDebugText("Combat finished");
             }
 
+            UnityEngine.Debug.Log(_combat.CurrentStep);
+
             foreach (var combatListener in _listeners)
             {
                 combatListener.StepChanged(_combat, _combat.CurrentStep);
