@@ -2790,13 +2790,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.9914446, y: -0, z: -0, w: 0.13052888}
+  m_LocalRotation: {x: 0.858401, y: -0, z: -0, w: 0.5129792}
   m_LocalPosition: {x: 0, y: 3, z: 150}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2005753774}
-  m_LocalEulerAnglesHint: {x: 165, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 118.274994, y: 0, z: 0}
 --- !u!114 &410087042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3659,7 +3659,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &623354394
@@ -3692,7 +3692,7 @@ MonoBehaviour:
         Raw: 0
         Type: 0
       Y:
-        Raw: 0
+        Raw: -200
         Type: 0
       Z:
         Raw: 0
@@ -5144,6 +5144,7 @@ GameObject:
   - component: {fileID: 1168154165}
   - component: {fileID: 1168154164}
   - component: {fileID: 1168154163}
+  - component: {fileID: 1168154166}
   m_Layer: 0
   m_Name: TargetCollider
   m_TagString: Target
@@ -5239,6 +5240,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168154161}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1168154166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168154161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb1cdf6103f82d4fa98e34df9c615fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1188043555
 GameObject:
   m_ObjectHideFlags: 0
@@ -5873,6 +5886,7 @@ GameObject:
   - component: {fileID: 1383794658}
   - component: {fileID: 1383794657}
   - component: {fileID: 1383794656}
+  - component: {fileID: 1383794659}
   m_Layer: 0
   m_Name: TargetCollider
   m_TagString: Target
@@ -5968,6 +5982,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1383794654}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1383794659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383794654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb1cdf6103f82d4fa98e34df9c615fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1399328921
 GameObject:
   m_ObjectHideFlags: 0
@@ -6380,7 +6406,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407956201}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -9186,6 +9212,7 @@ GameObject:
   - component: {fileID: 1688554872}
   - component: {fileID: 1688554871}
   - component: {fileID: 1688554870}
+  - component: {fileID: 1688554873}
   m_Layer: 0
   m_Name: TargetCollider
   m_TagString: Target
@@ -9281,6 +9308,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688554868}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1688554873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688554868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb1cdf6103f82d4fa98e34df9c615fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1688823948
 GameObject:
   m_ObjectHideFlags: 0
