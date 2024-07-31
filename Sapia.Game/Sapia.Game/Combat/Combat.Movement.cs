@@ -1,10 +1,13 @@
 ﻿using Sapia.Game.Combat.Entities;
+using Sapia.Game.Combat.Pathing;
 using Sapia.Game.Structs;
 
 namespace Sapia.Game.Combat;
 
 public partial class Combat
 {
+    public CombatPather Pather { get; }
+
     public bool Move(string participantId, Coord to)
     {
         return Try(participantId, cp =>

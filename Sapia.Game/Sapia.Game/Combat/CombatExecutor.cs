@@ -1,4 +1,5 @@
-﻿using Sapia.Game.Combat.Steps;
+﻿using Sapia.Game.Combat.Entities.Enums;
+using Sapia.Game.Combat.Steps;
 
 namespace Sapia.Game.Combat;
 

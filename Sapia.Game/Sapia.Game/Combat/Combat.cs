@@ -1,4 +1,5 @@
 ﻿using Sapia.Game.Combat.Entities;
+using Sapia.Game.Combat.Entities.Enums;
 using Sapia.Game.Combat.Pathing;
 using Sapia.Game.Types;
 
@@ -6,17 +7,13 @@ namespace Sapia.Game.Combat;
 
 public partial class Combat
 {
-    public CombatPather Pather { get; }
-
     public int CurrentRound { get; private set; }
 
-    private readonly ITypeDataRoot _typeData;
-    private readonly Dictionary<int, CombatParticipant> _participantsByInitiativeOrder;
-    private readonly Dictionary<string, CombatParticipant> _participantsById;
+    public ITypeDataRoot TypeData { get; }
 
     public Combat(ITypeDataRoot typeData, IReadOnlyCollection<CombatParticipant> participants)
     {
-        _typeData = typeData;
+        TypeData = typeData;
         _participantsByInitiativeOrder = participants.ToDictionary(x => x.InitiativeOrder, x => x);
         _participantsById = participants.ToDictionary(x => x.ParticipantId, x => x);
 
@@ -26,9 +23,6 @@ public partial class Combat
     }
 
     public int CurrentInitiativeOrder { get; private set; }
-    public IReadOnlyCollection<CombatParticipant> Participants => _participantsByInitiativeOrder.Values;
-
-    public CombatParticipant CurrentParticipant() => _participantsByInitiativeOrder[CurrentInitiativeOrder];
 
     public void EndTurn(string participantId)
     {
@@ -91,15 +85,4 @@ public partial class Combat
 
         return null;
     }
-
-    public CombatParticipant GetParticipantById(string participantId)
-    {
-        throw new NotImplementedException();
-    }
-}
-
-public enum CombatResult
-{
-    PlayerDefeat,
-    PlayerVictory
 }

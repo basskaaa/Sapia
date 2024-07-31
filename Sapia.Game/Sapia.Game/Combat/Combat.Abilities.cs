@@ -12,7 +12,7 @@ public partial class Combat
         {
             foreach (var ability in participant.Character.Abilities)
             {
-                if (ability.HasAvailableUses && _typeData.Abilities.TryFind(ability.AbilityId, out var abilityType))
+                if (ability.HasAvailableUses && TypeData.Abilities.TryFind(ability.AbilityId, out var abilityType))
                 {
                     if (participant.Status.RemainingActions.Contains(abilityType.Action))
                     {
@@ -31,7 +31,7 @@ public partial class Combat
 
             if (availableAbility != null &&
                 availableAbility.HasAvailableUses &&
-                _typeData.Abilities.TryFind(abilityUse.AbilityId, out var abilityType) &&
+                TypeData.Abilities.TryFind(abilityUse.AbilityId, out var abilityType) &&
                 cp.Status.RemainingActions.Contains(abilityType.Action))
             {
                 var result = ExecuteAbility(cp, abilityType, abilityUse);

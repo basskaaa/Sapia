@@ -1,4 +1,6 @@
-﻿namespace Sapia.Game.Combat.Steps;
+﻿using Sapia.Game.Combat.Entities.Enums;
+
+namespace Sapia.Game.Combat.Steps;
 
 public class CombatFinishedStep : CombatStep
 {
