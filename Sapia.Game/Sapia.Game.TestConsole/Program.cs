@@ -76,14 +76,13 @@ while (combat.Step())
 
             if (target != null)
             {
-                var result = turn.UseAbility(new TargetedAbilityUse(ability.AbilityType.Id, target.ParticipantId));
-
-                if (result.HasValue)
-                {
-                    var targetInfo = result.Value.AffectedParticipants.Select(x => $"{x.ParticipantId} {x.HealthChange}").ToArray();
-                    Console.WriteLine(t + $"{result.Value.Ability.Id}: {string.Join(", ", targetInfo)}");
-                }
+                turn.UseAbility(new TargetedAbilityUse(ability.AbilityType.Id, target.ParticipantId));
             }
+        }
+        else if (step is AbilityUsedStep abilityStep)
+        {
+            var targetInfo = abilityStep.Result.AffectedParticipants.Select(x => $"{x.ParticipantId} {x.HealthChange}").ToArray();
+            Console.WriteLine(t + $"{abilityStep.Result.Ability.Id}: {string.Join(", ", targetInfo)}");
         }
 
         turn.EndTurn();

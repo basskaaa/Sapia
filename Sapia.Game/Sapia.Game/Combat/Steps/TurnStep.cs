@@ -7,8 +7,9 @@ public class TurnStep : ParticipantChoiceStep
 {
     public IReadOnlyCollection<UsableAbility> Abilities { get; }
 
-    public bool HasEnded { get; private set; }
-    public IReadOnlyCollection<Coord>? MovementRoute { get; private set; }
+    internal bool HasEnded { get; private set; }
+    internal IReadOnlyCollection<Coord>? MovementRoute { get; private set; }
+    internal AbilityUse? AbilityToUse { get; private set; }
 
     public TurnStep(Combat combat, CombatParticipant participant, IReadOnlyCollection<UsableAbility> abilities) : base(combat, participant)
     {
@@ -42,5 +43,5 @@ public class TurnStep : ParticipantChoiceStep
         return true;
     }
 
-    public AbilityResult? UseAbility(AbilityUse use) => Combat.Abilities.UseAbility(Participant.ParticipantId, use);
+    public void UseAbility(AbilityUse use) => AbilityToUse = use;
 }
