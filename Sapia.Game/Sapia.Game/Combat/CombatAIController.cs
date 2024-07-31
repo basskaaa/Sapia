@@ -3,13 +3,13 @@ using Sapia.Game.Combat.Steps;
 
 namespace Sapia.Game.Combat;
 
-public class CombatAIController
+public class CombatAiController
 {
     private readonly Combat _combat;
 
     private readonly Dictionary<string, AiController> _controllers=new();
 
-    public CombatAIController(Combat combat)
+    public CombatAiController(Combat combat)
     {
         _combat = combat;
 
@@ -22,7 +22,7 @@ public class CombatAIController
         }
     }
 
-    public bool ExecuteStep(CombatParticipantStep participantStep)
+    public bool ExecuteStep(ParticipantChoiceStep participantStep)
     {
         if (_controllers.TryGetValue(participantStep.Participant.ParticipantId, out var controller))
         {

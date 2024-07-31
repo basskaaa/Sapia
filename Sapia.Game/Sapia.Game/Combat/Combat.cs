@@ -20,7 +20,7 @@ public class Combat
     public CombatParticipants Participants { get; }
     public CombatMovement Movement { get; }
     public CombatAbilities Abilities { get; }
-    public CombatAIController AIController { get; }
+    public CombatAiController AIController { get; }
 
     public Combat(ITypeDataRoot typeData, IReadOnlyCollection<CombatParticipant> participants)
     {
@@ -35,15 +35,29 @@ public class Combat
 
         _executor = new CombatExecutor(this);
         _execution = _executor.Execute();
+        Step();
     }
 
-    public bool Step() => _execution.MoveNext();
+#if DEBUG
+    public List<string> _debugs = new();
+#endif
+
+    public bool Step()
+    {
+        var result = _execution.MoveNext();
+
+#if DEBUG
+        _debugs.Add(CurrentStep?.ToString() ?? "Nothing");
+#endif
+
+        return result;
+    }
 
     public bool ExecuteAi()
     {
-        if (CurrentStep is CombatParticipantStep participantStep && participantStep.Participant.Character.IsNpc)
+        if (CurrentStep is ParticipantChoiceStep participantChoiceStep && participantChoiceStep.Participant.Character.IsNpc)
         {
-            return AIController.ExecuteStep(participantStep);
+            return AIController.ExecuteStep(participantChoiceStep);
         }
 
         return false;

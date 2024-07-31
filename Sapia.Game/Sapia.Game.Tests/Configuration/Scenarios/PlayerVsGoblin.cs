@@ -40,6 +40,9 @@ public static class PlayerVsGoblin
             new CombatFactory.CombatParticipantEntry("Goblin", goblinA, 2, (5,0))
         });
 
+        // Always step again to skip the start of combat step
+        combat.Step();
+
         return combat;
     }
 }

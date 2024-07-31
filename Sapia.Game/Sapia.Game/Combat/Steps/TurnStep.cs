@@ -4,7 +4,7 @@ using Sapia.Game.Structs;
 
 namespace Sapia.Game.Combat.Steps;
 
-public class TurnStep : CombatParticipantStep
+public class TurnStep : ParticipantChoiceStep
 {
     public IReadOnlyCollection<UsableAbility> Abilities { get; }
 
@@ -31,7 +31,6 @@ public class TurnStep : CombatParticipantStep
         }
 
         var pathToUse = path.Value.ToNodesArray()
-            .Where(x => x != Participant.Position)
             .ToArray();
 
         if (pathToUse.Length > Participant.Status.RemainingMovement)

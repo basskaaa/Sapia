@@ -108,7 +108,7 @@ public class AStar<T>
 
                 if (_pathManager.EqualsOtherNode(nextNode, goal))
                 {
-                    return new AStarResult<T>(newPath.CurrentPath);
+                    return new AStarResult<T>(newPath.CurrentPath.Skip(1).ToArray());
                 }
 
                 if (!settings.MaximumHeuristicCost.HasValue || newPath.HeuristicFromNextToGoal < settings.MaximumHeuristicCost.Value)

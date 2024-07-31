@@ -22,7 +22,6 @@ public class MovesToAttack
 
         combat.StepUntil(() =>
         {
-
             var d = Coord.Distance(p.Position, g.Position);
 
             return d <= 1;

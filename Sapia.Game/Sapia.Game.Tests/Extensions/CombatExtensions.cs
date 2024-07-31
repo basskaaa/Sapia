@@ -6,7 +6,7 @@ namespace Sapia.Game.Tests.Extensions;
 
 public static class CombatExtensions
 {
-    public static void StepUntil(this Game.Combat.Combat combat, Func<bool> until, int maxTries = 100)
+    public static void StepUntil(this Game.Combat.Combat combat, Func<bool> until, Action? perStep =null, int maxTries = 100)
     {
         var numTries = 0;
 
@@ -14,6 +14,8 @@ public static class CombatExtensions
         {
             combat.ExecuteAi();
             combat.Step();
+
+            perStep?.Invoke();
 
             if (until())
             {
