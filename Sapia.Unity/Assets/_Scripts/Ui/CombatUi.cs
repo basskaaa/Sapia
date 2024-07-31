@@ -116,6 +116,7 @@ namespace Assets._Scripts.Ui
             if (_combatRunner.CurrentStep is TurnStep turn && turn.Participant.Character.IsPlayer)
             {
                 turn.EndTurn();
+                _combatRunner.Step();
             }
         }
     }
