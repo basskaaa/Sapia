@@ -44,7 +44,7 @@ public class MovesToAttack
         var p = combat.Player();
         var g = combat.Goblin();
 
-        g.Position = new Coord(0, g.Character.Stats.MovementSpeed * 2);
+        g.Position = new(0, g.Character.Stats.MovementSpeed * 2);
         
         combat.StepUntil(() =>
         {

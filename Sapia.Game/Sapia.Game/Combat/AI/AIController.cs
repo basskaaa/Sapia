@@ -1,5 +1,4 @@
 ﻿using Sapia.Game.Combat.Entities;
-using Sapia.Game.Combat.Pathing;
 using Sapia.Game.Combat.Steps;
 using Sapia.Game.Extensions;
 using Sapia.Game.Structs;
@@ -141,7 +140,7 @@ public class AiController
 
     private bool TryToMoveTo(TurnStep turn, Coord target)
     {
-        var path = Combat.Movement.Pather.GetPath(Participant.Position, target, new AStarSettings(20));
+        var path = Combat.Movement.Pather.GetPath(Participant.Position, target, new(20));
 
         if (path != null)
         {

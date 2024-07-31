@@ -33,7 +33,7 @@ public class Combat
 
         StartNextRound();
 
-        _executor = new CombatExecutor(this);
+        _executor = new(this);
         _execution = _executor.Execute();
         Step();
     }

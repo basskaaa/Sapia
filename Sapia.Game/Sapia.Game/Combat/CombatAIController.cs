@@ -17,7 +17,7 @@ public class CombatAiController
         {
             if (participant.Character.IsNpc)
             {
-                _controllers[participant.ParticipantId] = new AiController(_combat, participant.ParticipantId);
+                _controllers[participant.ParticipantId] = new(_combat, participant.ParticipantId);
             }
         }
     }

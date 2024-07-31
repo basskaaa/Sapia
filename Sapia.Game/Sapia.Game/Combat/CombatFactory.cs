@@ -13,7 +13,7 @@ public static class CombatFactory
             .Select((x, i) => new CombatParticipant(x.Id, x.Character, x.InitiativeRoll, i, x.Position))
             .ToArray();
 
-        return new Combat(typeData, builtParticipants);
+        return new(typeData, builtParticipants);
     }
 
     public readonly struct CombatParticipantEntry

@@ -26,12 +26,12 @@ var characterStatusService = new CharacterService(typeData);
 
 var theRock = characterStatusService.CompileCharacter(theRockConfiguration, ["Jab", "Slash"]);
 
-var goblinA = new SimpleCharacter("GoblinA", new CharacterStats(3))
+var goblinA = new SimpleCharacter("GoblinA", new(3))
 {
     Abilities = new[] { new PreparedAbility("Slash") }
 };
 
-var goblinB = new SimpleCharacter("GoblinB", new CharacterStats(4))
+var goblinB = new SimpleCharacter("GoblinB", new(4))
 {
     Abilities = new[] { new PreparedAbility("Slash") }
 };

@@ -1,5 +1,4 @@
 ﻿using Sapia.Game.Combat.Entities;
-using Sapia.Game.Combat.Pathing;
 using Sapia.Game.Structs;
 
 namespace Sapia.Game.Combat.Steps;
@@ -23,7 +22,7 @@ public class TurnStep : ParticipantChoiceStep
 
     public bool TryMove(Coord target)
     {
-        var path = Combat.Movement.Pather.GetPath(Participant.Position, target, new AStarSettings(20));
+        var path = Combat.Movement.Pather.GetPath(Participant.Position, target, new(20));
 
         if (!path.HasValue)
         {

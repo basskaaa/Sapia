@@ -29,7 +29,7 @@ public static class PlayerVsGoblin
 
         var theRock = characterStatusService.CompileCharacter(theRockConfiguration, ["Jab", "Slash"]);
 
-        var goblinA = new SimpleCharacter("GoblinA", new CharacterStats(3))
+        var goblinA = new SimpleCharacter("GoblinA", new(3))
         {
             Abilities = new[] { new PreparedAbility("Slash") }
         };
