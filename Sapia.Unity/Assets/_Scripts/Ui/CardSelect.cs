@@ -77,7 +77,6 @@ namespace Assets._Scripts.Ui
         {
             if (!isReleased)
             {
-                UnityEngine.Debug.Log("Released");
                 isReleased = true;
 
                 SetInitPos();

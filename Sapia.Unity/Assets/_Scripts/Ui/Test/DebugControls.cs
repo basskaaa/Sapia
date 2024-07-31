@@ -19,13 +19,12 @@ namespace Assets._Scripts.Ui.Test
         }
 
         public void Step() => _combat.Step();
-        public void Act() => _combat.Act();
 
         public void StepChanged(Combat combat, CombatStep step)
         {
             actButton.SetActive(step is TurnStep turn &&
-                                ((!turn.Participant.Character.IsPlayer && !turn.HasEnded) ||
-                                (turn.Participant.Character.IsPlayer && turn.Abilities.Count == 0 && !turn.HasEnded)));
+                                ((!turn.Participant.Character.IsPlayer ) ||
+                                (turn.Participant.Character.IsPlayer && turn.Abilities.Count == 0)));
 
             var isEndTurn = step is TurnStep t2 && t2.Abilities.Count == 0;
 

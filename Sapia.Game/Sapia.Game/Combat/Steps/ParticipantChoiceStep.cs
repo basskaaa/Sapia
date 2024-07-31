@@ -2,7 +2,7 @@
 
 namespace Sapia.Game.Combat.Steps;
 
-public abstract class ParticipantChoiceStep : CombatParticipantStep
+public abstract class ParticipantChoiceStep : ParticipantStep
 {
     protected ParticipantChoiceStep(Combat combat, CombatParticipant participant) : base(combat, participant)
     {

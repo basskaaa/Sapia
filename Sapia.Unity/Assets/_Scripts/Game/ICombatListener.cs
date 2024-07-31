@@ -1,7 +1,10 @@
-using Sapia.Game.Combat.Steps;
 using Sapia.Game.Combat;
+using Sapia.Game.Combat.Steps;
 
-public interface ICombatListener
+namespace Assets._Scripts.Game
 {
-    void StepChanged(Combat combat, CombatStep step);
+    public interface ICombatListener
+    {
+        void StepChanged(Combat combat, CombatStep step);
+    }
 }

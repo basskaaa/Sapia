@@ -31,8 +31,6 @@ namespace Assets._Scripts.Ui
 
         private void CardUsed(UsableAbility ability, CombatParticipantRef target)
         {
-            UnityEngine.Debug.Log($"Trying {ability.AbilityType.Id}");
-
             _combatRunner.UseAbility("Player", ability, target?.ParticipantId);
         }
 
@@ -98,8 +96,6 @@ namespace Assets._Scripts.Ui
             {
                 var coord = TransformWorldToCoord(worldPos);
 
-                UnityEngine.Debug.Log($"Clicked at {worldPos} -> {coord}");
-
                 if (_combatRunner.Move("Player", coord))
                 {
                     ChangeInteractionMode(InteractionMode.Disabled);
@@ -113,6 +109,15 @@ namespace Assets._Scripts.Ui
         {
             var coord = TransformWorldToCoord(worldPos);
             return new Vector3(coord.X, 0, coord.Y);
+        }
+
+        public void EndTurn()
+        {
+            if (_combatRunner.CurrentStep is TurnStep turn && turn.Participant.Character.IsPlayer)
+            {
+                turn.EndTurn();
+                _combatRunner.Step();
+            }
         }
     }
 

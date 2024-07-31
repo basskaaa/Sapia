@@ -27,5 +27,10 @@ namespace Assets._Scripts.Ui
         {
             _combatUi.ChangeInteractionMode(_combatUi.InteractionMode == InteractionMode.Move ? InteractionMode.Ready : InteractionMode.Move);
         }
+
+        public void EndTurn()
+        {
+            _combatUi.EndTurn();
+        }
     }
 }

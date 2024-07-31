@@ -2,11 +2,11 @@
 
 namespace Sapia.Game.Combat.Steps;
 
-public class CombatFinishedStep : CombatStep
+public class FinishedStep : CombatStep
 {
     public CombatResult Result { get; }
 
-    public CombatFinishedStep(Combat combat, CombatResult result) : base(combat)
+    public FinishedStep(Combat combat, CombatResult result) : base(combat)
     {
         Result = result;
     }

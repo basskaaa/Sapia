@@ -47,6 +47,14 @@ public class CombatExecutor
                             break;
                         }
                     }
+                }else if (turn.AbilityToUse != null)
+                {
+                    var abilityResult = Combat.Abilities.UseAbility(participant.ParticipantId, turn.AbilityToUse);
+
+                    if (abilityResult.HasValue)
+                    {
+                        yield return new AbilityUsedStep(Combat, participant, abilityResult.Value);
+                    }
                 }
 
             } while (!turn.HasEnded);
@@ -59,6 +67,6 @@ public class CombatExecutor
             }
         }
 
-        yield return new CombatFinishedStep(Combat, result.Value);
+        yield return new FinishedStep(Combat, result.Value);
     }
 }
