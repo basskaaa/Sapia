@@ -17,12 +17,13 @@ namespace Assets._Scripts.Game
         private Combat _combat;
         private CombatParticipantRef[] _others;
         private bool _isResponsibleForNextStep = false;
+        private CombatRunner _combatRunner;
 
         void Awake()
         {
             _animationController = gameObject.GetOrAddComponent<AnimationController>();
 
-            _others = FindObjectsByType<CombatParticipantRef>(FindObjectsInactive.Include FindObjectsSortMode.InstanceID)
+            _others = FindObjectsByType<CombatParticipantRef>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID)
                 .Where(x => x != this)
                 .ToArray();
         }
@@ -47,7 +48,9 @@ namespace Assets._Scripts.Game
         public void JoinCombat(CombatRunner combatRunner, Combat combat)
         {
             _combat = combat;
-            combatRunner.AddListener(this);
+            _combatRunner = combatRunner;
+
+            _combatRunner.AddListener(this);
 
             Participant = combat.Participants[ParticipantId];
         }
@@ -57,7 +60,7 @@ namespace Assets._Scripts.Game
             if (step is MovedStep move && move.Participant.ParticipantId == ParticipantId)
             {
                 transform.position = new Vector3(move.Participant.Position.X, transform.position.y, move.Participant.Position.Y);
-                Invoke(nameof(Step), .35f);
+                Invoke(nameof(Step), .5f);
             }
 
             if (step is AbilityUsedStep abilityUsedStep)
@@ -90,7 +93,7 @@ namespace Assets._Scripts.Game
 
         private void Step()
         {
-            _combat.Step();
+            _combatRunner.Step();
         }
     }
 }

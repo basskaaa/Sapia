@@ -17,6 +17,8 @@ namespace Assets._Scripts.Game
     {
         private DebugText _debug;
 
+        public CombatStep CurrentStep => _combat.CurrentStep;
+
         private Combat _combat;
         private HashSet<ICombatListener> _listeners = new();
 
