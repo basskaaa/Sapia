@@ -64,7 +64,12 @@ namespace Assets._Scripts.Game
                 combatListener.StepChanged(_combat, _combat.CurrentStep);
             }
 
-            if (_combat.ExecuteAi())
+            // There should only be 1 additional call to Step
+            if (_combat.CurrentStep is AbilityFailedStep)
+            {
+                Invoke(nameof(Step), 1f);
+            }
+            else if (_combat.ExecuteAi())
             {
                 Invoke(nameof(Step), 1f);
             }
@@ -113,7 +118,7 @@ namespace Assets._Scripts.Game
 
                 foreach (var participant in _combat.Participants.All)
                 {
-                    var participantText = $"{participant.ParticipantId}: {participant.Character.CurrentHealth} / {participant.Character.Stats.MaxHealth}";
+                    var participantText = $"{participant.ParticipantId}: {participant.Character.CurrentHealth} / {participant.Character.Stats.MaxHealth} @{participant.Position}";
                     textToShow.Add(participantText);
                 }
             }
