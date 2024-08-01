@@ -47,12 +47,13 @@ namespace Assets._Scripts.Ui.Combat
 
                 _utilityActions.Show();
             }
-            else
+            else if (step is not AbilityFailedStep { Participant: { Character: { IsPlayer: true } } })
             {
+                ChangeInteractionMode(InteractionMode.Disabled);
                 _utilityActions.Hide();
             }
         }
-        
+
         public void ChangeInteractionMode(InteractionMode switchToInteractionMode)
         {
             InteractionMode = switchToInteractionMode;
