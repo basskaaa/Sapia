@@ -52,8 +52,6 @@ namespace Assets._Scripts.Ui.Combat.Cards
 
                 ReturnToDeck();
 
-                return;
-
                 var render = GetComponentInChildren<CardRender>();
 
                 if (render == null)
