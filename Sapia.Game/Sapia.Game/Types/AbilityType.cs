@@ -8,6 +8,9 @@ public class AbilityType : TypeDataWithDescription
     public CombatActionType Action { get; set; } = CombatActionType.Main;
     public TargetType Target { get; set; } = TargetType.Other;
 
+    // Only used when Target = TargetType.Other
+    public bool CanTargetSelf { get; set; } = false;
+
     public int Damage { get; set; } = 1;
 
     public int Range { get; set; } = 1;

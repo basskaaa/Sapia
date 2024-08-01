@@ -1,5 +1,6 @@
 ﻿using Sapia.Game.Combat.Entities;
 using Sapia.Game.Combat.Entities.Enums;
+using Sapia.Game.Structs;
 using Sapia.Game.Types.Enums;
 using Sapia.Game.Types;
 
@@ -82,7 +83,26 @@ public class CombatAbilities
             return AbilityAttempt.Fail(AbilityFailureReason.NoTarget);
         }
 
-        // TODO: validate range and whether can target self
+        if (abilityType.Target == TargetType.Other && !abilityType.CanTargetSelf)
+        {
+            foreach (var target in targets)
+            {
+                if (target.ParticipantId == participant.ParticipantId)
+                {
+                    return AbilityAttempt.Fail(AbilityFailureReason.UnableToTargetSelf);
+                }
+            }
+        }
+
+        foreach (var target in targets)
+        {
+            var d = Coord.Distance(target.Position, participant.Position);
+
+            if (d > abilityType.Range)
+            {
+                return AbilityAttempt.Fail(AbilityFailureReason.TargetOutOfRange);
+            }
+        }
 
         var affectedTargets = targets.Select(x => ApplyAbilityToParticipant(participant, x, abilityType));
 
