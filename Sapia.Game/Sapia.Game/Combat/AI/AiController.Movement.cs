@@ -8,36 +8,39 @@ public partial class AiController
 {
     private void MoveTowardsTarget(TurnStep turn)
     {
+        var target = _plan!.Target;
+        var desiredRange = _plan.ChosenAbility?.Range ?? 1;
+        
         // Reset movement target if:
         // Arrived
         // It is now obstructed
-        // It is now no longer adjacent to the target
-        if (_movementTarget.HasValue &&
-            (_movementTarget.Value == Participant.Position ||
-             Combat.Movement.Pather.IsObstructed(_movementTarget.Value) ||
-             Coord.Distance(_movementTarget.Value, _target.Position) > 1))
+        // It is now no longer within range of the target
+        if (_plan.MovementTarget.HasValue &&
+            (_plan.MovementTarget.Value == Participant.Position ||
+             Combat.Movement.Pather.IsObstructed(_plan.MovementTarget.Value) ||
+             Coord.Distance(_plan.MovementTarget.Value, target.Position) > desiredRange))
         {
-            _movementTarget = null;
+            _plan.MovementTarget = null;
         }
 
-        var dist = Coord.Distance(Participant.Position, _target.Position);
+        var dist = Coord.Distance(Participant.Position, target.Position);
 
         // Close enough to do something, no movement required
-        if (dist <= 1)
+        if (dist <= desiredRange)
         {
-            _movementTarget = null;
+            _plan.MovementTarget = null;
             return;
         }
 
         // Move towards existing target
-        if (_movementTarget.HasValue && TryToMoveTo(turn, _movementTarget.Value))
+        if (_plan.MovementTarget.HasValue && TryToMoveTo(turn, _plan.MovementTarget.Value))
         {
             return;
         }
 
         // No valid movement target, or couldn't move to it
         // Try to find a new movement target adjacent to the target
-        var adjacent = _target!.Position.GetAdjacent()
+        var adjacent = target!.Position.GetAdjacent()
             .Where(x => !Combat.Movement.Pather.IsObstructed(x))
             .OrderBy(x => Coord.Distance(x, Participant.Position))
             .ToArray();
@@ -57,7 +60,7 @@ public partial class AiController
 
         if (path != null)
         {
-            _movementTarget = target;
+            _plan!.MovementTarget = target;
 
             var movementGoal = path.Value.Path.Take(Participant.Status.RemainingMovement).Last();
 
