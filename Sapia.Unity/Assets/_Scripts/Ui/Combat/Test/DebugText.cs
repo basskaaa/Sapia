@@ -6,16 +6,40 @@ namespace Assets._Scripts.Ui.Combat.Test
 {
     public class DebugText : MonoBehaviour
     {
-        private TextBlock _text;
+        public TextBlock text, buttonLabel;
 
         void Awake()
         {
-            _text = GetComponent<TextBlock>();
+            Hide();
         }
 
-        public void Show(params string[] text)
+        private void Hide()
         {
-            _text.Text = string.Join(Environment.NewLine, text);
+            text.gameObject.SetActive(false);
+            buttonLabel.Text = "+";
+        }
+
+        private void Show()
+        {
+            text.gameObject.SetActive(true);
+            buttonLabel.Text = "-";
+        }
+
+        public void Toggle()
+        {
+            if (text.gameObject.activeSelf)
+            {
+                Hide();
+            }
+            else
+            {
+                Show();
+            }
+        }
+
+        public void ShowText(params string[] text)
+        {
+            this.text.Text = string.Join(Environment.NewLine, text);
         }
     }
 }

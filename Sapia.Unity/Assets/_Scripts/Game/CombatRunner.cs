@@ -136,7 +136,7 @@ namespace Assets._Scripts.Game
 
             textToShow.AddRange(text);
 
-            _debug.Show(textToShow.ToArray());
+            _debug.ShowText(textToShow.ToArray());
         }
 
         public void AddListener(ICombatListener listener)
