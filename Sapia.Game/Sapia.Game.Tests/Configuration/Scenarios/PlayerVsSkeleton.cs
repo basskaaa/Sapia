@@ -5,7 +5,7 @@ using Sapia.Game.Types;
 
 namespace Sapia.Game.Tests.Configuration.Scenarios;
 
-public static class PlayerVsGoblin
+public static class PlayerVsSkeleton
 {
     public static Game.Combat.Combat Setup(ITypeDataRoot typeData)
     {
@@ -29,7 +29,7 @@ public static class PlayerVsGoblin
 
         var theRock = characterStatusService.CompileCharacter(theRockConfiguration, ["Jab", "Slash"]);
 
-        var goblinA = new SimpleCharacter("GoblinA", new(3))
+        var skeleton = new SimpleCharacter("Skeleton", new(3))
         {
             Abilities = new[] { new PreparedAbility("Slash") }
         };
@@ -37,7 +37,7 @@ public static class PlayerVsGoblin
         var combat = CombatFactory.Create(typeData, new[]
         {
             new CombatFactory.CombatParticipantEntry("Player", theRock, 5, (0,0)),
-            new CombatFactory.CombatParticipantEntry("Goblin", goblinA, 2, (5,0))
+            new CombatFactory.CombatParticipantEntry("Skeleton", skeleton, 2, (5,0))
         });
 
         // Always step again to skip the start of combat step

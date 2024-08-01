@@ -9,4 +9,6 @@ public class AbilityType : TypeDataWithDescription
     public TargetType Target { get; set; } = TargetType.Other;
 
     public int Damage { get; set; } = 1;
+
+    public int Range { get; set; } = 1;
 }

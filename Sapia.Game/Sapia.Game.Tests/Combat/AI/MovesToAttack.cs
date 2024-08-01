@@ -13,16 +13,14 @@ public class MovesToAttack
     [SapiaTheory, Theory]
     public void Moves_within_distance_of_player_in_1_turn(ITypeDataRoot typeData)
     {
-        var combat = PlayerVsGoblin.Setup(typeData);
+        var combat = PlayerVsSkeleton.Setup(typeData);
 
         var p = combat.Player();
-        var g = combat.Goblin();
+        var s = combat.Skeleton();
 
-        combat.SkipTurnIfPlayer();
-
-        combat.StepUntil(() =>
+        combat.StepAiUntil(() =>
         {
-            var d = Coord.Distance(p.Position, g.Position);
+            var d = Coord.Distance(p.Position, s.Position);
 
             return d <= 1;
         });
@@ -30,39 +28,35 @@ public class MovesToAttack
         combat.CurrentRound.Should().Be(1);
 
         var adjacent = p.Position.GetAdjacent().ToArray();
-        adjacent.Should().Contain(g.Position);
+        adjacent.Should().Contain(s.Position);
 
-        adjacent = g.Position.GetAdjacent().ToArray();
+        adjacent = s.Position.GetAdjacent().ToArray();
         adjacent.Should().Contain(p.Position);
     }
 
     [SapiaTheory, Theory]
     public void Moves_within_distance_of_player_over_more_than_1_turn(ITypeDataRoot typeData)
     {
-        var combat = PlayerVsGoblin.Setup(typeData);
+        var combat = PlayerVsSkeleton.Setup(typeData);
 
         var p = combat.Player();
-        var g = combat.Goblin();
+        var s = combat.Skeleton();
 
-        g.Position = new(0, g.Character.Stats.MovementSpeed * 2);
+        s.Position = new(0, s.Character.Stats.MovementSpeed * 2);
         
-        combat.StepUntil(() =>
+        combat.StepAiUntil(() =>
         {
-            var d = Coord.Distance(p.Position, g.Position);
+            var d = Coord.Distance(p.Position, s.Position);
 
             return d <= 1;
-        },
-        () =>
-        {
-            combat.SkipTurnIfPlayer();
         });
 
         combat.CurrentRound.Should().BeGreaterOrEqualTo(2);
 
         var adjacent = p.Position.GetAdjacent().ToArray();
-        adjacent.Should().Contain(g.Position);
+        adjacent.Should().Contain(s.Position);
 
-        adjacent = g.Position.GetAdjacent().ToArray();
+        adjacent = s.Position.GetAdjacent().ToArray();
         adjacent.Should().Contain(p.Position);
     }
 }
