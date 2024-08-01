@@ -16,11 +16,11 @@ namespace Assets._Scripts.Debug
 
         private void Update()
         {
-            if (GetMousePosition.Instance.TryGetCurrentRay(out Ray ray))
+            if (GetMousePosition.TryGetCurrentRay(out var ray))
             {
                 if (_combatUi.InteractionMode == InteractionMode.Move)
                 {
-                    if (GetMousePosition.Instance.TryProjectGroundRay(ray, out Vector3 groundPos))
+                    if (GetMousePosition.TryProjectGroundRay(ray, out var groundPos))
                     {
                         groundPos = _combatUi.TransformWorldToCoordVector(groundPos);
 
@@ -31,7 +31,7 @@ namespace Assets._Scripts.Debug
                 }
                 else
                 {
-                    if (GetMousePosition.Instance.TryProjectRay(ray, out Vector3 worldPos))
+                    if (GetMousePosition.TryProjectRay(ray, out var worldPos))
                     {
                         transform.position = worldPos;
                     }

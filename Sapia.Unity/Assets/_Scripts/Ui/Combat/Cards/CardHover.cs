@@ -53,7 +53,7 @@ namespace Assets._Scripts.Ui.Combat.Cards
         {
             isHover = true;
             sortBase = sortGroup.SortingOrder;
-            Vector2 cardScale = new Vector2(baseScale.x * hoverScale.x, baseScale.y * hoverScale.y);
+            var cardScale = new Vector2(baseScale.x * hoverScale.x, baseScale.y * hoverScale.y);
             uiBlock.Size.XY.Percent = cardScale;
             sortGroup.SortingOrder = sortFront;
         }

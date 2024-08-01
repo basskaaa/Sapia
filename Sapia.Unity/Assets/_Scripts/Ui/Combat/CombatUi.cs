@@ -56,9 +56,9 @@ namespace Assets._Scripts.Ui.Combat
 
         private void GetCardsPos()
         {
-            CardSelect[] _cardSelects = _cards.GetComponentsInChildren<CardSelect>();
+            var _cardSelects = _cards.GetComponentsInChildren<CardSelect>();
 
-            foreach (CardSelect cardSelect in _cardSelects)
+            foreach (var cardSelect in _cardSelects)
             {
                 cardSelect.GetInitPosData();
             }
@@ -92,7 +92,7 @@ namespace Assets._Scripts.Ui.Combat
 
         private void TryMove()
         {
-            if (GetMousePosition.Instance.TryGetCurrentRay(out var ray) && GetMousePosition.Instance.TryProjectGroundRay(ray, out var worldPos))
+            if (GetMousePosition.TryGetCurrentRay(out var ray) && GetMousePosition.TryProjectGroundRay(ray, out var worldPos))
             {
                 var coord = TransformWorldToCoord(worldPos);
 

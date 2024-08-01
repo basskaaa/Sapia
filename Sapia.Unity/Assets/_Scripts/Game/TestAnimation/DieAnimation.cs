@@ -20,8 +20,8 @@ namespace Assets._Scripts.Game.TestAnimation
             IsPlaying = true;
             yield return new WaitForSeconds(0.25f);
 
-            Quaternion startRot = transform.rotation;
-            float t = 0.0f;
+            var startRot = transform.rotation;
+            var t = 0.0f;
             while (t < _duration)
             {
                 t += Time.deltaTime;

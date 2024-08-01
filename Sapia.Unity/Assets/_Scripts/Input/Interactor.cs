@@ -17,8 +17,8 @@ namespace Assets._Scripts.Input
         {
             if (UnityEngine.Input.GetKeyDown(KeyCode.E) && canInteract)
             {
-                Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
-                if (Physics.Raycast(r, out RaycastHit hitInfo, InteractRange)) 
+                var r = new Ray(InteractorSource.position, InteractorSource.forward);
+                if (Physics.Raycast(r, out var hitInfo, InteractRange)) 
                 {
                     if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj)) 
                     { 

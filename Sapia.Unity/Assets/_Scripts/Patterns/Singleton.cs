@@ -20,7 +20,7 @@ namespace Assets._Scripts.Patterns
 
                     if (instance == null) // If still no instance found
                     {
-                        GameObject singletonObject = new GameObject(typeof(T).Name); // Create a new GameObject
+                        var singletonObject = new GameObject(typeof(T).Name); // Create a new GameObject
                         instance = singletonObject.AddComponent<T>(); // Add the derived class component to the GameObject
                     }
                 }

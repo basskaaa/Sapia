@@ -65,7 +65,7 @@ namespace Assets._Scripts.Ui.Combat.Tooltips
         {
             cardsHover = FindObjectsByType<CardHover>(FindObjectsInactive.Include, FindObjectsSortMode.None);
 
-            foreach (CardHover card in cardsHover)
+            foreach (var card in cardsHover)
             {
                 if (card.isHover)
                 {
@@ -79,7 +79,7 @@ namespace Assets._Scripts.Ui.Combat.Tooltips
         {
             cardsSelect = FindObjectsByType<CardSelect>(FindObjectsInactive.Include, FindObjectsSortMode.None);
 
-            foreach (CardSelect card in cardsSelect)
+            foreach (var card in cardsSelect)
             {
                 if (card.isCardSelected)
                 {
@@ -91,11 +91,11 @@ namespace Assets._Scripts.Ui.Combat.Tooltips
 
         private (UsableAbility ability, float xPos)? GetHoveredCardDetails()
         {
-            foreach (CardHover card in cardsHover)
+            foreach (var card in cardsHover)
             {
                 if (card.isHover)
                 {
-                    float xPos = card.GetComponentInParent<CardSelect>().GetComponent<UIBlock2D>().Position.X.Value;
+                    var xPos = card.GetComponentInParent<CardSelect>().GetComponent<UIBlock2D>().Position.X.Value;
                     var render = card.GetComponentInParent<CardRender>();
 
                     return (render.Ability, xPos);
@@ -120,7 +120,7 @@ namespace Assets._Scripts.Ui.Combat.Tooltips
             
             tooltipHolder.Position.X.Value = details.Value.xPos + xOffset;
 
-            foreach (TextMeshProTextBlock text in tooltipText)
+            foreach (var text in tooltipText)
             {
                 text.gameObject.SetActive(true);
             }
@@ -135,7 +135,7 @@ namespace Assets._Scripts.Ui.Combat.Tooltips
             tooltipBlock.Shadow.Enabled = false;
             tooltipHolder.Position.X.Value = tooltipXPos;
 
-            foreach (TextMeshProTextBlock text in tooltipText)
+            foreach (var text in tooltipText)
             {
                 text.gameObject.SetActive(false);
             }

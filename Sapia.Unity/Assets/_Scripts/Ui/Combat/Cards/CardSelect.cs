@@ -107,7 +107,7 @@ namespace Assets._Scripts.Ui.Combat.Cards
 
             cardBlock.Position.XY.Value = new Vector2(0,0);
 
-            if (GetMousePosition.Instance.TryGetCurrentRay(out Ray ray) && GetMousePosition.Instance.TryProjectRay(ray, out Vector3 worldPos))
+            if (GetMousePosition.TryGetCurrentRay(out var ray) && GetMousePosition.TryProjectRay(ray, out var worldPos))
             {
                 selectionScreenPivot = selectedCardPivot.GetComponentInParent<SelectionScreen>().GetComponent<RectTransform>();
                 selectionScreenPivot.position = worldPos;
@@ -149,13 +149,13 @@ namespace Assets._Scripts.Ui.Combat.Cards
 
         private void CheckTarget()
         {
-            Vector3 mousePos = UnityEngine.Input.mousePosition;
+            var mousePos = UnityEngine.Input.mousePosition;
 
-            Ray ray = Camera.main.ScreenPointToRay(mousePos);
+            var ray = Camera.main.ScreenPointToRay(mousePos);
 
             RaycastHit raycastHit;
 
-            bool isHit = Physics.Raycast(ray, out raycastHit);
+            var isHit = Physics.Raycast(ray, out raycastHit);
 
             if (isHit && raycastHit.transform.CompareTag("Target") && isCardSelected && !hasTarget)
             {
@@ -185,8 +185,8 @@ namespace Assets._Scripts.Ui.Combat.Cards
         private void UnhighlightTargets()
         {
             hasTarget = false;
-            TargetCollider[] targets = FindObjectsOfType<TargetCollider>();
-            foreach (TargetCollider target in targets)
+            var targets = FindObjectsOfType<TargetCollider>();
+            foreach (var target in targets)
             {
                 target.GetComponent<MeshRenderer>().enabled = false;
             }

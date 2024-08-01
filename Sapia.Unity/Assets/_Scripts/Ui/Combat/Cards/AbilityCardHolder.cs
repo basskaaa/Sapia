@@ -18,7 +18,7 @@ namespace Assets._Scripts.Ui.Combat.Cards
         {
             var cards = GetComponentsInChildren<CardRender>(true);
 
-            for (int i = 0; i < abilities.Count; i++)
+            for (var i = 0; i < abilities.Count; i++)
             {
                 var ability = abilities.ElementAt(i);
 
@@ -37,7 +37,7 @@ namespace Assets._Scripts.Ui.Combat.Cards
                 card.Render(ability);
             }
 
-            for (int i = abilities.Count; i < cards.Length; i++)
+            for (var i = abilities.Count; i < cards.Length; i++)
             {
                 cards[i].gameObject.SetActive(false);
             }

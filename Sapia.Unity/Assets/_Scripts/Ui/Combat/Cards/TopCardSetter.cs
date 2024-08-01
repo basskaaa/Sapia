@@ -20,9 +20,9 @@ namespace Assets._Scripts.Ui.Combat.Cards
 
         public void FindTopCard()
         {
-            CardHover[] cardsHover = GetComponentsInChildren<CardHover>();
+            var cardsHover = GetComponentsInChildren<CardHover>();
         
-            foreach (CardHover card in cardsHover) 
+            foreach (var card in cardsHover) 
             { 
                 if (card == cardsHover.Last())
                 {
@@ -54,12 +54,12 @@ namespace Assets._Scripts.Ui.Combat.Cards
         {
             yield return new WaitForSeconds(setSortOrderDelay);
 
-            CardSelect[] cards = GetComponentsInChildren<CardSelect>();
+            var cards = GetComponentsInChildren<CardSelect>();
 
-            for (int i = 0; i < cards.Length; i++) 
+            for (var i = 0; i < cards.Length; i++) 
             {
-                SortGroup cardsSort = cards[i].GetComponent<SortGroup>();
-                UIBlock2D cardsBlock = cards[i].GetComponent<UIBlock2D>();
+                var cardsSort = cards[i].GetComponent<SortGroup>();
+                var cardsBlock = cards[i].GetComponent<UIBlock2D>();
 
                 cardsSort.SortingOrder = i;
                 cardsBlock.Position.Y = 0f;
