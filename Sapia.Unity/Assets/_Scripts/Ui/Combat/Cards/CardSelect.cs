@@ -10,30 +10,19 @@ namespace Assets._Scripts.Ui.Combat.Cards
 {
     public class CardSelect : UIControl<ButtonVisuals>
     {
-        public GameObject dragPivot;
-
         public CombatParticipantRef CurrentTarget { get; private set; }
 
         public ICardUsedListener CardUsedListener;
 
-        [SerializeField] private float highlightTime = 1f;
         public bool isCardSelected = false;
 
-        private RectTransform selectedCardPivot;
-        private RectTransform selectionScreenPivot;
         private RectTransform abilityCardHolder;
         private UIBlock2D cardBlock;
-        private UIBlock2D pivotBlock;
-
-        private Vector3 cardPos;
-        private Vector3 cardSize;
-        private Vector3 pivotPos;
-        private Vector3 screenPos;
 
         [SerializeField] private float opacityOnSelect = 0.5f;
-        private Color color;
-        private RadialGradient gradient;
-        private Color border;
+
+        private Color _initialColour;
+        private Vector3 _initialPosition;
 
         private bool isReleased = false;
         private bool hasTarget = false;
@@ -44,13 +33,9 @@ namespace Assets._Scripts.Ui.Combat.Cards
             abilityCardHolder = GetComponentInParent<AbilityCardHolder>().GetComponent<RectTransform>();
             View.UIBlock.AddGestureHandler<Gesture.OnRelease, ButtonVisuals>(HandleReleased);
             cardBlock = GetComponent<UIBlock2D>();
-            selectedCardPivot = FindFirstObjectByType<SelectedCardPivot>().GetComponent<RectTransform>();
-            selectionScreenPivot = FindFirstObjectByType<SelectionScreen>().GetComponent<RectTransform>();
-            pivotBlock = selectionScreenPivot.GetComponent<UIBlock2D>();
-            pivotPos = pivotBlock.transform.position;
 
-            GetInitPosData();
-            GetInitColorData();
+            _initialColour = cardBlock.Color;
+            _initialPosition = cardBlock.Position.Value;
         }
 
         private void OnDisable()
@@ -63,12 +48,11 @@ namespace Assets._Scripts.Ui.Combat.Cards
             if (!isReleased)
             {
                 isReleased = true;
-
-                //ReturnToInitialPosition();
-                SetInitialColour();
-
                 isCardSelected = false;
+
                 ReturnToDeck();
+
+                return;
 
                 var render = GetComponentInChildren<CardRender>();
 
@@ -83,15 +67,8 @@ namespace Assets._Scripts.Ui.Combat.Cards
             }
         }
 
-        private void Update()
+        void Update()
         {
-            //CheckTarget();
-
-            if (!isCardSelected)
-            {
-                return;
-            }
-
             if (isCardSelected) 
             {
                 OnCardDrag();
@@ -101,10 +78,12 @@ namespace Assets._Scripts.Ui.Combat.Cards
         
         private void ReturnToDeck()
         {
-            transform.SetParent(abilityCardHolder, false);
-            transform.localScale = Vector3.one;
-            transform.rotation = Quaternion.identity;
-            ReturnToInitialPosition();
+            transform.SetParent(abilityCardHolder, false);        
+            
+            cardBlock.Position.Y.Value = _initialPosition.y;
+            cardBlock.Position.Z.Value = _initialPosition.z;
+
+            cardBlock.Color = _initialColour;
         }
 
         public void OnCardDrag()
@@ -112,46 +91,19 @@ namespace Assets._Scripts.Ui.Combat.Cards
             isReleased = false;
             transform.SetParent(abilityCardHolder.transform.parent, false);
 
-            cardBlock.Position.XY.Value = UnityEngine.Input.mousePosition - dragPivot.transform.localPosition;
+            cardBlock.Position.XY.Value = UnityEngine.Input.mousePosition;
 
             if (GetMousePosition.TryGetCurrentRay(out var ray) && GetMousePosition.TryProjectRay(ray, out var worldPos))
             {
-                selectionScreenPivot = selectedCardPivot.GetComponentInParent<SelectionScreen>().GetComponent<RectTransform>();
-                selectionScreenPivot.position = worldPos;
-                SetSelectedColour();
-                isCardSelected = true;
+                Select();
             }
         }
 
-        public void GetInitPosData()
+        private void Select()
         {
-            cardPos = cardBlock.Position.Value;
-            cardSize = cardBlock.Size.Value;
-        }
+            isCardSelected = true;
 
-        private void ReturnToInitialPosition()
-        {
-            pivotBlock.transform.position = pivotPos;
-            cardBlock.Position.Y.Value = cardPos.y;
-            cardBlock.Position.Z.Value = cardPos.z;
-            cardBlock.Size.Value = cardSize;
-        }
-
-        public void GetInitColorData()
-        {
-            color = cardBlock.Color;
-            gradient = cardBlock.Gradient;
-            border = cardBlock.Border.Color;
-        }
-
-        private void SetSelectedColour()
-        {
-            cardBlock.Color = new Color(color.r, color.g, color.b, opacityOnSelect);
-        }
-
-        private void SetInitialColour()
-        {
-            cardBlock.Color = color;
+            cardBlock.Color = new Color(_initialColour.r, _initialColour.g, _initialColour.b, opacityOnSelect);
         }
 
         private void CheckTarget()
