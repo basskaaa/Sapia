@@ -89,11 +89,11 @@ public readonly struct Coord : IComparable<Coord>, IEquatable<Coord>
 
     public static int Distance(Coord a, Coord b)
     {
-        var dx = b.X - a.X;
-        var dy = b.Y - a.Y;
+        float dx = b.X - a.X;
+        float dy = b.Y - a.Y;
 
-        var df = dx * dx + dy * dy;
+        float df = dx * dx + dy * dy;
 
-        return (int)Math.Ceiling(Math.Sqrt(df));
+        return (int)Math.Floor(Math.Sqrt(df));
     }
 }

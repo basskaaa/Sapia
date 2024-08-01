@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using Sapia.Game.Combat.Entities.Enums;
+﻿using Sapia.Game.Combat.Entities.Enums;
 using Sapia.Game.Types;
 
 namespace Sapia.Game.Combat.Entities;

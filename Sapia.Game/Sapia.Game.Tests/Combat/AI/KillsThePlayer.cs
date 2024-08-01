@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Sapia.Game.Extensions;
 using Sapia.Game.Structs;
 using Sapia.Game.Tests.Configuration;
