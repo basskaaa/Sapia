@@ -1,4 +1,5 @@
 ﻿using Sapia.Game.Combat.Entities;
+using Sapia.Game.Combat.Entities.Enums;
 using Sapia.Game.Types.Enums;
 using Sapia.Game.Types;
 
@@ -30,48 +31,62 @@ public class CombatAbilities
         }
     }
 
-    public AbilityResult? UseAbility(string participantId, AbilityUse abilityUse)
+    public AbilityAttempt UseAbility(string participantId, AbilityUse abilityUse)
     {
         return _combat.Try(participantId, cp =>
         {
             var availableAbility = cp.Character.Abilities.FirstOrDefault(x => x.AbilityId == abilityUse.AbilityId);
 
-            if (availableAbility != null &&
-                availableAbility.HasAvailableUses &&
-                _combat.TypeData.Abilities.TryFind(abilityUse.AbilityId, out var abilityType) &&
-                cp.Status.RemainingActions.Contains(abilityType.Action))
+            if (availableAbility == null)
             {
-                var result = ExecuteAbility(cp, abilityType, abilityUse);
-
-                if (result.HasValue)
-                {
-                    if (availableAbility.UsesRemaining.HasValue)
-                    {
-                        availableAbility.UsesRemaining--;
-                    }
-
-                    cp.Status.RemainingActions = cp.Status.RemainingActions.Except([abilityType.Action]).ToArray();
-
-                    return result;
-                }
+                return AbilityAttempt.Fail(AbilityFailureReason.InvalidAbility);
             }
 
-            return null;
+            if (!availableAbility.HasAvailableUses)
+            {
+                return AbilityAttempt.Fail(AbilityFailureReason.InsufficientUsesRemaining);
+            }
+
+            if (!_combat.TypeData.Abilities.TryFind(abilityUse.AbilityId, out var abilityType))
+            {
+                return AbilityAttempt.Fail(AbilityFailureReason.InvalidAbility);
+            }
+
+            if (!cp.Status.RemainingActions.Contains(abilityType.Action))
+            {
+                return AbilityAttempt.Fail(AbilityFailureReason.InsufficientActions);
+            }
+
+            var result = ExecuteAbility(cp, abilityType, abilityUse);
+
+            if (result.WasSuccess)
+            {
+                if (availableAbility.UsesRemaining.HasValue)
+                {
+                    availableAbility.UsesRemaining--;
+                }
+
+                cp.Status.RemainingActions = cp.Status.RemainingActions.Except([abilityType.Action]).ToArray();
+            }
+
+            return result;
         });
     }
 
-    private AbilityResult? ExecuteAbility(CombatParticipant participant, AbilityType abilityType, AbilityUse abilityUse)
+    private AbilityAttempt ExecuteAbility(CombatParticipant participant, AbilityType abilityType, AbilityUse abilityUse)
     {
         var targets = GetTargets(participant, abilityType, abilityUse).ToArray();
 
         if (abilityType.Target != TargetType.None && targets.Length == 0)
         {
-            return null;
+            return AbilityAttempt.Fail(AbilityFailureReason.NoTarget);
         }
+
+        // TODO: validate range and whether can target self
 
         var affectedTargets = targets.Select(x => ApplyAbilityToParticipant(participant, x, abilityType));
 
-        return new AbilityResult(abilityType, affectedTargets.ToArray());
+        return AbilityAttempt.Success(new AbilityResult(abilityType, affectedTargets.ToArray()));
     }
 
     private AffectedParticipant ApplyAbilityToParticipant(CombatParticipant applier, CombatParticipant target, AbilityType abilityType)

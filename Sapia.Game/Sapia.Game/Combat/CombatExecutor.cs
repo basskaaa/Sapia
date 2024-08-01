@@ -47,13 +47,18 @@ public class CombatExecutor
                             break;
                         }
                     }
-                }else if (turn.AbilityToUse != null)
+                }
+                else if (turn.AbilityToUse != null)
                 {
-                    var abilityResult = Combat.Abilities.UseAbility(participant.ParticipantId, turn.AbilityToUse);
+                    var attempt = Combat.Abilities.UseAbility(participant.ParticipantId, turn.AbilityToUse);
 
-                    if (abilityResult.HasValue)
+                    if (attempt.WasSuccess)
                     {
-                        yield return new AbilityUsedStep(Combat, participant, abilityResult.Value);
+                        yield return new AbilityUsedStep(Combat, participant, attempt.Result!.Value);
+                    }
+                    else
+                    {
+                        yield return new AbilityFailedStep(Combat, participant, turn.AbilityToUse, attempt.FailureReason!.Value);
                     }
                 }
 
