@@ -178,11 +178,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visuals:
-    rid: 7594793721037062201
+    rid: 5099506373887524921
   references:
     version: 2
     RefIds:
-    - rid: 7594793721037062201
-      type: {class: LogItemVisuals, ns: Assets._Scripts.Ui, asm: Assembly-CSharp}
+    - rid: 5099506373887524921
+      type: {class: LogItemVisuals, ns: Assets._Scripts.Ui.Combat, asm: Assembly-CSharp}
       data:
         Label: {fileID: 5639629687545688878}
