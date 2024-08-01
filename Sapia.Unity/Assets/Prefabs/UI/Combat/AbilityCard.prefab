@@ -1,5 +1,40 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &226181874130399030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6171657460642219015}
+  m_Layer: 5
+  m_Name: DragPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6171657460642219015
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226181874130399030}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4899559233307898125}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 285}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4980356366649025096
 GameObject:
   m_ObjectHideFlags: 0
@@ -36,13 +71,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 6171657460642219015}
   - {fileID: 8592257457280639050}
   - {fileID: 8286379586951454551}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 150, y: 400}
+  m_AnchoredPosition: {x: 125, y: 200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4775605100873223083
@@ -74,11 +110,11 @@ MonoBehaviour:
   layout:
     Size:
       X:
-        Raw: 0.3
-        Type: 1
+        Raw: 250
+        Type: 0
       Y:
-        Raw: 1
-        Type: 1
+        Raw: 400
+        Type: 0
       Z:
         Raw: 0
         Type: 0
@@ -103,7 +139,7 @@ MonoBehaviour:
         Raw: 0.05
         Type: 1
       Top:
-        Raw: 0.05
+        Raw: 0
         Type: 1
       Front:
         Raw: 0
@@ -234,7 +270,7 @@ MonoBehaviour:
     LightingModel: 0
     ShadowCastingMode: 2
     ReceiveShadows: 1
-  PreviewSize: {x: 300, y: 800, z: 0}
+  PreviewSize: {x: 250, y: 400, z: 0}
   visuals:
     Color: {r: 0.3183962, g: 0.5, b: 0.37115803, a: 1}
     CornerRadius:
@@ -456,35 +492,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 924a4ccff628dd743890e2ad372d1596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragPivot: {fileID: 226181874130399030}
   highlightTime: 1
   isCardSelected: 0
-  OnReleased:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5274102833107839504}
-        m_TargetAssemblyTypeName: CardSelect, Assembly-CSharp
-        m_MethodName: OnCardRelease
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6850231640871297960}
-        m_TargetAssemblyTypeName: NovaSamples.UIControls.CardHover, Assembly-CSharp
-        m_MethodName: Unhover
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   opacityOnSelect: 0.5
 --- !u!114 &5555745021062099754
 MonoBehaviour:
@@ -538,7 +548,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 10}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8486140322603895388
@@ -767,7 +777,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 380}
+  m_AnchoredPosition: {x: 0, y: 170}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &8736289521926619825
@@ -1092,7 +1102,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -150, y: -20, z: -150, w: -20}
+  m_margin: {x: -112.5, y: -20, z: -112.5, w: -20}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -1135,7 +1145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 290}
+  m_AnchoredPosition: {x: 0, y: 80}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3551815412083967562
@@ -1427,7 +1437,7 @@ Transform:
   m_GameObject: {fileID: 9050290693775596512}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1907,7 +1917,7 @@ PrefabInstance:
     - target: {fileID: 6099577320301638935, guid: 84a86ea6e583c4d40a5c5eeb86c9491c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 162.91382
+      value: -47.08618
       objectReference: {fileID: 0}
     - target: {fileID: 6099577320301638935, guid: 84a86ea6e583c4d40a5c5eeb86c9491c,
         type: 3}
@@ -1933,12 +1943,12 @@ PrefabInstance:
     - target: {fileID: 7732848476007618034, guid: 84a86ea6e583c4d40a5c5eeb86c9491c,
         type: 3}
       propertyPath: m_margin.x
-      value: -150
+      value: -112.5
       objectReference: {fileID: 0}
     - target: {fileID: 7732848476007618034, guid: 84a86ea6e583c4d40a5c5eeb86c9491c,
         type: 3}
       propertyPath: m_margin.z
-      value: -150
+      value: -112.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

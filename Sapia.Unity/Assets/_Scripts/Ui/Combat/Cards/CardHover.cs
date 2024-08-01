@@ -7,14 +7,14 @@ namespace Assets._Scripts.Ui.Combat.Cards
     public class CardHover : UIControl<ButtonVisuals>
     {
         [SerializeField] private int sortFront = 100;
-        [SerializeField] private Vector2 hoverScale = new Vector2(1f, 1.05f);
+        [SerializeField] private Vector2 hoverScale = new Vector2(1.1f, 1.1f);
 
         private UIBlock2D uiBlock;
         private SortGroup sortGroup;
 
         public bool IsHovered { get; private set; }
 
-        private Vector2 _initialScale = Vector2.one;
+        private Length3 _initialSize;
         private int _initialSort;
 
         private void Awake()
@@ -28,7 +28,7 @@ namespace Assets._Scripts.Ui.Combat.Cards
             View.UIBlock.AddGestureHandler<Gesture.OnHover, ButtonVisuals>(HandleHovered);
             View.UIBlock.AddGestureHandler<Gesture.OnUnhover, ButtonVisuals>(HandleUnhovered);
 
-            _initialScale = new Vector2(uiBlock.Size.Percent.x, uiBlock.Size.Percent.y);
+            _initialSize = uiBlock.Size;
         }
 
         private void OnDisable()
@@ -43,9 +43,7 @@ namespace Assets._Scripts.Ui.Combat.Cards
 
             _initialSort = sortGroup.SortingOrder;
 
-            var cardScale = _initialScale * hoverScale;
-
-            uiBlock.Size.XY.Percent = cardScale;
+            uiBlock.Size = Length3.FixedValue(_initialSize.X.Value * hoverScale.x, _initialSize.Y.Value * hoverScale.y, _initialSize.Z.Value);
             sortGroup.SortingOrder = sortFront;
         }
 
@@ -53,7 +51,7 @@ namespace Assets._Scripts.Ui.Combat.Cards
         {
             IsHovered = false;
 
-            uiBlock.Size.XY.Percent = _initialScale;
+            uiBlock.Size = _initialSize;
             sortGroup.SortingOrder = _initialSort;
         }
     }

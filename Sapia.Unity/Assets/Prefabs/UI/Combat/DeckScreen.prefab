@@ -312,6 +312,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0944e41bf57f1c48b3e26a07d9ad2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LayoutCardsButton: 0
+  AddCardButton: 0
+  minSpacingPerCard: 5
+  maxSpacingPerCard: 25
+  spaceAfterXCards: 4
   CardPrefab: {fileID: 4980356366649025096, guid: 2d2a4c0a6ccfdf5479af71f36ed2e675,
     type: 3}
   CardUsed:
@@ -739,11 +744,11 @@ MonoBehaviour:
   layout:
     Size:
       X:
-        Raw: 1920
-        Type: 0
+        Raw: 1
+        Type: 1
       Y:
-        Raw: 939.18695
-        Type: 0
+        Raw: 1
+        Type: 1
       Z:
         Raw: 0
         Type: 0
@@ -858,8 +863,8 @@ MonoBehaviour:
       Y: 0
       Z: 0
     AutoSize:
-      X: 0
-      Y: 0
+      X: 1
+      Y: 1
       Z: 0
     RotateSize: 0
     AspectRatio: {x: 0, y: 0, z: 0}

@@ -10,6 +10,8 @@ namespace Assets._Scripts.Ui.Combat.Cards
 {
     public class CardSelect : UIControl<ButtonVisuals>
     {
+        public GameObject dragPivot;
+
         public CombatParticipantRef CurrentTarget { get; private set; }
 
         public ICardUsedListener CardUsedListener;
@@ -20,7 +22,6 @@ namespace Assets._Scripts.Ui.Combat.Cards
         private RectTransform selectedCardPivot;
         private RectTransform selectionScreenPivot;
         private RectTransform abilityCardHolder;
-        public UnityEvent OnReleased = null;
         private UIBlock2D cardBlock;
         private UIBlock2D pivotBlock;
 
@@ -57,32 +58,14 @@ namespace Assets._Scripts.Ui.Combat.Cards
             View.UIBlock.RemoveGestureHandler<Gesture.OnRelease, ButtonVisuals>(HandleReleased);
         }
 
-        private void HandleReleased(Gesture.OnRelease evt, ButtonVisuals visuals) => OnReleased?.Invoke();
-
-        private void Update()
-        {
-            //CheckTarget();
-
-            if (!isCardSelected)
-            {
-                return;
-            }
-
-            if (isCardSelected) 
-            {
-                OnCardDrag();
-                CheckTarget();
-            }
-        }
-
-        public void OnCardRelease()
+        private void HandleReleased(Gesture.OnRelease evt, ButtonVisuals visuals)
         {
             if (!isReleased)
             {
                 isReleased = true;
 
-                SetInitPos();
-                SetInitColor();
+                //ReturnToInitialPosition();
+                SetInitialColour();
 
                 isCardSelected = false;
                 ReturnToDeck();
@@ -100,25 +83,42 @@ namespace Assets._Scripts.Ui.Combat.Cards
             }
         }
 
+        private void Update()
+        {
+            //CheckTarget();
+
+            if (!isCardSelected)
+            {
+                return;
+            }
+
+            if (isCardSelected) 
+            {
+                OnCardDrag();
+                CheckTarget();
+            }
+        }
+        
         private void ReturnToDeck()
         {
             transform.SetParent(abilityCardHolder, false);
             transform.localScale = Vector3.one;
             transform.rotation = Quaternion.identity;
+            ReturnToInitialPosition();
         }
 
         public void OnCardDrag()
         {
             isReleased = false;
-            transform.SetParent(selectedCardPivot, true);
+            transform.SetParent(abilityCardHolder.transform.parent, false);
 
-            cardBlock.Position.XY.Value = new Vector2(0,0);
+            cardBlock.Position.XY.Value = UnityEngine.Input.mousePosition - dragPivot.transform.localPosition;
 
             if (GetMousePosition.TryGetCurrentRay(out var ray) && GetMousePosition.TryProjectRay(ray, out var worldPos))
             {
                 selectionScreenPivot = selectedCardPivot.GetComponentInParent<SelectionScreen>().GetComponent<RectTransform>();
                 selectionScreenPivot.position = worldPos;
-                SetSelectedColor();
+                SetSelectedColour();
                 isCardSelected = true;
             }
         }
@@ -129,7 +129,7 @@ namespace Assets._Scripts.Ui.Combat.Cards
             cardSize = cardBlock.Size.Value;
         }
 
-        private void SetInitPos()
+        private void ReturnToInitialPosition()
         {
             pivotBlock.transform.position = pivotPos;
             cardBlock.Position.Y.Value = cardPos.y;
@@ -144,12 +144,12 @@ namespace Assets._Scripts.Ui.Combat.Cards
             border = cardBlock.Border.Color;
         }
 
-        private void SetSelectedColor()
+        private void SetSelectedColour()
         {
             cardBlock.Color = new Color(color.r, color.g, color.b, opacityOnSelect);
         }
 
-        private void SetInitColor()
+        private void SetInitialColour()
         {
             cardBlock.Color = color;
         }
@@ -167,7 +167,6 @@ namespace Assets._Scripts.Ui.Combat.Cards
             if (isHit && raycastHit.transform.CompareTag("Target") && isCardSelected && !hasTarget)
             {
                 CurrentTarget = raycastHit.transform.GetComponentInParent<CombatParticipantRef>();
-                //Debug.Log(raycastHit.transform.name);
                 HighlightTarget(raycastHit);
             }
 
@@ -192,7 +191,7 @@ namespace Assets._Scripts.Ui.Combat.Cards
         private void UnhighlightTargets()
         {
             hasTarget = false;
-            var targets = FindObjectsOfType<TargetCollider>();
+            var targets = FindObjectsByType<TargetCollider>(FindObjectsSortMode.None);
             foreach (var target in targets)
             {
                 target.GetComponent<MeshRenderer>().enabled = false;
