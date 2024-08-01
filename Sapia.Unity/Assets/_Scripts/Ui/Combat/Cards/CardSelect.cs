@@ -4,7 +4,6 @@ using Assets._Scripts.Ui.Combat.Abstractions;
 using Nova;
 using NovaSamples.UIControls;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace Assets._Scripts.Ui.Combat.Cards
 {
@@ -27,7 +26,6 @@ namespace Assets._Scripts.Ui.Combat.Cards
         private bool isReleased = false;
         private bool hasTarget = false;
     
-
         private void OnEnable()
         {
             abilityCardHolder = GetComponentInParent<AbilityCardHolder>().GetComponent<RectTransform>();
