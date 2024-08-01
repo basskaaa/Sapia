@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 1269058963451266643}
   - component: {fileID: 4459902322193430214}
   - component: {fileID: 4293670090014701546}
-  - component: {fileID: 2923808658216566094}
-  - component: {fileID: 6607697771556987329}
   - component: {fileID: 766534248585903782}
   m_Layer: 5
   m_Name: DebugUI
@@ -231,7 +229,7 @@ MonoBehaviour:
     LightingModel: 0
     ShadowCastingMode: 2
     ReceiveShadows: 1
-  PreviewSize: {x: 1, y: 1, z: 0}
+  PreviewSize: {x: 1920, y: 939.18695, z: 0}
   visuals:
     Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     CornerRadius:
@@ -301,40 +299,6 @@ MonoBehaviour:
     FillEnabled: 0
   texture: {fileID: 0}
   sprite: {fileID: 0}
---- !u!114 &2923808658216566094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543683199028536688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b2a531bfddefda4e85a827979d250a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info:
-    SortingOrder: 0
-    RenderQueue: 4000
-    RenderOverOpaqueGeometry: 1
---- !u!114 &6607697771556987329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543683199028536688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8109d3c2d7da4742b2b9da9454648b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetCamera: {fileID: 0}
-  referenceResolution: {x: 1920, y: 1080}
-  fillMode: 0
-  planeDistance: 5
-  haveConfiguredSortGroup: 1
-  additionalCameras: []
 --- !u!114 &766534248585903782
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -681,9 +681,6 @@ GameObject:
   - component: {fileID: 1874428783112481110}
   - component: {fileID: 7964590244363972232}
   - component: {fileID: 4898914150579370492}
-  - component: {fileID: 8693579192192315198}
-  - component: {fileID: 1322374276581955377}
-  - component: {fileID: 7639998619345511839}
   m_Layer: 5
   m_Name: DeckScreen
   m_TagString: Untagged
@@ -972,52 +969,6 @@ MonoBehaviour:
     FillEnabled: 0
   texture: {fileID: 0}
   sprite: {fileID: 0}
---- !u!114 &8693579192192315198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8789430672459359885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b2a531bfddefda4e85a827979d250a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info:
-    SortingOrder: 0
-    RenderQueue: 4000
-    RenderOverOpaqueGeometry: 1
---- !u!114 &1322374276581955377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8789430672459359885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8109d3c2d7da4742b2b9da9454648b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetCamera: {fileID: 0}
-  referenceResolution: {x: 1920, y: 1080}
-  fillMode: 0
-  planeDistance: 5
-  haveConfiguredSortGroup: 1
-  additionalCameras: []
---- !u!114 &7639998619345511839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8789430672459359885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f752a6076631ec145ba5d825352b92ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1532368198229267164
 PrefabInstance:
   m_ObjectHideFlags: 0

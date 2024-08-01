@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 660, y: -199.59348}
+  m_AnchoredPosition: {x: -300, y: 200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3385546409941158192
@@ -114,7 +114,7 @@ MonoBehaviour:
         Raw: 0
         Type: 0
       Bottom:
-        Raw: 70
+        Raw: 0
         Type: 0
       Top:
         Raw: 0
@@ -229,7 +229,7 @@ MonoBehaviour:
     LightingModel: 0
     ShadowCastingMode: 2
     ReceiveShadows: 1
-  PreviewSize: {x: 1, y: 1, z: 0}
+  PreviewSize: {x: 600, y: 400, z: 0}
   visuals:
     Color: {r: 0, g: 0, b: 0, a: 0.85}
     CornerRadius:
