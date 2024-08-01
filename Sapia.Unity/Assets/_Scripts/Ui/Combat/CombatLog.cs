@@ -69,7 +69,7 @@ namespace Assets._Scripts.Ui.Combat
                 if (step is MovedStep && _wasMoveStep == false)
                 {
                     _wasMoveStep = true;
-                    yield return $"{Name(participantStep.Participant)} {(participantStep.Participant.Character.IsPlayer ? "are" : "is")} moving";
+                    yield return $"{TextHelper.Name(participantStep.Participant)} {(participantStep.Participant.Character.IsPlayer ? "are" : "is")} moving";
                     yield break;
                 }
                 else if (step is not MovedStep)
@@ -79,20 +79,20 @@ namespace Assets._Scripts.Ui.Combat
 
                 if (participantChanged && participantStep is TurnStep)
                 {
-                    yield return $"{Possessive(participantStep.Participant)} turn";
+                    yield return $"{TextHelper.Possessive(participantStep.Participant)} turn";
                     yield break;
                 }
 
                 if (participantStep is AbilityUsedStep abilityStep)
                 {
                     var targets = abilityStep.Result.AffectedParticipants
-                        .Select(x => TargetOfAbilityResult(step, x))
+                        .Select(x => TextHelper.TargetOfAbilityResult(step, x))
                         .ToArray();
 
                     var targetText = string.Join(", ", targets);
                     var fullTargetText = string.IsNullOrWhiteSpace(targetText) ? string.Empty : $" against {targetText}";
 
-                    yield return $"{Name(participantStep.Participant)} used {abilityStep.Result.Ability.Id}{fullTargetText}";
+                    yield return $"{TextHelper.Name(participantStep.Participant)} used {abilityStep.Result.Ability.Id}{fullTargetText}";
 
                     foreach (var affectedParticipant in abilityStep.Result.AffectedParticipants)
                     {
@@ -102,7 +102,7 @@ namespace Assets._Scripts.Ui.Combat
 
                             if (!participant.Character.IsAlive)
                             {
-                                yield return $"{Name(participant)} died";
+                                yield return $"{TextHelper.Name(participant)} died";
                             }
                         }
                     }
@@ -110,35 +110,12 @@ namespace Assets._Scripts.Ui.Combat
 
                 if (participantStep is AbilityFailedStep failed)
                 {
-                    yield return $"{Name(participantStep.Participant)} failed to use {failed.Use.AbilityId} - {failed.Reason.HumanName()}";
+                    yield return $"{TextHelper.Name(participantStep.Participant)} failed to use {failed.Use.AbilityId} - {failed.Reason.HumanName()}";
                     yield break;
                 }
             }
         }
 
-        private string Name(CombatParticipant participant) => participant.Character.IsPlayer ? "You" : participant.ParticipantId;
-        private string Possessive(CombatParticipant participant) => participant.Character.IsPlayer ? "Your" : $"{participant.ParticipantId}'s";
-
-        private string TargetOfAbilityResult(CombatStep step, AffectedParticipant p)
-        {
-            var participant = step.Combat.Participants[p.ParticipantId];
-
-            var name = Name(participant);
-
-            if (participant.Character.IsPlayer)
-            {
-                name = name.ToLower();
-            }
-
-            if (!participant.Character.IsAlive)
-            {
-
-            }
-
-            var dmg = p.HealthChange.HasValue ? $" ({p.HealthChange.Value})" : string.Empty;
-
-            return $"{name}{dmg}";
-        }
     }
 
     public class LogItemVisuals : ItemVisuals

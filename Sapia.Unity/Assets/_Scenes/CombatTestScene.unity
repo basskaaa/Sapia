@@ -4822,6 +4822,11 @@ PrefabInstance:
       propertyPath: targetCamera
       value: 
       objectReference: {fileID: 1188043556}
+    - target: {fileID: 2926528755570918246, guid: a8d46e20bdb009845822f56b738a734f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3915559283979619788, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
       propertyPath: targetCamera
@@ -4851,6 +4856,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796465598686639007, guid: a8d46e20bdb009845822f56b738a734f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 140.87805
       objectReference: {fileID: 0}
     - target: {fileID: 4828417092352050695, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
@@ -4912,6 +4922,11 @@ PrefabInstance:
       propertyPath: layout.Padding.Bottom.Raw
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6034393733374456839, guid: a8d46e20bdb009845822f56b738a734f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6493118907274105774, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4926,6 +4941,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CombatUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798107351756129314, guid: a8d46e20bdb009845822f56b738a734f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7846120137113727574, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
@@ -5067,6 +5087,10 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 2130132272668198948, guid: a8d46e20bdb009845822f56b738a734f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3348622223807202531, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
