@@ -10,7 +10,7 @@ namespace Sapia.Game.Tests.Combat.AI;
 
 public class MovesToAttack
 {
-    [SapiaTheory, Theory]
+    [SapiaData, Theory]
     public void Moves_within_distance_of_player_in_1_turn(ITypeDataRoot typeData)
     {
         var combat = PlayerVsSkeleton.Setup(typeData);
@@ -34,7 +34,7 @@ public class MovesToAttack
         adjacent.Should().Contain(p.Position);
     }
 
-    [SapiaTheory, Theory]
+    [SapiaData, Theory]
     public void Moves_within_distance_of_player_over_more_than_1_turn(ITypeDataRoot typeData)
     {
         var combat = PlayerVsSkeleton.Setup(typeData);

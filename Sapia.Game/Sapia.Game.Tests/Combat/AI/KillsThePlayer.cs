@@ -11,7 +11,7 @@ namespace Sapia.Game.Tests.Combat.AI;
 
 public class KillsThePlayer
 {
-    [SapiaTheory, Theory]
+    [SapiaData, Theory]
     public void Kills_in_melee(ITypeDataRoot typeData)
     {
         var combat = PlayerVsSkeleton.Setup(typeData);
@@ -28,7 +28,7 @@ public class KillsThePlayer
         adjacent.Should().Contain(p.Position);
     }
 
-    [SapiaTheory, Theory]
+    [SapiaData, Theory]
     public void Kills_with_ranged_without_moving(ITypeDataRoot typeData)
     {
         var combat = PlayerVsGoblinArcher.Setup(typeData);
@@ -45,7 +45,7 @@ public class KillsThePlayer
         g.Position.Should().Be(initialPosition);
     }
 
-    [SapiaTheory, Theory]
+    [SapiaData, Theory]
     public void Moves_into_range_to_kill(ITypeDataRoot typeData)
     {
         var combat = PlayerVsGoblinArcher.Setup(typeData);
