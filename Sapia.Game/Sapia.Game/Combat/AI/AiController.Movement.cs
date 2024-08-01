@@ -8,6 +8,11 @@ public partial class AiController
 {
     private void MoveTowardsTarget(TurnStep turn)
     {
+        if (_turnState.UsedARangedAttack)
+        {
+            return;
+        }
+
         var target = _plan!.Target;
         var desiredRange = _plan.ChosenAbility?.Range ?? 1;
         

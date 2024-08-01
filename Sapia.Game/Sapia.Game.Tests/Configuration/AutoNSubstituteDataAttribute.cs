@@ -27,9 +27,9 @@ public class AutoNSubstituteDataAttribute : AutoDataAttribute
     }
 }
 
-public class SapiaTheoryAttribute : AutoNSubstituteDataAttribute
+public class SapiaData : AutoNSubstituteDataAttribute
 {
-    public SapiaTheoryAttribute() :
+    public SapiaData() :
         base(typeof(TypeDataRootFixture))
     {
 

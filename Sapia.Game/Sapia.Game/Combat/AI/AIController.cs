@@ -38,7 +38,7 @@ public partial class AiController
 
         if (participantStep is TurnStep turn)
         {
-            _plan ??= MaintainPlan(turn);
+            _plan = MaintainPlan(turn);
 
             if (_plan == null || _turnState.HasMadeAllDecisions())
             {

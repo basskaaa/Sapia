@@ -34,6 +34,11 @@ public partial class AiController
 
     private void UseAbility(TurnStep turn, AbilityType ability)
     {
+        if (ability.Range > 1)
+        {
+            _turnState.UsedARangedAttack = true;
+        }
+
         turn.UseAbility(new TargetedAbilityUse(ability.Id, _plan!.Target.ParticipantId));
     }
 
