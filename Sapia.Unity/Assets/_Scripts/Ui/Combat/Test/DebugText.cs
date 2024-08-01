@@ -1,8 +1,8 @@
 using System;
-using UnityEngine;
 using Nova;
+using UnityEngine;
 
-namespace Assets._Scripts.Ui.Test
+namespace Assets._Scripts.Ui.Combat.Test
 {
     public class DebugText : MonoBehaviour
     {

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Assets._Scripts.Ui
+namespace Assets._Scripts.Ui.Combat
 {
     public class UiTestLog : MonoBehaviour
     {

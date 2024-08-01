@@ -3,7 +3,7 @@ using NovaSamples.UIControls;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Assets._Scripts.Ui
+namespace Assets._Scripts.Ui.Combat.Cards
 {
     public class CardHover : UIControl<ButtonVisuals>
     {

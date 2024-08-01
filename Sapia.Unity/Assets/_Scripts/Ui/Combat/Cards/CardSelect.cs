@@ -1,11 +1,12 @@
 using Assets._Scripts.Game;
 using Assets._Scripts.Input;
+using Assets._Scripts.Ui.Combat.Abstractions;
 using Nova;
 using NovaSamples.UIControls;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Assets._Scripts.Ui
+namespace Assets._Scripts.Ui.Combat.Cards
 {
     public class CardSelect : UIControl<ButtonVisuals>
     {

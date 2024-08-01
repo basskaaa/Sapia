@@ -1,5 +1,6 @@
 using Assets._Scripts.Input;
 using Assets._Scripts.Ui;
+using Assets._Scripts.Ui.Combat;
 using UnityEngine;
 
 namespace Assets._Scripts.Debug

@@ -1,11 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using Assets._Scripts.Game;
+using Assets._Scripts.Ui.Combat.Abstractions;
 using Sapia.Game.Combat.Entities;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Assets._Scripts.Ui
+namespace Assets._Scripts.Ui.Combat.Cards
 {
     public class AbilityCardHolder : MonoBehaviour, ICardUsedListener
     {

@@ -2,7 +2,7 @@ using Nova;
 using Sapia.Game.Combat.Entities;
 using UnityEngine;
 
-namespace Assets._Scripts.Ui
+namespace Assets._Scripts.Ui.Combat.Tooltips
 {
     public class TooltipRenderer : MonoBehaviour
     {

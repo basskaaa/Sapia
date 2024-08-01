@@ -1,10 +1,9 @@
 using Assets._Scripts.Game;
 using Nova;
-using Sapia.Game.Combat;
 using Sapia.Game.Combat.Steps;
 using UnityEngine;
 
-namespace Assets._Scripts.Ui.Test
+namespace Assets._Scripts.Ui.Combat.Test
 {
     public class DebugControls : MonoBehaviour, ICombatListener
     {
@@ -20,7 +19,7 @@ namespace Assets._Scripts.Ui.Test
 
         public void Step() => _combat.Step();
 
-        public void StepChanged(Combat combat, CombatStep step)
+        public void StepChanged(Sapia.Game.Combat.Combat combat, CombatStep step)
         {
             actButton.SetActive(step is TurnStep turn &&
                                 ((!turn.Participant.Character.IsPlayer ) ||

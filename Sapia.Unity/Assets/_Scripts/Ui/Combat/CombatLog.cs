@@ -2,13 +2,12 @@ using System.Collections.Generic;
 using System.Linq;
 using Assets._Scripts.Game;
 using Nova;
-using Sapia.Game.Combat;
 using Sapia.Game.Combat.Entities;
 using Sapia.Game.Combat.Steps;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace Assets._Scripts.Ui
+namespace Assets._Scripts.Ui.Combat
 {
     public class CombatLog : MonoBehaviour, ICombatListener
     {
@@ -32,7 +31,7 @@ namespace Assets._Scripts.Ui
             target.Label.Text = evt.UserData;
         }
 
-        public void StepChanged(Combat combat, CombatStep step)
+        public void StepChanged(Sapia.Game.Combat.Combat combat, CombatStep step)
         {
             var logs = CreateLog(step).ToArray();
 

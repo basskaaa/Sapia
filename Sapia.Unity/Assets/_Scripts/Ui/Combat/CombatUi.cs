@@ -1,12 +1,12 @@
 using Assets._Scripts.Game;
 using Assets._Scripts.Input;
-using Sapia.Game.Combat;
+using Assets._Scripts.Ui.Combat.Cards;
 using Sapia.Game.Combat.Entities;
 using Sapia.Game.Combat.Steps;
 using Sapia.Game.Structs;
 using UnityEngine;
 
-namespace Assets._Scripts.Ui
+namespace Assets._Scripts.Ui.Combat
 {
     public class CombatUi : MonoBehaviour, ICombatListener
     {
@@ -34,7 +34,7 @@ namespace Assets._Scripts.Ui
             _combatRunner.UseAbility("Player", ability, target?.ParticipantId);
         }
 
-        public void StepChanged(Combat combat, CombatStep step)
+        public void StepChanged(Sapia.Game.Combat.Combat combat, CombatStep step)
         {
             if (step is TurnStep turn && turn.Participant.Character.IsPlayer)
             {

@@ -1,10 +1,11 @@
 using System.Collections;
+using Assets._Scripts.Ui.Combat.Cards;
 using Nova;
 using Nova.TMP;
 using Sapia.Game.Combat.Entities;
 using UnityEngine;
 
-namespace Assets._Scripts.Ui
+namespace Assets._Scripts.Ui.Combat.Tooltips
 {
     public class Tooltip : MonoBehaviour
     {

@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace Assets._Scripts.Ui
+namespace Assets._Scripts.Ui.Combat
 {
-    public class SelectedCardPivot : MonoBehaviour
+    public class TargetCollider : MonoBehaviour
     {
         // Start is called before the first frame update
         void Start()

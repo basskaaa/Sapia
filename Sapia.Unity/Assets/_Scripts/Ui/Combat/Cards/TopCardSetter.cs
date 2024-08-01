@@ -3,7 +3,7 @@ using System.Linq;
 using Nova;
 using UnityEngine;
 
-namespace Assets._Scripts.Ui
+namespace Assets._Scripts.Ui.Combat.Cards
 {
     public class TopCardSetter : MonoBehaviour
     {

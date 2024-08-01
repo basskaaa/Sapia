@@ -1,4 +1,5 @@
 using System.Linq;
+using Assets._Scripts.Anim;
 using Assets._Scripts.Game.TestAnimation;
 using Sapia.Game.Combat;
 using Sapia.Game.Combat.Entities;
