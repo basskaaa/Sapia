@@ -4,22 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "8a4f359b7f19dea9",
+        "id": "6fb45ee718618cc2",
         "type": "tabs",
         "children": [
           {
-            "id": "d7ea9f5b977072bc",
+            "id": "533e0400cfe29d76",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "August Prototype/Ability Tags.md",
+                "file": "August Prototype/End of August Combat Prototype To Do.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              },
-              "pinned": true
+              }
             }
           }
         ]
@@ -88,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "August Prototype/Ability Tags.md",
+                "file": "August Prototype/End of August Combat Prototype To Do.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "August Prototype/Ability Tags.md",
+                "file": "August Prototype/End of August Combat Prototype To Do.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "August Prototype/Ability Tags.md"
+                "file": "August Prototype/End of August Combat Prototype To Do.md"
               }
             }
           }
@@ -166,11 +164,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d7ea9f5b977072bc",
+  "active": "533e0400cfe29d76",
   "lastOpenFiles": [
-    "August Prototype/Abilities/Multiattack.md",
-    "August Prototype/Ability Tags.md",
+    "Rules/3. Expanded Rules/5. Conditions/Concentrating.md",
+    "August Prototype/End of August Combat Prototype To Do.md",
+    "Rules/3. Expanded Rules/5. Conditions/Blinded.md",
+    "Rules/1. Basic Rules/Attributes, Instincts, and Skills.md",
+    "Rules/2. Character Options/0. General/ATTRIBUTES.md",
+    "End of August Combat Prototype.md",
     "August Prototype/Fighter Sheet.md",
+    "August Prototype/Skeleton.md",
+    "August Prototype/Ability Tags.md",
+    "_Main/Ideas/Prototype Narrative Ideas.md",
+    "_Main/_Progress Log.md",
+    "August Prototype/Abilities/Multiattack.md",
     "August Prototype/Abilities/Distraction.md",
     "August Prototype/Abilities/Parry.md",
     "Rules/3. Expanded Rules/6. Ability Properties/Action Types/Starter Action.md",
@@ -180,20 +187,11 @@
     "August Prototype/Abilities/Dodge.md",
     "August Prototype/Abilities/Dash.md",
     "August Prototype/Abilities/Attack.md",
-    "Rules/3. Expanded Rules/5. Conditions/Concentrating.md",
     "Rules/3. Expanded Rules/1. General/Instincts/Concentration.md",
     "Rules/3. Expanded Rules/5. Conditions/Doomed.md",
     "Rules/2. Character Options/4. Abilities/Moves/Rank 2 Moves/Multiattack.md",
     "August Prototype/Abilities/Multiattack 1.md",
     "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Quick Attack.md",
-    "Rules/2. Character Options/4. Abilities/Moves/Rank 1 Moves/Distraction.md",
-    "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Cleave.md",
-    "Rules/2. Character Options/4. Abilities/Moves/Rank 1 Moves/Parry.md",
-    "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Grapple.md",
-    "Rules/2. Character Options/4. Abilities/Moves/Rank 0 Moves/Dodge.md",
-    "Rules/2. Character Options/4. Abilities/Grace/Dash.md",
-    "Rules/2. Character Options/4. Abilities/Grace/Attack.md",
-    "August Prototype/End of August Combat Prototype.md",
     "August Prototype/Abilities",
     "August Prototype",
     "_Main/Images/Progress Images/Image Sequence_001_0000 1.jpg",

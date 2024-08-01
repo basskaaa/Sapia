@@ -4378,7 +4378,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2047915692}
@@ -4749,17 +4749,17 @@ PrefabInstance:
     - target: {fileID: 545966199107872130, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.0063885045
+      value: 0.0055555557
       objectReference: {fileID: 0}
     - target: {fileID: 545966199107872130, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.0063885045
+      value: 0.0055555557
       objectReference: {fileID: 0}
     - target: {fileID: 545966199107872130, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.0063885045
+      value: 0.0055555557
       objectReference: {fileID: 0}
     - target: {fileID: 545966199107872130, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
@@ -4859,7 +4859,7 @@ PrefabInstance:
     - target: {fileID: 4796465598686639007, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 140.87805
+      value: 162
       objectReference: {fileID: 0}
     - target: {fileID: 4828417092352050695, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
@@ -4886,6 +4886,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -205
       objectReference: {fileID: 0}
+    - target: {fileID: 5372979439039234836, guid: a8d46e20bdb009845822f56b738a734f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 200.16
+      objectReference: {fileID: 0}
     - target: {fileID: 5618234919482617189, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
       propertyPath: autoLayout.Spacing.Raw
@@ -4900,6 +4905,16 @@ PrefabInstance:
         type: 3}
       propertyPath: autoLayout.SpacingMinMax.Min
       value: -Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830182873323878655, guid: a8d46e20bdb009845822f56b738a734f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -480
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830182873323878655, guid: a8d46e20bdb009845822f56b738a734f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -324
       objectReference: {fileID: 0}
     - target: {fileID: 5901399296657703524, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
@@ -4949,7 +4964,7 @@ PrefabInstance:
     - target: {fileID: 6493118907274105774, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -230.91893
+      value: -301.32547
       objectReference: {fileID: 0}
     - target: {fileID: 7733238623236419426, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
@@ -4979,7 +4994,7 @@ PrefabInstance:
     - target: {fileID: 7865585088777936420, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 440.0427
+      value: 510.44922
       objectReference: {fileID: 0}
     - target: {fileID: 7961565003144679082, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
