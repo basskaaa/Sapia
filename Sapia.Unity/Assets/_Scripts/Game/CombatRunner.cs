@@ -1,10 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-using Assets._Scripts.TypeData;
-using Assets._Scripts.Ui;
 using Assets._Scripts.Ui.Combat.Test;
-using Sapia.Game.Characters;
-using Sapia.Game.Characters.Configuration;
 using Sapia.Game.Combat;
 using Sapia.Game.Combat.Entities;
 using Sapia.Game.Combat.Steps;

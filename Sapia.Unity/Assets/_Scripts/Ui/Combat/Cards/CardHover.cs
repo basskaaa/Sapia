@@ -1,7 +1,6 @@
 using Nova;
 using NovaSamples.UIControls;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace Assets._Scripts.Ui.Combat.Cards
 {
@@ -9,15 +8,14 @@ namespace Assets._Scripts.Ui.Combat.Cards
     {
         [SerializeField] private int sortFront = 100;
         [SerializeField] private Vector2 hoverScale = new Vector2(1f, 1.05f);
-        public bool isHover = false;
 
-        public UnityEvent OnHover = null;
-        public UnityEvent OnUnhover = null;
-        private Vector2 baseScale;
         private UIBlock2D uiBlock;
         private SortGroup sortGroup;
-        private int sortBase;
 
+        public bool IsHovered { get; private set; }
+
+        private Vector2 _initialScale = Vector2.one;
+        private int _initialSort;
 
         private void Awake()
         {
@@ -25,13 +23,12 @@ namespace Assets._Scripts.Ui.Combat.Cards
             uiBlock = sortGroup.GetComponent<UIBlock2D>();
         }
 
-
         private void OnEnable()
-        { 
+        {
             View.UIBlock.AddGestureHandler<Gesture.OnHover, ButtonVisuals>(HandleHovered);
             View.UIBlock.AddGestureHandler<Gesture.OnUnhover, ButtonVisuals>(HandleUnhovered);
 
-            GetInitialData();
+            _initialScale = new Vector2(uiBlock.Size.Percent.x, uiBlock.Size.Percent.y);
         }
 
         private void OnDisable()
@@ -40,29 +37,24 @@ namespace Assets._Scripts.Ui.Combat.Cards
             View.UIBlock.RemoveGestureHandler<Gesture.OnUnhover, ButtonVisuals>(HandleUnhovered);
         }
 
-        private void HandleHovered(Gesture.OnHover evt, ButtonVisuals visuals) => OnHover?.Invoke();
-        private void HandleUnhovered(Gesture.OnUnhover evt, ButtonVisuals visuals) => OnUnhover?.Invoke();
-
-        private void GetInitialData()
+        private void HandleHovered(Gesture.OnHover evt, ButtonVisuals visuals)
         {
-            //sortBase = sortGroup.SortingOrder;
-            baseScale = new Vector2(uiBlock.Size.Percent.x, uiBlock.Size.Percent.y);
-        }
+            IsHovered = true;
 
-        public void Hover()
-        {
-            isHover = true;
-            sortBase = sortGroup.SortingOrder;
-            var cardScale = new Vector2(baseScale.x * hoverScale.x, baseScale.y * hoverScale.y);
+            _initialSort = sortGroup.SortingOrder;
+
+            var cardScale = _initialScale * hoverScale;
+
             uiBlock.Size.XY.Percent = cardScale;
             sortGroup.SortingOrder = sortFront;
         }
 
-        public void Unhover() 
+        private void HandleUnhovered(Gesture.OnUnhover evt, ButtonVisuals visuals)
         {
-            isHover = false;
-            uiBlock.Size.XY.Percent = new Vector2(baseScale.x, baseScale.y);
-            sortGroup.SortingOrder = sortBase;
+            IsHovered = false;
+
+            uiBlock.Size.XY.Percent = _initialScale;
+            sortGroup.SortingOrder = _initialSort;
         }
     }
 }

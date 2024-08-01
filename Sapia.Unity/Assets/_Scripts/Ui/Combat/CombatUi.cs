@@ -11,7 +11,6 @@ namespace Assets._Scripts.Ui.Combat
     public class CombatUi : MonoBehaviour, ICombatListener
     {
         private AbilityCardHolder _cards;
-        private TopCardSetter _topCardSetter;
         private CombatRunner _combatRunner;
         private UtilityActions _utilityActions;
 
@@ -20,7 +19,6 @@ namespace Assets._Scripts.Ui.Combat
         void Awake()
         {
             _cards = GetComponentInChildren<AbilityCardHolder>(true);
-            _topCardSetter = GetComponentInChildren<TopCardSetter>(true);
             _utilityActions = GetComponentInChildren<UtilityActions>(true);
 
             _cards.CardUsed.AddListener(CardUsed);
@@ -31,7 +29,10 @@ namespace Assets._Scripts.Ui.Combat
 
         private void CardUsed(UsableAbility ability, CombatParticipantRef target)
         {
-            _combatRunner.UseAbility("Player", ability, target?.ParticipantId);
+            if (target != null)
+            {
+                _combatRunner.UseAbility("Player", ability, target?.ParticipantId);
+            }
         }
 
         public void StepChanged(Sapia.Game.Combat.Combat combat, CombatStep step)
@@ -43,8 +44,6 @@ namespace Assets._Scripts.Ui.Combat
                     ChangeInteractionMode(InteractionMode.Ready);
                 }
                 _cards.Show(turn.Abilities);
-                _topCardSetter.FindTopCard();
-                //GetCardsPos();
 
                 _utilityActions.Show();
             }
@@ -53,17 +52,7 @@ namespace Assets._Scripts.Ui.Combat
                 _utilityActions.Hide();
             }
         }
-
-        private void GetCardsPos()
-        {
-            var _cardSelects = _cards.GetComponentsInChildren<CardSelect>();
-
-            foreach (var cardSelect in _cardSelects)
-            {
-                cardSelect.GetInitPosData();
-            }
-        }
-
+        
         public void ChangeInteractionMode(InteractionMode switchToInteractionMode)
         {
             InteractionMode = switchToInteractionMode;

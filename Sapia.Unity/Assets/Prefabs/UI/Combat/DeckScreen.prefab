@@ -198,10 +198,10 @@ MonoBehaviour:
   autoLayout:
     Axis: 1
     Spacing:
-      Raw: -200
+      Raw: -50
       Type: 0
     SpacingMinMax:
-      Min: -200
+      Min: -50
       Max: Infinity
     AutoSpace: 0
     ReverseOrder: 0

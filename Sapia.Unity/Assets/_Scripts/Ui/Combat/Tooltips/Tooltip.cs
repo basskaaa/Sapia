@@ -67,7 +67,7 @@ namespace Assets._Scripts.Ui.Combat.Tooltips
 
             foreach (var card in cardsHover)
             {
-                if (card.isHover)
+                if (card.IsHovered)
                 {
                     return true;
                 }
@@ -93,7 +93,7 @@ namespace Assets._Scripts.Ui.Combat.Tooltips
         {
             foreach (var card in cardsHover)
             {
-                if (card.isHover)
+                if (card.IsHovered)
                 {
                     var xPos = card.GetComponentInParent<CardSelect>().GetComponent<UIBlock2D>().Position.X.Value;
                     var render = card.GetComponentInParent<CardRender>();

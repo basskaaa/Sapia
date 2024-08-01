@@ -795,7 +795,6 @@ Transform:
   m_Children:
   - {fileID: 1443263089}
   - {fileID: 1816503400}
-  - {fileID: 2047915692}
   - {fileID: 1009174100}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4725,7 +4724,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1847500309}
-  m_Father: {fileID: 438844155}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2047915693
 MonoBehaviour:
@@ -4736,7 +4735,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2047915691}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1e615c20bbc3104a8aba02b3f4d6435, type: 3}
+  m_Script: {fileID: 11500000, guid: 581fc9a9a302cca49b886cacc9057496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &9064308686935698505
@@ -4887,6 +4886,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -205
       objectReference: {fileID: 0}
+    - target: {fileID: 5618234919482617189, guid: a8d46e20bdb009845822f56b738a734f,
+        type: 3}
+      propertyPath: autoLayout.Spacing.Raw
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618234919482617189, guid: a8d46e20bdb009845822f56b738a734f,
+        type: 3}
+      propertyPath: autoLayout.Spacing.Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618234919482617189, guid: a8d46e20bdb009845822f56b738a734f,
+        type: 3}
+      propertyPath: autoLayout.SpacingMinMax.Min
+      value: -Infinity
+      objectReference: {fileID: 0}
     - target: {fileID: 5901399296657703524, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
       propertyPath: autoLayout.alignment
@@ -5026,6 +5040,10 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7063255306349480168, guid: a8d46e20bdb009845822f56b738a734f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 5124873441116183713, guid: a8d46e20bdb009845822f56b738a734f,
         type: 3}
       insertIndex: -1
@@ -5103,5 +5121,6 @@ SceneRoots:
   - {fileID: 1402484420}
   - {fileID: 2005753774}
   - {fileID: 438844155}
+  - {fileID: 2047915692}
   - {fileID: 2026447180}
   - {fileID: 9064308686935698505}

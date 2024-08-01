@@ -85,7 +85,7 @@ namespace Assets._Scripts.Ui.Combat.Cards
                 SetInitColor();
 
                 isCardSelected = false;
-                transform.SetParent(abilityCardHolder, false);
+                ReturnToDeck();
 
                 var render = GetComponentInChildren<CardRender>();
 
@@ -98,6 +98,13 @@ namespace Assets._Scripts.Ui.Combat.Cards
                 CheckTarget();
                 CardUsedListener?.OnCardUsed(render.Ability, CurrentTarget);
             }
+        }
+
+        private void ReturnToDeck()
+        {
+            transform.SetParent(abilityCardHolder, false);
+            transform.localScale = Vector3.one;
+            transform.rotation = Quaternion.identity;
         }
 
         public void OnCardDrag()
