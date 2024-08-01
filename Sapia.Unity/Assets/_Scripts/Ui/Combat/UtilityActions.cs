@@ -4,6 +4,7 @@ namespace Assets._Scripts.Ui.Combat
 {
     public class UtilityActions : MonoBehaviour
     {
+        public GameObject buttons;
         private CombatUi _combatUi;
 
         void Awake()
@@ -15,12 +16,12 @@ namespace Assets._Scripts.Ui.Combat
 
         public void Hide()
         {
-            gameObject.SetActive(false);
+            buttons.SetActive(false);
         }
 
         public void Show()
         {
-            gameObject.SetActive(true);
+            buttons.SetActive(true);
         }
 
         public void ToggleMoveMode()
