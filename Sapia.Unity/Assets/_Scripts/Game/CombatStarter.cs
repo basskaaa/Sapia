@@ -31,7 +31,7 @@ namespace Assets._Scripts.Game
             var typeData = TypeDataFactory.CreateTypeData();
             var characterStatusService = new CharacterService(typeData);
 
-            var theRock = characterStatusService.CompileCharacter(theRockConfiguration, new[] { "Jab", "Slash" });
+            var theRock = characterStatusService.CompileCharacter(theRockConfiguration, new[] { "Jab", "Slash", "Shoot" });
 
             ICompiledCharacter CreateSkeleton() => new SimpleCharacter("Skeleton", new CharacterStats(3))
             {

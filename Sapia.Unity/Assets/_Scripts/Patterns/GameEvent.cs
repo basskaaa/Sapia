@@ -20,7 +20,7 @@ namespace Assets._Scripts.Patterns
         {
             //It goes through all the listeners, and notifies
             //them that the event has been raise
-            for (int i = listeners.Count - 1; i >= 0; i--)
+            for (var i = listeners.Count - 1; i >= 0; i--)
             {
                 listeners[i].OnEventRaised();
             }

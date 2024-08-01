@@ -1,11 +1,10 @@
-using Assets._Scripts.Patterns;
 using UnityEngine;
 
 namespace Assets._Scripts.Input
 {
-    public class GetMousePosition : Singleton<GetMousePosition>
+    public static class GetMousePosition 
     {
-        public bool TryGetCurrentRay(out Ray ray)
+        public static bool TryGetCurrentRay(out Ray ray)
         {
             if (UnityEngine.Input.mousePresent)
             {
@@ -19,11 +18,11 @@ namespace Assets._Scripts.Input
             }
         }
 
-        public bool TryProjectRay(Ray ray, out Vector3 worldPos)
+        public static bool TryProjectRay(Ray ray, out Vector3 worldPos)
         {
-            Plane plane = new Plane(-transform.forward, transform.position);
+            var plane = new Plane(-Vector3.forward, 0);
 
-            if (plane.Raycast(ray, out float distance))
+            if (plane.Raycast(ray, out var distance))
             {
                 worldPos = ray.GetPoint(distance);
                 return true;
@@ -35,11 +34,11 @@ namespace Assets._Scripts.Input
             }
         }
 
-        public bool TryProjectGroundRay(Ray ray, out Vector3 worldPos)
+        public static bool TryProjectGroundRay(Ray ray, out Vector3 worldPos)
         {
-            Plane plane = new Plane(transform.up, 0);
+            var plane = new Plane(Vector3.up, 0);
 
-            if (plane.Raycast(ray, out float distance))
+            if (plane.Raycast(ray, out var distance))
             {
                 worldPos = ray.GetPoint(distance);
                 return true;

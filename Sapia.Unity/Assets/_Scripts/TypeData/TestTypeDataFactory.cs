@@ -22,9 +22,15 @@ namespace Assets._Scripts.TypeData
             {
                 Id = "Whirlwind",
                 Description = "Whoooosh don't forget helicopter noises"
+            }; 
+            var shoot = new AbilityType
+            {
+                Id = "Shoot",
+                Description = "Shoot 'em",
+                Range = 12
             };
 
-            return new(slash, jab, whirlwind);
+            return new(slash, jab, whirlwind, shoot);
         }
 
         private static TestTypeDataProvider<ClassType> CreateClassTypeData()
@@ -37,7 +43,8 @@ namespace Assets._Scripts.TypeData
             {
                 {"Slash", 1},
                 {"Jab", 1},
-                {"Whirlwind", 1}
+                {"Whirlwind", 1},
+                {"Shoot", 1}
             }
             };
 
