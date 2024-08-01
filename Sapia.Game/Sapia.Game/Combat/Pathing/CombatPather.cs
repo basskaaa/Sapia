@@ -39,8 +39,8 @@ public class CombatPather : IPathManager<Coord>
 
     public (float actualToNext, float heuristicToGoal) GetCosts(Coord currentNode, Coord nextNode, Coord goal)
     {
-        var toNext = Coord.Distance(currentNode, nextNode);
-        var toGoal = Coord.Distance(nextNode, goal);
+        var toNext = Coord.DistanceF(currentNode, nextNode);
+        var toGoal = Coord.DistanceF(nextNode, goal);
 
         return (toNext, toGoal);
     }

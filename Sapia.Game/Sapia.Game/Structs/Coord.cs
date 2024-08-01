@@ -87,13 +87,15 @@ public readonly struct Coord : IComparable<Coord>, IEquatable<Coord>
 
     public override string ToString() => $"{X} / {Y}";
 
-    public static int Distance(Coord a, Coord b)
+    public static int Distance(Coord a, Coord b) => (int)Math.Floor(DistanceF(a, b));
+
+    public static float DistanceF(Coord a, Coord b)
     {
         float dx = b.X - a.X;
         float dy = b.Y - a.Y;
 
-        float df = dx * dx + dy * dy;
+        var df = dx * dx + dy * dy;
 
-        return (int)Math.Floor(Math.Sqrt(df));
+        return (float)Math.Sqrt(df);
     }
 }
