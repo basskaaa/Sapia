@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4309606151194597680}
   - component: {fileID: 5662274735612676972}
   m_Layer: 5
-  m_Name: CombatLogs
+  m_Name: Logs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: 200}
+  m_AnchoredPosition: {x: -200, y: 200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3385546409941158192
@@ -69,7 +69,7 @@ MonoBehaviour:
   layout:
     Size:
       X:
-        Raw: 600
+        Raw: 118.13954
         Type: 0
       Y:
         Raw: 400
@@ -127,7 +127,7 @@ MonoBehaviour:
         Type: 0
     SizeMinMax:
       X:
-        Min: 0
+        Min: 400
         Max: Infinity
       Y:
         Min: 0
@@ -184,11 +184,11 @@ MonoBehaviour:
         Min: -Infinity
         Max: Infinity
     Alignment:
-      X: 1
-      Y: -1
+      X: -1
+      Y: 1
       Z: 0
     AutoSize:
-      X: 0
+      X: 2
       Y: 0
       Z: 0
     RotateSize: 0
@@ -229,7 +229,7 @@ MonoBehaviour:
     LightingModel: 0
     ShadowCastingMode: 2
     ReceiveShadows: 1
-  PreviewSize: {x: 600, y: 400, z: 0}
+  PreviewSize: {x: 118.13954, y: 400, z: 0}
   visuals:
     Color: {r: 0, g: 0, b: 0, a: 0.85}
     CornerRadius:
@@ -643,7 +643,7 @@ PrefabInstance:
     - target: {fileID: 1131966911264422815, guid: 0e60f286e7cfcd2478d4404c5b623ec3,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 140.93024
       objectReference: {fileID: 0}
     - target: {fileID: 1131966911264422815, guid: 0e60f286e7cfcd2478d4404c5b623ec3,
         type: 3}
@@ -673,12 +673,12 @@ PrefabInstance:
     - target: {fileID: 3477649858576784250, guid: 0e60f286e7cfcd2478d4404c5b623ec3,
         type: 3}
       propertyPath: m_margin.x
-      value: -290
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3477649858576784250, guid: 0e60f286e7cfcd2478d4404c5b623ec3,
         type: 3}
       propertyPath: m_margin.z
-      value: -290
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3477649858576784250, guid: 0e60f286e7cfcd2478d4404c5b623ec3,
         type: 3}
@@ -698,17 +698,22 @@ PrefabInstance:
     - target: {fileID: 8833131728229835106, guid: 0e60f286e7cfcd2478d4404c5b623ec3,
         type: 3}
       propertyPath: layout.AutoSize.X
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8833131728229835106, guid: 0e60f286e7cfcd2478d4404c5b623ec3,
         type: 3}
       propertyPath: layout.Size.X.Raw
-      value: 1
+      value: 98.13954
       objectReference: {fileID: 0}
     - target: {fileID: 8833131728229835106, guid: 0e60f286e7cfcd2478d4404c5b623ec3,
         type: 3}
       propertyPath: layout.Size.Y.Raw
       value: 44.6875
+      objectReference: {fileID: 0}
+    - target: {fileID: 8833131728229835106, guid: 0e60f286e7cfcd2478d4404c5b623ec3,
+        type: 3}
+      propertyPath: layout.Alignment.X
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8833131728229835106, guid: 0e60f286e7cfcd2478d4404c5b623ec3,
         type: 3}
@@ -718,7 +723,7 @@ PrefabInstance:
     - target: {fileID: 8833131728229835106, guid: 0e60f286e7cfcd2478d4404c5b623ec3,
         type: 3}
       propertyPath: layout.Size.X.Type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
