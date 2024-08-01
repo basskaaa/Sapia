@@ -58,6 +58,21 @@ public static class CombatExtensions
         combat.SkipTurnIf(t => t.Participant.Character.IsNpc);
     }
 
+    public static CombatStep GetNextStep(this Game.Combat.Combat combat, bool executeAi = true)
+    {
+        if (executeAi)
+        {
+            combat.ExecuteAi();
+        }
+
+        if (combat.Step())
+        {
+            return combat.CurrentStep!;
+        }
+
+        throw new InvalidOperationException("No more steps available");
+    }
+
     public static CombatParticipant Player(this Game.Combat.Combat combat) => combat.Participants["Player"];
     public static CombatParticipant GoblinArcher(this Game.Combat.Combat combat) => combat.Participants["GoblinArcher"];
     public static CombatParticipant Skeleton(this Game.Combat.Combat combat) => combat.Participants["Skeleton"];

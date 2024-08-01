@@ -35,7 +35,6 @@ public class Distance
         DistanceIs1((0, 0), (1, 1));
         DistanceIs1((0, 0), (-1, 1));
 
-
         DistanceIs1((5, -1), (6, 0));
         DistanceIs1((8, -5), (9, -4));
     }

@@ -22,7 +22,7 @@ namespace Assets._Scripts.TypeData
 
         public bool TryFind(string id, [MaybeNullWhen(false)] out T value) => _data.TryGetValue(id, out value);
 
-        public T? Find(string id)
+        public T Find(string id)
         {
             if (_data.TryGetValue(id, out var data))
             {

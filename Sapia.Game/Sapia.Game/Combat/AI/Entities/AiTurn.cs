@@ -4,6 +4,8 @@ public struct AiTurn
 {
     public HashSet<DecisionAttempts> Decisions = new();
 
+    public bool UsedARangedAttack { get; set; }
+
     public AiTurn()
     {
     }
