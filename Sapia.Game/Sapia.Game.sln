@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sapia.Game.TestConsole", "Sapia.Game.TestConsole\Sapia.Game.TestConsole.csproj", "{7BB87924-E74C-4D1B-8906-DF5545AC246E}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sapia.Game", "Sapia.Game\Sapia.Game.csproj", "{8FAD2249-EC17-449D-AF05-6696808E8298}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sapia.Game.DataGenerator", "Sapia.Game.DataGenerator\Sapia.Game.DataGenerator.csproj", "{4F3B10F3-3146-41F0-B1C0-25385213E5D2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PtahBuilder.BuildSystem", "..\..\ptahbuilder\src\PtahBuilder.BuildSystem\PtahBuilder.BuildSystem.csproj", "{F0443E11-ACAC-4A30-91FC-14C66E6335F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sapia.Game.Tests", "Sapia.Game.Tests\Sapia.Game.Tests.csproj", "{D7EB3628-F628-41DC-8288-3D6A70EDB437}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sapia.Game.Tests", "Sapia.Game.Tests\Sapia.Game.Tests.csproj", "{D7EB3628-F628-41DC-8288-3D6A70EDB437}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7BB87924-E74C-4D1B-8906-DF5545AC246E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7BB87924-E74C-4D1B-8906-DF5545AC246E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7BB87924-E74C-4D1B-8906-DF5545AC246E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7BB87924-E74C-4D1B-8906-DF5545AC246E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8FAD2249-EC17-449D-AF05-6696808E8298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8FAD2249-EC17-449D-AF05-6696808E8298}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FAD2249-EC17-449D-AF05-6696808E8298}.Release|Any CPU.ActiveCfg = Release|Any CPU

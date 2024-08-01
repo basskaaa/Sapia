@@ -19,8 +19,13 @@ public static class TypeDataFactory
         {
             Id = "Whirlwind"
         };
+        var shoot = new AbilityType
+        {
+            Id = "Shoot",
+            Range = 6
+        };
 
-        return new(slash, jab, whirlwind);
+        return new(slash, jab, whirlwind, shoot);
     }
 
     private static TestTypeDataProvider<ClassType> CreateClassTypeData()

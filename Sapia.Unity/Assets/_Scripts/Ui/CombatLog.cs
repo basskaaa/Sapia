@@ -5,6 +5,7 @@ using Nova;
 using Sapia.Game.Combat;
 using Sapia.Game.Combat.Entities;
 using Sapia.Game.Combat.Steps;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Assets._Scripts.Ui
@@ -14,11 +15,14 @@ namespace Assets._Scripts.Ui
         public TextBlock Heading;
         public ListView Logs;
 
+        private CombatRunner _combatRunner;
+
         private readonly List<string> _logs = new();
 
-        void Start()
+        void Awake()
         {
-            FindFirstObjectByType<CombatRunner>().AddListener(this);
+            _combatRunner = FindFirstObjectByType<CombatRunner>();
+            _combatRunner.AddListener(this);
 
             Logs.AddDataBinder<string, LogItemVisuals>(BindLogToList);
         }
@@ -30,11 +34,14 @@ namespace Assets._Scripts.Ui
 
         public void StepChanged(Combat combat, CombatStep step)
         {
-            var log = CreateLog(step);
+            var logs = CreateLog(step).ToArray();
 
-            if (!string.IsNullOrWhiteSpace(log))
+            if (logs.Length > 0)
             {
-                _logs.Insert(0, log);
+                foreach (var log in logs)
+                {
+                    _logs.Insert(0, log);
+                }
 
                 Refresh();
             }
@@ -52,7 +59,7 @@ namespace Assets._Scripts.Ui
         private CombatParticipant _lastParticipant;
         private bool _wasMoveStep = false;
 
-        private string CreateLog(CombatStep step)
+        private IEnumerable<string> CreateLog(CombatStep step)
         {
             if (step is ParticipantStep participantStep)
             {
@@ -63,29 +70,76 @@ namespace Assets._Scripts.Ui
                 if (step is MovedStep && _wasMoveStep == false)
                 {
                     _wasMoveStep = true;
-                    return $"{Name(participantStep.Participant)} {(participantStep.Participant.Character.IsPlayer ? "are" : "is")} moving";
+                    yield return $"{Name(participantStep.Participant)} {(participantStep.Participant.Character.IsPlayer ? "are" : "is")} moving";
+                    yield break;
                 }
-                else if(step is not MovedStep)
+                else if (step is not MovedStep)
                 {
                     _wasMoveStep = false;
                 }
 
                 if (participantChanged && participantStep is TurnStep)
                 {
-                    return $"{Possessive(participantStep.Participant)} turn";
+                    yield return $"{Possessive(participantStep.Participant)} turn";
+                    yield break;
                 }
 
                 if (participantStep is AbilityUsedStep abilityStep)
                 {
-                    return $"{Name(participantStep.Participant)} used {abilityStep.Result.Ability.Id}";
+                    var targets = abilityStep.Result.AffectedParticipants
+                        .Select(x => TargetOfAbilityResult(step, x))
+                        .ToArray();
+
+                    var targetText = string.Join(", ", targets);
+                    var fullTargetText = string.IsNullOrWhiteSpace(targetText) ? string.Empty : $" against {targetText}";
+
+                    yield return $"{Name(participantStep.Participant)} used {abilityStep.Result.Ability.Id}{fullTargetText}";
+
+                    foreach (var affectedParticipant in abilityStep.Result.AffectedParticipants)
+                    {
+                        if (affectedParticipant.HealthChange.HasValue && affectedParticipant.HealthChange.Value < 0)
+                        {
+                            var participant = step.Combat.Participants[affectedParticipant.ParticipantId];
+
+                            if (!participant.Character.IsAlive)
+                            {
+                                yield return $"{Name(participant)} died";
+                            }
+                        }
+                    }
+                }
+
+                if (participantStep is AbilityFailedStep failed)
+                {
+                    yield return $"{Name(participantStep.Participant)} failed to use {failed.Use.AbilityId} - {failed.Reason.HumanName()}";
+                    yield break;
                 }
             }
-
-            return null;
         }
 
         private string Name(CombatParticipant participant) => participant.Character.IsPlayer ? "You" : participant.ParticipantId;
         private string Possessive(CombatParticipant participant) => participant.Character.IsPlayer ? "Your" : $"{participant.ParticipantId}'s";
+
+        private string TargetOfAbilityResult(CombatStep step, AffectedParticipant p)
+        {
+            var participant = step.Combat.Participants[p.ParticipantId];
+
+            var name = Name(participant);
+
+            if (participant.Character.IsPlayer)
+            {
+                name = name.ToLower();
+            }
+
+            if (!participant.Character.IsAlive)
+            {
+
+            }
+
+            var dmg = p.HealthChange.HasValue ? $" ({p.HealthChange.Value})" : string.Empty;
+
+            return $"{name}{dmg}";
+        }
     }
 
     public class LogItemVisuals : ItemVisuals

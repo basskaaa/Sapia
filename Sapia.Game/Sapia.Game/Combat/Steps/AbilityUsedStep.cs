@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Sapia.Game.Combat.Entities;
+﻿using Sapia.Game.Combat.Entities;
 
 namespace Sapia.Game.Combat.Steps;
 

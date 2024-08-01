@@ -1,22 +1,26 @@
-﻿using Sapia.Game.Combat.Entities;
+﻿using Sapia.Game.Combat.AI.Entities;
+using Sapia.Game.Combat.Entities;
+using Sapia.Game.Combat.Entities.Enums;
 using Sapia.Game.Combat.Steps;
-using Sapia.Game.Extensions;
 using Sapia.Game.Structs;
 
 namespace Sapia.Game.Combat.AI;
 
-public class AiController
+public partial class AiController
 {
     public Combat Combat { get; }
     public CombatParticipant Participant { get; }
 
     private int? _lastRoundActed;
-    private readonly HashSet<DecisionAttempts> _decisionsThisRound = new();
 
-    private static readonly IReadOnlyCollection<DecisionAttempts> _allDecisions = (DecisionAttempts[])Enum.GetValues(typeof(DecisionAttempts));
+    // A plan for the AI to pursue this combat, possibly over many turns
+    // Requires a valid target and can be cleared and reset if needed
+    // A plan might only be to move towards the target and use an ability, clearing the plan once the ability is used
+    // This will cause the plan to be recalculated
+    private AiPlan? _plan;
 
-    private Coord? _movementTarget;
-    private CombatParticipant? _target;
+    // Represents what the AI has done on this turn
+    private AiTurn _turnState = new();
 
     public AiController(Combat combat, string participantId)
     {
@@ -29,14 +33,14 @@ public class AiController
         if (!_lastRoundActed.HasValue || _lastRoundActed.Value != Combat.CurrentRound)
         {
             _lastRoundActed = Combat.CurrentRound;
-            _decisionsThisRound.Clear();
+            _turnState = new();
         }
-
-        _target ??= FindTarget();
 
         if (participantStep is TurnStep turn)
         {
-            if (_target == null || HasMadeAllDecisions())
+            _plan ??= MaintainPlan(turn);
+
+            if (_plan == null || _turnState.HasMadeAllDecisions())
             {
                 turn.EndTurn();
             }
@@ -62,96 +66,59 @@ public class AiController
         return true;
     }
 
-    private bool DoFor(DecisionAttempts decision,TurnStep turn, Action<TurnStep> act)
+    private bool DoFor(DecisionAttempts decision, TurnStep turn, Action<TurnStep> act)
     {
-        if (_decisionsThisRound.Contains(decision))
+        if (_turnState.Decisions.Contains(decision))
         {
             return false;
         }
 
         act(turn);
-        _decisionsThisRound.Add(decision);
+        _turnState.Decisions.Add(decision);
 
         return true;
     }
-
-    private bool HasMadeAllDecisions()
+    
+    private AiPlan? MaintainPlan(TurnStep turn)
     {
-        foreach (var decision in _allDecisions)
+        if (PlanIsValid(_plan, turn))
         {
-            if (!_decisionsThisRound.Contains(decision))
-            {
-                return false;
-            }
+            return _plan;
+        }
+
+        var target = FindTarget();
+
+        if (target != null)
+        {
+            // TODO: better choosing of action e.g shuffling 
+            var mainActions = turn.Abilities.Where(x => x.AbilityType.Action == CombatActionType.Main).ToArray();
+
+            return new AiPlan(target, mainActions.Length == 0 ? null : mainActions.First().AbilityType);
+        }
+
+        return null;
+    }
+
+    private bool PlanIsValid(AiPlan? plan, TurnStep turn)
+    {
+        if (plan == null)
+        {
+            return false;
+        }
+
+        if (plan.Target.Character.IsAlive)
+        {
+            return false;
+        }
+
+        // If the ability can't be used then clear the plan
+        // This might clear the plan on the current turn which is ok because it will replan next turn
+        if (plan.ChosenAbility != null && turn.Abilities.All(x => x.AbilityType.Id != plan.ChosenAbility.Id))
+        {
+            return false;
         }
 
         return true;
-    }
-
-    private void ActAgainstTarget(TurnStep turn)
-    {
-        // TODO: try to attack or whatever
-    }
-
-    private void MoveTowardsTarget(TurnStep turn)
-    {
-        // Reset movement target if:
-        // Arrived
-        // It is now obstructed
-        // It is now no longer adjacent to the target
-        if (_movementTarget.HasValue &&
-            (_movementTarget.Value == Participant.Position ||
-             Combat.Movement.Pather.IsObstructed(_movementTarget.Value) ||
-             Coord.Distance(_movementTarget.Value, _target.Position) > 1))
-        {
-            _movementTarget = null;
-        }
-
-        var dist = Coord.Distance(Participant.Position, _target.Position);
-
-        // Close enough to do something, no movement required
-        if (dist <= 1)
-        {
-            _movementTarget = null;
-            return;
-        }
-
-        // Move towards existing target
-        if (_movementTarget.HasValue && TryToMoveTo(turn, _movementTarget.Value))
-        {
-            return;
-        }
-
-        // No valid movement target, or couldn't move to it
-        // Try to find a new movement target adjacent to the target
-        var adjacent = _target!.Position.GetAdjacent()
-            .Where(x => !Combat.Movement.Pather.IsObstructed(x))
-            .OrderBy(x => Coord.Distance(x, Participant.Position))
-            .ToArray();
-
-        foreach (var possibleAdjacent in adjacent)
-        {
-            if (TryToMoveTo(turn, possibleAdjacent))
-            {
-                return;
-            }
-        }
-    }
-
-    private bool TryToMoveTo(TurnStep turn, Coord target)
-    {
-        var path = Combat.Movement.Pather.GetPath(Participant.Position, target, new(20));
-
-        if (path != null)
-        {
-            _movementTarget = target;
-
-            var movementGoal = path.Value.Path.Take(Participant.Status.RemainingMovement).Last();
-
-            return turn.TryMove(movementGoal.Node);
-        }
-
-        return false;
     }
 
     private CombatParticipant? FindTarget()
@@ -160,12 +127,5 @@ public class AiController
             .Where(x => x.Character.IsPlayer && x.Character.IsAlive)
             .OrderBy(x => Coord.Distance(x.Position, Participant.Position))
             .FirstOrDefault();
-    }
-
-    enum DecisionAttempts
-    {
-        Move,
-        ActAgainstTarget,
-        ActAgainstTargetAfterMoving,
     }
 }

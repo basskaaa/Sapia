@@ -13796,7 +13796,7 @@ MonoBehaviour:
   layout:
     Size:
       X:
-        Raw: 400
+        Raw: 600
         Type: 0
       Y:
         Raw: 400
@@ -13958,7 +13958,7 @@ MonoBehaviour:
     ReceiveShadows: 1
   PreviewSize: {x: 1, y: 1, z: 0}
   visuals:
-    Color: {r: 0, g: 0, b: 0, a: 0.7}
+    Color: {r: 0, g: 0, b: 0, a: 0.85}
     CornerRadius:
       Raw: 0
       Type: 0
