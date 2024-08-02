@@ -19,4 +19,4 @@ Weapon:
    - "[[Melee Weapon]]"
    - "[[Shield]]"
 ---
-When a foe enters your melee range your defence is increased by 2 until the start of your next turn.
+When a foe enters your melee range, your defence is increased by 2 until the start of your next turn.

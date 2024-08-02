@@ -11,5 +11,3 @@ tags:
   - Attack
 ---
 You have an additional attack action this turn.
-
-*Upcast: You have another additional attack action.*

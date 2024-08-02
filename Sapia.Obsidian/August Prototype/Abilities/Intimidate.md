@@ -1,16 +1,18 @@
 ---
 Rank:
-  - "[[Rank 0]]"
+  - "[[Rank 1]]"
 Action:
   - "[[Main Action]]"
 Target:
   - "[[Other]]"
 Range: 6
-Save: "[[Willpower]]"
+Save:
+  - "[[Willpower]]"
 Classes:
   - All
 Concentration: false
-AttacksMadeByTarget: Disadvantage
+AttacksMadeByTarget:
+  - Disadvantage
 tags:
   - Debuff
   - Attack

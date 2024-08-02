@@ -9,7 +9,8 @@ ReactionEvent:
   - "[[Attacked]]"
 Save:
   - "[[Fortitude Save]]"
-IncomingAttack: "[[Miss]]"
+IncomingAttack:
+  - "[[Miss]]"
 Classes:
   - "[[Rules/2. Character Options/3. Classes/Fighter/Fighter]]"
 tags:
@@ -20,4 +21,4 @@ Weapon:
   - "[[Shield]]"
 SkipImport: true
 ---
-When a creature makes a melee attack against you, the creature must succeed on a Fortitude saving throw or miss the attack.
+When a creature makes a melee attack against you, the creature must succeed on a Strength saving throw or miss the attack.

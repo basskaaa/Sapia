@@ -1,6 +1,6 @@
 ---
 Rank:
-  - "[[Rank 0]]"
+  - "[[Rank 1]]"
 Action:
   - "[[Reaction]]"
 ReactionRange:
@@ -18,5 +18,3 @@ Prerequisite:
 When you make a killing blow against a creature at range, you can attack another target within range.
 
 Andy Note: this is to demonstrate the ranged counterpart to Cleave.
-
-*Upcast: You deal the remaining damage to an additional target within range.*

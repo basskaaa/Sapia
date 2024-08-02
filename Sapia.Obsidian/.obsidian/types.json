@@ -21,6 +21,12 @@
     "Rarity": "multitext",
     "Weapon Range": "multitext",
     "Weapon Type": "multitext",
-    "Masterwork": "multitext"
+    "Masterwork": "multitext",
+    "Weapon": "multitext",
+    "IncomingAttack": "multitext",
+    "AttacksAgainstTarget": "multitext",
+    "ApplyStatusEffect": "multitext",
+    "AttacksMadeByTarget": "multitext",
+    "AdditionalAction": "multitext"
   }
 }

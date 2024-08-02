@@ -16,6 +16,4 @@ tags:
 ---
 Your movement speed is doubled this turn.
 
-*Upcast: Your movement speed increases by an additional 5 ft per upcast*
-
 *Notes: Can only be used once per turn.*
