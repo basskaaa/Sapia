@@ -468,18 +468,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6850231640871297960}
-        m_TargetAssemblyTypeName: NovaSamples.UIControls.CardHover, Assembly-CSharp
-        m_MethodName: Hover
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &5274102833107839504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,8 +480,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 924a4ccff628dd743890e2ad372d1596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragPivot: {fileID: 226181874130399030}
-  highlightTime: 1
   isCardSelected: 0
   opacityOnSelect: 0.5
 --- !u!114 &5555745021062099754

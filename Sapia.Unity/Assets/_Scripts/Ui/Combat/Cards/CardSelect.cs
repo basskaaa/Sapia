@@ -51,6 +51,7 @@ namespace Assets._Scripts.Ui.Combat.Cards
                 ReturnToDeck();
 
                 var render = GetComponentInChildren<CardRender>();
+                var hover = GetComponentInChildren<CardHover>();
 
                 if (render == null)
                 {
@@ -58,6 +59,7 @@ namespace Assets._Scripts.Ui.Combat.Cards
                     return;
                 }
 
+                hover.Unhover();
                 CheckTarget();
                 CardUsedListener?.OnCardUsed(render.Ability, CurrentTarget);
             }
