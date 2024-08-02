@@ -5,6 +5,7 @@ using Sapia.Game.Combat.Entities;
 using Sapia.Game.Combat.Steps;
 using Unity.VisualScripting;
 using UnityEngine;
+using static Assets._Scripts.Anim.AnimManager;
 
 namespace Assets._Scripts.Game
 {
@@ -62,8 +63,20 @@ namespace Assets._Scripts.Game
             if (step is MovedStep move && move.Participant.ParticipantId == ParticipantId)
             {
                 // This is a move step for this actor, move to the new position then invoke step
+                Vector3 currentPos = transform.position;
                 transform.position = new Vector3(move.Participant.Position.X, transform.position.y, move.Participant.Position.Y);
+                if (!gameObject.CompareTag("Player"))
+                {
+                    transform.LookAt(FindObjectOfType<Player>().transform);
+                }
+                else
+                {
+                    //transform.LookAt(-currentPos);
+                }
+                _anim.PlayAnim(animName.move, 0);
                 Invoke(nameof(Step), .5f);
+                _anim.PlayAnim(animName.idle, 0);
+
             }
 
             if (step is AbilityUsedStep abilityUsedStep)

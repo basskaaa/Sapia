@@ -35,15 +35,19 @@ namespace Assets._Scripts.Anim
                     break;
                 case animName.move:
                     _animator.Play(_move.name);
+                    PlayAnim(animName.idle, 0);
                     break;
                 case animName.death:
                     _animator.Play(_death.name);
+                    PlayAnim(animName.idle, 0);
                     break;
                 case animName.hit:
                     _animator.Play(_hit.name);
+                    PlayAnim(animName.idle, 0);
                     break;
                 case animName.ability:
                     _animator.Play(_ability[index].name);
+                    PlayAnim(animName.idle, 0);
                     break;
                 default:
                     return;
@@ -52,8 +56,20 @@ namespace Assets._Scripts.Anim
 
         public bool IsPlaying()
         {
-            return _animator.GetCurrentAnimatorStateInfo(0).length >
-                   _animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+            if (_animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+            {
+                return false;
+            }
+            else
+            {
+                return _animator.GetCurrentAnimatorStateInfo(0).length >
+                       _animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+            }
+        }
+
+        public void StopAnim()
+        {
+            _animator.StopPlayback();
         }
     }
 }
