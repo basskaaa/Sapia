@@ -1,0 +1,1 @@
+A reaction event raised when the ability wielder hits with an attack.

@@ -1,0 +1,1 @@
+This ability effect can be ended on the caster's turn, or if the target succeeds on a save at the start of their turn as a starter action. The save is of the same type and DC as the original ability.

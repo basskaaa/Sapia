@@ -4,18 +4,19 @@ Rank:
 Action:
   - "[[Reaction]]"
 ReactionRange:
-  - "[[Melee]]"  
+  - "[[Melee]]"
 ReactionEvent:
-  - "[[AttackMiss]]"  
+  - "[[AttackHit]]"
 Duration:
   - "[[Until the start of your next turn]]"
-Target: "[[ReactionTarget]]"
+Target:
+  - "[[ReactionTarget]]"
 DefenceModifier: -1
 Classes:
   - "[[Rules/2. Character Options/3. Classes/Fighter/Fighter]]"
 tags:
   - Debuff
 ---
-When you miss on an attack roll against a target, you reduce its defence by 1 until the start of your next turn.
+When you hit on an attack roll against a target, you reduce its defence by 1 until the start of your next turn.
 
 *Upcast: You reduce the target’s defence by an additional 1 per upcast.*

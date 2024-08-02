@@ -15,9 +15,12 @@
 	- [ ] Sfx system
 - [ ] Animation system
 	- [ ] Particles
-- [x] Turn-based interation ✅ 2024-08-01
+- [ ] [x] Turn-based interation ✅ 2024-08-01
 - [x] Enemy ai ✅ 2024-08-01
 - [x] Grid movement ✅ 2024-08-01
+# Enemies
+- [ ] Skeleton
+- [ ] Goblin Archer
 # UI
 - [x] Ability cards ✅ 2024-08-01
 - [ ] Inventory

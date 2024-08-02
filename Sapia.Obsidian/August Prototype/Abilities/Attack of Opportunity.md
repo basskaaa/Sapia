@@ -1,12 +1,13 @@
 ---
 Rank:
-  - "[[Rank 0]]"
+  - "[[Rank 1]]"
 Action:
   - "[[Reaction]]"
 ReactionRange:
   - "[[Melee]]"  
 ReactionEvent:
-  - "[[KillingBlow]]"
+  - "[[LeavesRange]]"  
+Target: "[[ReactionSource]]"
 Classes:
   - "[[Rules/2. Character Options/3. Classes/Fighter/Fighter]]"
 IsWeaponAttack: true
@@ -14,6 +15,4 @@ tags:
   - Attack
 Weapon: "[[Melee Weapon]]"
 ---
-When you make a killing blow against a creature in melee, you can attack another target within reach.
-
-*Upcast: You deal the remaining damage to an additional target within range.*
+When a target leaves your melee range you may attack that target.

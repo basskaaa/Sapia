@@ -1,0 +1,1 @@
+This reaction is triggered when an target leaves the applicable range. Usually this will be the range of the weapon.

@@ -3,20 +3,13 @@ Rank:
   - "[[Rank 2]]"
 Action:
   - "[[Main Action]]"
-School: 
 Target:
   - "[[Self]]"
-Range: 
-Damage Type: 
-Duration:
-  - "[[Until the start of your next turn]]"
-Attack/Save: 
-Classes: 
 Concentration: false
+AdditionalAction: "[[Attack Action]]"
 tags:
   - Attack
-Prerequisite:
 ---
-You have an additional attack action until the start of your next turn.
+You have an additional attack action this turn.
 
 *Upcast: You have another additional attack action.*

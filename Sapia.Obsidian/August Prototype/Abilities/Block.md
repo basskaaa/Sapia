@@ -1,23 +1,23 @@
 ---
 Rank:
-  - "[[Rank 1]]"
+  - "[[Rank 0]]"
 Action:
   - "[[Reaction]]"
 ReactionRange:
   - "[[Melee]]"
 ReactionEvent:
   - "[[Attacked]]"
-Target: "[[ReactionSource]]"
 Save:
   - "[[Fortitude Save]]"
-IncomingAttack: Miss
-IsWeaponAttack: true
+IncomingAttack: "[[Miss]]"
 Classes:
   - "[[Rules/2. Character Options/3. Classes/Fighter/Fighter]]"
 tags:
   - Debuff
   - Defence
-Prerequisite:
+Weapon:
   - "[[Melee Weapon]]"
+  - "[[Shield]]"
+SkipImport: true
 ---
-When a creature makes a melee attack against you, the creature must succeed on a Fortitude saving throw or miss the attack, and you can attack the target.
+When a creature makes a melee attack against you, the creature must succeed on a Fortitude saving throw or miss the attack.
