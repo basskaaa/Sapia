@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "August Prototype/Abilities/Attack.md",
+                "file": "August Prototype/TODO - End of August Combat Prototype.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "August Prototype/Abilities/Attack.md",
+                "file": "August Prototype/TODO - End of August Combat Prototype.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "August Prototype/Abilities/Attack.md",
+                "file": "August Prototype/TODO - End of August Combat Prototype.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "August Prototype/Abilities/Attack.md"
+                "file": "August Prototype/TODO - End of August Combat Prototype.md"
               }
             }
           }
@@ -166,7 +166,27 @@
   },
   "active": "8737dfac28a78a3a",
   "lastOpenFiles": [
+    "August Prototype/Abilities/Attack.md",
+    "August Prototype/Abilities/Deflect.md",
+    "Rules/3. Expanded Rules/6. Ability Properties/Duration Types/Until saved or ended by caster.md",
+    "August Prototype/TODO - End of August Combat Prototype.md",
+    "August Prototype/Implementation/ReactionEvents/LeavesRange.md",
+    "August Prototype/Implementation/ReactionEvents/KillingBlow.md",
+    "August Prototype/Implementation/ReactionEvents/EntersRange.md",
+    "August Prototype/Implementation/ReactionEvents/AttackMiss.md",
+    "August Prototype/Implementation/ReactionEvents/AttackHit.md",
+    "August Prototype/Implementation/ReactionEvents/Attacked.md",
+    "August Prototype/Implementation/Targets/ReactionTarget.md",
+    "August Prototype/Implementation/Targets/ReactionSource.md",
+    "August Prototype/Implementation/Targets/Other.md",
+    "August Prototype/Implementation/ForcedResolutions/Miss.md",
+    "August Prototype/Implementation/ReactionEvents",
+    "August Prototype/Implementation/Targets",
+    "August Prototype/Implementation/ForcedResolutions",
+    "August Prototype/Implementation",
+    "August Prototype/Abilities/Block.md",
     "August Prototype/Abilities/Attack of Opportunity.md",
+    "August Prototype/End of August Combat Prototype.md",
     "August Prototype/Abilities/Distraction.md",
     "August Prototype/Abilities/Double Tap.md",
     "August Prototype/Abilities/Intimidate.md",
@@ -174,28 +194,8 @@
     "August Prototype/Abilities/Taunt.md",
     "August Prototype/Abilities/Sunder Armour.md",
     "August Prototype/Abilities/Stand Firm.md",
-    "August Prototype/Abilities/Attack.md",
-    "August Prototype/Abilities/Block.md",
     "August Prototype/Abilities/Cleave.md",
     "August Prototype/Abilities/Dash.md",
-    "August Prototype/Abilities/Deflect.md",
-    "August Prototype/Abilities/Dodge.md",
-    "August Prototype/Abilities/Grapple.md",
-    "August Prototype/Abilities/Greater Taunt.md",
-    "August Prototype/Abilities/Multiattack.md",
-    "August Prototype/Abilities/Parry.md",
-    "August Prototype/Implementation/Targets/ReactionSource.md",
-    "August Prototype/Implementation/ReactionEvents/LeavesRange.md",
-    "August Prototype/TODO - End of August Combat Prototype.md",
-    "August Prototype/Ability Tags.md",
-    "August Prototype/End of August Combat Prototype To Do.md",
-    "Rules/3. Expanded Rules/6. Ability Properties/Duration Types/Until saved or ended by caster.md",
-    "August Prototype/Implementation/Targets/ReactionTarget.md",
-    "August Prototype/Implementation/Targets/Other.md",
-    "August Prototype/Implementation/Targets",
-    "August Prototype/Implementation/ReactionEvents",
-    "August Prototype/Implementation/ForcedResolutions",
-    "August Prototype/Implementation",
     "August Prototype/Abilities",
     "August Prototype",
     "_Main/Images/Progress Images/Image Sequence_001_0000 1.jpg",
