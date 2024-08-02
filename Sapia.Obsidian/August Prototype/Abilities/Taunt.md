@@ -1,17 +1,19 @@
 ---
 Rank:
-  - "[[Rank 0]]"
+  - "[[Rank 1]]"
 Action:
   - "[[Main Action]]"
 Target:
   - "[[Other]]"
 Range: 6
-Save: "[[Willpower]]"
+Save:
+  - "[[Willpower]]"
 Classes:
   - All
-AttacksAgainstTarget: Advantage
+AttacksAgainstTarget:
+  - Advantage
 tags:
   - Debuff
   - Attack
 ---
-Attacks against the target are made at advantage until the start of your next turn.
+The target must succeed on a Wisdom saving throw or attacks against them are made at advantage until the start of your next turn.

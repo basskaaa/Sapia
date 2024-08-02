@@ -15,5 +15,3 @@ tags:
 Weapon: "[[Melee Weapon]]"
 ---
 When you make a killing blow against a creature in melee, you can attack another target within reach.
-
-*Upcast: You deal the remaining damage to an additional target within range.*

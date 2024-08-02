@@ -27,6 +27,10 @@
 - [ ] Stat display
 	- [ ] Hp
 	- [ ] Ability points
+# Design
+- [ ] Describe stat sources
+- [ ] Translate abilities
+- [ ] Translate conditions
 #### Animations
 - [ ] Move
 - [ ] Death

@@ -20,4 +20,4 @@ tags:
 Prerequisite:
   - "[[Melee Weapon]]"
 ---
-When a creature makes a melee attack against you, the creature must succeed on a Fortitude saving throw or miss the attack, and you can attack the target.
+When a creature makes a melee attack against you, the creature must succeed on a Strength saving throw or miss the attack, and you can attack the target.
