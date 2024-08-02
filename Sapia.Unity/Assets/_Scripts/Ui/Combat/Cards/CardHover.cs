@@ -49,6 +49,11 @@ namespace Assets._Scripts.Ui.Combat.Cards
 
         private void HandleUnhovered(Gesture.OnUnhover evt, ButtonVisuals visuals)
         {
+            Unhover();
+        }
+
+        public void Unhover()
+        {
             IsHovered = false;
 
             uiBlock.Size = _initialSize;
