@@ -1,0 +1,1 @@
+The target is whoever triggered the reaction event. Examples include the target who moved into or out of a threatened area, or a target who attacks the wielder of the ability.

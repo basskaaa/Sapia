@@ -4,7 +4,7 @@ Rank:
 Action:
   - "[[Reaction]]"
 ReactionRange:
-  - "[[Melee]]"  
+  - "[[Ranged]]"
 ReactionEvent:
   - "[[KillingBlow]]"
 Classes:
@@ -12,8 +12,11 @@ Classes:
 IsWeaponAttack: true
 tags:
   - Attack
-Weapon: "[[Melee Weapon]]"
+Prerequisite:
+  - "[[Ranged Weapon]]"
 ---
-When you make a killing blow against a creature in melee, you can attack another target within reach.
+When you make a killing blow against a creature at range, you can attack another target within range.
+
+Andy Note: this is to demonstrate the ranged counterpart to Cleave.
 
 *Upcast: You deal the remaining damage to an additional target within range.*

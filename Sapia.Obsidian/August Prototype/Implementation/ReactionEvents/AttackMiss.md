@@ -1,0 +1,1 @@
+A reaction event triggered when the wielder of the ability misses with an attack.

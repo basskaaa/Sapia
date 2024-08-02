@@ -1,0 +1,1 @@
+This reaction event is triggered when the wielder of the ability is attacked.

@@ -1,0 +1,1 @@
+This reaction event is triggered when a foe enters the appropriate range (e.g melee weapon) of the ability wielder.

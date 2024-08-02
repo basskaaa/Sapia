@@ -1,0 +1,1 @@
+This reaction event is triggered if the wielder of the ability lands a killing blow.

@@ -1,0 +1,1 @@
+The target at the time the reaction was triggered. For example if a reaction is triggered by an attack miss then the ReactionTarget will be the target of that attack.
