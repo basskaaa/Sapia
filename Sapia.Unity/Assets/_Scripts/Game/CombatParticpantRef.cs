@@ -1,11 +1,9 @@
 using System.Linq;
-using Assets._Scripts.Anim;
 using Sapia.Game.Combat;
 using Sapia.Game.Combat.Entities;
 using Sapia.Game.Combat.Steps;
 using Unity.VisualScripting;
 using UnityEngine;
-using static Assets._Scripts.Anim.AnimManager;
 
 namespace Assets._Scripts.Game
 {
@@ -71,11 +69,11 @@ namespace Assets._Scripts.Game
                 }
                 else
                 {
-                    //transform.LookAt(-currentPos);
+                    //transform.LookAt(-currentPos); // needs to be set up to not rotate camera
                 }
-                _anim.PlayAnim(animName.move, 0);
+                _anim.PlayRandomAnimation(AnimManager.animName.move);
                 Invoke(nameof(Step), .5f);
-                _anim.PlayAnim(animName.idle, 0);
+                //_anim.PlayRandomAnimation(AnimManager.animName.idle);
 
             }
 
@@ -85,7 +83,7 @@ namespace Assets._Scripts.Game
                 {
                     // An ability was used by this actor. Play the attack animation t
                     // Then wait for all others to finish animating
-                    _anim.PlayAnim(AnimManager.animName.ability, 0);
+                    _anim.PlayAnimation(AnimManager.animName.ability, 0); // needs to reference animation index in ability data
                     _isResponsibleForNextStep = true;
                 }
                 else
@@ -98,11 +96,11 @@ namespace Assets._Scripts.Game
                         {
                             if (Participant.Character.IsAlive)
                             {
-                                _anim.PlayAnim(AnimManager.animName.hit, 0);
+                                _anim.PlayRandomAnimation(AnimManager.animName.hit);
                             }
                             else
                             {
-                                _anim.PlayAnim(AnimManager.animName.death, 0);
+                                _anim.PlayRandomAnimation(AnimManager.animName.death);
                             }
                             break;
                         }
