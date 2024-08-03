@@ -1,5 +1,5 @@
 ﻿using Sapia.Game.Structs.Dice;
-using Sapia.Game.Types;
+using Sapia.Game.Types.Entities;
 
 namespace Sapia.Game.Combat.Entities;
 

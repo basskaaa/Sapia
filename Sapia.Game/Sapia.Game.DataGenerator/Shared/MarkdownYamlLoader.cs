@@ -3,7 +3,7 @@ using PtahBuilder.BuildSystem.Entities;
 using PtahBuilder.BuildSystem.Execution.Abstractions;
 using PtahBuilder.BuildSystem.Extensions;
 using PtahBuilder.BuildSystem.Services.Serialization;
-using Sapia.Game.Entities.Interfaces;
+using Sapia.Game.Types.Interfaces;
 
 namespace Sapia.Game.DataGenerator.Shared;
 

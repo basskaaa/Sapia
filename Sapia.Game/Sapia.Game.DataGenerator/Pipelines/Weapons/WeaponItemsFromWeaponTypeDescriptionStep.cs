@@ -1,8 +1,8 @@
 ﻿using PtahBuilder.BuildSystem.Entities;
 using PtahBuilder.BuildSystem.Execution.Abstractions;
 using PtahBuilder.BuildSystem.Extensions;
-using Sapia.Game.Entities.Items.Weapons;
 using Sapia.Game.Services;
+using Sapia.Game.Types.Entities;
 
 namespace Sapia.Game.DataGenerator.Pipelines.Weapons;
 

@@ -1,5 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using Sapia.Game.Entities.Interfaces;
+using Sapia.Game.Types.Interfaces;
 
 namespace Sapia.Game.Types;
 

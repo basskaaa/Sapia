@@ -2,7 +2,7 @@
 using Sapia.Game.Combat.Entities.Enums;
 using Sapia.Game.Structs;
 using Sapia.Game.Types.Enums;
-using Sapia.Game.Types;
+using Sapia.Game.Types.Entities;
 
 namespace Sapia.Game.Combat;
 

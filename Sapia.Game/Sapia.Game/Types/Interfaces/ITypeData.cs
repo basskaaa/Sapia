@@ -1,4 +1,4 @@
-﻿namespace Sapia.Game.Entities.Interfaces;
+﻿namespace Sapia.Game.Types.Interfaces;
 
 public interface ITypeData
 {

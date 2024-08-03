@@ -1,4 +1,4 @@
-﻿namespace Sapia.Game.Types;
+﻿namespace Sapia.Game.Types.Entities;
 
 public class ClassType : TypeData
 {

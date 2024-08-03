@@ -1,5 +1,5 @@
 ﻿using Sapia.Game.Combat.Entities.Enums;
-using Sapia.Game.Types;
+using Sapia.Game.Types.Entities;
 
 namespace Sapia.Game.Combat.Entities;
 

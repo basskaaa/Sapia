@@ -1,7 +1,7 @@
 ﻿using Sapia.Game.Combat.Entities.Enums;
 using Sapia.Game.Types.Enums;
 
-namespace Sapia.Game.Types;
+namespace Sapia.Game.Types.Entities;
 
 public class AbilityType : TypeDataWithDescription
 {

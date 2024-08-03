@@ -1,8 +1,8 @@
 ﻿using PtahBuilder.BuildSystem.Config;
-using Sapia.Game.Entities.Items.Weapons;
 using PtahBuilder.BuildSystem.Steps.Output;
 using PtahBuilder.BuildSystem.Steps.Process;
 using Sapia.Game.DataGenerator.Shared;
+using Sapia.Game.Types.Entities;
 
 namespace Sapia.Game.DataGenerator.Pipelines.Weapons;
 
