@@ -4,7 +4,7 @@ Damage:
 Weight:
   - Great
 Value: 5
-Item tags:
+Tags:
   - Combat
 ---
 - Great Staff. 5gp

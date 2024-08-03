@@ -4,7 +4,7 @@ Damage:
 Weight:
   - Heavy
 Value: 3
-Item tags:
+Tags:
   - Combat
 ---
 - Mages Staff. 3gp

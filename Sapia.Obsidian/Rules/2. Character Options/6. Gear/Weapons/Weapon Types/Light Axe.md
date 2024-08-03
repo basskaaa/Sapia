@@ -4,7 +4,7 @@ Damage:
 Weight:
   - Light
 Value: 2
-Item tags:
+Tags:
   - Combat
 ---
 - Hatchet. 2gp

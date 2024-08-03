@@ -3,7 +3,7 @@ Damage:
   - d6
 Weight:
   - Light
-Item tags:
+Tags:
   - Combat
 ---
 - Javelin. 1sp

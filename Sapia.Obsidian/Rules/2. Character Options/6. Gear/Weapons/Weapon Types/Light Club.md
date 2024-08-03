@@ -4,7 +4,7 @@ Damage:
 Weight:
   - Light
 Value: 0.5
-Item tags:
+Tags:
   - Combat
 ---
 - Cudgel. 4sp

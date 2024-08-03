@@ -3,7 +3,7 @@ Damage:
   - d10
 Weight:
   - Medium
-Item tags:
+Tags:
   - Combat
 ---
 - Warhammer

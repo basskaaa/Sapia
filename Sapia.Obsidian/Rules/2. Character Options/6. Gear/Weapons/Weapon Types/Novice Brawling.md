@@ -6,6 +6,6 @@ Weight:
 Weapon Range:
   - 6ft
 Value: 
-Item tags:
+Tags:
   - Combat
 ---

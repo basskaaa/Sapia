@@ -4,6 +4,6 @@ Damage:
 Weight:
   - Great
 Value: 8
-Item tags:
+Tags:
   - Combat
 ---

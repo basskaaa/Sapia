@@ -4,7 +4,7 @@ Damage:
 Weight:
   - Heavy
 Value: 12
-Item tags:
+Tags:
   - Combat
 ---
 - Lumber axe. 3gp

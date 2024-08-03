@@ -17,7 +17,7 @@
     "Damage": "multitext",
     "Weight": "multitext",
     "Value": "number",
-    "Item tags": "multitext",
+    "Tags": "multitext",
     "Rarity": "multitext",
     "Weapon Range": "multitext",
     "Weapon Type": "multitext",

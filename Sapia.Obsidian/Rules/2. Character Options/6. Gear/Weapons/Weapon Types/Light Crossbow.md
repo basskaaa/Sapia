@@ -4,7 +4,7 @@ Damage:
 Weight:
   - Light
 Value: 15
-Item tags:
+Tags:
   - Combat
 ---
 - Hand crossbow. 15gp

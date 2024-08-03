@@ -4,7 +4,7 @@ Damage:
 Weight:
   - Medium
 Value: 1
-Item tags:
+Tags:
   - Combat
 ---
 - Wooden club. 2sp

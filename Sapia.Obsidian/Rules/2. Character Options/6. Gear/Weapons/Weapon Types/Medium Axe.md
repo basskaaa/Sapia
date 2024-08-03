@@ -4,7 +4,7 @@ Damage:
 Weight:
   - Medium
 Value: 6
-Item tags:
+Tags:
   - Combat
 ---
 - Battleaxe. 6gp

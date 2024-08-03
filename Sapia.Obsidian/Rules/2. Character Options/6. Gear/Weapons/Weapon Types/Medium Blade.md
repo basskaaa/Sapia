@@ -4,7 +4,7 @@ Damage:
 Weight:
   - Medium
 Value: 3
-Item tags:
+Tags:
   - Combat
 ---
 - Shortsword. 3gp

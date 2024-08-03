@@ -4,5 +4,5 @@ Weight:
   - Medium
 Rarity: 
 Value: 
-Item tags: 
+Tags: 
 ---

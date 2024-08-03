@@ -6,7 +6,7 @@ Weight:
 Weapon Range:
   - 6ft
 Value: 
-Item tags:
+Tags:
   - Combat
 ---
 Apprentice Brawling is for people who are apprentices and they do brawling.

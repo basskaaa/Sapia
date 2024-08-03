@@ -4,7 +4,7 @@ Damage:
 Weight:
   - Heavy
 Value: 20
-Item tags:
+Tags:
   - Combat
 ---
 - Heavy crossbow. 20gp

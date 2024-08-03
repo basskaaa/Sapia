@@ -1,7 +1,7 @@
 ---
 Weight:
   - Great
-Item tags:
+Tags:
   - Worn
   - Combat
 ---

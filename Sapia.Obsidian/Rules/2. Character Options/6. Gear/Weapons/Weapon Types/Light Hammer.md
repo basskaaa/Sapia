@@ -4,7 +4,7 @@ Damage:
 Weight:
   - Light
 Value: 1
-Item tags:
+Tags:
   - Combat
 ---
 A hammer which lights up the room

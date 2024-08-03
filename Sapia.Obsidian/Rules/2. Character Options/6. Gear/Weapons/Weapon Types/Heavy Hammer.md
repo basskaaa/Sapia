@@ -4,7 +4,7 @@ Damage:
 Weight:
   - Heavy
 Value: 5
-Item tags:
+Tags:
   - Combat
 ---
 - Maul

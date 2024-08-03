@@ -1,5 +1,5 @@
 ---
 Value: 
-Item tags: 
+Tags: 
 Weight:
 ---

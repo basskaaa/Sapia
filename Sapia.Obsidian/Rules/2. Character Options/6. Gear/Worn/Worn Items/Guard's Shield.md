@@ -5,6 +5,6 @@ Weight:
 Rarity:
   - "[[Mundane]]"
 Value: 
-Item tags:
+Tags:
   - Worn
 ---

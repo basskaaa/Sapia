@@ -4,7 +4,7 @@ Damage:
 Weight:
   - Medium
 Value: 10
-Item tags:
+Tags:
   - Combat
 ---
 - Crossbow. 10gp

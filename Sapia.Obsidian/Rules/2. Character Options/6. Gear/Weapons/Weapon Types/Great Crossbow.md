@@ -4,7 +4,7 @@ Damage:
 Weight:
   - Great
 Value: 30
-Item tags:
+Tags:
   - Combat
 ---
 - Great crossbow. 30gp

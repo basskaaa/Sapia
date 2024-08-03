@@ -4,7 +4,7 @@ Damage:
 Weight:
   - Great
 Value: 15
-Item tags:
+Tags:
   - Combat
 ---
 - Great maul

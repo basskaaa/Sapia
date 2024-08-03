@@ -3,7 +3,7 @@ Damage:
   - d8
 Weight:
   - Medium
-Item tags:
+Tags:
   - Combat
 ---
 - Wood Spear. 5cp
