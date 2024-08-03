@@ -19,4 +19,6 @@ public class WeaponType : TypeDataWithDescription
     public string Type { get; set; } = string.Empty;
     public WeaponWeight Weight { get; set; } = WeaponWeight.Medium;
     public int Range { get; set; } = 1;
+
+    public string Masterwork { get; set; } = string.Empty;
 }

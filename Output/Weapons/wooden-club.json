@@ -1,0 +1,14 @@
+{
+  "Id": "wooden-club",
+  "Name": "Wooden club",
+  "Value": 0.2,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d6",
+  "Type": "medium club",
+  "Weight": 2,
+  "Range": 1,
+  "Masterwork": ""
+}

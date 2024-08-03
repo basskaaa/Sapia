@@ -1,0 +1,14 @@
+{
+  "Id": "medium-bow",
+  "Type": "medium bow",
+  "Weight": 4,
+  "Value": 15.0,
+  "Damage": "d6",
+  "Name": "Medium Bow",
+  "Description": [
+    "- Hunting bow"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

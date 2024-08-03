@@ -1,0 +1,14 @@
+{
+  "Id": "hunting-bow",
+  "Name": "Hunting bow",
+  "Value": 15.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d6",
+  "Type": "medium bow",
+  "Weight": 4,
+  "Range": 1,
+  "Masterwork": ""
+}

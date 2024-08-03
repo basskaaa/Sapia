@@ -1,0 +1,14 @@
+{
+  "Id": "light-hammer",
+  "Type": "light hammer",
+  "Weight": 1,
+  "Value": 1.0,
+  "Damage": "d6",
+  "Name": "Light Hammer",
+  "Description": [
+    "A hammer which lights up the room"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

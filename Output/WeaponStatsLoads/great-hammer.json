@@ -1,0 +1,14 @@
+{
+  "Id": "great-hammer",
+  "Type": "great hammer",
+  "Weight": 4,
+  "Value": 15.0,
+  "Damage": "d20",
+  "Name": "Great Hammer",
+  "Description": [
+    "- Great maul"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

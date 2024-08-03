@@ -1,0 +1,15 @@
+{
+  "Id": "light-club",
+  "Type": "light club",
+  "Weight": 1,
+  "Value": 0.5,
+  "Damage": "d4",
+  "Name": "Light Club",
+  "Description": [
+    "- Cudgel. 4sp",
+    "- Baton. 5sp"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

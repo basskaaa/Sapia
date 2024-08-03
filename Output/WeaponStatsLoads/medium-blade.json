@@ -1,0 +1,15 @@
+{
+  "Id": "medium-blade",
+  "Type": "medium blade",
+  "Weight": 2,
+  "Value": 3.0,
+  "Damage": "d8",
+  "Name": "Medium Blade",
+  "Description": [
+    "- Shortsword. 3gp",
+    "- Rapier. 5gp"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

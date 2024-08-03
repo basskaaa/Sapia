@@ -1,0 +1,14 @@
+{
+  "Id": "greatsword",
+  "Name": "Greatsword",
+  "Value": 15.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d12",
+  "Type": "great blade",
+  "Weight": 4,
+  "Range": 1,
+  "Masterwork": ""
+}

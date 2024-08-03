@@ -1,0 +1,14 @@
+{
+  "Id": "hatchet",
+  "Name": "Hatchet",
+  "Value": 2.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d6",
+  "Type": "light axe",
+  "Weight": 1,
+  "Range": 1,
+  "Masterwork": ""
+}

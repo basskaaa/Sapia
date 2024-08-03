@@ -1,0 +1,14 @@
+{
+  "Id": "heavy-crossbow",
+  "Type": "heavy crossbow",
+  "Weight": 3,
+  "Value": 20.0,
+  "Damage": "d12",
+  "Name": "Heavy Crossbow",
+  "Description": [
+    "- Heavy crossbow. 20gp"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

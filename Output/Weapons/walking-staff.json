@@ -1,0 +1,11 @@
+{
+  "Id": "walking-staff",
+  "Name": "walking-staff",
+  "Description": [],
+  "Tags": [],
+  "Damage": "d4",
+  "Type": "Club",
+  "Weight": 2,
+  "Range": 1,
+  "Masterwork": ""
+}

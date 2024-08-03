@@ -1,0 +1,13 @@
+{
+  "Id": "medium-polearm",
+  "Type": "medium polearm",
+  "Weight": 2,
+  "Damage": "d8",
+  "Name": "Medium Polearm",
+  "Description": [
+    "- Wood Spear. 5cp"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

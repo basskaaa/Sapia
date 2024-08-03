@@ -1,0 +1,14 @@
+{
+  "Id": "medium-axe",
+  "Type": "medium axe",
+  "Weight": 2,
+  "Value": 6.0,
+  "Damage": "d10",
+  "Name": "Medium Axe",
+  "Description": [
+    "- Battleaxe. 6gp"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

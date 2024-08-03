@@ -1,0 +1,14 @@
+{
+  "Id": "medium-hammer",
+  "Type": "medium hammer",
+  "Weight": 2,
+  "Damage": "d10",
+  "Name": "Medium Hammer",
+  "Description": [
+    "- Warhammer",
+    "- Pickaxe"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

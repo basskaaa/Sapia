@@ -1,0 +1,14 @@
+{
+  "Id": "maul",
+  "Name": "Maul",
+  "Value": 5.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d12",
+  "Type": "heavy hammer",
+  "Weight": 3,
+  "Range": 1,
+  "Masterwork": ""
+}

@@ -1,0 +1,14 @@
+{
+  "Id": "great-club",
+  "Type": "great club",
+  "Weight": 4,
+  "Value": 5.0,
+  "Damage": "d12",
+  "Name": "Great Club",
+  "Description": [
+    "- Great Staff. 5gp"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

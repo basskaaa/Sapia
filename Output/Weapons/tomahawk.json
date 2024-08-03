@@ -1,0 +1,14 @@
+{
+  "Id": "tomahawk",
+  "Name": "Tomahawk",
+  "Value": 4.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d6",
+  "Type": "light axe",
+  "Weight": 1,
+  "Range": 1,
+  "Masterwork": ""
+}

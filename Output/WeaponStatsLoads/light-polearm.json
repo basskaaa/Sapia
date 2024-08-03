@@ -1,0 +1,13 @@
+{
+  "Id": "light-polearm",
+  "Type": "light polearm",
+  "Weight": 1,
+  "Damage": "d6",
+  "Name": "Light Polearm",
+  "Description": [
+    "- Javelin. 1sp"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

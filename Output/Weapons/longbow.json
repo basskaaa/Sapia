@@ -1,0 +1,14 @@
+{
+  "Id": "longbow",
+  "Name": "Longbow",
+  "Value": 15.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d8",
+  "Type": "heavy bow",
+  "Weight": 3,
+  "Range": 1,
+  "Masterwork": ""
+}

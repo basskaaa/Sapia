@@ -1,0 +1,12 @@
+{
+  "Id": "heavy-blade",
+  "Type": "heavy blade",
+  "Weight": 4,
+  "Value": 8.0,
+  "Damage": "d10",
+  "Name": "Heavy Blade",
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Id": "light-bow",
+  "Type": "light bow",
+  "Weight": 4,
+  "Value": 15.0,
+  "Damage": "d4",
+  "Name": "Light Bow",
+  "Description": [
+    "- Shortbow"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

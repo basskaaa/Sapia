@@ -1,0 +1,14 @@
+{
+  "Id": "lumber-axe",
+  "Name": "Lumber axe",
+  "Value": 3.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d12",
+  "Type": "heavy axe",
+  "Weight": 3,
+  "Range": 1,
+  "Masterwork": ""
+}

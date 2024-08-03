@@ -1,0 +1,10 @@
+{
+  "Id": "basic-brawling",
+  "Type": "basic brawling",
+  "Damage": "d3",
+  "Name": "Basic Brawling",
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ]
+}

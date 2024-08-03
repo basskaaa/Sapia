@@ -1,0 +1,14 @@
+{
+  "Id": "great-staff",
+  "Name": "Great Staff",
+  "Value": 5.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d12",
+  "Type": "great club",
+  "Weight": 4,
+  "Range": 1,
+  "Masterwork": ""
+}

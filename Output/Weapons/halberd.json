@@ -1,0 +1,14 @@
+{
+  "Id": "halberd",
+  "Name": "Halberd",
+  "Value": 20.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d10",
+  "Type": "heavy polearm",
+  "Weight": 3,
+  "Range": 1,
+  "Masterwork": ""
+}

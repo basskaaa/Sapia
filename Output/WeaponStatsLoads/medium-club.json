@@ -1,0 +1,15 @@
+{
+  "Id": "medium-club",
+  "Type": "medium club",
+  "Weight": 2,
+  "Value": 1.0,
+  "Damage": "d6",
+  "Name": "Medium Club",
+  "Description": [
+    "- Wooden club. 2sp",
+    "- Bo Staff. 1gp"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

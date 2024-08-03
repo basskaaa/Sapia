@@ -1,0 +1,14 @@
+{
+  "Id": "great-blade",
+  "Type": "great blade",
+  "Weight": 4,
+  "Value": 15.0,
+  "Damage": "d12",
+  "Name": "Great Blade",
+  "Description": [
+    "- Greatsword. 15gp"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}

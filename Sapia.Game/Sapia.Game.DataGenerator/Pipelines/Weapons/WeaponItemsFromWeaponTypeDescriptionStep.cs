@@ -33,11 +33,21 @@ public class WeaponTypeFromWeaponStatsLoadDescriptionStep : IStep<WeaponType>
 
                     var weaponType = new WeaponType
                     {
-                        Name = splits[0].Trim(),
-                        Value = splits.Length > 1 ? _goldService.Parse(splits[1]) : entity.Value
+                        Name = splits[0].Trim()
                     };
 
-                    context.AddEntity(weaponType);
+                    weaponType = context.AddEntity(weaponType).Value;
+
+                    if (splits.Length > 1 && weaponType.Value <= 0)
+                    {
+                        weaponType.Value = _goldService.Parse(splits[1]);
+                    }
+
+                    if (string.IsNullOrWhiteSpace(weaponType.Type))
+                    {
+                        weaponType.Type = entity.Type;
+                        weaponType.Weight = entity.Weight;
+                    }
 
                     description.RemoveAt(i);
                     i--;

@@ -1,0 +1,16 @@
+{
+  "Id": "heavy-polearm",
+  "Type": "heavy polearm",
+  "Weight": 3,
+  "Damage": "d10",
+  "Name": "Heavy Polearm",
+  "Description": [
+    "- Spear. 4gp",
+    "- Trident. 15gp",
+    "- Lance. 10gp",
+    "- Halberd. 20gp"
+  ],
+  "Tags": [
+    "Combat"
+  ]
+}
