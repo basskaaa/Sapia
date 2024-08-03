@@ -1,5 +1,5 @@
 ---
-Damage Die:
+Damage:
   - d3
 Weight:
   - None

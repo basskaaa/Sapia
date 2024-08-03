@@ -1,5 +1,5 @@
 ---
-Damage Die:
+Damage:
   - d6
 Weight:
   - Medium

@@ -1,5 +1,5 @@
 ---
-Damage Die:
+Damage:
   - d10
 Weight:
   - Great

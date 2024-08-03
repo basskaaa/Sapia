@@ -1,5 +1,5 @@
 ---
-Damage Die:
+Damage:
   - d8
 Weight:
   - Heavy

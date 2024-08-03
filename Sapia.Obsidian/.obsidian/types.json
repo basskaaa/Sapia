@@ -14,7 +14,7 @@
     "School": "multitext",
     "Target": "multitext",
     "Prerequisite": "multitext",
-    "Damage Die": "multitext",
+    "Damage": "multitext",
     "Weight": "multitext",
     "Value": "number",
     "Item tags": "multitext",
