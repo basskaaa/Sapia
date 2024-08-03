@@ -10,10 +10,13 @@ namespace Sapia.Game.DataGenerator.Pipelines.Weapons
         public string Type { get; set; } = string.Empty;
         public WeaponWeight Weight { get; set; }
 
+        public int Range { get; set; }
         public float Value { get; set; }
         public Dice Damage { get; set; } = new Dice(4);
 
         public string Name { get; set; }
         public string[] Description { get; set; } = Array.Empty<string>();
+
+        public string[] Tags { get; set; } = Array.Empty<string>();
     }
 }

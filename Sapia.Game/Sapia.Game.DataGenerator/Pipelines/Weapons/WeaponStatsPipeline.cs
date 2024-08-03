@@ -12,6 +12,7 @@ public static class WeaponStatsPipeline
         {
             p.AddInputStep<MarkdownYamlLoader<WeaponStatsLoad>>("../Rules/2. Character Options/6. Gear/Weapons/Weapon Types");
 
+            // Only output for validating
             p.AddOutputStep<JsonOutputStep<WeaponStatsLoad>>();
         });
     }

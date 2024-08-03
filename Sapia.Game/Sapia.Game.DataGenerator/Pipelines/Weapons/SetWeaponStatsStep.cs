@@ -49,6 +49,11 @@ namespace Sapia.Game.DataGenerator.Pipelines.Weapons
             {
                 weaponType.Value = weaponStats.Value;
             }
+
+            weaponType.Tags = weaponStats.Tags
+                .Union(weaponType.Tags)
+                .Distinct()
+                .ToArray();
         }
     }
 }

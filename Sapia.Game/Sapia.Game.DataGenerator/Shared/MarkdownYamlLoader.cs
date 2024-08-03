@@ -36,6 +36,10 @@ public class MarkdownYamlLoader<T> : IStep<T> where T : IHasDescription
     {
         var text = File.ReadAllText(file);
 
+        text = text
+            .Replace("\"[[", string.Empty)
+            .Replace("]]\"", string.Empty);
+
         var parts = text.Split("---", StringSplitOptions.RemoveEmptyEntries);
 
         var (entity, metadata) = _yamlService.DeserializeAndGetMetadata<T>(parts[0], _nodeNameToPropertyMappings);

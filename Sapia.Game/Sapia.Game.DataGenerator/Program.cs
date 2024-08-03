@@ -37,7 +37,7 @@ await new BuilderFactory()
             // Load actual entities
             x.AddPipelinePhase(phase =>
             {
-                // phase.AddWeaponTypePipeline);
+                phase.AddWeaponTypePipeline();
             });
 
         })
