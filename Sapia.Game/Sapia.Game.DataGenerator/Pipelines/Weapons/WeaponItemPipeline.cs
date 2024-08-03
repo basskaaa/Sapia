@@ -1,36 +1,23 @@
 ﻿using PtahBuilder.BuildSystem.Config;
 using PtahBuilder.BuildSystem.Steps.Output;
-using PtahBuilder.BuildSystem.Steps.Process;
 using Sapia.Game.DataGenerator.Shared;
 using Sapia.Game.Types.Entities;
 
 namespace Sapia.Game.DataGenerator.Pipelines.Weapons;
 
-public static class WeaponItemPipeline
+public static class WeaponTypePipeline
 {
-    public static void AddWeaponItemPipeline(this PhaseAddContext phase)
+    public static void AddWeaponTypePipeline(this PhaseAddContext phase)
     {
-        phase.AddPipeline<WeaponItem>(p =>
+        phase.AddPipeline<WeaponType>(p =>
         {
-            p.AddInputStep<MarkdownYamlLoader<WeaponItem>>("Rules/2. Character Options/6. Gear/Weapons/Weapon Items", new Dictionary<string, string>()
-            {
-                {"Weapon Range", "Range" },
-                {"Value (gp)", "Value"},
-                {"Item tags", "Tags"},
-                {"Weapon Type", "WeaponType"}
-            });
+            p.AddInputStep<MarkdownYamlLoader<WeaponType>>("Weapons");
 
-            p.AddInputStep<WeaponItemsFromWeaponTypeDescriptionStep>();
+            p.AddInputStep<WeaponTypeFromWeaponStatsLoadDescriptionStep>();
 
-            p.AddProcessStep<ReferenceFixStep<WeaponItem>>(new[] { nameof(WeaponItem.WeaponType) }.ToList());
+            p.AddProcessStep<SetWeaponStatsStep>();
 
-            p.AddOutputStep<ValidateEntityReferenceStep<WeaponItem, WeaponType>>(new ValidationConfig<WeaponItem>()
-            {
-                IsRequired = true,
-                PropertyName = nameof(WeaponItem.WeaponType)
-            });
-
-            p.AddOutputStep<JsonOutputStep<WeaponItem>>();
+            p.AddOutputStep<JsonOutputStep<WeaponType>>();
         });
     }
 }

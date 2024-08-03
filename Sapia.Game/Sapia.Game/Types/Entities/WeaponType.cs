@@ -1,6 +1,4 @@
-﻿using Sapia.Game.Entities.Interfaces;
-using Sapia.Game.Structs.Dice;
-using Sapia.Game.Types;
+﻿using Sapia.Game.Structs.Dice;
 using Sapia.Game.Types.Enums;
 
 namespace Sapia.Game.Types.Entities;

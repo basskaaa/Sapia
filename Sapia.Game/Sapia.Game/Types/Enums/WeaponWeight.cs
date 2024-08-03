@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Sapia.Game.Types.Enums
+﻿namespace Sapia.Game.Types.Enums
 {
     public enum WeaponWeight
     {

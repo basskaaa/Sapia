@@ -28,10 +28,16 @@ await new BuilderFactory()
             x.DeleteOutputDirectory = true;
             x.MissingIdPreference = MissingIdPreference.SourceFile;
 
+            // Load any shared or build data
             x.AddPipelinePhase(phase =>
             {
-                phase.AddWeaponTypePipeline();
-                phase.AddWeaponItemPipeline();
+                phase.AddWeaponStatsPipeline();
+            });
+
+            // Load actual entities
+            x.AddPipelinePhase(phase =>
+            {
+                // phase.AddWeaponTypePipeline);
             });
 
         })
