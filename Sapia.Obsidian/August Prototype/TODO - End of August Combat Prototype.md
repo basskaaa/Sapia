@@ -18,7 +18,10 @@
 	- [x] Randomisation ✅ 2024-08-02
 	- [ ] Reference ability data for ability anim index
 	- [ ] Store anims in scriptable object
+	- [ ] Move anim event call fix
 - [ ] Camera follow system
+	- [ ] Camera pan
+	- [ ] Camera rotate
 - [x] Turn-based interation ✅ 2024-08-02
 - [x] Enemy ai ✅ 2024-08-01
 - [x] Grid movement ✅ 2024-08-01

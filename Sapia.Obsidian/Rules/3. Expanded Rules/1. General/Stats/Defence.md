@@ -1,0 +1,1 @@
+Species base defence + dex bonus + armour bonus (+ shield when equipped)

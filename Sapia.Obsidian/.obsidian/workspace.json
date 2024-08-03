@@ -4,16 +4,46 @@
     "type": "split",
     "children": [
       {
-        "id": "62e74b8ca438bc16",
+        "id": "4c5812ddc999a1e1",
         "type": "tabs",
         "children": [
           {
-            "id": "8737dfac28a78a3a",
+            "id": "6640fa89bd3ceb3a",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "August Prototype/Stats sources.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "c915008494f567d3",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rules/Test Characters/Evad (L2 Fighter).md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "6252b8d97125f401",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "August Prototype/TODO - End of August Combat Prototype.md",
+                "file": "Rules/1. Basic Rules/Levels and Power.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +79,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "concentration",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "August Prototype/TODO - End of August Combat Prototype.md",
+                "file": "August Prototype/Stats sources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "August Prototype/TODO - End of August Combat Prototype.md",
+                "file": "August Prototype/Stats sources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "August Prototype/TODO - End of August Combat Prototype.md"
+                "file": "August Prototype/Stats sources.md"
               }
             }
           }
@@ -164,38 +194,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8737dfac28a78a3a",
+  "active": "6640fa89bd3ceb3a",
   "lastOpenFiles": [
-    "August Prototype/Abilities/Attack.md",
-    "August Prototype/Abilities/Deflect.md",
-    "Rules/3. Expanded Rules/6. Ability Properties/Duration Types/Until saved or ended by caster.md",
-    "August Prototype/TODO - End of August Combat Prototype.md",
-    "August Prototype/Implementation/ReactionEvents/LeavesRange.md",
-    "August Prototype/Implementation/ReactionEvents/KillingBlow.md",
-    "August Prototype/Implementation/ReactionEvents/EntersRange.md",
-    "August Prototype/Implementation/ReactionEvents/AttackMiss.md",
-    "August Prototype/Implementation/ReactionEvents/AttackHit.md",
-    "August Prototype/Implementation/ReactionEvents/Attacked.md",
-    "August Prototype/Implementation/Targets/ReactionTarget.md",
-    "August Prototype/Implementation/Targets/ReactionSource.md",
-    "August Prototype/Implementation/Targets/Other.md",
-    "August Prototype/Implementation/ForcedResolutions/Miss.md",
+    "Rules/1. Basic Rules/Levels and Power.md",
+    "Rules/2. Character Options/0. General/GEAR.md",
+    "August Prototype/Stats sources.md",
+    "Rules/Test Characters/Evad (L2 Fighter).md",
+    "Rules/2. Character Options/5. Traits/Species/Human Versatility.md",
+    "Rules/2. Character Options/5. Traits/Experience/Crowd Control.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighter Max Abilities.md",
+    "Rules/2. Character Options/2. Backgrounds/Environment/Grasslands.md",
+    "Rules/2. Character Options/2. Backgrounds/Blessing/Jevel.md",
+    "Rules/2. Character Options/2. Backgrounds/Lifestyle/Guard of the People.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighting Styles/Defender.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighter Ability Modifier.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighter Ability DC.md",
+    "Rules/1. Basic Rules/Attributes, Instincts, and Skills.md",
+    "_Main/Templates/Adventurer Template.md",
+    "Rules/3. Expanded Rules/1. General/Instincts/Luck.md",
+    "Rules/3. Expanded Rules/5. Conditions/Unlucky.md",
+    "Rules/Test Characters/Tomas (L5 Cleric).md",
+    "Rules/3. Expanded Rules/1. General/Instincts/Concentration.md",
+    "Rules/2. Character Options/1. Species/Human Species.md",
+    "Rules/2. Character Options/1. Species/Dwarf Species.md",
+    "Rules/2. Character Options/3. Classes/Class Features/Fighter Features/Fighter Level 1/Fighter Proficiencies.md",
+    "Rules/2. Character Options/0. General/Speed.md",
+    "Rules/3. Expanded Rules/1. General/Stats/Power Modifier.md",
+    "Rules/3. Expanded Rules/1. General/Stats/Defence.md",
+    "August Prototype/Fighter Sheet.md",
+    "Rules/4. NPC Creation",
     "August Prototype/Implementation/ReactionEvents",
     "August Prototype/Implementation/Targets",
     "August Prototype/Implementation/ForcedResolutions",
     "August Prototype/Implementation",
-    "August Prototype/Abilities/Block.md",
-    "August Prototype/Abilities/Attack of Opportunity.md",
-    "August Prototype/End of August Combat Prototype.md",
-    "August Prototype/Abilities/Distraction.md",
-    "August Prototype/Abilities/Double Tap.md",
-    "August Prototype/Abilities/Intimidate.md",
-    "August Prototype/Abilities/Quick Attack.md",
-    "August Prototype/Abilities/Taunt.md",
-    "August Prototype/Abilities/Sunder Armour.md",
-    "August Prototype/Abilities/Stand Firm.md",
-    "August Prototype/Abilities/Cleave.md",
-    "August Prototype/Abilities/Dash.md",
     "August Prototype/Abilities",
     "August Prototype",
     "_Main/Images/Progress Images/Image Sequence_001_0000 1.jpg",
@@ -207,7 +238,6 @@
     "_Main/Images/Progress Images/Pasted image 20240423165153.png",
     "Setting/Locations",
     "Rules/3. Expanded Rules/7. Gear Properties/Rarity Types",
-    "Rules/3. Expanded Rules/7. Gear Properties",
     "_Main/Images/Progress Images/Image Sequence_013_0000.jpg",
     "_Main/Images/Progress Images/Image Sequence_012_0000_1.jpg",
     "_Main/Images/Progress Images/Image Sequence_012_0000.jpg",
