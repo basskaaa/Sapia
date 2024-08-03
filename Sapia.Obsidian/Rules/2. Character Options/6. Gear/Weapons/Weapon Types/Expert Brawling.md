@@ -3,7 +3,7 @@ Damage:
   - d10
 Weight:
   - None
-Weapon Range:
+Range:
   - 9ft
 Value: 
 Tags:

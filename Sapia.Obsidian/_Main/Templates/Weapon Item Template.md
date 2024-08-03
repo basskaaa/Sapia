@@ -1,6 +1,6 @@
 ---
 Weapon Type: 
-Weapon Range: 
+Range: 
 Value: 
 Masterwork: 
 Tags:

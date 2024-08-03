@@ -3,7 +3,7 @@ Damage:
   - d12
 Weight:
   - Great
-Weapon Range:
+Range:
   - 300ft
 Value: 15
 Tags:
