@@ -1,6 +1,6 @@
 {
   "Id": "heavy-polearm",
-  "Type": "heavy polearm",
+  "Type": "Polearm",
   "Weight": 3,
   "Damage": "d10",
   "Name": "Heavy Polearm",

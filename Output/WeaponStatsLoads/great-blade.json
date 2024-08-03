@@ -1,6 +1,6 @@
 {
   "Id": "great-blade",
-  "Type": "great blade",
+  "Type": "Blade",
   "Weight": 4,
   "Value": 15.0,
   "Damage": "d12",

@@ -1,6 +1,6 @@
 {
   "Id": "medium-hammer",
-  "Type": "medium hammer",
+  "Type": "Hammer",
   "Weight": 2,
   "Damage": "d10",
   "Name": "Medium Hammer",

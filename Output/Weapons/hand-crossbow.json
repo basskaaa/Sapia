@@ -7,7 +7,7 @@
     "Combat"
   ],
   "Damage": "d8",
-  "Type": "light crossbow",
+  "Type": "Crossbow",
   "Weight": 1,
   "Range": 1,
   "Masterwork": ""

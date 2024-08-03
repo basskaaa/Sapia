@@ -1,6 +1,6 @@
 {
   "Id": "medium-polearm",
-  "Type": "medium polearm",
+  "Type": "Polearm",
   "Weight": 2,
   "Damage": "d8",
   "Name": "Medium Polearm",

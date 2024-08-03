@@ -1,6 +1,6 @@
 {
   "Id": "heavy-club",
-  "Type": "heavy club",
+  "Type": "Club",
   "Weight": 3,
   "Value": 3.0,
   "Damage": "d8",

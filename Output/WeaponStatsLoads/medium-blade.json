@@ -1,6 +1,6 @@
 {
   "Id": "medium-blade",
-  "Type": "medium blade",
+  "Type": "Blade",
   "Weight": 2,
   "Value": 3.0,
   "Damage": "d8",

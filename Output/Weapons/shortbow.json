@@ -6,8 +6,8 @@
   "Tags": [
     "Combat"
   ],
-  "Damage": "d4",
-  "Type": "light bow",
+  "Damage": "d12",
+  "Type": "Bow",
   "Weight": 4,
   "Range": 1,
   "Masterwork": ""

@@ -1,7 +1,8 @@
 {
   "Id": "medium-bow",
-  "Type": "medium bow",
+  "Type": "Bow",
   "Weight": 4,
+  "Range": 18,
   "Value": 15.0,
   "Damage": "d6",
   "Name": "Medium Bow",

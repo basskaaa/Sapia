@@ -1,6 +1,6 @@
 {
   "Id": "great-axe",
-  "Type": "great axe",
+  "Type": "Axe",
   "Weight": 4,
   "Value": 15.0,
   "Damage": "d20",

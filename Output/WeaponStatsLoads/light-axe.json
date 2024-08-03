@@ -1,6 +1,6 @@
 {
   "Id": "light-axe",
-  "Type": "light axe",
+  "Type": "Axe",
   "Weight": 1,
   "Value": 2.0,
   "Damage": "d6",

@@ -1,6 +1,6 @@
 {
   "Id": "great-club",
-  "Type": "great club",
+  "Type": "Club",
   "Weight": 4,
   "Value": 5.0,
   "Damage": "d12",

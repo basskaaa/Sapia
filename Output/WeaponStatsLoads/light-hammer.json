@@ -1,6 +1,6 @@
 {
   "Id": "light-hammer",
-  "Type": "light hammer",
+  "Type": "Hammer",
   "Weight": 1,
   "Value": 1.0,
   "Damage": "d6",

@@ -1,7 +1,8 @@
 {
   "Id": "heavy-bow",
-  "Type": "heavy bow",
+  "Type": "Bow",
   "Weight": 3,
+  "Range": 24,
   "Value": 15.0,
   "Damage": "d8",
   "Name": "Heavy Bow",

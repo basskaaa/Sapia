@@ -4,6 +4,7 @@ Damage:
 Weight:
   - Great
 Value: 30
+Range: 24
 Tags:
   - Combat
 ---

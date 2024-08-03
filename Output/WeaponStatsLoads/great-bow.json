@@ -1,7 +1,8 @@
 {
   "Id": "great-bow",
-  "Type": "great bow",
+  "Type": "Bow",
   "Weight": 4,
+  "Range": 36,
   "Value": 15.0,
   "Damage": "d12",
   "Name": "Great Bow",

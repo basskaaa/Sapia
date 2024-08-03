@@ -1,7 +1,8 @@
 {
   "Id": "light-crossbow",
-  "Type": "light crossbow",
+  "Type": "Crossbow",
   "Weight": 1,
+  "Range": 18,
   "Value": 15.0,
   "Damage": "d8",
   "Name": "Light Crossbow",

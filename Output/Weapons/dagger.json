@@ -3,8 +3,10 @@
   "Name": "dagger",
   "Value": 1.0,
   "Description": [],
-  "Tags": [],
-  "Damage": "d4",
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d8",
   "Type": "Blade",
   "Weight": 2,
   "Masterwork": ""

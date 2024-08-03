@@ -1,6 +1,6 @@
 {
   "Id": "heavy-blade",
-  "Type": "heavy blade",
+  "Type": "Blade",
   "Weight": 4,
   "Value": 8.0,
   "Damage": "d10",

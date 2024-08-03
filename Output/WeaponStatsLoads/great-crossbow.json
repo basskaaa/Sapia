@@ -1,7 +1,8 @@
 {
   "Id": "great-crossbow",
-  "Type": "great crossbow",
+  "Type": "Crossbow",
   "Weight": 4,
+  "Range": 24,
   "Value": 30.0,
   "Damage": "d20",
   "Name": "Great Crossbow",

@@ -1,6 +1,6 @@
 {
   "Id": "light-blade",
-  "Type": "light blade",
+  "Type": "Blade",
   "Weight": 1,
   "Value": 1.0,
   "Damage": "d4",

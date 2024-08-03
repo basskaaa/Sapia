@@ -35,7 +35,7 @@ public static class WeaponTypePipeline
             {
                 if (string.IsNullOrWhiteSpace(entity.Value.Type))
                 {
-                    entity.Value.Type = entity.Id.Split(' ').Last().Humanize();
+                    entity.Value.Type = entity.Id.Split('-').Last().Humanize();
                 }
             });
 

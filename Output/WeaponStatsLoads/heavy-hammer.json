@@ -1,6 +1,6 @@
 {
   "Id": "heavy-hammer",
-  "Type": "heavy hammer",
+  "Type": "Hammer",
   "Weight": 3,
   "Value": 5.0,
   "Damage": "d12",

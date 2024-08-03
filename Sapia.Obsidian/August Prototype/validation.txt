@@ -1,9 +1,0 @@
-WeaponType Validation Errors
-  dagger
-    SetWeaponStatsStep: Unable to find a WeaponStatsLoad for Medium Blade
-  guards-crossbow
-    SetWeaponStatsStep: Unable to find a WeaponStatsLoad for Medium Crossbow
-  longsword
-    SetWeaponStatsStep: Unable to find a WeaponStatsLoad for Medium Blade
-  walking-staff
-    SetWeaponStatsStep: Unable to find a WeaponStatsLoad for Medium Club

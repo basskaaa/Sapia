@@ -1,6 +1,6 @@
 {
   "Id": "light-club",
-  "Type": "light club",
+  "Type": "Club",
   "Weight": 1,
   "Value": 0.5,
   "Damage": "d4",

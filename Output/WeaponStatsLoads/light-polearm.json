@@ -1,6 +1,6 @@
 {
   "Id": "light-polearm",
-  "Type": "light polearm",
+  "Type": "Polearm",
   "Weight": 1,
   "Damage": "d6",
   "Name": "Light Polearm",
