@@ -2,6 +2,6 @@
 Tools & Trinkets Type: "[[Book]]"
 Weight: 
 Rarity: 
-Value (gp): 
+Value: 
 Item tags:
 ---

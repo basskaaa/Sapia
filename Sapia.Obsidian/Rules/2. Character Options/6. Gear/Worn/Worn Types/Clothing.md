@@ -1,6 +1,6 @@
 ---
 Item Type: 
-Value (gp): 
+Value: 
 Item tags: 
 Weight:
 ---

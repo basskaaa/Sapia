@@ -3,7 +3,7 @@ Damage Die:
   - d20
 Weight:
   - Great
-Value (gp): 30
+Value: 30
 Item tags:
   - Combat
 ---

@@ -1,0 +1,4 @@
+---
+Type: "[[Blade]]"
+Range: "[[Light]]"
+---

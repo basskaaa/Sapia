@@ -16,7 +16,7 @@
     "Prerequisite": "multitext",
     "Damage Die": "multitext",
     "Weight": "multitext",
-    "Value (gp)": "number",
+    "Value": "number",
     "Item tags": "multitext",
     "Rarity": "multitext",
     "Weapon Range": "multitext",

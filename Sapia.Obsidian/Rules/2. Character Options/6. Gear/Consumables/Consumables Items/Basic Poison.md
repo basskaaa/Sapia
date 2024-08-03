@@ -2,7 +2,7 @@
 Consumable Type: "[[Potion]]"
 Weight: 
 Rarity: 
-Value (gp): 
+Value: 
 Item tags:
 ---
 Can be applied to a weapon on a short rest.

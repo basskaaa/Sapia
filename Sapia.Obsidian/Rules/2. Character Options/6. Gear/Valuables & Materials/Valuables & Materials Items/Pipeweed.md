@@ -2,6 +2,6 @@
 Valuables & Materials Type: "[[Natural]]"
 Weight: 
 Rarity: 
-Value (gp): 
+Value: 
 Item tags:
 ---

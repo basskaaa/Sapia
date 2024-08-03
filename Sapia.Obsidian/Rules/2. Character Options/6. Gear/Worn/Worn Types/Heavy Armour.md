@@ -1,5 +1,5 @@
 ---
-Value (gp): 
+Value: 
 Item tags: 
 Weight:
 ---

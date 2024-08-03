@@ -5,7 +5,7 @@ Weight:
   - Great
 Weapon Range:
   - 300ft
-Value (gp): 15
+Value: 15
 Item tags:
   - Combat
 ---

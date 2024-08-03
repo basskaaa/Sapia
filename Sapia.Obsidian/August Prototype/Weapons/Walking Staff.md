@@ -1,0 +1,6 @@
+---
+Type:
+  - "[[Club]]"
+Weight: 
+  - "[[Medium]]"
+---

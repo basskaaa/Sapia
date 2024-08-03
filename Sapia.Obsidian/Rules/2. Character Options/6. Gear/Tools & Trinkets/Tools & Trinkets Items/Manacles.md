@@ -2,6 +2,6 @@
 Tools & Trinkets Type: "[[Manacles]]"
 Weight: 
 Rarity: 
-Value (gp): 
+Value: 
 Item tags:
 ---

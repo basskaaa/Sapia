@@ -4,7 +4,7 @@ Weight:
   - Light
 Rarity:
   - "[[Mundane]]"
-Value (gp): 
+Value: 
 Item tags:
   - Worn
 ---

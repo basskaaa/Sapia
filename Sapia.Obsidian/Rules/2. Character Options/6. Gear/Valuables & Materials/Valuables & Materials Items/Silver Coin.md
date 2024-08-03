@@ -2,6 +2,6 @@
 Valuables & Materials Type: "[[Coin]]"
 Weight: 
 Rarity: 
-Value (gp): 
+Value: 
 Item tags:
 ---

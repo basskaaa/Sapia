@@ -2,6 +2,6 @@
 Tools & Trinkets Type: "[[Lightcaster]]"
 Weight: 
 Rarity: 
-Value (gp): 
+Value: 
 Item tags: 
 ---

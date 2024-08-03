@@ -3,6 +3,6 @@ Tools & Trinkets Type: "[[Musical Instrument]]"
 Weight:
   - Medium
 Rarity: 
-Value (gp): 
+Value: 
 Item tags: 
 ---

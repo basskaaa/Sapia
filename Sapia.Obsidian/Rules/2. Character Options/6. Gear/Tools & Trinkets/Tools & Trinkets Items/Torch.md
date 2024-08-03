@@ -2,7 +2,7 @@
 Tools & Trinkets Type: "[[Lightcaster]]"
 Weight: 
 Rarity: 
-Value (gp): 
+Value: 
 Item tags: 
 ---
 - Creates dim light within a radius of 4m for 1 hour.

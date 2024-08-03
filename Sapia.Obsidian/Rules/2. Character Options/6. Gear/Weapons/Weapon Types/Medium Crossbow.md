@@ -3,7 +3,7 @@ Damage Die:
   - d10
 Weight:
   - Medium
-Value (gp): 10
+Value: 10
 Item tags:
   - Combat
 ---

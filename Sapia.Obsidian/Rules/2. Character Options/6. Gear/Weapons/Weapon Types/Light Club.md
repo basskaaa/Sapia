@@ -3,7 +3,7 @@ Damage Die:
   - d4
 Weight:
   - Light
-Value (gp): 0.5
+Value: 0.5
 Item tags:
   - Combat
 ---

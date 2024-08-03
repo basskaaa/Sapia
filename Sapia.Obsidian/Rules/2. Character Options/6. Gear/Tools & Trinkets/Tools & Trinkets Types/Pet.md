@@ -2,6 +2,6 @@
 Item Type: Tools & Trinkets
 Weight: 
 Rarity: 
-Value (gp): 
+Value: 
 Item tags:
 ---

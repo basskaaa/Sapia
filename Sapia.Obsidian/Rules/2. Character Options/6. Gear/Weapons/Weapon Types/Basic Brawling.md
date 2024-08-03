@@ -5,7 +5,7 @@ Weight:
   - None
 Weapon Range:
   - 3ft
-Value (gp): 
+Value: 
 Item tags:
   - Combat
 ---

@@ -2,6 +2,6 @@
 Item Type: 
 Weight: 
 Rarity: 
-Value (gp): 
+Value: 
 Item tags:
 ---
