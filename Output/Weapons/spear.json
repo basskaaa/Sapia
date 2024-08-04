@@ -1,0 +1,14 @@
+{
+  "Id": "spear",
+  "Name": "Spear",
+  "Value": 4.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d10",
+  "Type": "Polearm",
+  "Weight": 3,
+  "Range": 1,
+  "Masterwork": ""
+}

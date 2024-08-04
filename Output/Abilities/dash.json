@@ -1,0 +1,12 @@
+{
+  "Action": 2,
+  "Target": 1,
+  "Damage": 1,
+  "Range": 1,
+  "Description": [
+    "Your movement speed is doubled this turn.",
+    "*Notes: Can only be used once per turn.*"
+  ],
+  "Id": "dash",
+  "Name": "Dash"
+}

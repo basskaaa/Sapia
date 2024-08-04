@@ -1,0 +1,10 @@
+{
+  "Action": 3,
+  "Target": 2,
+  "Damage": 1,
+  "Description": [
+    "A target up to your size within range must succeed on a Strength saving throw or be [[Pinned]]. The grappled target can attempt to escape by repeating the saving throw as a starter action on their turn."
+  ],
+  "Id": "grapple",
+  "Name": "Grapple"
+}

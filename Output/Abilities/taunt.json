@@ -1,0 +1,11 @@
+{
+  "Action": 2,
+  "Target": 2,
+  "Damage": 1,
+  "Range": 6,
+  "Description": [
+    "The target must succeed on a Wisdom saving throw or attacks against them are made at advantage until the start of your next turn."
+  ],
+  "Id": "taunt",
+  "Name": "Taunt"
+}

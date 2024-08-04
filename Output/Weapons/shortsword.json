@@ -1,0 +1,14 @@
+{
+  "Id": "shortsword",
+  "Name": "Shortsword",
+  "Value": 3.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d8",
+  "Type": "Blade",
+  "Weight": 2,
+  "Range": 1,
+  "Masterwork": ""
+}

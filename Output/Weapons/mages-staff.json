@@ -1,0 +1,14 @@
+{
+  "Id": "mages-staff",
+  "Name": "Mages Staff",
+  "Value": 3.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d8",
+  "Type": "Club",
+  "Weight": 3,
+  "Range": 1,
+  "Masterwork": ""
+}

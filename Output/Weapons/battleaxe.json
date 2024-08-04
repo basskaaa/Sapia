@@ -1,0 +1,14 @@
+{
+  "Id": "battleaxe",
+  "Name": "Battleaxe",
+  "Value": 6.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d10",
+  "Type": "Axe",
+  "Weight": 2,
+  "Range": 1,
+  "Masterwork": ""
+}

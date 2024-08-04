@@ -1,0 +1,11 @@
+{
+  "Action": 5,
+  "Target": 5,
+  "Damage": 1,
+  "Range": 1,
+  "Description": [
+    "When you miss on an attack roll against a target, you reduce its defence by 1 until the start of your next turn."
+  ],
+  "Id": "distraction",
+  "Name": "Distraction"
+}
