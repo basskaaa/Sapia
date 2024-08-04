@@ -5,6 +5,7 @@ using PtahBuilder.Plugins.NewtonsoftJson;
 using PtahBuilder.Util.Helpers;
 using Sapia.Game.DataGenerator;
 using Sapia.Game.DataGenerator.JsonConverters;
+using Sapia.Game.DataGenerator.Pipelines.Abilities;
 using Sapia.Game.DataGenerator.Pipelines.Weapons;
 using Sapia.Game.Services;
 

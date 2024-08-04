@@ -1,12 +1,10 @@
-﻿using Humanizer;
-using PtahBuilder.BuildSystem.Config;
-using PtahBuilder.BuildSystem.Entities;
+﻿using PtahBuilder.BuildSystem.Config;
+using PtahBuilder.BuildSystem.Services.Serialization;
 using PtahBuilder.BuildSystem.Steps.Output;
-using PtahBuilder.BuildSystem.Steps.Process;
 using Sapia.Game.DataGenerator.Shared;
 using Sapia.Game.Types.Entities;
 
-namespace Sapia.Game.DataGenerator.Pipelines.Weapons;
+namespace Sapia.Game.DataGenerator.Pipelines.Abilities;
 
 public static class AbilitiesPipeline
 {
@@ -14,10 +12,13 @@ public static class AbilitiesPipeline
     {
         phase.AddPipeline<AbilityType>(p =>
         {
-            p.DuplicateIdBehaviour = DuplicateIdBehaviour.ReturnExistingEntity;
+            var settings = new YamlDeserializationSettings
+            {
+                UnmatchedPropertyAction = UnmatchedPropertyAction.Warn
+            };
 
-            p.AddInputStep<MarkdownYamlLoader<AbilityType>>("Abilities");
-            
+            p.AddInputStep<MarkdownYamlLoader<AbilityType>>("Abilities", settings);
+
             p.AddOutputStep<JsonOutputStep<AbilityType>>();
         });
     }

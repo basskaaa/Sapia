@@ -12,14 +12,14 @@ public class MarkdownYamlLoader<T> : IStep<T> where T : IHasDescription
     private readonly IFilesConfig _filesConfig;
     private readonly IYamlService _yamlService;
     private readonly string _directory;
-    private readonly Dictionary<string, string>? _nodeNameToPropertyMappings;
+    private readonly YamlDeserializationSettings? _settings;
 
-    public MarkdownYamlLoader(IFilesConfig filesConfig, IYamlService yamlService, string directory, Dictionary<string, string>? nodeNameToPropertyMappings = null)
+    public MarkdownYamlLoader(IFilesConfig filesConfig, IYamlService yamlService, string directory, YamlDeserializationSettings? settings = null)
     {
         _filesConfig = filesConfig;
         _directory = directory;
         _yamlService = yamlService;
-        _nodeNameToPropertyMappings = nodeNameToPropertyMappings;
+        _settings = settings;
     }
 
     public Task Execute(IPipelineContext<T> context, IReadOnlyCollection<Entity<T>> entities)
@@ -42,7 +42,7 @@ public class MarkdownYamlLoader<T> : IStep<T> where T : IHasDescription
 
         var parts = text.Split("---", StringSplitOptions.RemoveEmptyEntries);
 
-        var (entity, metadata) = _yamlService.DeserializeAndGetMetadata<T>(parts[0], _nodeNameToPropertyMappings);
+        var (entity, metadata) = _yamlService.DeserializeAndGetMetadata<T>(parts[0], _settings);
 
         entity.Name = Path.GetFileNameWithoutExtension(file).Trim();
         entity.Description = parts[1].Split(new string[] { Environment.NewLine, "\n" }, StringSplitOptions.RemoveEmptyEntries).Select(x => x.Trim()).ToArray();
