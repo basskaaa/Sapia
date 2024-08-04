@@ -3,6 +3,7 @@
   "Target": 2,
   "Damage": 1,
   "Range": 6,
+  "Rank": 2,
   "Description": [
     "Attacks against the target are made at advantage until the start of your next turn."
   ],

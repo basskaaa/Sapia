@@ -3,6 +3,7 @@
   "Target": 5,
   "Damage": 1,
   "Range": 1,
+  "Rank": 1,
   "Description": [
     "When you hit on an attack roll against a target, you reduce its defence by 1 until the start of your next turn."
   ],
