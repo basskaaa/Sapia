@@ -22,6 +22,11 @@ public static class AbilitiesPipeline
                         {
                             PreProcess = s=>s.Replace("Action", string.Empty).Trim()
                         }
+                    },
+                    { nameof(AbilityType.Rank), new()
+                        {
+                            PreProcess = s=>s.Replace("Rank", string.Empty).Trim()
+                        }
                     }
                 }
             };

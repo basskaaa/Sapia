@@ -3,6 +3,7 @@
   "Target": 2,
   "Damage": 1,
   "Range": 1,
+  "Rank": 1,
   "Description": [
     "When you make a killing blow against a creature at range, you can attack another target within range.",
     "Andy Note: this is to demonstrate the ranged counterpart to Cleave."

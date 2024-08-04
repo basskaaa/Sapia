@@ -3,6 +3,7 @@
   "Target": 4,
   "Damage": 1,
   "Range": 1,
+  "Rank": 1,
   "Description": [
     "When a creature makes a melee attack against you, the creature must succeed on a Strength saving throw or miss the attack, and you can attack the target."
   ],

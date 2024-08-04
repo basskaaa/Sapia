@@ -3,6 +3,7 @@
   "Target": 1,
   "Damage": 1,
   "Range": 1,
+  "Rank": 1,
   "Description": [
     "When a foe enters your melee range, your defence is increased by 2 until the start of your next turn."
   ],

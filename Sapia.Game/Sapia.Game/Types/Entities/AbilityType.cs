@@ -14,4 +14,6 @@ public class AbilityType : TypeDataWithDescription
     public int Damage { get; set; } = 1;
 
     public int Range { get; set; } = 1;
+
+    public int Rank { get; set; } = 0;
 }
