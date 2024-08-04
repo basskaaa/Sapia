@@ -38,9 +38,6 @@ public static class WeaponTypePipeline
                     entity.Value.Type = entity.Id.Split('-').Last().Humanize();
                 }
             });
-
-            // Only output for validating
-            p.AddOutputStep<JsonOutputStep<WeaponStatsLoad>>();
         });
     }
 }
