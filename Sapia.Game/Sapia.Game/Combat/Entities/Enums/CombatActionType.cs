@@ -4,6 +4,7 @@ public enum CombatActionType
 {
     Starter = 1,
     Main = 2,
-    Free = 3,
-    Reaction = 4
+    AttackAction = 3,
+    Free = 4,
+    Reaction = 5
 }

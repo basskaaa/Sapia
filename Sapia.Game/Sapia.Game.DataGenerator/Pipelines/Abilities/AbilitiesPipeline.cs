@@ -14,7 +14,16 @@ public static class AbilitiesPipeline
         {
             var settings = new YamlDeserializationSettings
             {
-                UnmatchedPropertyAction = UnmatchedPropertyAction.Warn
+                UnmatchedPropertyAction = UnmatchedPropertyAction.Warn,
+
+                PropertySettings = new()
+                {
+                    { nameof(AbilityType.Action), new()
+                        {
+                            PreProcess = s=>s.Replace("Action", string.Empty).Trim()
+                        }
+                    }
+                }
             };
 
             p.AddInputStep<MarkdownYamlLoader<AbilityType>>("Abilities", settings);
