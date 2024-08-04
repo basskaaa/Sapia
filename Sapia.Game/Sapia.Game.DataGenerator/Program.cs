@@ -38,6 +38,7 @@ await new BuilderFactory()
             x.AddPipelinePhase(phase =>
             {
                 phase.AddWeaponTypePipeline();
+                phase.AddAbilitiesPipeline();
             });
 
         })
