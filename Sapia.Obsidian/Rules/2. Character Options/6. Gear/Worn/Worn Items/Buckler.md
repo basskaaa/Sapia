@@ -1,6 +1,6 @@
 ---
 Worn Type: "[[Light Shield]]"
-Value (gp): 
-Item tags: 
+Value: 
+Tags: 
 Weight:
 ---

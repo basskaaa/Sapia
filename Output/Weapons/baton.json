@@ -1,0 +1,14 @@
+{
+  "Id": "baton",
+  "Name": "Baton",
+  "Value": 0.5,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d4",
+  "Type": "Club",
+  "Weight": 1,
+  "Range": 1,
+  "Masterwork": ""
+}

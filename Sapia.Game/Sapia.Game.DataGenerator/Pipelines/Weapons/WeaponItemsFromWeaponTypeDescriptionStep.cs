@@ -1,23 +1,23 @@
 ﻿using PtahBuilder.BuildSystem.Entities;
 using PtahBuilder.BuildSystem.Execution.Abstractions;
 using PtahBuilder.BuildSystem.Extensions;
-using Sapia.Game.Entities.Items.Weapons;
 using Sapia.Game.Services;
+using Sapia.Game.Types.Entities;
 
 namespace Sapia.Game.DataGenerator.Pipelines.Weapons;
 
-public class WeaponItemsFromWeaponTypeDescriptionStep : IStep<WeaponItem>
+public class WeaponTypeFromWeaponStatsLoadDescriptionStep : IStep<WeaponType>
 {
-    private readonly IEntityProvider<WeaponType> _weaponTypes;
+    private readonly IEntityProvider<WeaponStatsLoad> _weaponTypes;
     private readonly IGoldService _goldService;
 
-    public WeaponItemsFromWeaponTypeDescriptionStep(IEntityProvider<WeaponType> weaponTypes, IGoldService goldService)
+    public WeaponTypeFromWeaponStatsLoadDescriptionStep(IEntityProvider<WeaponStatsLoad> weaponTypes, IGoldService goldService)
     {
         _weaponTypes = weaponTypes;
         _goldService = goldService;
     }
 
-    public Task Execute(IPipelineContext<WeaponItem> context, IReadOnlyCollection<Entity<WeaponItem>> entities)
+    public Task Execute(IPipelineContext<WeaponType> context, IReadOnlyCollection<Entity<WeaponType>> entities)
     {
         foreach (var entity in _weaponTypes.ToArray())
         {
@@ -31,14 +31,23 @@ public class WeaponItemsFromWeaponTypeDescriptionStep : IStep<WeaponItem>
                 {
                     var splits = line.Substring(1).Split(".", StringSplitOptions.RemoveEmptyEntries);
 
-                    var weaponItem = new WeaponItem
+                    var weaponType = new WeaponType
                     {
-                        Name = splits[0].Trim(),
-                        Value = splits.Length > 1 ? _goldService.Parse(splits[1]) : entity.Value,
-                        WeaponType = entity.Id
+                        Name = splits[0].Trim()
                     };
 
-                    context.AddEntity(weaponItem);
+                    weaponType = context.AddEntity(weaponType).Value;
+
+                    if (splits.Length > 1 && weaponType.Value <= 0)
+                    {
+                        weaponType.Value = _goldService.Parse(splits[1]);
+                    }
+
+                    if (string.IsNullOrWhiteSpace(weaponType.Type))
+                    {
+                        weaponType.Type = entity.Type;
+                        weaponType.Weight = entity.Weight;
+                    }
 
                     description.RemoveAt(i);
                     i--;

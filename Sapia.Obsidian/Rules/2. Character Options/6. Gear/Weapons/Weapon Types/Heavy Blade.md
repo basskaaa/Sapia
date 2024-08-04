@@ -1,9 +1,9 @@
 ---
-Damage Die:
+Damage:
   - d10
 Weight:
   - Great
-Value (gp): 8
-Item tags:
+Value: 8
+Tags:
   - Combat
 ---

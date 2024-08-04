@@ -1,10 +1,11 @@
 ---
-Damage Die:
+Damage:
   - d4
 Weight:
   - Great
-Value (gp): 15
-Item tags:
+Value: 15
+Range: 18
+Tags:
   - Combat
 ---
 - Shortbow

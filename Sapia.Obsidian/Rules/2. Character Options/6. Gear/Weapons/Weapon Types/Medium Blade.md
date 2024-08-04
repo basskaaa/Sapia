@@ -1,10 +1,10 @@
 ---
-Damage Die:
+Damage:
   - d8
 Weight:
   - Medium
-Value (gp): 3
-Item tags:
+Value: 3
+Tags:
   - Combat
 ---
 - Shortsword. 3gp

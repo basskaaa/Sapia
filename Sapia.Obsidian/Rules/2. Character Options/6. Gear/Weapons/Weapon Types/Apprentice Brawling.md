@@ -1,12 +1,12 @@
 ---
-Damage Die:
+Damage:
   - d8
 Weight:
   - None
-Weapon Range:
+Range:
   - 6ft
-Value (gp): 
-Item tags:
+Value: 
+Tags:
   - Combat
 ---
 Apprentice Brawling is for people who are apprentices and they do brawling.

@@ -1,10 +1,11 @@
 ---
-Damage Die:
+Damage:
   - d20
 Weight:
   - Great
-Value (gp): 30
-Item tags:
+Value: 30
+Range: 24
+Tags:
   - Combat
 ---
 - Great crossbow. 30gp

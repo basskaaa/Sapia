@@ -2,7 +2,7 @@
 using Sapia.Game.Combat.Entities.Enums;
 using Sapia.Game.Combat.Steps;
 using Sapia.Game.Structs;
-using Sapia.Game.Types;
+using Sapia.Game.Types.Entities;
 using Sapia.Game.Types.Enums;
 
 namespace Sapia.Game.Combat.AI;

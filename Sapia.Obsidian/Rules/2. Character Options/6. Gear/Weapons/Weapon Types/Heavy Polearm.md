@@ -1,9 +1,9 @@
 ---
-Damage Die:
+Damage:
   - d10
 Weight:
   - Heavy
-Item tags:
+Tags:
   - Combat
 ---
 - Spear. 4gp

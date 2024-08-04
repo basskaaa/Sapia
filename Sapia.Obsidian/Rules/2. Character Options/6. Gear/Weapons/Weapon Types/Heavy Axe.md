@@ -1,10 +1,10 @@
 ---
-Damage Die:
+Damage:
   - d12
 Weight:
   - Heavy
-Value (gp): 12
-Item tags:
+Value: 12
+Tags:
   - Combat
 ---
 - Lumber axe. 3gp

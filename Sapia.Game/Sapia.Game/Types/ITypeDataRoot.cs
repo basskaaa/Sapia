@@ -1,4 +1,6 @@
-﻿namespace Sapia.Game.Types;
+﻿using Sapia.Game.Types.Entities;
+
+namespace Sapia.Game.Types;
 
 public interface ITypeDataRoot
 {

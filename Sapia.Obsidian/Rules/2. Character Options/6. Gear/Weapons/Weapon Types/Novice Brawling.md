@@ -1,11 +1,11 @@
 ---
-Damage Die:
+Damage:
   - d6
 Weight:
   - None
-Weapon Range:
+Range:
   - 6ft
-Value (gp): 
-Item tags:
+Value: 
+Tags:
   - Combat
 ---

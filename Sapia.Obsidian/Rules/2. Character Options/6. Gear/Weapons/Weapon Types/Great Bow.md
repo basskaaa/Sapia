@@ -1,11 +1,10 @@
 ---
-Damage Die:
+Damage:
   - d12
 Weight:
   - Great
-Weapon Range:
-  - 300ft
-Value (gp): 15
-Item tags:
+Value: 15
+Range: 36
+Tags:
   - Combat
 ---

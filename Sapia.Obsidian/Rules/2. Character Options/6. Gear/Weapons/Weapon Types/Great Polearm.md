@@ -1,8 +1,8 @@
 ---
-Damage Die:
+Damage:
   - d12
 Weight:
   - Great
-Item tags:
+Tags:
   - Combat
 ---

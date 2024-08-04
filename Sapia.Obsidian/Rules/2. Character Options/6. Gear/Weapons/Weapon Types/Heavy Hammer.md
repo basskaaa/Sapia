@@ -1,10 +1,10 @@
 ---
-Damage Die:
+Damage:
   - d12
 Weight:
   - Heavy
-Value (gp): 5
-Item tags:
+Value: 5
+Tags:
   - Combat
 ---
 - Maul

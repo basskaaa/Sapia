@@ -1,10 +1,10 @@
 ---
-Damage Die:
+Damage:
   - d6
 Weight:
   - Light
-Value (gp): 2
-Item tags:
+Value: 2
+Tags:
   - Combat
 ---
 - Hatchet. 2gp

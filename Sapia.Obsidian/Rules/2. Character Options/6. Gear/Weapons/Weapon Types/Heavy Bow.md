@@ -1,10 +1,11 @@
 ---
-Damage Die:
+Damage:
   - d8
 Weight:
   - Heavy
-Value (gp): 15
-Item tags:
+Value: 15
+Range: 24
+Tags:
   - Combat
 ---
 - Longbow

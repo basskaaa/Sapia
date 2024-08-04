@@ -1,10 +1,10 @@
 ---
-Damage Die:
+Damage:
   - d10
 Weight:
   - Medium
-Value (gp): 6
-Item tags:
+Value: 6
+Tags:
   - Combat
 ---
 - Battleaxe. 6gp

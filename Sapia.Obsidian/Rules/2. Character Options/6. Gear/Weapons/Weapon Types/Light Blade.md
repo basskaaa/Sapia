@@ -1,10 +1,10 @@
 ---
-Damage Die:
+Damage:
   - d4
 Weight:
   - Light
-Value (gp): 1
-Item tags:
+Value: 1
+Tags:
   - Combat
 ---
 - Dagger. 1gp

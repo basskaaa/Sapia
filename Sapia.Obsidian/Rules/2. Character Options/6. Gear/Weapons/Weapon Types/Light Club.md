@@ -1,10 +1,10 @@
 ---
-Damage Die:
+Damage:
   - d4
 Weight:
   - Light
-Value (gp): 0.5
-Item tags:
+Value: 0.5
+Tags:
   - Combat
 ---
 - Cudgel. 4sp

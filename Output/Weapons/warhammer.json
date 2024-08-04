@@ -1,0 +1,13 @@
+{
+  "Id": "warhammer",
+  "Name": "Warhammer",
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d10",
+  "Type": "Hammer",
+  "Weight": 2,
+  "Range": 1,
+  "Masterwork": ""
+}

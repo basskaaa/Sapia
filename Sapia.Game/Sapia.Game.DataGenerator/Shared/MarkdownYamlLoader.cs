@@ -3,7 +3,7 @@ using PtahBuilder.BuildSystem.Entities;
 using PtahBuilder.BuildSystem.Execution.Abstractions;
 using PtahBuilder.BuildSystem.Extensions;
 using PtahBuilder.BuildSystem.Services.Serialization;
-using Sapia.Game.Entities.Interfaces;
+using Sapia.Game.Types.Interfaces;
 
 namespace Sapia.Game.DataGenerator.Shared;
 
@@ -35,6 +35,10 @@ public class MarkdownYamlLoader<T> : IStep<T> where T : IHasDescription
     private void ProcessFile(IPipelineContext<T> context, string file)
     {
         var text = File.ReadAllText(file);
+
+        text = text
+            .Replace("\"[[", string.Empty)
+            .Replace("]]\"", string.Empty);
 
         var parts = text.Split("---", StringSplitOptions.RemoveEmptyEntries);
 

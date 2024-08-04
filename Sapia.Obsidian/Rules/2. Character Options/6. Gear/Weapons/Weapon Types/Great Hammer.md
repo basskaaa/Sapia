@@ -1,10 +1,10 @@
 ---
-Damage Die:
+Damage:
   - d20
 Weight:
   - Great
-Value (gp): 15
-Item tags:
+Value: 15
+Tags:
   - Combat
 ---
 - Great maul

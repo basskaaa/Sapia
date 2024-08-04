@@ -5,7 +5,7 @@ namespace Sapia.Game.DataGenerator;
 
 public static class TypeConfig
 {
-    public static BuilderFactory AddFusionShiftTypeHandling(this BuilderFactory builderFactory)
+    public static BuilderFactory AddSapiaTypeHandling(this BuilderFactory builderFactory)
     {
         return builderFactory.AddCustomValueParser(typeof(IDiceValue), v => DiceParser.Parse(v!.ToString()!));
     }

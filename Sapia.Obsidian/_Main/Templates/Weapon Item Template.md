@@ -1,7 +1,7 @@
 ---
 Weapon Type: 
-Weapon Range: 
-Value (gp): 
+Range: 
+Value: 
 Masterwork: 
-Item tags:
+Tags:
 ---

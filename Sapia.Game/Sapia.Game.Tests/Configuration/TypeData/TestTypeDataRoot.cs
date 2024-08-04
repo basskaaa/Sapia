@@ -1,4 +1,5 @@
 ﻿using Sapia.Game.Types;
+using Sapia.Game.Types.Entities;
 
 namespace Sapia.Game.Tests.Configuration.TypeData;
 

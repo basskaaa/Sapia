@@ -1,10 +1,10 @@
 ---
-Damage Die:
+Damage:
   - d6
 Weight:
   - Light
-Value (gp): 1
-Item tags:
+Value: 1
+Tags:
   - Combat
 ---
 A hammer which lights up the room

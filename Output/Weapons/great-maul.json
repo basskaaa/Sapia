@@ -1,0 +1,14 @@
+{
+  "Id": "great-maul",
+  "Name": "Great maul",
+  "Value": 15.0,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d20",
+  "Type": "Hammer",
+  "Weight": 4,
+  "Range": 1,
+  "Masterwork": ""
+}

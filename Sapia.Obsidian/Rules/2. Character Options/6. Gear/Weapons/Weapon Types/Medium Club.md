@@ -1,10 +1,10 @@
 ---
-Damage Die:
+Damage:
   - d6
 Weight:
   - Medium
-Value (gp): 1
-Item tags:
+Value: 1
+Tags:
   - Combat
 ---
 - Wooden club. 2sp

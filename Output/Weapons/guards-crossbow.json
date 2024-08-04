@@ -1,0 +1,16 @@
+{
+  "Id": "guards-crossbow",
+  "Name": "guards-crossbow",
+  "Value": 10.0,
+  "Description": [],
+  "Tags": [
+    "Combat",
+    "Ammunition",
+    "Two-Handed"
+  ],
+  "Damage": "d10",
+  "Type": "Crossbow",
+  "Weight": 2,
+  "Range": 18,
+  "Masterwork": ""
+}

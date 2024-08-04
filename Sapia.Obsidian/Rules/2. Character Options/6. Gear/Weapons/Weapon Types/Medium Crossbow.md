@@ -1,10 +1,11 @@
 ---
-Damage Die:
+Damage:
   - d10
 Weight:
   - Medium
-Value (gp): 10
-Item tags:
+Value: 10
+Range: 18
+Tags:
   - Combat
 ---
 - Crossbow. 10gp

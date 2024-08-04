@@ -1,0 +1,14 @@
+{
+  "Id": "javelin",
+  "Name": "Javelin",
+  "Value": 0.1,
+  "Description": [],
+  "Tags": [
+    "Combat"
+  ],
+  "Damage": "d6",
+  "Type": "Polearm",
+  "Weight": 1,
+  "Range": 1,
+  "Masterwork": ""
+}
