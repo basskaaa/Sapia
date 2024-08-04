@@ -1,0 +1,11 @@
+{
+  "Action": 5,
+  "Target": 2,
+  "Damage": 1,
+  "Range": 1,
+  "Description": [
+    "When a creature makes a ranged attack against you, that attack is rolled at disadvantage."
+  ],
+  "Id": "deflect",
+  "Name": "Deflect"
+}

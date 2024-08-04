@@ -1,0 +1,11 @@
+{
+  "Action": 5,
+  "Target": 2,
+  "Damage": 1,
+  "Range": 1,
+  "Description": [
+    "When you make a killing blow against a creature in melee, you can attack another target within reach."
+  ],
+  "Id": "cleave",
+  "Name": "Cleave"
+}

@@ -1,0 +1,11 @@
+{
+  "Action": 2,
+  "Target": 1,
+  "Damage": 1,
+  "Range": 1,
+  "Description": [
+    "You have an additional attack action this turn."
+  ],
+  "Id": "multiattack",
+  "Name": "Multiattack"
+}

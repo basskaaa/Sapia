@@ -1,0 +1,11 @@
+{
+  "Action": 5,
+  "Target": 2,
+  "Damage": 1,
+  "Range": 1,
+  "Description": [
+    "When a creature makes a melee attack against you, the creature must succeed on a Strength saving throw or miss the attack."
+  ],
+  "Id": "block",
+  "Name": "Block"
+}

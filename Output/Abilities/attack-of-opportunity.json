@@ -1,0 +1,11 @@
+{
+  "Action": 5,
+  "Target": 4,
+  "Damage": 1,
+  "Range": 1,
+  "Description": [
+    "When a target leaves your melee range you may attack that target."
+  ],
+  "Id": "attack-of-opportunity",
+  "Name": "Attack of Opportunity"
+}

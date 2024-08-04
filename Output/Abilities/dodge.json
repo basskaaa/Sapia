@@ -1,0 +1,11 @@
+{
+  "Action": 2,
+  "Target": 1,
+  "Damage": 1,
+  "Range": 1,
+  "Description": [
+    "Attacks against you are made at disadvantage until the start of your next turn."
+  ],
+  "Id": "dodge",
+  "Name": "Dodge"
+}
