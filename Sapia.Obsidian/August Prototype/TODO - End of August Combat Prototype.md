@@ -10,9 +10,9 @@
 	- most character stats will inherit from one of these 6
 - [ ] Conditions system
 	- Eg [[Concentrating]] (with Constitution checks instead of concentration checks for prototype)
-- [ ] Sound system
-	- [ ] Music system
-	- [ ] Sfx system
+- [x] Sound system ✅ 2024-08-08
+	- [x] Music system ✅ 2024-08-08
+	- [x] Sfx system ✅ 2024-08-08
 - [x] Animation system ✅ 2024-08-02
 	- [ ] Particles
 	- [x] Randomisation ✅ 2024-08-02
@@ -26,8 +26,8 @@
 - [x] Enemy ai ✅ 2024-08-01
 - [x] Grid movement ✅ 2024-08-01
 # Enemies
-- [ ] Skeleton
-- [ ] Goblin Archer
+- [x] Skeleton ✅ 2024-08-08
+- [x] Archer ✅ 2024-08-08
 # UI
 - [x] Ability cards ✅ 2024-08-01
 - [ ] Inventory
@@ -35,9 +35,18 @@
 	- [ ] Hp
 	- [ ] Ability points
 # Design
-- [ ] Describe stat sources
+- [x] Describe stat sources ✅ 2024-08-08
 - [ ] Translate abilities
 - [ ] Translate conditions
+#### Sounds
+- [ ] Select card
+- [ ] Use card
+- [ ] Hover card
+- [ ] Footstep
+- [ ] Ability
+- [ ] Hit
+- [ ] Death
+- [ ] End turn
 #### Animations
 - [ ] Move
 - [ ] Death

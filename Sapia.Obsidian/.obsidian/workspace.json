@@ -4,46 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4c5812ddc999a1e1",
+        "id": "382429531dbbb4b6",
         "type": "tabs",
         "children": [
           {
-            "id": "6640fa89bd3ceb3a",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "August Prototype/Stats sources.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "c915008494f567d3",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rules/Test Characters/Evad (L2 Fighter).md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "6252b8d97125f401",
+            "id": "2af4997adc8259c0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rules/1. Basic Rules/Levels and Power.md",
+                "file": "August Prototype/TODO - End of August Combat Prototype.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -116,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "August Prototype/Stats sources.md",
+                "file": "August Prototype/TODO - End of August Combat Prototype.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "August Prototype/Stats sources.md",
+                "file": "August Prototype/TODO - End of August Combat Prototype.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "August Prototype/Stats sources.md"
+                "file": "August Prototype/TODO - End of August Combat Prototype.md"
               }
             }
           }
@@ -194,11 +164,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6640fa89bd3ceb3a",
+  "active": "2af4997adc8259c0",
   "lastOpenFiles": [
+    "August Prototype/Stats sources.md",
     "Rules/1. Basic Rules/Levels and Power.md",
     "Rules/2. Character Options/0. General/GEAR.md",
-    "August Prototype/Stats sources.md",
     "Rules/Test Characters/Evad (L2 Fighter).md",
     "Rules/2. Character Options/5. Traits/Species/Human Versatility.md",
     "Rules/2. Character Options/5. Traits/Experience/Crowd Control.md",
