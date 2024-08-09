@@ -82,6 +82,8 @@ namespace Assets._Scripts.Ui.Combat.Cards
             cardBlock.Position.Z.Value = _initialPosition.z;
 
             cardBlock.Color = _initialColour;
+
+            AudioManager.Instance.PlaySound(AudioManager.Instance.sfxClips[1].AudioClip, 0.5f);
         }
 
         public void OnCardDrag()
@@ -99,8 +101,13 @@ namespace Assets._Scripts.Ui.Combat.Cards
 
         private void Select()
         {
-            isCardSelected = true;
+            if (!isCardSelected)
+            {
+                AudioManager.Instance.PlaySound(AudioManager.Instance.sfxClips[2].AudioClip, 0.5f);
 
+            }
+
+            isCardSelected = true;
             cardBlock.Color = new Color(_initialColour.r, _initialColour.g, _initialColour.b, opacityOnSelect);
         }
 
@@ -117,6 +124,8 @@ namespace Assets._Scripts.Ui.Combat.Cards
             if (isHit && raycastHit.transform.CompareTag("Target") && isCardSelected && !hasTarget)
             {
                 CurrentTarget = raycastHit.transform.GetComponentInParent<CombatParticipantRef>();
+                AudioManager.Instance.PlaySound(AudioManager.Instance.sfxClips[3].AudioClip, 0.5f);
+
                 HighlightTarget(raycastHit);
             }
 

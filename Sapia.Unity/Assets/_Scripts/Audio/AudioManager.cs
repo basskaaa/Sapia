@@ -1,14 +1,14 @@
 using Assets._Scripts.Patterns;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioManager : Singleton<AudioManager>
 {
     public AudioSource MusicSource;
-    public AudioSource SfxSource;           
+    public AudioSource SfxSource;
 
-    public void PlaySound(float lowPitchRange, float highPitchRange, AudioClip clipToPlay, float volume)
+    public AudioClipHolder[] sfxClips;
+
+    public void PlaySound(AudioClip clipToPlay, float volume, float lowPitchRange, float highPitchRange)
     {
         SfxSource.pitch = Random.Range(lowPitchRange, highPitchRange);
         SfxSource.PlayOneShot(clipToPlay);
@@ -17,6 +17,7 @@ public class AudioManager : Singleton<AudioManager>
 
     public void PlaySound(AudioClip clipToPlay, float volume)
     {
+        SfxSource.pitch = 1;
         SfxSource.PlayOneShot(clipToPlay);
         SfxSource.volume = volume;
     }

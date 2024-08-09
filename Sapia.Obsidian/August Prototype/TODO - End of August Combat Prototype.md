@@ -39,9 +39,10 @@
 - [ ] Translate abilities
 - [ ] Translate conditions
 #### Sounds
-- [ ] Select card
-- [ ] Use card
-- [ ] Hover card
+- [x] Select card ✅ 2024-08-09
+- [x] Use card ✅ 2024-08-09
+- [x] Hover card ✅ 2024-08-09
+- [x] Release card into deck ✅ 2024-08-09
 - [ ] Footstep
 - [ ] Ability
 - [ ] Hit

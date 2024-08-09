@@ -84,6 +84,7 @@ namespace Assets._Scripts.Game
                     // An ability was used by this actor. Play the attack animation t
                     // Then wait for all others to finish animating
                     _anim.PlayAnimation(AnimManager.animName.ability, 0); // needs to reference animation index in ability data
+                    AudioManager.Instance.PlaySound(AudioManager.Instance.sfxClips[4].AudioClip, 0.5f, AudioManager.Instance.sfxClips[4].LowPitchRange, AudioManager.Instance.sfxClips[4].HighPitchRange);
                     _isResponsibleForNextStep = true;
                 }
                 else
@@ -97,6 +98,8 @@ namespace Assets._Scripts.Game
                             if (Participant.Character.IsAlive)
                             {
                                 _anim.PlayRandomAnimation(AnimManager.animName.hit);
+
+                                AudioManager.Instance.PlaySound(AudioManager.Instance.sfxClips[5].AudioClip, 0.5f, AudioManager.Instance.sfxClips[5].LowPitchRange, AudioManager.Instance.sfxClips[5].HighPitchRange);
                             }
                             else
                             {

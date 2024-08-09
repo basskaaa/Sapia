@@ -180,6 +180,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MusicSource: {fileID: 143013864}
   SfxSource: {fileID: 1956374203}
+  sfxClips:
+  - {fileID: 11400000, guid: c9e9b5854cf4b9741af8d58af47a3250, type: 2}
+  - {fileID: 11400000, guid: 7b32b9f8ee0616445a96252b8782cd85, type: 2}
+  - {fileID: 11400000, guid: d2e98be44d0e5a7439bc152ebff6187f, type: 2}
+  - {fileID: 11400000, guid: b43cde078ec27bb44a91c54010d891c8, type: 2}
+  - {fileID: 11400000, guid: 0c5382f94f98d4d41898e07476b078ad, type: 2}
+  - {fileID: 11400000, guid: 69dd3a7b812138e47913b7d56ff52774, type: 2}
 --- !u!1 &143013862
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,12 +231,12 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 0fa3c77b1e1ad4741ae902a87f64cc95,
     type: 2}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 4c52e44514f18034daaf6bd44685fd30, type: 3}
+  m_Resource: {fileID: 8300000, guid: 4c52e44514f18034daaf6bd44685fd30, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
