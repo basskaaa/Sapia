@@ -106,15 +106,20 @@ namespace Assets._Scripts.Game
         private void MoveStep(MovedStep move)
         {
             // This is a move step for this actor, move to the new position then invoke step
-            Vector3 currentPos = transform.position;
+            var initialPosition = transform.position;
+
             transform.position = new Vector3(move.Participant.Position.X, transform.position.y, move.Participant.Position.Y);
+
             if (!gameObject.CompareTag("Player"))
             {
                 transform.LookAt(FindObjectOfType<Player>().transform);
             }
             else
             {
-                transform.LookAt(-currentPos); // needs to be set up to not rotate camera
+                var dir = transform.position - initialPosition;
+
+                // Look in front current position in direction of movement
+                transform.LookAt(transform.position + dir);
             }
             _anim.PlayRandomAnimation(AnimManager.animName.move);
             Invoke(nameof(Step), .5f);
