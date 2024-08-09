@@ -1,5 +1,7 @@
 using Nova;
 using NovaSamples.UIControls;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Assets._Scripts.Ui.Combat.Cards
@@ -41,6 +43,7 @@ namespace Assets._Scripts.Ui.Combat.Cards
         {
             IsHovered = true;
 
+            AudioManager.Instance.PlaySound(AudioManager.Instance.sfxClips[0].AudioClip, 0.5f);
             _initialSort = sortGroup.SortingOrder;
 
             uiBlock.Size = Length3.FixedValue(_initialSize.X.Value * hoverScale.x, _initialSize.Y.Value * hoverScale.y, _initialSize.Z.Value);
