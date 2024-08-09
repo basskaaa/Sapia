@@ -33,17 +33,27 @@ namespace Assets._Scripts.Game
 
             var theRock = characterStatusService.CompileCharacter(theRockConfiguration, new[] { "Jab", "Slash", "Shoot" });
 
-            ICompiledCharacter CreateSkeleton() => new SimpleCharacter("Skeleton", new CharacterStats(3))
+            ICompiledCharacter CreateEnemy(string participantId)
             {
-                Abilities = new[] { new PreparedAbility("Slash") }
-            };
+                if (participantId.StartsWith("GoblinArcher"))
+                {
+                    return new SimpleCharacter("Skeleton", new CharacterStats(3))
+                    {
+                        Abilities = new[] { new PreparedAbility("Shoot") }
+                    };
+                }
+                return new SimpleCharacter("Skeleton", new CharacterStats(3))
+                {
+                    Abilities = new[] { new PreparedAbility("Slash") }
+                };
+            }
 
             var participants = participantRefs.Select(x =>
             {
                 var pos = new Coord((int)x.transform.position.x, (int)x.transform.position.z);
                 var id = x.ParticipantId;
 
-                var character = x.ParticipantId == "Player" ? theRock : CreateSkeleton();
+                var character = x.ParticipantId == "Player" ? theRock : CreateEnemy(x.ParticipantId);
 
                 return new CombatFactory.CombatParticipantEntry(id, character, id == "Player" ? 20 : 5, pos);
             });
