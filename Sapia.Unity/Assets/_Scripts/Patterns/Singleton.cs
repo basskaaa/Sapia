@@ -37,6 +37,13 @@ namespace Assets._Scripts.Patterns
             else
             {
                 instance = this as T; // Set the instance to this (the current instance)
+
+                // Clear the parent at runtime so DontDestryOnLoadWorks
+                if (gameObject.transform.parent != null)
+                {
+                    gameObject.transform.parent = null;
+                }
+
                 DontDestroyOnLoad(gameObject); // Don't destroy the GameObject when loading new scenes
             }
         }
